@@ -1,0 +1,185 @@
+/* =========================================================
+   LPページ専用スタイル（副業ジャンル：Monetrack紹介ページ）
+   ../../../css/style.css（共通テンプレートCSS）を土台にし、
+   このLPだけに必要なスタイルのみをここに追加する。
+
+   ※ 特定商品名に依存しない汎用クラス名
+   　（product-*, problem-*, benefit-* 等）を使用しており、
+   　 lp/sample/ で検証した構成をそのまま流用している。
+   ========================================================= */
+
+/* --- 広告表示バー --- */
+.lp-notice-bar {
+  background-color: var(--color-background-light);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-1) var(--container-padding);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+.lp-notice-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+}
+
+.badge--ad {
+  background-color: #fff4e5;
+  border-color: #f3d9a4;
+  color: #8a5a00;
+}
+
+.lp-header-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+/* --- 商品紹介 --- */
+.product-intro {
+  display: grid;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* 画像を使わず、CSSのみのプレースホルダーとして表示 */
+.product-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: var(--space-3);
+}
+
+.product-name {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-1);
+}
+
+.product-catch {
+  color: var(--color-text-light);
+}
+
+.product-description {
+  color: var(--color-text);
+}
+
+.product-price {
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+  background-color: var(--color-background-light);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
+.product-price-label {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+.product-price-value {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* --- 悩み・課題 --- */
+.problem-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.problem-item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3);
+}
+
+.problem-item .problem-icon {
+  flex-shrink: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* --- 解決策 --- */
+.solution-block {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+/* --- メリット --- */
+.benefit-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.benefit-item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  padding: var(--space-1) 0;
+}
+
+.benefit-item .benefit-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* --- FAQ 開閉アイコン（JSで回転させる） --- */
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-toggle-icon {
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.faq-item[open] .faq-toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* --- 出典・免責の注釈 --- */
+.source-note {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+/* ---------------------------------------------------------
+   Media Queries
+   --------------------------------------------------------- */
+@media (min-width: 768px) {
+  .product-intro {
+    grid-template-columns: 320px 1fr;
+  }
+}

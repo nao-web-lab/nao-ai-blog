@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="sampleCoverTitle">
+  <title id="sampleCoverTitle">商品画像エリア（サンプル）</title>
+  <!-- このSVGは商品画像の代わりに使用する自作のプレースホルダー図形です。実在の画像・素材は使用していません。 -->
+  <rect width="480" height="320" rx="16" fill="#f7f8fa"/>
+  <rect x="24" y="24" width="432" height="272" rx="12" fill="#ffffff" stroke="#e3e6ea" stroke-width="2" stroke-dasharray="8 8"/>
+  <!-- ノート（教材）を表す簡易アイコン -->
+  <rect x="170" y="90" width="140" height="110" rx="6" fill="#2563eb"/>
+  <rect x="182" y="106" width="116" height="8" rx="4" fill="#ffffff"/>
+  <rect x="182" y="126" width="116" height="8" rx="4" fill="#ffffff" opacity="0.8"/>
+  <rect x="182" y="146" width="80" height="8" rx="4" fill="#ffffff" opacity="0.6"/>
+  <!-- ペン先を表す簡易アイコン -->
+  <path d="M300 200 L340 160 L356 176 L316 216 Z" fill="#1d4ed8"/>
+  <path d="M340 160 L356 176 L364 152 Z" fill="#5a6270"/>
+  <text x="240" y="250" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5a6270" text-anchor="middle">商品画像エリア（サンプル）</text>
+</svg>
