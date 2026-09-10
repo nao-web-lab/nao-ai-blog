@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $siteBaseUrl = "https://nao-web-lab.github.io/nao-ai-blog"
@@ -82,12 +82,17 @@ Write-Host "Running automatic checks..." -ForegroundColor Green
 $index = Join-Path $targetDir "index.html"
 $html = Get-Content -Raw -Encoding UTF8 $index
 $affiliatePattern = [regex]::Escape($url)
-$ctaPattern = '(?is)<a\b[^>]*\bhref\s*=\s*["'']' + $affiliatePattern + '["''][^>]*>'
+$doubleQuote = [char]34
+$singleQuote = [char]39
+$quoteClass = '[' + $doubleQuote + $singleQuote + ']'
+$ctaPattern = '(?is)<a\b[^>]*\bhref\s*=\s*' + $quoteClass + $affiliatePattern + $quoteClass + '[^>]*>'
 $ctaMatches = [regex]::Matches($html, $ctaPattern)
 if ($ctaMatches.Count -lt 4) { throw "CTA check failed. At least four affiliate CTAs are required; found $($ctaMatches.Count)." }
 foreach ($cta in $ctaMatches) {
-    if ($cta.Value -notmatch '(?i)\btarget\s*=\s*["'']_blank["'']') { throw "Affiliate CTA target check failed." }
-    if ($cta.Value -notmatch '(?i)\brel\s*=\s*["''][^"'']*\bnofollow\b[^"'']*\bsponsored\b[^"'']*["'']') { throw "Affiliate CTA rel attribute check failed." }
+    $targetPattern = '(?i)\btarget\s*=\s*' + $quoteClass + '_blank' + $quoteClass
+    $relPattern = '(?i)\brel\s*=\s*' + $quoteClass + '[^>]*\bnofollow\b[^>]*\bsponsored\b[^>]*' + $quoteClass
+    if ($cta.Value -notmatch $targetPattern) { throw "Affiliate CTA target check failed." }
+    if ($cta.Value -notmatch $relPattern) { throw "Affiliate CTA rel attribute check failed." }
 }
 if ($html -notmatch 'PR|広告|アフィリエイト') { throw "PR disclosure check failed." }
 if ($html -notmatch '(?is)<title>[^<]+</title>') { throw "SEO title check failed." }
@@ -98,8 +103,10 @@ $expectedOgImage = "$publicUrl/images/og-image.svg"
 $expectedOgMeta = 'property="og:image" content="' + $expectedOgImage + '"'
 if ($html -notmatch [regex]::Escape($expectedOgMeta)) { throw "OGP image check failed." }
 if ($html -notmatch 'name="twitter:card" content="summary_large_image"') { throw "Twitter card check failed." }
-if ([regex]::Matches($html, '(?is)<img\b[^>]*\bsrc\s*=\s*["'']images/[^"'']+["''][^>]*>').Count -lt 2) { throw "Local image placement check failed. At least two local images are required." }
-if ($html -match '(?i)<(?:img|source)\b[^>]*\bsrc\s*=\s*["'']https?://') { throw "Remote image check failed. LP images must be local assets." }
+$localImagePattern = '(?is)<img\b[^>]*\bsrc\s*=\s*' + $quoteClass + 'images/[^>]*' + $quoteClass + '[^>]*>'
+if ([regex]::Matches($html, $localImagePattern).Count -lt 2) { throw "Local image placement check failed. At least two local images are required." }
+$remoteImagePattern = '(?i)<(?:img|source)\b[^>]*\bsrc\s*=\s*' + $quoteClass + 'https?://'
+if ($html -match $remoteImagePattern) { throw "Remote image check failed. LP images must be local assets." }
 foreach ($svg in $requiredFiles | Where-Object { $_ -like '*.svg' }) {
     $svgContent = Get-Content -Raw -Encoding UTF8 $svg
     if ($svgContent -notmatch '(?is)^\s*<svg\b' -or $svgContent -match '(?i)<script\b') { throw "Generated SVG safety check failed: $svg" }
