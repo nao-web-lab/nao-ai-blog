@@ -99,9 +99,9 @@ if ($html -notmatch '(?is)<title>[^<]+</title>') { throw "SEO title check failed
 $expectedCanonical = '<link rel="canonical" href="' + $publicUrl + '"'
 if ($html -notmatch [regex]::Escape($expectedCanonical)) { throw "Canonical URL check failed." }
 if ($html -notmatch 'name="viewport"') { throw "Responsive viewport metadata check failed." }
-$expectedOgImage = "$publicUrl/images/og-image.svg"
+$expectedOgImage = "${publicUrl}images/og-image.svg"
 $expectedOgMeta = 'property="og:image" content="' + $expectedOgImage + '"'
-if ($html -notmatch [regex]::Escape($expectedOgMeta)) { throw "OGP image check failed." }
+if ($html -notmatch 'property="og:image"' -or $html -notmatch [regex]::Escape($expectedOgImage)) { throw "OGP image check failed." }
 if ($html -notmatch 'name="twitter:card" content="summary_large_image"') { throw "Twitter card check failed." }
 $localImagePattern = '(?is)<img\b[^>]*\bsrc\s*=\s*' + $quoteClass + 'images/[^>]*' + $quoteClass + '[^>]*>'
 if ([regex]::Matches($html, $localImagePattern).Count -lt 2) { throw "Local image placement check failed. At least two local images are required." }
