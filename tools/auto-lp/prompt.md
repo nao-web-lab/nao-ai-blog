@@ -12,6 +12,13 @@ Relative target:
 Public URL:
 {{PUBLIC_URL}}
 
+Official banner image (optional — only present if the user supplied an ASP banner code for this run):
+Image URL: {{BANNER_IMG_SRC}}
+Width: {{BANNER_WIDTH}}
+Height: {{BANNER_HEIGHT}}
+Alt text: {{BANNER_ALT}}
+Tracking pixel URL (optional): {{TRACKING_PIXEL_SRC}}
+
 STAGE 0 — Environment check
 Confirm the target directory and skim the existing repository's LP design language as a style reference. Do not modify, delete, or overwrite any file outside the target directory, and do not overwrite an existing LP.
 
@@ -43,10 +50,18 @@ Create, inside the target directory only:
 - images/og-image.svg
 
 Image rules:
-- Do not hotlink or download images from other sites. Do not use an official logo, product screenshot, stock photo, or any copied visual without a clearly documented licence.
+- Do not hotlink or download images from other sites. Do not use an official logo, product screenshot, stock photo, or any copied visual without a clearly documented licence. The one exception is the official banner image described below, if one was supplied — that image is explicitly licensed by the ad network for affiliate use.
 - Create three original, self-contained SVG assets instead. They must be concept illustrations based on verified service characteristics, not reproductions of the advertiser's brand or UI. SVGs must not include JavaScript, external URLs, embedded raster data, or unverified statistics.
 - Place `images/hero-visual.svg` in the hero and `images/section-visual.svg` beside a relevant explanatory section, each with meaningful Japanese `alt` text that adds context rather than acting as decoration.
 - Create `images/og-image.svg` as a simple, readable social-sharing image. It may use the LP's Japanese headline, but must not use invented claims, third-party logos, or promotional prices.
+
+Official banner image (only if "Image URL" above is non-empty):
+- This is a real banner image provided directly by the ad network (ASP) specifically for affiliate use — not a scraped or stolen image, so it's fine to embed it as-is alongside your original SVGs (it does not replace them).
+- Embed it with `<img src="{{BANNER_IMG_SRC}}" width="{{BANNER_WIDTH}}" height="{{BANNER_HEIGHT}}" alt="...">` in one natural, prominent spot (e.g. near the hero or a mid-page CTA section). Use the given alt text if it's non-empty; otherwise write a meaningful Japanese alt yourself.
+- Never change, re-encode, re-host, or otherwise modify the `src` URL — its tracking parameters must stay byte-for-byte identical or the advertiser's click tracking breaks.
+- Wrap it in an `<a>` tag using the affiliate URL, with `target="_blank"` and `rel="nofollow sponsored noopener noreferrer"` — you may set these attributes on the anchor even if the original snippet didn't include them; only the href and the img `src` must never be altered.
+- If a tracking pixel URL is also given above (non-empty), include it exactly once, unmodified, as an invisible 1x1 image (e.g. `<img src="{{TRACKING_PIXEL_SRC}}" width="1" height="1" alt="" style="position:absolute;width:1px;height:1px;overflow:hidden;">`) — never as visible content.
+- If "Image URL" above is empty, no banner was supplied for this run — rely on the three original SVG illustrations only, and do not fabricate or hotlink any other image.
 
 Code quality: mobile-first, accessible headings/labels/contrast/focus states/tap targets, responsive for smartphone/tablet/desktop, no horizontal scroll, buttons easy to tap, sections with sensible spacing, CTAs easy to find. Keep the page lightweight and dependency-free (no API key, token, build step, or external image/service calls).
 
@@ -70,7 +85,7 @@ Before declaring the LP done, review it as if you were both the agency's quality
 - Body: does it empathize with the reader's problem, explain the benefit clearly, give a reason to keep reading, and address likely doubts?
 - CTA: is it easy to find, easy to tap, clearly worded, and not overused to the point of feeling pushy?
 - Consistency: no contradictions, no typos, no unnatural phrasing, no exaggerated or misleading claims.
-- Confirm index.html is valid and references local CSS/JS correctly; confirm all CTA links use the supplied affiliate URL with the correct `target`/`rel`; confirm the PR disclosure exists; confirm canonical uses the exact target URL; confirm all three local SVG assets exist, are referenced correctly, and no remotely hosted image is used.
+- Confirm index.html is valid and references local CSS/JS correctly; confirm all CTA links use the supplied affiliate URL with the correct `target`/`rel`; confirm the PR disclosure exists; confirm canonical uses the exact target URL; confirm all three local SVG assets exist and are referenced correctly; confirm no remotely hosted image is used other than the official banner/tracking pixel above (if one was supplied), and that its `src` was not altered.
 Fix anything you find, then re-check.
 
 Hard limits (do not cross these):
