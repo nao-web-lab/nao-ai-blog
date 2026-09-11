@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="sectionVisualTitle">
+  <title id="sectionVisualTitle">電話番号と電話機はそのままに、回線だけが光回線に切り替わる様子を表した図解イラスト</title>
+
+  <!-- 背景カード -->
+  <rect x="8" y="8" width="304" height="204" rx="16" fill="#EAF5F3"/>
+
+  <!-- 左：今までの加入電話回線 -->
+  <g transform="translate(40 60)">
+    <rect x="0" y="0" width="76" height="100" rx="10" fill="#FFFFFF" stroke="#CFE3DF" stroke-width="1.5"/>
+    <text x="38" y="-14" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="12" fill="#4B6D66">これまで</text>
+    <path d="M18 30 h40 M18 46 h40 M18 62 h26" stroke="#B9CFCA" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="38" cy="82" r="7" fill="none" stroke="#8FA8A2" stroke-width="2.4"/>
+  </g>
+
+  <!-- 中央：矢印（切り替え） -->
+  <g transform="translate(140 100)">
+    <line x1="0" y1="10" x2="44" y2="10" stroke="#FF8A57" stroke-width="3" stroke-linecap="round"/>
+    <path d="M36 2 L46 10 L36 18" fill="none" stroke="#FF8A57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="22" y="-8" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#E35F2B">回線だけ切替</text>
+  </g>
+
+  <!-- 右：ひかり電話（電話番号・電話機はそのまま） -->
+  <g transform="translate(204 60)">
+    <rect x="0" y="0" width="76" height="100" rx="10" fill="#0E7C77"/>
+    <text x="38" y="-14" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="12" fill="#0E7C77" font-weight="700">ひかり電話</text>
+    <path d="M18 30 h40 M18 46 h40 M18 62 h26" stroke="#CDEDE8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="38" cy="82" r="7" fill="none" stroke="#CDEDE8" stroke-width="2.4"/>
+  </g>
+
+  <!-- 電話番号タグ（そのまま引き継がれることを示す） -->
+  <g transform="translate(96 24)">
+    <rect x="0" y="0" width="128" height="26" rx="13" fill="#FF8A57"/>
+    <text x="64" y="17.5" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="11.5" fill="#2A1000" font-weight="700">電話番号・電話機はそのまま</text>
+  </g>
+</svg>

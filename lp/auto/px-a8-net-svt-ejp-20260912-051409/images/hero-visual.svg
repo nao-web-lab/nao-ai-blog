@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="heroVisualTitle">
+  <title id="heroVisualTitle">光ファイバーの光が電話機へとつながっていく様子を表したイメージイラスト</title>
+
+  <!-- 背景の淡い円 -->
+  <circle cx="120" cy="120" r="112" fill="#0A3D39" opacity="0.55"/>
+  <circle cx="120" cy="120" r="82" fill="none" stroke="#3FBBAF" stroke-width="1" opacity="0.35"/>
+
+  <!-- 光ファイバーの波線（左から右へ光が伝わるイメージ） -->
+  <path d="M18 150 C 50 130, 60 170, 92 150 C 124 130, 134 170, 166 150"
+        fill="none" stroke="#FF8A57" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M18 168 C 50 148, 60 188, 92 168 C 124 148, 134 188, 166 168"
+        fill="none" stroke="#3FBBAF" stroke-width="2.4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 光の粒（データ・光を表す点） -->
+  <circle cx="40" cy="140" r="3.4" fill="#FFC49A"/>
+  <circle cx="78" cy="158" r="2.6" fill="#FFC49A"/>
+  <circle cx="112" cy="140" r="3.4" fill="#FFC49A"/>
+  <circle cx="150" cy="158" r="2.6" fill="#FFC49A"/>
+
+  <!-- 受話器（電話番号・電話機はそのまま、というコンセプト） -->
+  <g transform="translate(120 92)">
+    <path d="M-34 -6 C -34 -28 -14 -44 10 -40 C 28 -37 40 -22 38 -4
+             C 37 6 30 10 22 6 C 16 3 15 -4 10 -8 C 2 -14 -6 -12 -12 -6
+             C -18 0 -18 8 -12 14 C -8 18 -2 17 4 20
+             C 12 24 15 34 8 40 C -8 50 -32 34 -34 12 C -35 6 -34 0 -34 -6 Z"
+          fill="none" stroke="#F5F7FB" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- 上部にかかる光の弧（回線がつながるイメージ） -->
+  <path d="M62 60 C 90 34 150 34 178 60" fill="none" stroke="#3FBBAF" stroke-width="2.4"
+        stroke-dasharray="2 8" stroke-linecap="round" opacity="0.8"/>
+</svg>
