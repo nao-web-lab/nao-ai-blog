@@ -24,7 +24,22 @@ Write-Host " NAO WEB LAB Auto LP Generator" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-$rawInput = Read-Host "Affiliate URL (or paste one ASP banner code block)"
+$firstLine = Read-Host "Affiliate URL (or paste one ASP banner code block, then press Enter once more when done)"
+if ([string]::IsNullOrWhiteSpace($firstLine)) { throw "No URL or banner code was entered." }
+
+if ($firstLine -match '<') {
+    Write-Host "(Banner code detected. If you pasted more than one line, press Enter once more now.)"
+    $extraLines = @($firstLine)
+    $maxExtraLines = 20
+    for ($i = 0; $i -lt $maxExtraLines; $i++) {
+        $nextLine = Read-Host
+        if ([string]::IsNullOrEmpty($nextLine)) { break }
+        $extraLines += $nextLine
+    }
+    $rawInput = $extraLines -join "`n"
+} else {
+    $rawInput = $firstLine
+}
 if ([string]::IsNullOrWhiteSpace($rawInput)) { throw "No URL or banner code was entered." }
 
 $bannerImgSrc = ""
