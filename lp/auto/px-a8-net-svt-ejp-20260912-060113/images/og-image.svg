@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">今のネット、遅いと感じたら。NTTの光回線「フレッツ光」を無料相談でチェック — NAO WEB LAB</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131C6E"/>
+      <stop offset="55%" stop-color="#2A3FDB"/>
+      <stop offset="100%" stop-color="#131C6E"/>
+    </linearGradient>
+    <linearGradient id="ogBeam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C8CFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FF5C6C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <g stroke="url(#ogBeam)" stroke-width="4" stroke-linecap="round" opacity="0.55">
+    <path d="M-40 480 C280 380, 520 420, 900 300" fill="none"/>
+    <path d="M-40 540 C300 460, 560 480, 940 360" fill="none"/>
+    <path d="M-40 590 C260 520, 540 540, 980 420" fill="none"/>
+  </g>
+
+  <rect x="80" y="76" width="120" height="40" rx="8" fill="#FF5C6C"/>
+  <text x="140" y="103" font-family="'Noto Sans JP', sans-serif" font-size="20" font-weight="700" fill="#131C6E" text-anchor="middle">PR</text>
+
+  <text x="80" y="230" font-family="'Noto Sans JP', sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">今のネット、遅いと感じたら。</text>
+  <text x="80" y="300" font-family="'Noto Sans JP', sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">NTTの光回線「フレッツ光」を</text>
+  <text x="80" y="370" font-family="'Noto Sans JP', sans-serif" font-size="52" font-weight="700" fill="#FFFFFF">無料相談でチェック</text>
+
+  <text x="80" y="440" font-family="'Noto Sans JP', sans-serif" font-size="26" fill="#CBD3FF">エリア・建物タイプに合った料金プランを無料で確認</text>
+
+  <g transform="translate(80,500)">
+    <rect x="0" y="0" width="34" height="34" rx="9" fill="#FFFFFF"/>
+    <text x="17" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#2A3FDB" text-anchor="middle">N</text>
+    <text x="46" y="24" font-family="'Noto Sans JP', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">NAO WEB LAB</text>
+  </g>
+</svg>

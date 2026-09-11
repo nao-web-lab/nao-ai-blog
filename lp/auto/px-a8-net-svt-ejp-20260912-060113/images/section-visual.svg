@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="sectionTitle">
+  <title id="sectionTitle">1本の光回線から、ルーターを経由してパソコン・スマートフォン・固定電話へとつながる様子を表した図解イラスト</title>
+  <defs>
+    <linearGradient id="secLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A3FDB"/>
+      <stop offset="100%" stop-color="#FF5C6C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 回線の引き込み線 -->
+  <path d="M12 110 H96" stroke="url(#secLine)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="12" cy="110" r="5" fill="#FF5C6C"/>
+  <text x="10" y="96" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#4F5773">光回線</text>
+
+  <!-- ルーター本体 -->
+  <g transform="translate(96,86)">
+    <rect x="0" y="0" width="64" height="48" rx="8" fill="#FFFFFF" stroke="#2A3FDB" stroke-width="3"/>
+    <circle cx="16" cy="24" r="3" fill="#2A3FDB"/>
+    <circle cx="28" cy="24" r="3" fill="#2A3FDB"/>
+    <circle cx="40" cy="24" r="3" fill="#FF5C6C"/>
+    <path d="M50 -6 q6 6 0 12" fill="none" stroke="#7C8CFF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M56 -12 q12 12 0 24" fill="none" stroke="#7C8CFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="96" y="150" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#4F5773">ルーター</text>
+
+  <!-- 分岐先：パソコン -->
+  <path d="M160 100 C200 84, 220 76, 246 66" stroke="#2A3FDB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <g transform="translate(246,42)">
+    <rect x="0" y="0" width="44" height="30" rx="3" fill="#FFFFFF" stroke="#2A3FDB" stroke-width="2.5"/>
+    <rect x="14" y="30" width="16" height="6" fill="#EBF0FC" stroke="#2A3FDB" stroke-width="2"/>
+  </g>
+  <text x="246" y="24" font-family="'Noto Sans JP', sans-serif" font-size="10" fill="#4F5773">パソコン</text>
+
+  <!-- 分岐先：スマートフォン -->
+  <path d="M160 112 C200 116, 224 118, 250 122" stroke="#2A3FDB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <g transform="translate(250,104)">
+    <rect x="0" y="0" width="20" height="34" rx="4" fill="#FFFFFF" stroke="#2A3FDB" stroke-width="2.5"/>
+    <circle cx="10" cy="28" r="1.6" fill="#2A3FDB"/>
+  </g>
+  <text x="246" y="150" font-family="'Noto Sans JP', sans-serif" font-size="10" fill="#4F5773">スマホ</text>
+
+  <!-- 分岐先：固定電話（ひかり電話オプション） -->
+  <path d="M160 124 C196 150, 216 166, 240 178" stroke="#FF5C6C" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <g transform="translate(238,178)">
+    <path d="M0 4 C0 4 -3 4 -3 8 C-3 16 6 25 14 25 C18 25 18 22 18 22 L12 16 C12 16 10 18 9 17 C6 16 4 14 3 11 C2 10 4 8 4 8 Z" fill="none" stroke="#FF5C6C" stroke-width="2.2" stroke-linejoin="round"/>
+  </g>
+  <text x="238" y="206" font-family="'Noto Sans JP', sans-serif" font-size="10" fill="#4F5773">電話（任意）</text>
+</svg>
