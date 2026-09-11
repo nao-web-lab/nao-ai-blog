@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="heroVisualTitle">
+  <title id="heroVisualTitle">株価チャートの中から虫眼鏡で10銘柄を選び出す様子を表したイメージイラスト</title>
+
+  <!-- 背景の淡い円 -->
+  <circle cx="120" cy="120" r="112" fill="#1C2E52" opacity="0.55"/>
+  <circle cx="120" cy="120" r="86" fill="#22366073" opacity="0.6"/>
+
+  <!-- 株価チャートのローソク足（概念図・実データではない） -->
+  <g stroke="#D9B968" stroke-width="2" stroke-linecap="round">
+    <line x1="52" y1="150" x2="52" y2="112" />
+    <line x1="70" y1="160" x2="70" y2="118" />
+    <line x1="88" y1="140" x2="88" y2="96" />
+    <line x1="106" y1="150" x2="106" y2="104" />
+    <line x1="124" y1="126" x2="124" y2="82" />
+    <line x1="142" y1="118" x2="142" y2="70" />
+    <line x1="160" y1="102" x2="160" y2="58" />
+  </g>
+  <g fill="#D9B968">
+    <rect x="47" y="126" width="10" height="16" rx="1.5" />
+    <rect x="65" y="130" width="10" height="18" rx="1.5" />
+    <rect x="83" y="110" width="10" height="20" rx="1.5" />
+    <rect x="101" y="112" width="10" height="24" rx="1.5" />
+    <rect x="119" y="92" width="10" height="22" rx="1.5" />
+    <rect x="137" y="80" width="10" height="24" rx="1.5" />
+    <rect x="155" y="66" width="10" height="24" rx="1.5" />
+  </g>
+
+  <!-- 選定された銘柄を示す小さな点（10個＝10銘柄の概念表現） -->
+  <g fill="#EDF1FA">
+    <circle cx="60" cy="150" r="3" />
+    <circle cx="78" cy="146" r="3" />
+    <circle cx="96" cy="132" r="3" />
+    <circle cx="114" cy="126" r="3" />
+    <circle cx="132" cy="104" r="3" />
+    <circle cx="150" cy="92" r="3" />
+    <circle cx="168" cy="78" r="3" />
+    <circle cx="182" cy="94" r="3" />
+    <circle cx="88" cy="164" r="3" />
+    <circle cx="140" cy="140" r="3" />
+  </g>
+
+  <!-- 虫眼鏡（銘柄を選び出すイメージ） -->
+  <g>
+    <circle cx="150" cy="120" r="38" fill="#0B1220" fill-opacity="0.15" stroke="#EDF1FA" stroke-width="4"/>
+    <line x1="176" y1="146" x2="204" y2="174" stroke="#EDF1FA" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="150" cy="120" r="38" fill="none" stroke="#D9B968" stroke-width="2"/>
+  </g>
+</svg>
