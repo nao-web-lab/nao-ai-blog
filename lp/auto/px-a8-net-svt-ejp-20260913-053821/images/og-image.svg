@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">固定電話加入権ドットコム｜開業・移転にすぐ使える固定電話を最短で</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1F4A3D"/>
+      <stop offset="100%" stop-color="#123128"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <g fill="none" stroke="#E9C87A" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <path d="M120 470a170 170 0 0 1 340 0"/>
+    <path d="M165 470a125 125 0 0 1 250 0"/>
+  </g>
+  <g transform="translate(215,340)">
+    <path d="M20 40c8-18 26-32 48-32l8 0c6 0 10 5 9 11l-3 16c-1 5-5 8-10 8-10 0-19 6-24 15-6 11-6 24 0 35 5 9 14 15 24 15 5 0 9 3 10 8l3 16c1 6-3 11-9 11l-8 0c-22 0-40-14-48-32-8-18-8-40 0-56z" fill="#FBF8F1"/>
+  </g>
+
+  <text x="540" y="230" font-family="'Zen Old Mincho','Noto Serif JP',serif" font-size="56" font-weight="700" fill="#FFFFFF">固定電話加入権ドットコム</text>
+  <text x="540" y="300" font-family="'Noto Sans JP',sans-serif" font-size="30" fill="#E9C87A">開業・移転にすぐ使える固定電話を、最短で。</text>
+  <text x="540" y="360" font-family="'Noto Sans JP',sans-serif" font-size="22" fill="#E4E9E1">回線タイプの選び方と申し込みの流れを紹介</text>
+
+  <rect x="540" y="410" width="220" height="52" rx="26" fill="#C98A2C"/>
+  <text x="650" y="443" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">無料相談・お見積もり</text>
+
+  <text x="60" y="600" font-family="'Noto Sans JP',sans-serif" font-size="20" fill="#B9C2B4">NAO WEB LAB（PR）</text>
+</svg>
