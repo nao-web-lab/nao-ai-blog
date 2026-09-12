@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="heroVisualTitle">
+  <title id="heroVisualTitle">入浴の蒸気で温まり、マッサージすることでとろけて肌になじんでいく美容液マスクのイメージ図</title>
+  <defs>
+    <radialGradient id="heroBgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#F5E3DD"/>
+      <stop offset="100%" stop-color="#EBCBC1"/>
+    </radialGradient>
+    <linearGradient id="heroMaskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98AA0"/>
+      <stop offset="100%" stop-color="#B3556B"/>
+    </linearGradient>
+    <linearGradient id="heroFaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF3EF"/>
+      <stop offset="100%" stop-color="#F1DAD2"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="210" cy="210" r="200" fill="url(#heroBgGrad)"/>
+
+  <!-- steam wisps -->
+  <g fill="none" stroke="#C79A5B" stroke-width="5" stroke-linecap="round" opacity="0.55">
+    <path d="M150 90 C140 70, 165 60, 155 40 C147 24, 165 14, 160 2"/>
+    <path d="M210 82 C200 62, 225 52, 215 32 C207 16, 225 6, 220 -6" transform="translate(0,10)"/>
+    <path d="M270 90 C260 70, 285 60, 275 40 C267 24, 285 14, 280 2"/>
+  </g>
+
+  <!-- face silhouette -->
+  <ellipse cx="210" cy="245" rx="98" ry="128" fill="url(#heroFaceGrad)"/>
+
+  <!-- melting mask overlay -->
+  <path d="M116 210
+           C120 160, 160 128, 210 128
+           C260 128, 300 160, 304 210
+           C308 250, 292 288, 268 316
+           C284 300, 296 270, 292 240
+           C286 195, 250 170, 210 170
+           C170 170, 134 195, 128 240
+           C124 270, 136 300, 152 316
+           C128 288, 112 250, 116 210 Z"
+        fill="url(#heroMaskGrad)" opacity="0.88"/>
+
+  <!-- drips of essence -->
+  <g fill="#B3556B" opacity="0.75">
+    <path d="M150 318 c-4 10 -4 20 4 24 c8 4 14 -4 12 -12 c-2 -8 -10 -16 -16 -12 Z"/>
+    <path d="M270 320 c-4 10 -4 20 4 24 c8 4 14 -4 12 -12 c-2 -8 -10 -16 -16 -12 Z"/>
+    <path d="M210 338 c-4 12 -4 22 5 27 c9 5 16 -4 13 -13 c-3 -9 -11 -18 -18 -14 Z"/>
+  </g>
+
+  <!-- hydration ring accents -->
+  <g fill="none" stroke="#C79A5B" stroke-width="3" opacity="0.5">
+    <circle cx="210" cy="245" r="150"/>
+    <circle cx="210" cy="245" r="172"/>
+  </g>
+</svg>
