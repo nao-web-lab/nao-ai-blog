@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">工事不要、最短3営業日で使える法人向けWi-Fi「BizAir+5G」の紹介ページOGP画像</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123259"/>
+      <stop offset="100%" stop-color="#0A1E38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <circle cx="1000" cy="120" r="260" fill="#FFA24D" opacity="0.12"/>
+  <g fill="none" stroke="#FFA24D" stroke-width="6" stroke-linecap="round" opacity="0.5">
+    <path d="M980 470 m-60,0 a60,60 0 0 1 120,0"/>
+    <path d="M980 470 m-95,0 a95,95 0 0 1 190,0" opacity="0.6"/>
+    <path d="M980 470 m-130,0 a130,130 0 0 1 260,0" opacity="0.35"/>
+  </g>
+
+  <rect x="80" y="80" width="230" height="48" rx="24" fill="#FFA24D"/>
+  <text x="195" y="111" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="22" fill="#0A1E38" font-weight="700">PR/広告 法人向けWi-Fi</text>
+
+  <text x="80" y="250" font-family="'Noto Sans JP', sans-serif" font-size="58" fill="#F4F6FA" font-weight="700">工事不要で、今月から</text>
+  <text x="80" y="330" font-family="'Noto Sans JP', sans-serif" font-size="58" fill="#F4F6FA" font-weight="700">使えるネット環境を。</text>
+
+  <text x="80" y="410" font-family="'Noto Sans JP', sans-serif" font-size="30" fill="#FFCFA0">置くだけ法人Wi-Fi「BizAir+5G」</text>
+
+  <rect x="80" y="450" width="300" height="72" rx="14" fill="#FFFFFF"/>
+  <text x="230" y="497" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="30" fill="#123259" font-weight="700">NAO WEB LAB</text>
+</svg>
