@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">介護リハビリセラピスト資格とは？通信・1日講座の学び方と費用｜NAO WEB LAB</title>
+  <defs>
+    <linearGradient id="ogBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16221C"/>
+      <stop offset="55%" stop-color="#234A3D"/>
+      <stop offset="100%" stop-color="#1B2E27"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBgGrad)"/>
+
+  <!-- decorative aroma-drop motif -->
+  <g opacity="0.5">
+    <path d="M1040 120c18 26 26 42 26 58a26 26 0 0 1-52 0c0-16 8-32 26-58Z" fill="#D98A4C"/>
+    <path d="M1110 210c12 18 18 29 18 40a18 18 0 0 1-36 0c0-11 6-22 18-40Z" fill="#D98A4C" opacity="0.6"/>
+  </g>
+
+  <text x="90" y="150" font-family="'Zen Maru Gothic','Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#E7B98A" letter-spacing="2">CARE REHABILI THERAPIST</text>
+
+  <text x="90" y="240" font-family="'Zen Maru Gothic','Noto Sans JP',sans-serif" font-size="58" font-weight="900" fill="#FFFFFF">介護リハビリセラピスト資格とは</text>
+  <text x="90" y="310" font-family="'Zen Maru Gothic','Noto Sans JP',sans-serif" font-size="58" font-weight="900" fill="#FFFFFF">通信・1日講座の学び方</text>
+
+  <text x="90" y="380" font-family="'Noto Sans JP',sans-serif" font-size="26" fill="#D9E8DD">アロマ×マッサージで、高齢者にやさしい施術を学ぶ</text>
+
+  <rect x="90" y="440" width="230" height="56" rx="28" fill="#2F6F5E"/>
+  <text x="205" y="475" font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">紹介ページ</text>
+
+  <text x="90" y="570" font-family="'Noto Sans JP',sans-serif" font-size="24" font-weight="700" fill="#EAF3EC">NAO WEB LAB</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" role="img" aria-labelledby="sectionVisualTitle">
+  <title id="sectionVisualTitle">美容液成分が溶け出し、肌の上でうるおいのヴェールとなって広がっていくイメージ図</title>
+  <defs>
+    <linearGradient id="secBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF3EF"/>
+      <stop offset="100%" stop-color="#F3E0D9"/>
+    </linearGradient>
+    <radialGradient id="secDropGrad" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#E3A9B7"/>
+      <stop offset="100%" stop-color="#B3556B"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="360" height="320" rx="20" fill="url(#secBgGrad)"/>
+
+  <!-- ripple rings representing spreading essence -->
+  <g fill="none" stroke="#B8863F" stroke-width="2.5" opacity="0.45">
+    <circle cx="180" cy="180" r="60"/>
+    <circle cx="180" cy="180" r="90"/>
+    <circle cx="180" cy="180" r="120"/>
+  </g>
+
+  <!-- central essence droplet -->
+  <path d="M180 90 C205 130, 228 155, 228 185
+           a48 48 0 1 1 -96 0
+           C132 155, 155 130, 180 90 Z"
+        fill="url(#secDropGrad)"/>
+
+  <!-- shine highlight -->
+  <path d="M162 150 c-6 14 -6 26 2 34" fill="none" stroke="#FBF3EF" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- small satellite droplets -->
+  <g fill="#C79A5B" opacity="0.8">
+    <circle cx="96" cy="230" r="9"/>
+    <circle cx="270" cy="220" r="7"/>
+    <circle cx="252" cy="266" r="5"/>
+  </g>
+</svg>

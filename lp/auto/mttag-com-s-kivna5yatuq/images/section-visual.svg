@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" role="img" aria-labelledby="sectionVisualTitle">
+  <title id="sectionVisualTitle">スマートフォンでオンライン学習を進める様子と、合格するまで何度でも挑戦できるサポート体制を表すイメージ図</title>
+  <defs>
+    <linearGradient id="secBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E9F1E6"/>
+      <stop offset="100%" stop-color="#D6E8D1"/>
+    </linearGradient>
+    <linearGradient id="secPhoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F6F5E"/>
+      <stop offset="100%" stop-color="#1E4B3F"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="360" height="320" rx="20" fill="url(#secBgGrad)"/>
+
+  <!-- textbook behind phone -->
+  <rect x="46" y="150" width="120" height="90" rx="6" fill="#FFFFFF" stroke="#DCE8DA" stroke-width="2"/>
+  <line x1="60" y1="172" x2="152" y2="172" stroke="#CFE2C9" stroke-width="4" stroke-linecap="round"/>
+  <line x1="60" y1="190" x2="140" y2="190" stroke="#CFE2C9" stroke-width="4" stroke-linecap="round"/>
+  <line x1="60" y1="208" x2="146" y2="208" stroke="#CFE2C9" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- smartphone -->
+  <rect x="150" y="70" width="120" height="210" rx="18" fill="url(#secPhoneGrad)"/>
+  <rect x="162" y="92" width="96" height="150" rx="6" fill="#F5F8F3"/>
+
+  <!-- play button on screen (video lesson) -->
+  <circle cx="210" cy="140" r="24" fill="#D98A4C"/>
+  <path d="M202 128l20 12-20 12Z" fill="#FFFFFF"/>
+
+  <!-- progress checklist lines -->
+  <rect x="176" y="182" width="68" height="6" rx="3" fill="#CFE2C9"/>
+  <rect x="176" y="198" width="52" height="6" rx="3" fill="#CFE2C9"/>
+  <rect x="176" y="214" width="60" height="6" rx="3" fill="#CFE2C9"/>
+
+  <!-- home button -->
+  <circle cx="210" cy="262" r="6" fill="#EAF3EC"/>
+
+  <!-- certificate badge floating top right -->
+  <g transform="translate(258,54)">
+    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#D98A4C" stroke-width="3"/>
+    <path d="M-12 2l8 8 16-18" fill="none" stroke="#2F6F5E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
