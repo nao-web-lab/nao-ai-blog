@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">SoftBank光をスマホとセットで検討する｜NAO WEB LAB</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B2E7A"/>
+      <stop offset="100%" stop-color="#1B1538"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <g fill="#5C4FA8" opacity="0.5">
+    <circle cx="120" cy="90" r="4"/>
+    <circle cx="200" cy="150" r="3"/>
+    <circle cx="1080" cy="100" r="4"/>
+    <circle cx="1120" cy="500" r="3"/>
+    <circle cx="90" cy="540" r="4"/>
+  </g>
+  <rect x="80" y="80" width="230" height="46" rx="23" fill="#FFFFFF" opacity="0.12"/>
+  <text x="100" y="110" font-family="sans-serif" font-size="20" fill="#FFD98A" font-weight="700">光回線のりかえサポート</text>
+
+  <text x="100" y="250" font-family="sans-serif" font-size="56" fill="#FFFFFF" font-weight="800">スマホとまとめて、</text>
+  <text x="100" y="326" font-family="sans-serif" font-size="56" fill="#FFFFFF" font-weight="800">おトクな光回線に。</text>
+  <text x="100" y="390" font-family="sans-serif" font-size="30" fill="#E4DEF7" font-weight="700">SoftBank光 料金・乗り換えガイド</text>
+
+  <g transform="translate(100,440)">
+    <rect width="360" height="72" rx="36" fill="#F2A93B"/>
+    <text x="180" y="46" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#241C4D" font-weight="800">まずは無料でエリア確認</text>
+  </g>
+
+  <text x="100" y="580" font-family="sans-serif" font-size="22" fill="#B9AEDD">NAO WEB LAB｜広告（PR）</text>
+
+  <!-- decorative speed lines -->
+  <g stroke="#F2A93B" stroke-width="6" stroke-linecap="round" opacity="0.8">
+    <line x1="820" y1="200" x2="1080" y2="180"/>
+    <line x1="800" y1="240" x2="1090" y2="230" opacity="0.6"/>
+    <line x1="790" y1="280" x2="1070" y2="285" opacity="0.4"/>
+  </g>
+</svg>

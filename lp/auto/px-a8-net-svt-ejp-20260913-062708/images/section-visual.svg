@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="secTitle secDesc">
+  <title id="secTitle">フレッツ光からSoftBank光への乗り換えイメージ</title>
+  <desc id="secDesc">フレッツ光ネクストを利用中の場合、工事や解約金なしでSoftBank光に切り替えられる流れを示した図</desc>
+  <defs>
+    <linearGradient id="boxGradA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFEBFB"/>
+      <stop offset="100%" stop-color="#DCD4F2"/>
+    </linearGradient>
+    <linearGradient id="boxGradB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B2E7A"/>
+      <stop offset="100%" stop-color="#241C4D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="420" rx="24" fill="#FBFAFE"/>
+
+  <!-- before box -->
+  <g transform="translate(40,140)">
+    <rect width="200" height="140" rx="16" fill="url(#boxGradA)" stroke="#C9BEEB" stroke-width="2"/>
+    <text x="100" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#4A4270" font-weight="700">フレッツ光</text>
+    <text x="100" y="62" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6C6390">ネクスト利用中</text>
+    <g transform="translate(70,80)" stroke="#4A4270" stroke-width="3" fill="none" stroke-linecap="round">
+      <rect x="0" y="0" width="60" height="40" rx="4"/>
+      <line x1="10" y1="12" x2="50" y2="12"/>
+      <line x1="10" y1="22" x2="40" y2="22"/>
+    </g>
+  </g>
+
+  <!-- arrow -->
+  <g transform="translate(260,190)" stroke="#F2A93B" stroke-width="8" stroke-linecap="round">
+    <line x1="0" y1="20" x2="90" y2="20"/>
+    <polyline points="70,4 96,20 70,36" fill="none"/>
+  </g>
+  <text x="305" y="90" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8A7FB3">工事・解約金</text>
+  <text x="305" y="108" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8A7FB3">不要で切り替え</text>
+
+  <!-- after box -->
+  <g transform="translate(400,140)">
+    <rect width="200" height="140" rx="16" fill="url(#boxGradB)"/>
+    <text x="100" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">SoftBank光</text>
+    <text x="100" y="62" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#E4DEF7">プロバイダ込み</text>
+    <g transform="translate(70,80)" stroke="#F2A93B" stroke-width="3" fill="none" stroke-linecap="round">
+      <rect x="0" y="0" width="60" height="40" rx="4"/>
+      <path d="M12 20 L 24 32 L 48 8" />
+    </g>
+  </g>
+
+  <!-- caption row: セット割 -->
+  <g transform="translate(220,330)">
+    <rect x="0" y="0" width="200" height="60" rx="30" fill="#FFF4E1" stroke="#F2A93B" stroke-width="1.5"/>
+    <text x="100" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#7A5A12" font-weight="700">スマホとセットでおトク</text>
+  </g>
+</svg>
