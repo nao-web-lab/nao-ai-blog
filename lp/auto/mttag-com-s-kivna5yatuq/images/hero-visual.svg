@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="heroVisualTitle">
+  <title id="heroVisualTitle">椅子に座った高齢者の手に、アロマオイルを使ってやさしくハンドマッサージをする様子のイメージ図</title>
+  <defs>
+    <radialGradient id="heroBgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#E9F1E6"/>
+      <stop offset="100%" stop-color="#CFE2C9"/>
+    </radialGradient>
+    <linearGradient id="heroChairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F6F5E"/>
+      <stop offset="100%" stop-color="#1E4B3F"/>
+    </linearGradient>
+    <linearGradient id="heroSleeveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E4D2"/>
+      <stop offset="100%" stop-color="#E7CBA8"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="210" cy="210" r="200" fill="url(#heroBgGrad)"/>
+
+  <!-- gentle warmth rings -->
+  <g fill="none" stroke="#D98A4C" stroke-width="3" opacity="0.35">
+    <circle cx="255" cy="150" r="18"/>
+    <circle cx="255" cy="150" r="30"/>
+  </g>
+
+  <!-- chair back -->
+  <path d="M120 350c-6-90 6-150 40-190 26-30 60-30 86 0 34 40 46 100 40 190Z" fill="url(#heroChairGrad)" opacity="0.14"/>
+
+  <!-- seated figure: torso -->
+  <path d="M150 360c-4-70 6-120 60-120s64 50 60 120Z" fill="url(#heroChairGrad)"/>
+
+  <!-- receiving arm (resting on lap) -->
+  <path d="M150 300c-18 10-34 26-42 46-6 16-4 30 8 34 14 5 26-6 32-20 8-18 16-34 26-44Z" fill="url(#heroSleeveGrad)"/>
+  <!-- receiving hand -->
+  <ellipse cx="118" cy="352" rx="26" ry="17" fill="#F4D9BE"/>
+
+  <!-- caregiver arm reaching in -->
+  <path d="M300 250c20 6 36 20 46 40 8 16 6 30-6 36-13 6-26-4-33-18-9-17-18-32-30-42Z" fill="url(#heroSleeveGrad)"/>
+  <!-- caregiver hand cupping the receiving hand -->
+  <ellipse cx="150" cy="345" rx="30" ry="19" fill="#F4D9BE" opacity="0.95"/>
+  <path d="M126 335c8-10 20-16 34-16 12 0 22 5 30 13" fill="none" stroke="#E7B98A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- aroma oil drop above the hands -->
+  <path d="M172 292c8 12 12 20 12 28a12 12 0 0 1-24 0c0-8 4-16 12-28Z" fill="#D98A4C"/>
+  <circle cx="168" cy="302" r="3" fill="#F3D9BE" opacity="0.8"/>
+
+  <!-- soft sparkle accents -->
+  <g fill="#2F6F5E" opacity="0.5">
+    <circle cx="90" cy="120" r="4"/>
+    <circle cx="330" cy="110" r="3"/>
+    <circle cx="320" cy="320" r="3.5"/>
+  </g>
+</svg>
