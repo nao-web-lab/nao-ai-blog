@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="heroVisualTitle">
+  <title id="heroVisualTitle">コンピ指数を確認し、6R・9R・12Rの条件に該当したレースだけを馬連3点で勝負し、該当しなければ見送るという仕組みを表した図</title>
+
+  <!-- card background -->
+  <rect x="8" y="8" width="624" height="464" rx="28" fill="#FFFFFF" stroke="#DDE3D6" stroke-width="2"/>
+  <rect x="8" y="8" width="624" height="464" rx="28" fill="none" stroke="#0F4A3C" stroke-opacity="0.06" stroke-width="10"/>
+
+  <!-- index bars (コンピ指数のイメージ) -->
+  <g transform="translate(48,56)">
+    <text x="0" y="-14" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#57645C">コンピ指数</text>
+    <rect x="0" y="66" width="20" height="34" rx="3" fill="#C9A227"/>
+    <rect x="28" y="46" width="20" height="54" rx="3" fill="#C9A227"/>
+    <rect x="56" y="30" width="20" height="70" rx="3" fill="#0F4A3C"/>
+    <rect x="84" y="52" width="20" height="48" rx="3" fill="#0F4A3C"/>
+    <rect x="112" y="70" width="20" height="30" rx="3" fill="#0F4A3C"/>
+    <line x1="0" y1="100" x2="132" y2="100" stroke="#DDE3D6" stroke-width="2"/>
+  </g>
+
+  <!-- three lanes: 6R / 9R / 12R -->
+  <g font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif">
+    <!-- 6R lane -->
+    <circle cx="66" cy="216" r="20" fill="#2B6E8F"/>
+    <text x="66" y="221" text-anchor="middle" font-size="15" font-weight="900" fill="#FFFFFF">6R</text>
+    <path d="M86 216 H380" stroke="#2B6E8F" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+    <text x="120" y="204" font-size="13" fill="#2B6E8F" font-weight="700">バランス型</text>
+
+    <!-- 9R lane -->
+    <circle cx="66" cy="276" r="20" fill="#B4791F"/>
+    <text x="66" y="281" text-anchor="middle" font-size="15" font-weight="900" fill="#FFFFFF">9R</text>
+    <path d="M86 276 H380" stroke="#B4791F" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+    <text x="120" y="264" font-size="13" fill="#B4791F" font-weight="700">高回収型</text>
+
+    <!-- 12R lane -->
+    <circle cx="66" cy="336" r="20" fill="#0F4A3C"/>
+    <text x="60" y="341" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">12R</text>
+    <path d="M86 336 H380" stroke="#0F4A3C" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+    <text x="120" y="324" font-size="13" fill="#0F4A3C" font-weight="700">高的中型</text>
+
+    <!-- convergence lines into ticket -->
+    <path d="M380 216 C 440 216, 460 270, 500 274" stroke="#2B6E8F" stroke-width="3" fill="none"/>
+    <path d="M380 276 H500" stroke="#B4791F" stroke-width="3" fill="none"/>
+    <path d="M380 336 C 440 336, 460 282, 500 278" stroke="#0F4A3C" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- ticket / decision badge -->
+  <g transform="translate(500,236)">
+    <rect x="0" y="0" width="96" height="80" rx="14" fill="#E7F0EA" stroke="#C9A227" stroke-width="3"/>
+    <circle cx="0" cy="40" r="7" fill="#FFFFFF" stroke="#C9A227" stroke-width="2"/>
+    <path d="M28 42 L44 58 L70 26" fill="none" stroke="#0F4A3C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="48" y="72" text-anchor="middle" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="12" font-weight="700" fill="#0F4A3C">馬連3点</text>
+  </g>
+
+  <!-- skip branch -->
+  <g transform="translate(66,404)" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif">
+    <path d="M0 -28 V0" stroke="#B9C3BC" stroke-width="3" stroke-dasharray="6 6"/>
+    <circle cx="0" cy="16" r="16" fill="#F1EEE4" stroke="#B9C3BC" stroke-width="2"/>
+    <path d="M-6 10 L6 22 M6 10 L-6 22" stroke="#8A968D" stroke-width="3" stroke-linecap="round"/>
+    <text x="26" y="21" font-size="13" font-weight="700" fill="#57645C">条件に該当しなければ見送り</text>
+  </g>
+</svg>
