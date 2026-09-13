@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="secTitle secDesc">
+  <title id="secTitle">4種類の素材を組み合わせてショート動画に仕上げる流れ</title>
+  <desc id="secDesc">動画素材・画像素材・テキスト原稿・BGMの4つのフォルダから素材を組み合わせて、1本のショート動画として書き出す流れを示した図</desc>
+  <defs>
+    <linearGradient id="secBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3EFE6"/>
+      <stop offset="100%" stop-color="#FBF9F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="20" fill="url(#secBg)"/>
+
+  <!-- four source folders -->
+  <g font-family="sans-serif" font-size="14" fill="#1B1B24">
+    <g transform="translate(40,40)">
+      <rect width="120" height="86" rx="10" fill="#FFFFFF" stroke="#E0A94A" stroke-width="2.5"/>
+      <path d="M10 10 L45 10 L52 20 L110 20 L110 68 L10 68 Z" fill="none" stroke="#E0A94A" stroke-width="2"/>
+      <path d="M28 46 L46 58 L28 70 Z" fill="#E0A94A" transform="translate(0,-14)"/>
+      <text x="60" y="102" text-anchor="middle">動画素材</text>
+    </g>
+    <g transform="translate(190,40)">
+      <rect width="120" height="86" rx="10" fill="#FFFFFF" stroke="#9B7FD4" stroke-width="2.5"/>
+      <path d="M10 10 L45 10 L52 20 L110 20 L110 68 L10 68 Z" fill="none" stroke="#9B7FD4" stroke-width="2"/>
+      <circle cx="30" cy="34" r="6" fill="#9B7FD4"/>
+      <path d="M16 58 L36 40 L52 52 L74 30 L96 58 Z" fill="#9B7FD4" opacity="0.8"/>
+      <text x="60" y="102" text-anchor="middle">画像素材</text>
+    </g>
+    <g transform="translate(340,40)">
+      <rect width="120" height="86" rx="10" fill="#FFFFFF" stroke="#E0A94A" stroke-width="2.5"/>
+      <path d="M10 10 L45 10 L52 20 L110 20 L110 68 L10 68 Z" fill="none" stroke="#E0A94A" stroke-width="2"/>
+      <rect x="24" y="32" width="60" height="6" fill="#E0A94A"/>
+      <rect x="24" y="44" width="60" height="6" fill="#E0A94A" opacity="0.7"/>
+      <rect x="24" y="56" width="40" height="6" fill="#E0A94A" opacity="0.5"/>
+      <text x="60" y="102" text-anchor="middle">テキスト原稿</text>
+    </g>
+    <g transform="translate(490,40)">
+      <rect width="120" height="86" rx="10" fill="#FFFFFF" stroke="#9B7FD4" stroke-width="2.5"/>
+      <path d="M10 10 L45 10 L52 20 L110 20 L110 68 L10 68 Z" fill="none" stroke="#9B7FD4" stroke-width="2"/>
+      <circle cx="34" cy="60" r="8" fill="#9B7FD4"/>
+      <circle cx="68" cy="52" r="8" fill="#9B7FD4"/>
+      <path d="M42 60 V28 L76 20 V52" fill="none" stroke="#9B7FD4" stroke-width="3"/>
+      <text x="60" y="102" text-anchor="middle">BGM</text>
+    </g>
+  </g>
+
+  <!-- arrows converging down -->
+  <g stroke="#C9BFAE" stroke-width="2" fill="none">
+    <path d="M100 160 L280 240"/>
+    <path d="M250 160 L300 240"/>
+    <path d="M400 160 L340 240"/>
+    <path d="M550 160 L360 240"/>
+  </g>
+
+  <!-- combined output: vertical video with post icon -->
+  <g transform="translate(255,250)">
+    <rect x="0" y="0" width="130" height="150" rx="16" fill="#171B33"/>
+    <rect x="10" y="12" width="110" height="102" rx="8" fill="#20264A"/>
+    <path d="M56 46 L82 63 L56 80 Z" fill="#E0A94A"/>
+    <rect x="18" y="122" width="60" height="7" rx="3.5" fill="#F3EFE6" opacity="0.8"/>
+    <rect x="18" y="134" width="90" height="7" rx="3.5" fill="#F3EFE6" opacity="0.5"/>
+    <text x="65" y="-10" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1B1B24" font-weight="700">組み合わせて投稿</text>
+  </g>
+</svg>

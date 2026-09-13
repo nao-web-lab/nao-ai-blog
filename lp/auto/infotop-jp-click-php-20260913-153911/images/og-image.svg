@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">素材探しと台本づくりに追われる時間を、投稿する時間に。アルファソートクリエイター ショート動画の動画素材＆テキスト原稿集 紹介ページ</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171B33"/>
+      <stop offset="100%" stop-color="#0A0C1A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <g fill="#F3EFE6" opacity="0.6">
+    <circle cx="90" cy="90" r="3"/>
+    <circle cx="160" cy="150" r="2"/>
+    <circle cx="1120" cy="80" r="3"/>
+    <circle cx="1080" cy="180" r="2"/>
+    <circle cx="60" cy="540" r="2.5"/>
+    <circle cx="1140" cy="520" r="2.5"/>
+  </g>
+  <rect x="80" y="70" width="230" height="46" rx="23" fill="none" stroke="#E0A94A" stroke-width="2"/>
+  <text x="195" y="99" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#E0A94A">NAO WEB LAB</text>
+
+  <text x="80" y="230" font-family="sans-serif" font-size="54" font-weight="700" fill="#FBF9F5">素材探しと台本づくりに</text>
+  <text x="80" y="300" font-family="sans-serif" font-size="54" font-weight="700" fill="#FBF9F5">追われる時間を、</text>
+  <text x="80" y="370" font-family="sans-serif" font-size="54" font-weight="700" fill="#E0A94A">投稿する時間に。</text>
+
+  <text x="80" y="440" font-family="sans-serif" font-size="26" fill="#C9BFAE">アルファソートクリエイター</text>
+  <text x="80" y="478" font-family="sans-serif" font-size="26" fill="#C9BFAE">ショート動画の動画素材＆テキスト原稿集 2026年8月号</text>
+
+  <text x="80" y="560" font-family="sans-serif" font-size="20" fill="#9B7FD4">PR｜NAO WEB LAB 独自紹介ページ</text>
+</svg>
