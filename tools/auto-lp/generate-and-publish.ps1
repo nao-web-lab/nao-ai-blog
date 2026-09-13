@@ -180,7 +180,7 @@ Write-Host ""
 Write-Host "Running automatic checks..." -ForegroundColor Green
 $index = Join-Path $targetDir "index.html"
 $html = Get-Content -Raw -Encoding UTF8 $index
-$affiliatePattern = [regex]::Escape($url)
+$affiliatePattern = ([regex]::Escape($url)) -replace '&', '(?:&|&amp;)'
 $ctaPattern = '(?is)<a\b[^>]*\bhref\s*=\s*' + $quoteClass + $affiliatePattern + $quoteClass + '[^>]*>'
 $ctaMatches = [regex]::Matches($html, $ctaPattern)
 if ($ctaMatches.Count -lt 4) { throw "CTA check failed. At least four affiliate CTAs are required; found $($ctaMatches.Count)." }
@@ -208,13 +208,13 @@ if ($trackingPixelSrc) { $allowedRemoteSrcs += $trackingPixelSrc }
 $remoteSrcPattern = '(?is)<(?:img|source)\b[^>]*\bsrc\s*=\s*' + $quoteClass + '(https?://' + $notQuoteClass + '*)' + $quoteClass
 $remoteMatches = [regex]::Matches($html, $remoteSrcPattern)
 foreach ($rm in $remoteMatches) {
-    $foundSrc = $rm.Groups[1].Value
+    $foundSrc = $rm.Groups[1].Value -replace '&amp;', '&'
     if ($allowedRemoteSrcs -notcontains $foundSrc) {
         throw "Remote image check failed. LP images must be local assets or the exact supplied banner/tracking image. Unexpected remote src: $foundSrc"
     }
 }
-if ($bannerImgSrc -and $html -notmatch [regex]::Escape($bannerImgSrc)) { throw "Banner image check failed. The supplied banner image was not found in the generated page." }
-if ($trackingPixelSrc -and $html -notmatch [regex]::Escape($trackingPixelSrc)) { throw "Tracking pixel check failed. The supplied tracking pixel was not found in the generated page." }
+if ($bannerImgSrc -and $html -notmatch (([regex]::Escape($bannerImgSrc)) -replace '&', '(?:&|&amp;)')) { throw "Banner image check failed. The supplied banner image was not found in the generated page." }
+if ($trackingPixelSrc -and $html -notmatch (([regex]::Escape($trackingPixelSrc)) -replace '&', '(?:&|&amp;)')) { throw "Tracking pixel check failed. The supplied tracking pixel was not found in the generated page." }
 
 foreach ($svg in $requiredFiles | Where-Object { $_ -like '*.svg' }) {
     $svgContent = Get-Content -Raw -Encoding UTF8 $svg

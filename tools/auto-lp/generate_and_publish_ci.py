@@ -145,7 +145,8 @@ def main() -> int:
     index = target_dir / "index.html"
     html = index.read_text(encoding="utf-8")
 
-    cta_re = re.compile(r"(?is)<a\b[^>]*\bhref\s*=\s*" + QUOTE + re.escape(url) + QUOTE + r"[^>]*>")
+    url_pattern = re.escape(url).replace("&", "(?:&|&amp;)")
+    cta_re = re.compile(r"(?is)<a\b[^>]*\bhref\s*=\s*" + QUOTE + url_pattern + QUOTE + r"[^>]*>")
     ctas = list(cta_re.finditer(html))
     if len(ctas) < 4:
         fail(f"CTA check failed. At least four affiliate CTAs are required; found {len(ctas)}.")

@@ -6,4 +6,8 @@ if errorlevel 1 (
   echo.
   echo Auto LP process failed.
 )
-pause
+echo.
+echo This window will now stay open (it will not close by itself).
+echo You can safely type git commands here if needed, or just close the window.
+echo.
+cmd /k
