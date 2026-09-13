@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">MT4裁量トレード練習君プレミアム２｜チャートを巻き戻して練習できるFXトレード練習ソフト</title>
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F17"/>
+      <stop offset="100%" stop-color="#131A26"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- decorative candlesticks -->
+  <g stroke-width="4" opacity="0.55">
+    <line x1="960" y1="120" x2="960" y2="260" stroke="#FF6B57"/>
+    <rect x="940" y="150" width="40" height="70" fill="#FF6B57"/>
+    <line x1="1030" y1="80" x2="1030" y2="220" stroke="#29D3C0"/>
+    <rect x="1010" y="110" width="40" height="70" fill="#29D3C0"/>
+    <line x1="1100" y1="140" x2="1100" y2="280" stroke="#29D3C0"/>
+    <rect x="1080" y="170" width="40" height="70" fill="#29D3C0"/>
+  </g>
+
+  <text x="80" y="140" font-family="'Noto Sans JP', sans-serif" font-size="24" fill="#29D3C0" letter-spacing="2">FXトレード練習ソフト</text>
+  <text x="78" y="230" font-family="'Noto Sans JP', sans-serif" font-size="56" font-weight="700" fill="#E7ECF2">チャートを巻き戻して、</text>
+  <text x="78" y="300" font-family="'Noto Sans JP', sans-serif" font-size="56" font-weight="700" fill="#E7ECF2">何度でも練習できる。</text>
+  <text x="80" y="370" font-family="'Noto Sans JP', sans-serif" font-size="30" fill="#98A4B3">MT4裁量トレード練習君プレミアム２</text>
+
+  <rect x="80" y="430" width="230" height="56" rx="28" fill="#FFB020"/>
+  <text x="195" y="466" font-family="'Noto Sans JP', sans-serif" font-size="20" font-weight="700" fill="#0B0F17" text-anchor="middle">NAO WEB LAB</text>
+
+  <text x="80" y="560" font-family="'Noto Sans JP', sans-serif" font-size="18" fill="#57645C">当ページは広告（アフィリエイト）を含みます</text>
+</svg>

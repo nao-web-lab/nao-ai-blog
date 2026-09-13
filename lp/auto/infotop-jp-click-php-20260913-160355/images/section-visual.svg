@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-labelledby="secTitle secDesc">
+  <title id="secTitle">注文操作とリスク管理をまとめた操作パネルのイメージ図</title>
+  <desc id="secDesc">成行・指値注文の切り替えボタン、損切り／利確ラインをドラッグで動かすスライダー、リスク・リワード比を示すメーターを組み合わせた概念イラスト。実際のソフト画面ではない。</desc>
+  <defs>
+    <linearGradient id="secPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2432"/>
+      <stop offset="100%" stop-color="#131A26"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="560" height="420" rx="24" fill="url(#secPanel)"/>
+
+  <!-- order type toggle -->
+  <rect x="36" y="36" width="240" height="56" rx="12" fill="#0B0F17"/>
+  <rect x="44" y="44" width="108" height="40" rx="8" fill="#29D3C0"/>
+  <text x="98" y="69" font-family="'Noto Sans JP', sans-serif" font-size="14" fill="#0B0F17" text-anchor="middle">成行注文</text>
+  <text x="212" y="69" font-family="'Noto Sans JP', sans-serif" font-size="14" fill="#98A4B3" text-anchor="middle">指値注文</text>
+
+  <!-- risk reward meter -->
+  <rect x="308" y="36" width="216" height="56" rx="12" fill="#0B0F17"/>
+  <text x="326" y="58" font-family="'Noto Sans JP', sans-serif" font-size="12" fill="#98A4B3">リスクリワード比</text>
+  <text x="326" y="78" font-family="'Space Grotesk', sans-serif" font-size="18" fill="#FFB020" font-weight="700">1 : 2.4</text>
+  <rect x="440" y="52" width="70" height="10" rx="5" fill="#26303F"/>
+  <rect x="440" y="52" width="46" height="10" rx="5" fill="#FFB020"/>
+
+  <!-- SL/TP drag slider -->
+  <rect x="36" y="116" width="488" height="100" rx="14" fill="#0B0F17"/>
+  <text x="56" y="142" font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#98A4B3">損切り・利確ラインをドラッグで調整</text>
+  <line x1="56" y1="180" x2="504" y2="180" stroke="#26303F" stroke-width="4"/>
+  <line x1="56" y1="180" x2="220" y2="180" stroke="#FF6B57" stroke-width="4"/>
+  <line x1="220" y1="180" x2="360" y2="180" stroke="#29D3C0" stroke-width="4"/>
+  <circle cx="220" cy="180" r="10" fill="#FF6B57"/>
+  <text x="220" y="205" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#FF6B57" text-anchor="middle">損切り</text>
+  <circle cx="360" cy="180" r="10" fill="#29D3C0"/>
+  <text x="360" y="205" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#29D3C0" text-anchor="middle">利確</text>
+  <circle cx="290" cy="180" r="7" fill="#E7ECF2"/>
+
+  <!-- multi timeframe chips -->
+  <g font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#98A4B3">
+    <rect x="36" y="248" width="70" height="34" rx="17" fill="#0B0F17" stroke="#26303F"/>
+    <text x="71" y="270" text-anchor="middle" fill="#E7ECF2">5分足</text>
+
+    <rect x="118" y="248" width="70" height="34" rx="17" fill="#0B0F17" stroke="#26303F"/>
+    <text x="153" y="270" text-anchor="middle">1時間足</text>
+
+    <rect x="200" y="248" width="70" height="34" rx="17" fill="#29D3C0"/>
+    <text x="235" y="270" text-anchor="middle" fill="#0B0F17">日足</text>
+
+    <rect x="282" y="248" width="70" height="34" rx="17" fill="#0B0F17" stroke="#26303F"/>
+    <text x="317" y="270" text-anchor="middle">週足</text>
+
+    <rect x="364" y="248" width="90" height="34" rx="17" fill="#0B0F17" stroke="#26303F"/>
+    <text x="409" y="270" text-anchor="middle">月足</text>
+  </g>
+
+  <!-- report card -->
+  <rect x="36" y="308" width="488" height="80" rx="14" fill="#0B0F17"/>
+  <text x="56" y="334" font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#98A4B3">検証レポート（練習結果）</text>
+  <g font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">
+    <text x="56" y="366" fill="#29D3C0">32勝</text>
+    <text x="140" y="366" fill="#FF6B57">18敗</text>
+    <text x="240" y="366" fill="#E7ECF2">勝率 64%</text>
+  </g>
+  <text x="56" y="384" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#57645C">※画面はイメージです。実際の練習結果を示すものではありません。</text>
+</svg>
