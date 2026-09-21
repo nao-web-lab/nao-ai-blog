@@ -1,0 +1,25 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">オリコで乗ーる｜頭金0円から新車に定額で乗れるカーリース</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2A45"/>
+      <stop offset="100%" stop-color="#16233B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="14" height="630" fill="#FF6B35"/>
+
+  <text x="90" y="180" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="30" fill="#FF6B35" font-weight="700" letter-spacing="3">CAR LEASE</text>
+  <text x="88" y="270" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="64" fill="#FFFFFF" font-weight="900">オリコで乗ーる</text>
+  <text x="90" y="330" font-family="'Noto Sans JP',sans-serif" font-size="30" fill="#C9D2E0" font-weight="500">頭金0円から、新車に定額で乗る。</text>
+  <text x="90" y="380" font-family="'Noto Sans JP',sans-serif" font-size="22" fill="#94A0B5">国産・輸入車 約300車種から選べるカーリース</text>
+
+  <!-- car glyph -->
+  <g transform="translate(760,380)">
+    <path d="M10 90 L10 60 Q10 46 26 44 L54 40 L78 14 Q86 6 100 6 L200 6 Q214 6 220 18 L236 44 L260 46 Q276 48 276 64 L276 90 Z"
+          fill="none" stroke="#EEF1F6" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M92 40 L112 16 H190 L212 40 Z" fill="none" stroke="#FF6B35" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="60" cy="92" r="22" fill="#16233B" stroke="#EEF1F6" stroke-width="6"/>
+    <circle cx="228" cy="92" r="22" fill="#16233B" stroke="#EEF1F6" stroke-width="6"/>
+  </g>
+</svg>

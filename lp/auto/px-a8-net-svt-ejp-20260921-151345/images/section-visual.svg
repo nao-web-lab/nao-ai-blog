@@ -1,0 +1,20 @@
+<svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sectionTitle">
+  <title id="sectionTitle">月々定額プランのイメージ</title>
+  <rect x="0" y="0" width="220" height="160" rx="14" fill="#F5F7FA"/>
+  <!-- coin stack -->
+  <g stroke="#16233B" stroke-width="3" fill="#FFFFFF">
+    <ellipse cx="70" cy="118" rx="34" ry="10"/>
+    <ellipse cx="70" cy="102" rx="34" ry="10"/>
+    <ellipse cx="70" cy="86" rx="34" ry="10"/>
+  </g>
+  <text x="70" y="91" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="14" font-weight="700" fill="#FF6B35" text-anchor="middle">¥</text>
+  <!-- recurring arrows -->
+  <g transform="translate(128,30)" fill="none" stroke="#FF6B35" stroke-width="3.4" stroke-linecap="round">
+    <path d="M8 30 A30 30 0 1 1 30 58"/>
+    <path d="M30 58 L18 56 M30 58 L28 46" />
+    <path d="M58 30 A30 30 0 0 0 36 4"/>
+    <path d="M36 4 L48 6 M36 4 L38 16" />
+  </g>
+  <text x="158" y="98" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#5C6674" text-anchor="middle">毎月</text>
+  <text x="158" y="116" font-family="'Noto Sans JP',sans-serif" font-size="13" fill="#5C6674" text-anchor="middle">定額</text>
+</svg>

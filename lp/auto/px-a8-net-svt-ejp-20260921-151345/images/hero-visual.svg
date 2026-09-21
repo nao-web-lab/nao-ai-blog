@@ -1,0 +1,38 @@
+<svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">頭金0円・月々定額で新車のカーリースに乗るイメージ</title>
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#223252"/>
+      <stop offset="100%" stop-color="#16233B"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="480" height="360" rx="18" fill="url(#skyGrad)"/>
+  <line x1="30" y1="270" x2="450" y2="270" stroke="#3A4B6B" stroke-width="2"/>
+
+  <!-- car silhouette -->
+  <g transform="translate(70,150)">
+    <path d="M10 90 L10 60 Q10 46 26 44 L54 40 L78 14 Q86 6 100 6 L200 6 Q214 6 220 18 L236 44 L260 46 Q276 48 276 64 L276 90 Z"
+          fill="none" stroke="#EEF1F6" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M92 40 L112 16 H190 L212 40 Z" fill="none" stroke="#FF6B35" stroke-width="3.2" stroke-linejoin="round"/>
+    <circle cx="60" cy="92" r="20" fill="#16233B" stroke="#EEF1F6" stroke-width="4"/>
+    <circle cx="60" cy="92" r="6" fill="#EEF1F6"/>
+    <circle cx="228" cy="92" r="20" fill="#16233B" stroke="#EEF1F6" stroke-width="4"/>
+    <circle cx="228" cy="92" r="6" fill="#EEF1F6"/>
+  </g>
+
+  <!-- zero down-payment coin badge -->
+  <g transform="translate(330,60)">
+    <circle cx="45" cy="45" r="45" fill="#FF6B35"/>
+    <text x="45" y="56" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#16233B" text-anchor="middle">¥0</text>
+  </g>
+  <text x="330" y="126" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#C9D2E0" text-anchor="middle">頭金0円</text>
+
+  <!-- monthly flat-fee calendar icon -->
+  <g transform="translate(30,40)">
+    <rect x="0" y="8" width="72" height="60" rx="8" fill="none" stroke="#EEF1F6" stroke-width="3"/>
+    <line x1="0" y1="26" x2="72" y2="26" stroke="#EEF1F6" stroke-width="3"/>
+    <line x1="16" y1="0" x2="16" y2="16" stroke="#FF6B35" stroke-width="3" stroke-linecap="round"/>
+    <line x1="56" y1="0" x2="56" y2="16" stroke="#FF6B35" stroke-width="3" stroke-linecap="round"/>
+    <text x="36" y="54" font-family="'Zen Kaku Gothic New','Noto Sans JP',sans-serif" font-size="16" font-weight="700" fill="#EEF1F6" text-anchor="middle">月々</text>
+  </g>
+</svg>
