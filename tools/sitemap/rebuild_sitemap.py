@@ -21,6 +21,21 @@ def extract(html: str, pattern: str) -> str:
     return m.group(1).strip() if m else ""
 
 
+def product_guide_urls() -> list:
+    """楽天商品ガイド(/products/ 以下、tools/rakuten-lp が生成)のURL。一覧→カテゴリ→各LPの順。
+    canonical が書かれている index.html だけを対象にする（存在しないページは載せない）。"""
+    root = REPO_ROOT / "products"
+    if not (root / "index.html").is_file():
+        return []
+    urls = [f"{SITE_BASE_URL}/products/"]
+    for depth in ("*/index.html", "*/*/index.html"):
+        for f in sorted(root.glob(depth)):
+            canonical = extract(f.read_text(encoding="utf-8"), r'<link rel="canonical" href="([^"]+)"')
+            if canonical and canonical.startswith(SITE_BASE_URL):
+                urls.append(canonical)
+    return urls
+
+
 def main() -> None:
     lp_root = REPO_ROOT / "lp" / "auto"
     entries = []
@@ -39,6 +54,7 @@ def main() -> None:
     today = datetime.date.today().isoformat()
 
     urls = [f"{SITE_BASE_URL}/", f"{SITE_BASE_URL}/lp/auto/"] + [e["url"] for e in entries]
+    urls += product_guide_urls()
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',

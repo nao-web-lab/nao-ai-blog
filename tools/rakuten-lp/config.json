@@ -1,0 +1,266 @@
+{
+  "site_base_url": "https://nao-web-lab.github.io/nao-ai-blog",
+  "site_name": "NAO WEB LAB",
+  "source": "ranking",
+  "ranking_sources": [
+    {
+      "label": "総合リアルタイム（流行）",
+      "period": "realtime"
+    },
+    {
+      "label": "総合デイリー（売れ筋）"
+    },
+    {
+      "label": "30代女性",
+      "age": 30,
+      "sex": 1
+    },
+    {
+      "label": "40代女性",
+      "age": 40,
+      "sex": 1
+    },
+    {
+      "label": "20代女性",
+      "age": 20,
+      "sex": 1
+    },
+    {
+      "label": "30代男性",
+      "age": 30,
+      "sex": 0
+    },
+    {
+      "label": "40代男性",
+      "age": 40,
+      "sex": 0
+    },
+    {
+      "label": "20代男性",
+      "age": 20,
+      "sex": 0
+    },
+    {
+      "label": "50代以上女性",
+      "age": 50,
+      "sex": 1
+    }
+  ],
+  "ranking_pages_per_source": 4,
+  "ranking_sources_per_run": 9,
+  "max_lookups_per_run": 300,
+  "fallback_to_keywords": true,
+  "daily_target": 150,
+  "max_per_run": 150,
+  "max_per_category_per_day": 15,
+  "max_per_product_type_per_day": 2,
+  "min_primary_score": 55,
+  "min_final_score": 75,
+  "min_review_count": 20,
+  "min_review_average": 3.8,
+  "rakuten_hits_per_page": 30,
+  "rakuten_pages_per_keyword": 2,
+  "rakuten_interval_sec": 1.2,
+  "gemini_interval_sec": 13,
+  "gemini_max_calls_per_run": 600,
+  "image_size": "600x600",
+  "max_images": 6,
+  "related_links": 4,
+  "env_files": [
+    "../../../rakuten-threads-auto/local/env/common.env"
+  ],
+  "categories": [
+    {
+      "slug": "beauty",
+      "label": "美容・スキンケア",
+      "layout": "beauty",
+      "keywords": [
+        "美容液",
+        "化粧水",
+        "洗顔料",
+        "クレンジング",
+        "日焼け止め",
+        "保湿クリーム"
+      ]
+    },
+    {
+      "slug": "haircare",
+      "label": "ヘアケア",
+      "layout": "beauty",
+      "keywords": [
+        "シャンプー",
+        "ヘアオイル",
+        "トリートメント",
+        "ドライヤー"
+      ]
+    },
+    {
+      "slug": "mens-beauty",
+      "label": "メンズ美容",
+      "layout": "beauty",
+      "keywords": [
+        "メンズ 洗顔",
+        "メンズ オールインワン",
+        "電動シェーバー"
+      ]
+    },
+    {
+      "slug": "health",
+      "label": "健康・リラックス",
+      "layout": "health",
+      "keywords": [
+        "体組成計",
+        "マッサージ",
+        "枕",
+        "ストレッチ",
+        "温活"
+      ]
+    },
+    {
+      "slug": "food",
+      "label": "食品・飲料",
+      "layout": "food",
+      "keywords": [
+        "お取り寄せ",
+        "ナッツ",
+        "コーヒー",
+        "紅茶",
+        "スープ",
+        "ミネラルウォーター"
+      ]
+    },
+    {
+      "slug": "kitchen",
+      "label": "キッチン",
+      "layout": "appliance",
+      "keywords": [
+        "フライパン",
+        "保存容器",
+        "包丁",
+        "水筒",
+        "キッチン 便利"
+      ]
+    },
+    {
+      "slug": "appliances",
+      "label": "家電",
+      "layout": "appliance",
+      "keywords": [
+        "電気ケトル",
+        "サーキュレーター",
+        "加湿器",
+        "掃除機",
+        "ホットプレート"
+      ]
+    },
+    {
+      "slug": "pc-smartphone",
+      "label": "PC・スマホ周辺機器",
+      "layout": "appliance",
+      "keywords": [
+        "モバイルバッテリー",
+        "ワイヤレスイヤホン",
+        "スマホスタンド",
+        "USB 充電器",
+        "マウス"
+      ]
+    },
+    {
+      "slug": "living",
+      "label": "生活雑貨・日用品",
+      "layout": "living",
+      "keywords": [
+        "バスタオル",
+        "洗濯",
+        "掃除 便利",
+        "消臭"
+      ]
+    },
+    {
+      "slug": "interior",
+      "label": "収納・インテリア",
+      "layout": "interior",
+      "keywords": [
+        "収納ボックス",
+        "ラグ",
+        "照明",
+        "クッション",
+        "カーテン"
+      ]
+    },
+    {
+      "slug": "baby",
+      "label": "育児・ベビー用品",
+      "layout": "baby",
+      "keywords": [
+        "抱っこ紐",
+        "ベビー 食器",
+        "スタイ",
+        "おむつ替え",
+        "子供 水筒"
+      ]
+    },
+    {
+      "slug": "pet",
+      "label": "ペット用品",
+      "layout": "living",
+      "keywords": [
+        "ペット ベッド",
+        "猫 おもちゃ",
+        "犬 ハーネス",
+        "ペット 給水器"
+      ]
+    },
+    {
+      "slug": "sports-outdoor",
+      "label": "スポーツ・アウトドア",
+      "layout": "appliance",
+      "keywords": [
+        "ヨガマット",
+        "キャンプ 椅子",
+        "ダンベル",
+        "ランニング"
+      ]
+    },
+    {
+      "slug": "fashion",
+      "label": "ファッション小物",
+      "layout": "interior",
+      "keywords": [
+        "財布",
+        "トートバッグ",
+        "腕時計",
+        "折りたたみ傘"
+      ]
+    },
+    {
+      "slug": "gift",
+      "label": "ギフト",
+      "layout": "food",
+      "keywords": [
+        "ギフト スイーツ",
+        "プレゼント 雑貨",
+        "内祝い"
+      ]
+    },
+    {
+      "slug": "toys-hobby",
+      "label": "おもちゃ・ホビー",
+      "layout": "baby",
+      "keywords": [
+        "知育玩具",
+        "プラモデル",
+        "ボードゲーム"
+      ]
+    },
+    {
+      "slug": "other",
+      "label": "その他",
+      "layout": "living",
+      "keywords": []
+    }
+  ],
+  "gemini_daily_calls_limit": 450,
+  "max_run_minutes": 300,
+  "_comment": "daily_target=1日の上限(作れるだけ作る)。品質基準を満たす商品・Geminiの利用枠・max_run_minutes のどれかに達したら終了。gemini_daily_calls_limit はLP生成で1日に使うGemini成功呼び出し数の上限（Threads投稿用の枠を残すため）"
+}

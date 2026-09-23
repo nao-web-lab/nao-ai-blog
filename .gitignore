@@ -1,3 +1,7 @@
 # LP自動生成の検証作業で毎回できる一時ファイル・フォルダ(サイトの一部ではない)
 .playwright-mcp/
 mobile-full.png
+
+# local only
+.claude/
+__pycache__/

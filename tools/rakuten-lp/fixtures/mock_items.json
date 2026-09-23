@@ -1,0 +1,425 @@
+{
+ "美容液": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "化粧水": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "洗顔料": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "クレンジング": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "日焼け止め": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "保湿クリーム": [
+  {
+   "itemCode": "mockbeauty:10000001",
+   "itemName": "【楽天1位】美容液 ビタミンC誘導体 30ml 保湿 送料無料 スキンケア",
+   "itemCaption": "内容量：30ml。ビタミンC誘導体とヒアルロン酸Naを配合した美容液です。使い方：洗顔後、化粧水で肌を整えたあと、2〜3滴を手のひらに取り顔全体になじませてください。スポイト式ボトルで量を調整しやすい設計です。無香料・無着色。日本製。お肌に合わないときはご使用をおやめください。",
+   "itemPrice": 3280,
+   "reviewCount": 5230,
+   "reviewAverage": 4.52,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  },
+  {
+   "itemCode": "mockbeauty:10000002",
+   "itemName": "化粧水 大容量 500ml しっとり",
+   "itemCaption": "内容量：500ml。セラミド配合の化粧水。ポンプ式で片手で使えます。全身にも使える大容量タイプ。使い方：適量を手に取り、肌になじませます。弱酸性。",
+   "itemPrice": 1980,
+   "reviewCount": 860,
+   "reviewAverage": 4.31,
+   "shopName": "モックコスメ店",
+   "itemUrl": "https://item.rakuten.co.jp/mockbeauty/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockbeauty%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockbeauty/cabinet/img2.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "電気ケトル": [
+  {
+   "itemCode": "mockapp:30000001",
+   "itemName": "電気ケトル 1.0L 温度調節 保温機能 おしゃれ【送料無料】",
+   "itemCaption": "容量：1.0L。温度調節：60〜100℃の5段階。保温機能付き（最大60分）。消費電力：1200W。空焚き防止機能・転倒時のお湯漏れを抑える構造。本体サイズ：幅22×奥行16×高さ24cm。保証期間：1年。電源コード長：約0.9m。",
+   "itemPrice": 6980,
+   "reviewCount": 1830,
+   "reviewAverage": 4.43,
+   "shopName": "モック家電ストア",
+   "itemUrl": "https://item.rakuten.co.jp/mockapp/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockapp%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "サーキュレーター": [
+  {
+   "itemCode": "mockapp:30000001",
+   "itemName": "電気ケトル 1.0L 温度調節 保温機能 おしゃれ【送料無料】",
+   "itemCaption": "容量：1.0L。温度調節：60〜100℃の5段階。保温機能付き（最大60分）。消費電力：1200W。空焚き防止機能・転倒時のお湯漏れを抑える構造。本体サイズ：幅22×奥行16×高さ24cm。保証期間：1年。電源コード長：約0.9m。",
+   "itemPrice": 6980,
+   "reviewCount": 1830,
+   "reviewAverage": 4.43,
+   "shopName": "モック家電ストア",
+   "itemUrl": "https://item.rakuten.co.jp/mockapp/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockapp%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "加湿器": [
+  {
+   "itemCode": "mockapp:30000001",
+   "itemName": "電気ケトル 1.0L 温度調節 保温機能 おしゃれ【送料無料】",
+   "itemCaption": "容量：1.0L。温度調節：60〜100℃の5段階。保温機能付き（最大60分）。消費電力：1200W。空焚き防止機能・転倒時のお湯漏れを抑える構造。本体サイズ：幅22×奥行16×高さ24cm。保証期間：1年。電源コード長：約0.9m。",
+   "itemPrice": 6980,
+   "reviewCount": 1830,
+   "reviewAverage": 4.43,
+   "shopName": "モック家電ストア",
+   "itemUrl": "https://item.rakuten.co.jp/mockapp/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockapp%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "掃除機": [
+  {
+   "itemCode": "mockapp:30000001",
+   "itemName": "電気ケトル 1.0L 温度調節 保温機能 おしゃれ【送料無料】",
+   "itemCaption": "容量：1.0L。温度調節：60〜100℃の5段階。保温機能付き（最大60分）。消費電力：1200W。空焚き防止機能・転倒時のお湯漏れを抑える構造。本体サイズ：幅22×奥行16×高さ24cm。保証期間：1年。電源コード長：約0.9m。",
+   "itemPrice": 6980,
+   "reviewCount": 1830,
+   "reviewAverage": 4.43,
+   "shopName": "モック家電ストア",
+   "itemUrl": "https://item.rakuten.co.jp/mockapp/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockapp%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "ホットプレート": [
+  {
+   "itemCode": "mockapp:30000001",
+   "itemName": "電気ケトル 1.0L 温度調節 保温機能 おしゃれ【送料無料】",
+   "itemCaption": "容量：1.0L。温度調節：60〜100℃の5段階。保温機能付き（最大60分）。消費電力：1200W。空焚き防止機能・転倒時のお湯漏れを抑える構造。本体サイズ：幅22×奥行16×高さ24cm。保証期間：1年。電源コード長：約0.9m。",
+   "itemPrice": 6980,
+   "reviewCount": 1830,
+   "reviewAverage": 4.43,
+   "shopName": "モック家電ストア",
+   "itemUrl": "https://item.rakuten.co.jp/mockapp/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockapp%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockapp/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "バスタオル": [
+  {
+   "itemCode": "mockliving:20000001",
+   "itemName": "バスタオル 今治タオル 2枚セット 60×120cm 綿100% ★ポイント10倍",
+   "itemCaption": "サイズ：約60×120cm。素材：綿100%。今治タオルブランド認定品。2枚セット。カラーは5色から選べます。お手入れ：洗濯機で洗えます。初回は単独で洗ってください。蛍光増白剤不使用。",
+   "itemPrice": 3980,
+   "reviewCount": 2410,
+   "reviewAverage": 4.61,
+   "shopName": "モックタオル工房",
+   "itemUrl": "https://item.rakuten.co.jp/mockliving/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockliving%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "洗濯": [
+  {
+   "itemCode": "mockliving:20000001",
+   "itemName": "バスタオル 今治タオル 2枚セット 60×120cm 綿100% ★ポイント10倍",
+   "itemCaption": "サイズ：約60×120cm。素材：綿100%。今治タオルブランド認定品。2枚セット。カラーは5色から選べます。お手入れ：洗濯機で洗えます。初回は単独で洗ってください。蛍光増白剤不使用。",
+   "itemPrice": 3980,
+   "reviewCount": 2410,
+   "reviewAverage": 4.61,
+   "shopName": "モックタオル工房",
+   "itemUrl": "https://item.rakuten.co.jp/mockliving/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockliving%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "掃除 便利": [
+  {
+   "itemCode": "mockliving:20000001",
+   "itemName": "バスタオル 今治タオル 2枚セット 60×120cm 綿100% ★ポイント10倍",
+   "itemCaption": "サイズ：約60×120cm。素材：綿100%。今治タオルブランド認定品。2枚セット。カラーは5色から選べます。お手入れ：洗濯機で洗えます。初回は単独で洗ってください。蛍光増白剤不使用。",
+   "itemPrice": 3980,
+   "reviewCount": 2410,
+   "reviewAverage": 4.61,
+   "shopName": "モックタオル工房",
+   "itemUrl": "https://item.rakuten.co.jp/mockliving/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockliving%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ],
+ "消臭": [
+  {
+   "itemCode": "mockliving:20000001",
+   "itemName": "バスタオル 今治タオル 2枚セット 60×120cm 綿100% ★ポイント10倍",
+   "itemCaption": "サイズ：約60×120cm。素材：綿100%。今治タオルブランド認定品。2枚セット。カラーは5色から選べます。お手入れ：洗濯機で洗えます。初回は単独で洗ってください。蛍光増白剤不使用。",
+   "itemPrice": 3980,
+   "reviewCount": 2410,
+   "reviewAverage": 4.61,
+   "shopName": "モックタオル工房",
+   "itemUrl": "https://item.rakuten.co.jp/mockliving/x/",
+   "affiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/mock/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmockliving%2Fx%2F",
+   "mediumImageUrls": [
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img1.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img2.jpg?_ex=128x128",
+    "https://thumbnail.image.rakuten.co.jp/@0_mall/mockliving/cabinet/img3.jpg?_ex=128x128"
+   ],
+   "taxFlag": 0,
+   "postageFlag": 0,
+   "affiliateRate": 4.0
+  }
+ ]
+}
