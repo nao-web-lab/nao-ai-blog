@@ -84,7 +84,7 @@ def analyze(p: dict, image_parts: list, categories: list = ()) -> dict:
 
 以下のJSONのみを出力:
 {{
-  "suitable": true または false（誤解を招かずに購入判断を助けるLPを作れるか。情報不足・規制が強い・商品の実体が曖昧なら false）,
+  "suitable": true または false（誤解を招かずに購入判断を助けるLPを作れるか。情報不足・規制が強い・商品の実体が曖昧なら false。医薬品・コンタクトレンズ/カラコンなどの高度管理医療機器・お酒・たばこは必ず false）,
   "reject_reason": "false の場合の理由（true なら空文字）",
   "product_type": "商品の種類を表す短い名詞（例: 電気ケトル）",
   "category_slug": "この商品に最も合うカテゴリを次から1つ: {_cat_text(categories)}",

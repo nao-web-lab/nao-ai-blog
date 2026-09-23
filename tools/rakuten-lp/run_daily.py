@@ -303,7 +303,7 @@ def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat:
         same = [r for r in db["products"].values() if r.get("status") == "published" and r.get("created_at", "").startswith(today_str())
                 and r.get("product_type") and (ptype in quality._norm(r["product_type"]) or quality._norm(r["product_type"]) in ptype)]
         if len(same) >= config.get("max_per_product_type_per_day", 2):
-            raise CategoryFull(f"{a.get('product_type')}（同じ種類の商品）")
+            raise CategoryFull(f"{a.get('product_type')}（同じ種類の商品・1日{config.get('max_per_product_type_per_day', 2)}本まで）")
     ai_scores = a.get("scores") or {}
     final = scoring.final_score(cand["primary"], ai_scores)
     if not a.get("suitable", False):
@@ -411,7 +411,7 @@ def git(*args, check=True):
     return r.stdout
 
 
-OUR_PATHS = ["products", "tools/rakuten-lp/data", "sitemap.xml", "robots.txt", "lp/auto/index.html"]
+OUR_PATHS = ["products", "tools/rakuten-lp", "sitemap.xml", "robots.txt", "lp/auto/index.html"]  # tools/rakuten-lp: ツール自体の更新も一緒に公開（logsは.gitignoreで除外）
 
 
 def unrelated_changes() -> list:
@@ -432,13 +432,13 @@ def publish(n_new: int) -> None:
     git("commit", "-m", f"Add {n_new} Rakuten product LP(s) {today_str()}")
     for attempt in range(3):
         try:
-            git("pull", "--rebase", "origin", "main")
+            git("pull", "--rebase", "--autostash", "origin", "main")
             git("push", "origin", "HEAD:main")
             log("GitHubへpushしました（数分後にGitHub Pagesへ反映されます）")
             return
         except RuntimeError as e:
             log(f"push失敗（{attempt + 1}回目）: {e}")
-    raise RuntimeError("pushに3回失敗しました。ネットワークかGitHubの認証を確認してください")
+    raise RuntimeError("pushに3回失敗しました。ログ(tools/rakuten-lp/logs)の push失敗 の行を確認してください")
 
 
 # ---------------------------------------------------------------- main
@@ -544,7 +544,7 @@ def process_pool(pool, config, db, rng, new_recs, made_by_cat, remaining, tried_
             append_log(GENERATED_LOG, {k: rec[k] for k in ("item_code", "display_name", "item_url", "lp_url", "created_at", "final_score", "category", "image_count", "status")} | {"error": None})
             log(f"  ✔ 公開用に生成 {rec['lp_url']}（最終{rec['final_score']}点・画像{rec['image_count']}枚・自動修正{rec['auto_fixes']}件）")
         except CategoryFull as e:
-            log(f"  – 見送り: 「{e}」は本日の上限({config['max_per_category_per_day']}本)に達したため別の日に回します")
+            log(f"  – 見送り: 「{e}」は本日の上限に達したため別の日に回します")
             continue
         except SkipProduct as e:
             db["products"][code] = {"item_code": code, "item_name": it.get("itemName", ""), "affiliate_url": it.get("affiliateUrl"),
@@ -587,6 +587,21 @@ def process_pool(pool, config, db, rng, new_recs, made_by_cat, remaining, tried_
     return False
 
 
+def retract_banned(db: dict) -> None:
+    """基準変更で対象外になった商品（例: カラコン）の公開済みLPを取り下げる。"""
+    import shutil
+    for code, rec in db["products"].items():
+        if rec.get("status") != "published" or not scoring.BANNED_NAME_RE.search(rec.get("item_name", "")):
+            continue
+        page_dir = (REPO_ROOT / rec["lp_path"]).parent
+        if page_dir.exists() and page_dir.parent.parent == REPO_ROOT / "products":
+            shutil.rmtree(page_dir)
+        (CONTENT_DIR / f"{rec.get('slug', '')}.json").unlink(missing_ok=True)
+        rec["status"], rec["reason"] = "excluded", "取り下げ: 対象外カテゴリ（医療機器など）"
+        rec["updated_at"] = now_jst().isoformat(timespec="seconds")
+        log(f"取り下げ: {rec.get('display_name', code)}")
+
+
 def run(config, args) -> int:
     log("=" * 50)
     log("楽天商品LP 自動生成")
@@ -598,12 +613,13 @@ def run(config, args) -> int:
             do_git = False
         else:
             try:
-                git("pull", "--rebase", "origin", "main")
+                git("pull", "--rebase", "--autostash", "origin", "main")
             except RuntimeError as e:
                 log(f"最新化(pull)に失敗: {e}")
 
     db = load_db()
     today = today_str()
+    retract_banned(db)
     made_today = [r for r in db["products"].values() if r["status"] == "published" and r.get("created_at", "").startswith(today)]
     made_by_cat = {}
     for r in made_today:

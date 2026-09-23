@@ -95,6 +95,10 @@ def final_score(primary: float, ai: dict) -> float:
     return round(primary + ai_part, 1)
 
 
+# 高度管理医療機器（カラコン等）など、アフィリエイトLPで扱わない商品
+BANNED_NAME_RE = re.compile(r"カラコン|カラーコンタクト|コンタクトレンズ|(ワンデー|1day|1DAY|2week|2ウィーク|マンスリー).{0,30}(\d+\s*枚|DIA|BC|度あり|度なし)|医療機器|医薬品|処方")
+
+
 def passes_basic_filter(item: dict, config: dict, check_caption: bool = True) -> tuple:
     """LP化の最低条件。満たさない場合は (False, 理由)。"""
     if not item.get("affiliateUrl"):
@@ -112,6 +116,8 @@ def passes_basic_filter(item: dict, config: dict, check_caption: bool = True) ->
     name = item.get("itemName") or ""
     if re.search(r"訳あり|福袋|中古|アウトレット|お試し\s*\d+円|1円", name):
         return False, "LP化に不向きな商品種別（訳あり/福袋/中古等）"
+    if BANNED_NAME_RE.search(name):
+        return False, "広告表現の規制が強い/対象外カテゴリ"
     if re.search(r"医薬品|処方|コンタクトレンズ|たばこ|電子タバコ|アダルト|成人向け|ビール|ワイン|日本酒|焼酎|ウイスキー|ハイボール|チューハイ|サワー缶|酎ハイ|リキュール|お酒|ギフト券|商品券|チケット|ふるさと納税", name):
         return False, "広告表現の規制が強い/対象外カテゴリ"
     return True, ""
