@@ -66,6 +66,7 @@
   "image_size": "600x600",
   "max_images": 6,
   "related_links": 4,
+  "audit_per_day": 30,
   "env_files": [
     "../../../rakuten-threads-auto/local/env/common.env"
   ],

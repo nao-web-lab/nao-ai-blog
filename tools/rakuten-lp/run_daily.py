@@ -237,6 +237,7 @@ def build_product(cand: dict, a: dict, verified_imgs: list) -> dict:
         "review_average": float(it.get("reviewAverage") or 0), "tax_flag": it.get("taxFlag"), "postage_flag": it.get("postageFlag"),
         "category": cand["category"]["slug"], "category_label": cand["category"]["label"], "layout": cand["category"]["layout"],
         "keyword": cand["keyword"], "image_urls": verified_imgs, "spec_rows": spec_rows[:8],
+        "fetched_at": now_jst().isoformat(timespec="seconds"),
     }
 
 
@@ -265,10 +266,10 @@ def avoid_phrases(recents: list) -> list:
     return list(dict.fromkeys(out))
 
 
-def page_ctx(config, p, slug, created, modified):
+def page_ctx(config, p, slug, created, modified, fetched=None):
     site = config["site_base_url"]
     return {"site_url": site, "site_name": config["site_name"], "root_rel": "../../../",
-            "public_url": f"{site}/products/{p['category']}/{slug}/", "fetched_date": created[:10].replace("-", "/"),
+            "public_url": f"{site}/products/{p['category']}/{slug}/", "fetched_date": (fetched or p.get("fetched_at") or created)[:10].replace("-", "/"),
             "published": created, "modified": modified, "favicon": listing.FAVICON}
 
 
@@ -587,19 +588,140 @@ def process_pool(pool, config, db, rng, new_recs, made_by_cat, remaining, tried_
     return False
 
 
+def retract(db: dict, code: str, reason: str) -> None:
+    """公開済みLPを取り下げる（ページとデータを削除し、DBに理由を残す）。"""
+    import shutil
+    rec = db["products"][code]
+    page_dir = (REPO_ROOT / rec["lp_path"]).parent
+    if page_dir.exists() and page_dir.parent.parent == REPO_ROOT / "products":
+        shutil.rmtree(page_dir)
+    (CONTENT_DIR / f"{rec.get('slug', '')}.json").unlink(missing_ok=True)
+    rec["status"], rec["reason"] = "excluded", f"取り下げ: {reason}"
+    rec["updated_at"] = now_jst().isoformat(timespec="seconds")
+    log(f"取り下げ: {rec.get('display_name', code)}（{reason}）")
+
+
 def retract_banned(db: dict) -> None:
     """基準変更で対象外になった商品（例: カラコン）の公開済みLPを取り下げる。"""
-    import shutil
-    for code, rec in db["products"].items():
-        if rec.get("status") != "published" or not scoring.BANNED_NAME_RE.search(rec.get("item_name", "")):
+    for code, rec in list(db["products"].items()):
+        if rec.get("status") == "published" and scoring.BANNED_NAME_RE.search(rec.get("item_name", "")):
+            retract(db, code, "対象外カテゴリ（医療機器など）")
+
+
+def audit_published(db: dict, config: dict) -> dict:
+    """公開済みLPの定期点検（毎日、最後に点検した日が古い順に一定数）。
+
+    1. 楽天APIで最新の商品情報を取得 → 価格・レビュー件数・評価・在庫を更新
+       （商品ページが消えた/販売停止が2回続いたら取り下げ）
+    2. 商品画像がまだ表示できるか確認 → 表示できない画像は外す（全滅なら取り下げ）
+    3. 最新の品質ルールで文章を再チェック → 問題のある文を自動修正
+       （必須項目が欠けるほどの問題なら取り下げ）
+    4. HTMLを作り直してHTMLチェック → 合格したものだけ上書き
+    """
+    import copy
+    n = config.get("audit_per_day", 30)
+    summary = {"checked": 0, "updated": 0, "text_fixed": 0, "images_dropped": 0, "retracted": 0}
+    targets = sorted((r for r in db["products"].values() if r.get("status") == "published"),
+                     key=lambda r: r.get("last_checked_at", ""))[:n]
+    today = today_str()
+    for rec in targets:
+        if rec.get("last_checked_at", "").startswith(today) and rec.get("created_at", "").startswith(today):
+            continue  # 今日作ったばかりのページは点検不要
+        code = rec["item_code"]
+        data = read_json(CONTENT_DIR / f"{rec.get('slug', '')}.json", None)
+        if not data:
             continue
-        page_dir = (REPO_ROOT / rec["lp_path"]).parent
-        if page_dir.exists() and page_dir.parent.parent == REPO_ROOT / "products":
-            shutil.rmtree(page_dir)
-        (CONTENT_DIR / f"{rec.get('slug', '')}.json").unlink(missing_ok=True)
-        rec["status"], rec["reason"] = "excluded", "取り下げ: 対象外カテゴリ（医療機器など）"
-        rec["updated_at"] = now_jst().isoformat(timespec="seconds")
-        log(f"取り下げ: {rec.get('display_name', code)}")
+        p, c, plan = data["product"], data["content"], data["image_plan"]
+        changed = []
+        summary["checked"] += 1
+        now = now_jst().isoformat(timespec="seconds")
+
+        # 1. 最新の商品情報
+        try:
+            item = rakuten_api.lookup(code, interval=config["rakuten_interval_sec"])
+        except rakuten_api.RakutenAPIError as e:
+            log(f"  点検スキップ（楽天API失敗）: {rec.get('display_name')} {e}")
+            continue
+        if not item:
+            rec["missing_count"] = rec.get("missing_count", 0) + 1
+            if rec["missing_count"] >= 2 and not os.getenv("RAKUTEN_LP_MOCK"):
+                retract(db, code, "楽天市場で商品が見つからない（販売終了の可能性）")
+                summary["retracted"] += 1
+                continue
+        else:
+            rec["missing_count"] = 0
+            if int(item.get("availability", 1) or 0) == 0:
+                rec["unavailable_count"] = rec.get("unavailable_count", 0) + 1
+                if rec["unavailable_count"] >= 2:
+                    retract(db, code, "販売停止・在庫切れが続いている")
+                    summary["retracted"] += 1
+                    continue
+            else:
+                rec["unavailable_count"] = 0
+            for key, field, cast in (("price", "itemPrice", int), ("review_count", "reviewCount", int),
+                                     ("review_average", "reviewAverage", float)):
+                if item.get(field) is not None and cast(item[field]) != p.get(key):
+                    changed.append(f"{key}: {p.get(key)}→{item[field]}")
+                    p[key] = cast(item[field])
+            new_aff = item.get("affiliateUrl")
+            if new_aff and quality.is_valid_affiliate_url(new_aff) and new_aff != p["affiliate_url"]:
+                p["affiliate_url"] = rec["affiliate_url"] = new_aff
+                changed.append("affiliate URL更新")
+            p["fetched_at"] = now
+
+        # 2. 画像
+        try:
+            alive = set(images.verify([i["url"] for i in plan]))
+        except images.ImageCheckError:
+            alive = {i["url"] for i in plan}  # 通信の問題なら今回は触らない
+        kept = [i for i in plan if i["url"] in alive]
+        if not kept:
+            retract(db, code, "商品画像が表示できなくなった")
+            summary["retracted"] += 1
+            continue
+        if len(kept) != len(plan):
+            summary["images_dropped"] += len(plan) - len(kept)
+            changed.append(f"画像{len(plan) - len(kept)}枚を除外")
+            kept[0]["role"] = "main"
+            plan = kept
+
+        # 3. 文章（最新ルールで再チェック）
+        c2 = copy.deepcopy(c)
+        c2, fixes = quality.check_and_fix_text(c2, source_text(p))
+        fixes += quality.check_risk_text(c2, (data.get("analysis") or {}).get("risk_category"))
+        fixes += quality.check_image_texts(plan, source_text(p), p["display_name"])
+        if fixes:
+            if quality.structural_issues(c2):
+                retract(db, code, "最新の品質基準を満たさない")
+                summary["retracted"] += 1
+                continue
+            c = c2
+            summary["text_fixed"] += 1
+            changed.append(f"文章修正{len(fixes)}件")
+
+        # 4. 再生成（情報の取得日も更新）
+        entries = listing.published_entries(db)
+        related = listing.related_items_for(rec, entries, config["related_links"])
+        ctx = page_ctx(config, p, rec["slug"], rec["created_at"], now, fetched=p.get("fetched_at"))
+        html_text = render.render_page(p, c, plan, related, ctx)
+        path = REPO_ROOT / rec["lp_path"]
+        issues = quality.check_html(html_text, path, ctx["public_url"], p["affiliate_url"], REPO_ROOT)
+        rec["last_checked_at"] = now
+        if issues:
+            log(f"  点検: HTMLチェック不合格のため上書きしない {rec.get('display_name')}: {issues[:2]}")
+            continue
+        path.write_text(html_text, encoding="utf-8")
+        write_json(CONTENT_DIR / f"{rec['slug']}.json", {**data, "product": p, "content": c, "image_plan": plan})
+        rec["images"] = [i["url"] for i in plan]
+        rec["image_count"] = len(plan)
+        rec["related"] = [x["href"] for x in related]
+        rec["updated_at"] = now
+        if changed:
+            summary["updated"] += 1
+            append_log(LOG_DIR / "audit-log.json", {"at": now, "item_code": code, "name": rec.get("display_name"), "changes": changed})
+    log(f"定期点検: {summary['checked']}本を点検 / 情報更新 {summary['updated']}本 / 文章修正 {summary['text_fixed']}本 / "
+        f"画像除外 {summary['images_dropped']}枚 / 取り下げ {summary['retracted']}本")
+    return summary
 
 
 def run(config, args) -> int:
@@ -620,6 +742,13 @@ def run(config, args) -> int:
     db = load_db()
     today = today_str()
     retract_banned(db)
+    audit = {}
+    if config.get("audit_per_day", 30) > 0:
+        try:
+            audit = audit_published(db, config)
+        except Exception as e:  # 点検の失敗で新規作成を止めない
+            log(f"定期点検でエラー（新規作成は続行）: {redact(e)}")
+        save_db(db)
     made_today = [r for r in db["products"].values() if r["status"] == "published" and r.get("created_at", "").startswith(today)]
     made_by_cat = {}
     for r in made_today:
@@ -671,13 +800,14 @@ def run(config, args) -> int:
         log(f"sitemap更新に失敗: {e}")
 
     log(f"今回の新規LP: {len(new_recs)}本 / 関連リンク更新: {n_rel}本 / Gemini呼び出し: {gemini.calls_used()}回")
-    if do_git and (new_recs or n_rel):
+    if do_git and (new_recs or n_rel or audit.get("checked")):
         publish(len(new_recs))
     elif not do_git:
         log("--no-push（または公開停止条件）のため commit/push はしていません")
     if args.notify:
         done = len(made_today) + len(new_recs)
         notify_line(f"✅ 楽天LP自動生成\n本日 {done}本（今回 {len(new_recs)}本・Gemini {gemini.calls_used()}回）\n"
+                    + (f"点検 {audit.get('checked', 0)}本（更新{audit.get('updated', 0)}・修正{audit.get('text_fixed', 0)}・取り下げ{audit.get('retracted', 0)}）\n" if audit else "")
                     + ("公開(push)済み" if do_git and new_recs else "未公開"))
     return 0
 
