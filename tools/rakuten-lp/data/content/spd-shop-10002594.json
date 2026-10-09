@@ -5,10 +5,10 @@
     "display_name": "キオクシア KIOXIA TransMemory U202 32GB",
     "caption": "&nbsp; 【商品仕様】 メーカー KIOXIA 容 量 32GB（ユーザ領域28.8GB） インターフェース USB 2.0 high-speed 対応 外形寸法(LxWxH) 51.4 x 21.4 x 8.4 mm (キャップを含む) 質量 約8g 動作環境・保護性能 動作温度：0 ℃ 〜 50 ℃ (結露しないこと) 適合規制：RoHS適合 対応機種 USBインターフェース（Type-A）を標準搭載し、以下のOSを搭載したモデル macOS Mojave 10.14, macOS Catalina 10.15, macOS Big Sur 11, macOS Monterey 12 Windows 8.1, Windows 10, Windows 11 包装形式 日本製 海外パッケージ 注意事項 ※大きいドライブを取扱う場合、ドライブ容量の制限を調べてください。FAT32は 1ドライブの最大容量 32GBであり、それ以上の容量を認識できません。 実容量の半分或はもっと少なくしか認識しない場合、ファイルシステムの知識を勉強ください。 ※大きいファイルを取扱う場合、ファイルシステムによるファイル容量の制限を調べてください。ファイルシステムは主に FAT32 と exFATを用いられています。但し、FAT32は 1ドライブの最大容量 32GBであり、1ファイルの最大容量 4GB、4GB以上のファイルが保存できません。exFATは 1ドライブの最大容量 2TBであり、1ファイルの最大容量　2TB、4GB以上のファイルが保存できます。実容量の半分或はもっと少なくしか認識しない、4GB以上のファイルの保存、転送に失敗したら、a. 空き容量； b. ファイルシステム種類 の2つを確認すれば、おおよそのトラブルは解決できると思います。 ※商品パッケージの表示容量は1ギガバイトを1，000，000，000バイトとして定義します。実際利用容量はオペレーティングシステムに1ギガバイトを1，073，741，824バイトとして定義しています。またメモリ容量の一部を管理領域として使用しているため、ご使用いただけるメモリ容量は商品の表示容量より小さいです。 ※デザイン、仕様は予告なく変更される場合があります。 ※浸水・破損・加工された場合は保証対象外となります。 【配送について】バリエーション 32GB &nbsp; 64GB &nbsp; 128GB 1箱（20枚入り）",
     "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sal7o.bd4ch2db.g00sal7o.bd4cie2c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspd-shop%2Fkxusb32g-lu202wc4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspd-shop%2Fi%2F10002594%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sal7o.bd4ch2db.g00sal7o.bd4cie2c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspd-shop%2Fkxusb32g-lu202wc4%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+    "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sal7o.bd4ch2db.g00sal7o.bd4cie2c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspd-shop%2Fkxusb32g-lu202wc4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspd-shop%2Fi%2F10002594%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
     "shop_name": "SPD楽天市場店",
     "price": 1298,
-    "review_count": 497,
+    "review_count": 501,
     "review_average": 4.58,
     "tax_flag": 0,
     "postage_flag": 0,
@@ -43,7 +43,7 @@
         "value": "約8g"
       }
     ],
-    "fetched_at": "2026-09-29T10:44:42+09:00"
+    "fetched_at": "2026-10-09T10:00:41+09:00"
   },
   "content": {
     "title": "KIOXIA 32GB USBメモリの仕様と対応OSを確認",
