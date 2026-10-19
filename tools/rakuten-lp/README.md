@@ -1,7 +1,7 @@
 # 楽天商品LP 自動生成（tools/rakuten-lp）
 
 楽天市場APIで商品を探し、AI(Gemini)で分析・選定し、購入検討者向けのLPを生成して
-`/products/<カテゴリ>/<商品>/` に公開するツールです。1日20本を目標に、不足分だけ作ります。
+`/products/<カテゴリ>/<商品>/` に公開するツールです。1日30本（config.json の daily_target）を目標に、不足分だけ作ります。
 
 ## 流れ
 楽天ランキングAPI（ジャンル指定なしの総合リアルタイム＝流行、総合デイリー＝売れ筋、年代・性別別を日替わり）
@@ -26,7 +26,11 @@ python tools\rakuten-lp\run_daily.py --no-push --limit 3 --categories beauty,liv
 python tools\rakuten-lp\run_daily.py --limit 5                                                          # 5本作って公開
 python tools\rakuten-lp\run_daily.py                                                                     # 本番（本日分の不足を作って公開）
 python tools\rakuten-lp\run_daily.py --source keywords                                                  # ランキングではなくジャンル別キーワード検索で探す
+python tools\rakuten-lp\run_daily.py --rerender --no-push                                               # デザイン変更後に全LP・一覧を作り直す（公開しない）
+python tools\rakuten-lp\run_daily.py --rerender                                                         # 全LP・一覧を作り直して公開
 ```
+`--rerender` は保存済みの原稿（data/content）から作り直すだけで、楽天API・Geminiは使いません（費用なし）。
+文章・価格・更新日は変わりません。1本でも品質チェックに落ちたら公開せずに止まります。
 毎日の自動実行は `register_task.ps1` を右クリック →「PowerShellで実行」。
 
 ## 秘密情報
@@ -44,6 +48,7 @@ python tools\rakuten-lp\run_daily.py --source keywords                          
 | writer.py | 分析・文章生成・AIレビューのプロンプト |
 | quality.py | 捏造/誇張/定型文/数値/重複/HTMLのチェックと自動修正 |
 | render.py / listing.py | LP・一覧ページのHTML |
+| ../../products/assets/lp.css | LP・一覧ページのデザイン（全ページ共通。変えると全LPに即反映） |
 | data/database.json | 商品DB（重複防止・生成履歴） |
 | data/content/*.json | 各LPの原稿（関連リンク更新時の再生成用） |
 | logs/ | 実行ログ・generated-products.json・failed-products.json（git管理外） |

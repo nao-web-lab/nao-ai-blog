@@ -6,7 +6,7 @@
 
 > このリポジトリは公開リポジトリ。このファイルやコードに APIキー・ID などの秘密情報を絶対に書かない。
 
-## 現在の運用状態（2026-10-19 時点）
+## 現在の運用状態（2026-10-20 時点）
 - 毎日 10:00 に Windows タスクスケジューラ「NaoAiBlog-RakutenLP」が起動
   （`pythonw tools\rakuten-lp\run_daily.py --notify`、登録は `register_task.ps1`、最長6時間）
 - 1日30本を作成 → 公開済みLPを30本点検 → git commit/push → LINE通知。所要 約1時間
@@ -36,6 +36,14 @@
 - PR表記・`rel="nofollow sponsored noopener"` を必ず付ける
 - 医療機器（カラコン等）・医薬品・お酒・チケット・ふるさと納税は扱わない
 
+## デザイン（2026-10-20 全面改訂・公開済み）
+- CSSは `products/assets/lp.css`（全LP・一覧で共通）。サイト共通の `css/style.css` は触らない（OUR_PATHS外で自動pushが止まる）
+- 考え方は「売場の棚」：商品画像を淡い藍色のステージに置く／見出しは明朝体／強い色は購入ボタンの朱色だけ／一覧は罫線で区切る
+- スマホは画面下に「楽天市場で見る」を固定表示（`.lp-sticky`、PCでは非表示）。確認ポイントはチェックを入れられる（保存はしない）
+- PR表記は各ページ冒頭（商品名の上）に「PR｜楽天アフィリエイト広告を含みます」の1行、報酬の詳しい説明はページ下の注意書き。
+  オーナーから「消したい」要望があったが、景品表示法（ステマ規制）と楽天規約のため冒頭の1行は必ず残す
+- HTML構造を変えたら `--rerender` で全LPを作り直す（API・Gemini不使用、文章・更新日は据え置き、1本でも失敗したら公開しない）
+
 ## 秘密情報（値はここに書かない。変数名のみ）
 `C:\Users\user\rakuten-threads-auto\local\env\common.env`（git管理外）を `config.json` の `env_files` から読み込む。
 - `RAKUTEN_APPLICATION_ID` / `RAKUTEN_ACCESS_KEY` / `RAKUTEN_AFFILIATE_ID`
@@ -56,6 +64,8 @@ max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_se
 - Gemini の 429/503 は自動で待機・再試行する仕様（異常ではない）
 - `.github/workflows/rebuild-sitemap.yml` は保護されていて書き換えられない（不要）
 - コマンドは PowerShell（Windows）前提で案内する
+
+- 実行ログの「Rebuilt sitemap ... for 13 LP(s)」は旧 `lp/auto/` のLP数。商品ガイド（/products/）のURLは別途すべて sitemap.xml に入っている（異常ではない）
 
 ## ログ
 `logs/`（git管理外）: run_日時.log（毎回の実行）、generated-products.json、failed-products.json、audit-log.json
