@@ -90,10 +90,11 @@ def _page(title, desc, canonical, root, h1, lead, body, site_name):
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する"><span></span><span></span><span></span></button>
 <nav id="primary-nav" class="site-nav" aria-label="メインナビゲーション"><ul>{nav}</ul></nav>
 </div></header>
-<div class="lp-pr" role="note"><div class="container"><span class="lp-pr-badge">PR</span>このページで紹介している商品ページには、楽天アフィリエイトの広告リンクが含まれます。</div></div>
-<main id="main-content"><section class="section"><div class="container">
-<h1 class="lp-h1">{e(h1)}</h1><p class="section-lead">{e(lead)}</p>
+<main id="main-content"><section class="lp-list"><div class="container">
+<div class="lp-list-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます</p>
+<h1 class="lp-h1">{e(h1)}</h1><p class="lp-list-lead">{e(lead)}</p></div>
 {body}
+<p class="lp-disclaimer">※このページで紹介している商品ページには、楽天アフィリエイトの広告リンクが含まれます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</p>
 </div></section></main>
 <footer class="site-footer"><div class="container footer-inner">
 <p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(site_name)}</p>
@@ -123,7 +124,7 @@ def build_listings(db: dict, config: dict, ensure: list = ()) -> list:
     for slug, items in by_cat.items():
         label = cats.get(slug, slug)
         cards = "".join(_card(r, "../") for r in items) or "<li>このカテゴリのページは準備中です。</li>"
-        body = f'<ul class="lp-related lp-related--grid">{cards}</ul><p><a href="../">商品ガイドのトップへ戻る</a></p>'
+        body = f'<ul class="lp-related lp-related--grid">{cards}</ul><p class="lp-back"><a href="../">ほかのカテゴリも見る（商品ガイドのトップへ）</a></p>'
         html_text = _page(f"{label}の商品ガイド", f"{label}カテゴリの商品について、特徴・使う場面・購入前に確認したい点を商品情報をもとに整理したページの一覧です。",
                           f"{site}/products/{slug}/", "../../", f"{label}の商品ガイド",
                           f"{label}の商品を、楽天市場の商品情報をもとに1商品ずつ整理しています（{len(items)}件）。", body, name)
@@ -135,7 +136,7 @@ def build_listings(db: dict, config: dict, ensure: list = ()) -> list:
     # 全体
     cat_links = "".join(f'<li><a class="lp-chip" href="{slug}/">{e(cats.get(slug, slug))}（{len(v)}）</a></li>' for slug, v in sorted(by_cat.items(), key=lambda x: -len(x[1])) if v)
     latest = "".join(_card(r, "") for r in entries[:60])
-    body = (f'<h2 class="lp-h2">カテゴリから探す</h2><ul class="lp-chips">{cat_links}</ul>'
+    body = (f'<nav aria-label="カテゴリ"><h2 class="lp-h2">カテゴリから探す</h2><ul class="lp-chips">{cat_links}</ul></nav>'
             f'<h2 class="lp-h2">新着の商品ガイド</h2><ul class="lp-related lp-related--grid">{latest or "<li>まだ公開されたページはありません。</li>"}</ul>')
     html_text = _page("商品ガイド一覧", "楽天市場の商品について、どんな人に向いているか・特徴・購入前に確認したい点を1商品ずつ整理した商品ガイドの一覧です。",
                       f"{site}/products/", "../", "商品ガイド",

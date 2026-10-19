@@ -83,18 +83,17 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
         items = "".join(f"<li>{e(x)}</li>" for x in c["for_whom"])
         blocks["for_whom"] = _section("for_whom", heads["for_whom"], f'<ul class="lp-check">{items}</ul>')
     if c.get("reasons"):
-        cards = "".join(f'<div class="lp-reason"><span class="lp-reason-no">{i}</span><div><h3>{e(r["title"])}</h3><p>{e(r["body"])}</p></div></div>'
-                        for i, r in enumerate(c["reasons"], 1))
+        cards = "".join(f'<div class="lp-reason"><h3>{e(r["title"])}</h3><p>{e(r["body"])}</p></div>' for r in c["reasons"])
         blocks["reasons"] = _section("reasons", heads["reasons"], f'<div class="lp-reasons">{cards}</div>')
     if c.get("features"):
         rows = []
         for i, f in enumerate(c["features"]):
             img = extra_imgs[i] if i < len(extra_imgs) else None
             media = _img(img, aff) if img else ""
-            merit = f'<p class="lp-merit"><strong>読者にとってのメリット</strong>{e(f.get("merit"))}</p>' if f.get("merit") else ""
+            merit = f'<p class="lp-merit"><strong>うれしいポイント</strong>{e(f.get("merit"))}</p>' if f.get("merit") else ""
             side = " lp-feature--rev" if i % 2 else ""
             rows.append(f'<div class="lp-feature{side}{" lp-feature--noimg" if not img else ""}">{media}'
-                        f'<div class="lp-feature-text"><h3><span class="lp-feature-no">{i + 1:02d}</span>{e(f["title"])}</h3><p>{e(f["body"])}</p>{merit}</div></div>')
+                        f'<div class="lp-feature-text"><h3>{e(f["title"])}</h3><p>{e(f["body"])}</p>{merit}</div></div>')
         blocks["features"] = _section("features", heads["features"], "".join(rows))
     if c.get("scenes"):
         cards = "".join(f'<div class="lp-scene"><h3>{e(s["title"])}</h3><p>{e(s["body"])}</p></div>' for s in c["scenes"])
@@ -123,8 +122,10 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
                                f'<p class="lp-note">価格・送料・在庫・ポイントは変動します。購入前に楽天市場の商品ページで最新情報をご確認ください。'
                                f'記載のない仕様は、このページでは確認できていません。</p>')
     if c.get("checkpoints"):
-        items = "".join(f"<li>{e(x)}</li>" for x in c["checkpoints"])
-        blocks["checkpoints"] = _section("checkpoints", heads["checkpoints"], f'<ol class="lp-points">{items}</ol>', "section--muted")
+        # 購入前に自分で確かめる項目。チェックを入れられるようにする（保存はしない）
+        items = "".join(f'<li><label><input type="checkbox"><span>{e(x)}</span></label></li>' for x in c["checkpoints"])
+        blocks["checkpoints"] = _section("checkpoints", heads["checkpoints"],
+                                         f'<p class="lp-points-hint">確認できた項目にチェックを入れながら読めます。</p><ul class="lp-points">{items}</ul>', "section--muted")
     if c.get("not_for"):
         items = "".join(f"<li>{e(x)}</li>" for x in c["not_for"])
         blocks["not_for"] = _section("not_for", heads["not_for"], f'<ul class="lp-check lp-check--no">{items}</ul>')
@@ -162,11 +163,19 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
     # ---- FV
     points = "".join(f"<li>{e(x)}</li>" for x in fv.get("points") or [])
     fv_img = _img(main_img, aff, eager=True, cls="lp-fv-img") if main_img else ""
-    stars = f'<p class="lp-rating">楽天市場のレビュー平均 <strong>{p["review_average"]:.2f}</strong>（{p["review_count"]:,}件・{e(fetched)}時点）</p>'
-    fv_html = (f'<section class="lp-fv"><div class="container container--narrow">'
-               f'<p class="lp-eyebrow">{e(fv.get("eyebrow"))}</p><h1 class="lp-h1">{e(c["h1"])}</h1>'
-               f'<div class="lp-fv-grid">{fv_img}<div class="lp-fv-text"><p class="lp-catch">{e(fv.get("catch"))}</p>'
-               f'<p class="lp-lead">{e(fv.get("lead"))}</p><ul class="lp-fv-points">{points}</ul>{stars}{_cta(p, c, "fv")}</div></div></div></section>')
+    # 星の表示は楽天APIのレビュー平均そのもの（装飾のみ。数値は文字でも併記する）
+    stars = (f'<p class="lp-rating"><span class="lp-stars" style="--rate:{p["review_average"]:.2f}" aria-hidden="true"></span>'
+             f'<strong>{p["review_average"]:.2f}</strong><span>楽天市場のレビュー {p["review_count"]:,}件（{e(fetched)}時点）</span></p>')
+    eyebrow = f'<p class="lp-eyebrow">{e(fv.get("eyebrow"))}</p>' if fv.get("eyebrow") else ""
+    fv_html = (f'<section class="lp-fv"><div class="container lp-fv-grid">'
+               f'<div class="lp-fv-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます</p>'
+               f'{eyebrow}<h1 class="lp-h1">{e(c["h1"])}</h1></div>'
+               f'<div class="lp-fv-stage">{fv_img}</div>'
+               f'<div class="lp-fv-body">{stars}<p class="lp-catch">{e(fv.get("catch"))}</p>'
+               f'<p class="lp-lead">{e(fv.get("lead"))}</p><ul class="lp-fv-points">{points}</ul>{_cta(p, c, "fv")}</div>'
+               f'</div></section>')
+    sticky = (f'<div class="lp-sticky"><div class="lp-sticky-inner"><span class="lp-sticky-name">{e(p["display_name"])}</span>'
+              f'{_aff(aff, "楽天市場で見る", "lp-sticky-btn")}</div></div>')
 
     # ---- breadcrumb / JSON-LD
     crumbs = [("ホーム", f'{root}index.html', ctx["site_url"] + "/"),
@@ -224,18 +233,19 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する"><span></span><span></span><span></span></button>
 <nav id="primary-nav" class="site-nav" aria-label="メインナビゲーション"><ul>{nav}</ul></nav>
 </div></header>
-<div class="lp-pr" role="note"><div class="container container--narrow"><span class="lp-pr-badge">PR</span>本ページは楽天アフィリエイトを利用した広告を含みます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</div></div>
-<nav class="lp-breadcrumb container container--narrow" aria-label="パンくずリスト">{crumb_html}</nav>
+<nav class="lp-breadcrumb container" aria-label="パンくずリスト">{crumb_html}</nav>
 <main id="main-content">
 {fv_html}
 {''.join(body_sections)}
 {final}
 {related_html}
 <div class="container container--narrow lp-disclaimer">
+<p>※本ページは楽天アフィリエイトを利用した広告を含みます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</p>
 <p>※本ページの内容は{e(fetched)}時点で楽天市場に登録されている商品情報をもとに作成しています。商品の仕様・価格・在庫・レビュー件数などは変更されている場合があります。最新の情報は楽天市場の商品ページでご確認ください。</p>
 <p>※商品画像は楽天アフィリエイトを通じて提供されている画像を使用しています（著作権は各ショップ・権利者に帰属します）。</p>
 <p class="lp-muted">最終更新: {e(ctx['modified'][:10])}</p>
 </div>
+{sticky}
 </main>
 <footer class="site-footer"><div class="container footer-inner">
 <p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(ctx['site_name'])}</p>

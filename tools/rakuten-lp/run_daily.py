@@ -404,6 +404,31 @@ def refresh_related(db: dict, config: dict) -> int:
     return updated
 
 
+def rerender_all(db: dict, config: dict) -> tuple:
+    """デザイン変更の反映用。保存済みの原稿(data/content)から全LPと一覧を作り直す（API・Geminiは使わない）。
+    文章・商品情報は変えないので、更新日(dateModified)・関連リンクは据え置く。"""
+    entries = listing.published_entries(db)
+    ok, ng = 0, []
+    for rec in entries:
+        data = read_json(CONTENT_DIR / f"{rec['slug']}.json", None)
+        if not data:
+            ng.append(f"{rec['slug']}: 原稿なし")
+            continue
+        related = listing.related_items_for(rec, entries, config["related_links"])
+        ctx = page_ctx(config, data["product"], rec["slug"], rec["created_at"], rec.get("updated_at") or rec["created_at"])
+        html_text = render.render_page(data["product"], data["content"], data["image_plan"], related, ctx)
+        path = REPO_ROOT / rec["lp_path"]
+        issues = quality.check_html(html_text, path, ctx["public_url"], rec["affiliate_url"], REPO_ROOT)
+        if issues:
+            ng.append(f"{rec['slug']}: " + " / ".join(issues[:3]))
+            continue
+        path.write_text(html_text, encoding="utf-8")
+        rec["related"] = [r["href"] for r in related]
+        ok += 1
+    listing.build_listings(db, config)
+    return ok, ng
+
+
 # ---------------------------------------------------------------- git
 def git(*args, check=True):
     r = subprocess.run(["git", "-C", str(REPO_ROOT), *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -440,6 +465,21 @@ def publish(n_new: int) -> None:
         except RuntimeError as e:
             log(f"push失敗（{attempt + 1}回目）: {e}")
     raise RuntimeError("pushに3回失敗しました。ログ(tools/rakuten-lp/logs)の push失敗 の行を確認してください")
+
+
+def publish_redesign() -> None:
+    """--rerender 用。通常の publish と同じく OUR_PATHS だけを main へ公開する。"""
+    bad = unrelated_changes()
+    if bad:
+        raise RuntimeError("対象外の未コミット変更があるため公開を止めました: " + ", ".join(bad[:5]))
+    git("add", "--", *OUR_PATHS)
+    if not git("diff", "--cached", "--name-only").strip():
+        log("公開する変更はありません")
+        return
+    git("commit", "-m", f"Re-render Rakuten product LPs with new design {today_str()}")
+    git("pull", "--rebase", "--autostash", "origin", "main")
+    git("push", "origin", "HEAD:main")
+    log("GitHubへpushしました（数分後にGitHub Pagesへ反映されます）")
 
 
 # ---------------------------------------------------------------- main
@@ -483,6 +523,7 @@ def main() -> int:
     ap.add_argument("--mock", action="store_true")
     ap.add_argument("--source", choices=["ranking", "keywords"], default=None, help="商品の探し方（既定: config.jsonのsource=ranking）")
     ap.add_argument("--notify", action="store_true", help="終了時にLINEへ結果を通知（タスクスケジューラ用）")
+    ap.add_argument("--rerender", action="store_true", help="新規作成はせず、公開済みLPと一覧を今のデザインで作り直す（API不使用）")
     args = ap.parse_args()
 
     if args.mock:
@@ -496,6 +537,19 @@ def main() -> int:
         return 0
     LOCK.write_text(str(os.getpid()), encoding="utf-8")
     try:
+        if args.rerender:
+            db = load_db()
+            ok, ng = rerender_all(db, config)
+            save_db(db)
+            log(f"作り直し: {ok}本 / 失敗: {len(ng)}本")
+            for x in ng[:20]:
+                log(f"  ✖ {x}")
+            if ng:
+                log("失敗があるため公開しません（失敗したページは元のままです）")
+                return 1
+            if not args.no_push:
+                publish_redesign()
+            return 0
         return run(config, args)
     except Exception as e:
         log(f"致命的なエラー: {redact(e)}")
