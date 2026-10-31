@@ -6451,8 +6451,8 @@
       "title": "smooソファのサイズや復元期間を確認する",
       "status": "published",
       "created_at": "2026-09-23T18:27:37+09:00",
-      "updated_at": "2026-10-27T11:23:58+09:00",
-      "last_checked_at": "2026-10-11T10:00:44+09:00",
+      "updated_at": "2026-10-31T10:00:04+09:00",
+      "last_checked_at": "2026-10-31T10:00:04+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 2,
@@ -9950,7 +9950,7 @@
       "title": "彩水-あやみず- やさしい軟水 500ml×24本の特徴と仕様",
       "status": "published",
       "created_at": "2026-09-24T10:36:56+09:00",
-      "updated_at": "2026-10-30T11:36:01+09:00",
+      "updated_at": "2026-10-31T11:26:23+09:00",
       "last_checked_at": "2026-10-25T10:00:05+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -9958,8 +9958,8 @@
       "related": [
         "../../../products/food/onestep-10045575/",
         "../../../products/food/zaiho-10000022/",
-        "../../../products/food/lifedrinkcompany-10000014/",
-        "../../../products/food/soukaidrink-10012675/"
+        "../../../products/food/soukaidrink-10008702/",
+        "../../../products/food/lifedrinkcompany-10000014/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -10479,8 +10479,8 @@
       "title": "九州産の菊芋と桑葉で作る、わくわく園のブレンド茶",
       "status": "published",
       "created_at": "2026-09-25T10:04:01+09:00",
-      "updated_at": "2026-10-29T11:30:31+09:00",
-      "last_checked_at": "2026-10-11T10:00:45+09:00",
+      "updated_at": "2026-10-31T10:00:06+09:00",
+      "last_checked_at": "2026-10-31T10:00:06+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 1,
@@ -10621,8 +10621,8 @@
       "title": "プリュのフェイスパックは大容量70枚入りの保湿マスク",
       "status": "published",
       "created_at": "2026-09-25T10:10:19+09:00",
-      "updated_at": "2026-10-11T10:00:47+09:00",
-      "last_checked_at": "2026-10-11T10:00:47+09:00",
+      "updated_at": "2026-10-31T10:00:08+09:00",
+      "last_checked_at": "2026-10-31T10:00:08+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 3,
@@ -10685,8 +10685,8 @@
       "title": "ビーレジェンド ホエイプロテインの特徴と味の種類",
       "status": "published",
       "created_at": "2026-09-25T10:11:37+09:00",
-      "updated_at": "2026-10-22T11:05:30+09:00",
-      "last_checked_at": "2026-10-11T10:00:49+09:00",
+      "updated_at": "2026-10-31T10:00:09+09:00",
+      "last_checked_at": "2026-10-31T10:00:09+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
@@ -10750,8 +10750,8 @@
       "title": "アイリスオーヤマのお茶ペットボトルをチェック",
       "status": "published",
       "created_at": "2026-09-25T10:12:46+09:00",
-      "updated_at": "2026-10-29T11:30:31+09:00",
-      "last_checked_at": "2026-10-11T10:00:50+09:00",
+      "updated_at": "2026-10-31T10:00:10+09:00",
+      "last_checked_at": "2026-10-31T10:00:10+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
@@ -10816,8 +10816,8 @@
       "title": "有機桑茶100包（わくわく園）の仕様と特徴",
       "status": "published",
       "created_at": "2026-09-25T10:14:01+09:00",
-      "updated_at": "2026-10-17T10:48:03+09:00",
-      "last_checked_at": "2026-10-11T10:00:51+09:00",
+      "updated_at": "2026-10-31T10:00:12+09:00",
+      "last_checked_at": "2026-10-31T10:00:12+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
@@ -15652,16 +15652,16 @@
       "title": "布団セット 7点・9点固綿入り洗えるタイプの仕様と選び方",
       "status": "published",
       "created_at": "2026-09-27T10:29:23+09:00",
-      "updated_at": "2026-10-29T11:30:30+09:00",
+      "updated_at": "2026-10-31T11:26:22+09:00",
       "last_checked_at": "2026-10-19T10:00:09+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
         "../../../products/interior/tansu-10044340/",
+        "../../../products/interior/tansu-10050367/",
         "../../../products/interior/dondon-10005919/",
-        "../../../products/interior/dondon-10003667/",
-        "../../../products/interior/tansu-10050605/"
+        "../../../products/interior/dondon-10003667/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -16670,16 +16670,16 @@
       "title": "スコープのアズ茶碗は北欧食器に合う？特徴とサイズ選び",
       "status": "published",
       "created_at": "2026-09-28T10:11:16+09:00",
-      "updated_at": "2026-10-24T11:15:40+09:00",
+      "updated_at": "2026-10-31T11:26:22+09:00",
       "last_checked_at": "2026-10-21T10:00:32+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 3,
       "related": [
         "../../../products/kitchen/scope-10009512/",
-        "../../../products/interior/rugly-10008402/",
-        "../../../products/interior/gbt-dko-10042846/",
-        "../../../products/interior/gbt-dko-10042845/"
+        "../../../products/kitchen/scope-10069461/",
+        "../../../products/kitchen/scope-10052259/",
+        "../../../products/interior/rugly-10008402/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -20046,7 +20046,7 @@
       "title": "一刀両断 除草剤 5L×4本 グリホサート41%の特徴と使い方",
       "status": "published",
       "created_at": "2026-09-29T10:41:41+09:00",
-      "updated_at": "2026-10-26T10:00:57+09:00",
+      "updated_at": "2026-10-31T11:26:21+09:00",
       "last_checked_at": "2026-10-26T10:00:57+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -20055,7 +20055,7 @@
         "../../../products/living/e-kit-10042595/",
         "../../../products/living/sinkatec-10000425/",
         "../../../products/living/soutowelshop-10000000/",
-        "../../../products/living/treesoyc-10000002/"
+        "../../../products/living/dondon-10001586/"
       ],
       "review_changes": 3,
       "missing_count": 0,
@@ -21188,7 +21188,7 @@
       "title": "特大タラバ蟹脚1kgの仕様と解凍時の注意点",
       "status": "published",
       "created_at": "2026-09-30T10:19:44+09:00",
-      "updated_at": "2026-10-30T11:36:00+09:00",
+      "updated_at": "2026-10-31T11:26:21+09:00",
       "last_checked_at": "2026-10-30T10:00:28+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -21197,7 +21197,7 @@
         "../../../products/food/kouragumi-10000441/",
         "../../../products/food/kouragumi-10000367/",
         "../../../products/food/morigen-10000010/",
-        "../../../products/food/sorekani-10000055/"
+        "../../../products/food/noza-mart-10000108/"
       ],
       "review_changes": 4,
       "missing_count": 0,
@@ -22335,7 +22335,7 @@
       "title": "布用ノンアイロンお名前シールの特徴と選び方ガイド",
       "status": "published",
       "created_at": "2026-09-30T10:46:36+09:00",
-      "updated_at": "2026-10-30T10:01:02+09:00",
+      "updated_at": "2026-10-31T11:26:21+09:00",
       "last_checked_at": "2026-10-30T10:01:02+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -22344,7 +22344,7 @@
         "../../../products/baby/try-10018460/",
         "../../../products/food/dining-shioso-10000475/",
         "../../../products/food/kouragumi-10001787/",
-        "../../../products/baby/soyott-camp-10000031/"
+        "../../../products/food/noza-mart-10000108/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -24480,16 +24480,16 @@
       "title": "スカルプD アイラッシュセラム プレミアムの特徴と使い方",
       "status": "published",
       "created_at": "2026-10-01T11:15:43+09:00",
-      "updated_at": "2026-10-17T10:48:02+09:00",
+      "updated_at": "2026-10-31T11:26:21+09:00",
       "last_checked_at": "2026-10-13T10:00:43+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 2,
       "related": [
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/attenir-10000252/",
         "../../../products/beauty/attenir-10000250/",
-        "../../../products/beauty/fancl-shop-10009421/",
-        "../../../products/beauty/manara-10000214/"
+        "../../../products/beauty/fancl-shop-10009421/"
       ],
       "review_changes": 2,
       "missing_count": 1
@@ -24876,16 +24876,16 @@
       "title": "ラッシュアディクト アイラッシュ コンディショニング セラム アドバンスの仕様と特徴",
       "status": "published",
       "created_at": "2026-10-03T05:55:44+09:00",
-      "updated_at": "2026-10-17T10:48:02+09:00",
+      "updated_at": "2026-10-31T11:26:20+09:00",
       "last_checked_at": "2026-10-14T10:00:46+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
       "related": [
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/attenir-10000252/",
         "../../../products/beauty/attenir-10000250/",
-        "../../../products/beauty/fancl-shop-10009421/",
-        "../../../products/beauty/manara-10000214/"
+        "../../../products/beauty/fancl-shop-10009421/"
       ],
       "review_changes": 3,
       "missing_count": 0,
@@ -25888,7 +25888,7 @@
       "title": "西川のシングルサイズ羽毛布団｜フランス産ダウンと仕様を確認",
       "status": "published",
       "created_at": "2026-10-03T06:19:33+09:00",
-      "updated_at": "2026-10-29T11:30:29+09:00",
+      "updated_at": "2026-10-31T11:26:20+09:00",
       "last_checked_at": "2026-10-15T10:00:22+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -25897,7 +25897,7 @@
         "../../../products/interior/soleine-10009935/",
         "../../../products/living/soleine-10007987/",
         "../../../products/pc-smartphone/pixiogaming-10000126/",
-        "../../../products/interior/eunicedress-10001863/"
+        "../../../products/interior/tansu-10049274/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -27922,16 +27922,16 @@
       "title": "SUBUダウンサンダルは暖かい？特徴やサイズ感を解説",
       "status": "published",
       "created_at": "2026-10-04T10:32:01+09:00",
-      "updated_at": "2026-10-27T11:23:55+09:00",
+      "updated_at": "2026-10-31T11:26:20+09:00",
       "last_checked_at": "2026-10-18T10:00:19+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 0,
       "related": [
         "../../../products/sports-outdoor/handmade-amane-10001224/",
+        "../../../products/sports-outdoor/bbtown-10108462/",
         "../../../products/sports-outdoor/moonloid-10000422/",
-        "../../../products/fashion/renfrojapan-10000086/",
-        "../../../products/fashion/e-zakkamania-10083447/"
+        "../../../products/fashion/renfrojapan-10000086/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -29780,7 +29780,7 @@
       "title": "ダンボール 60サイズ 160枚セットの仕様と確認点",
       "status": "published",
       "created_at": "2026-10-05T10:30:32+09:00",
-      "updated_at": "2026-10-24T11:15:38+09:00",
+      "updated_at": "2026-10-31T11:26:20+09:00",
       "last_checked_at": "2026-10-20T10:00:15+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -29789,7 +29789,7 @@
         "../../../products/living/e-kit-10042595/",
         "../../../products/living/sinkatec-10000425/",
         "../../../products/living/soutowelshop-10000000/",
-        "../../../products/living/treesoyc-10000002/"
+        "../../../products/living/dondon-10001586/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -30902,16 +30902,16 @@
       "title": "静岡県加工の天然まぐろ冷凍ねぎとろ200gの特徴を解説",
       "status": "published",
       "created_at": "2026-10-06T10:13:25+09:00",
-      "updated_at": "2026-10-25T11:10:15+09:00",
+      "updated_at": "2026-10-31T11:26:20+09:00",
       "last_checked_at": "2026-10-21T10:00:44+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 0,
       "related": [
         "../../../products/food/yonekyu-10002024/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/sorekani-10000055/",
-        "../../../products/food/kyunan-10021552/",
-        "../../../products/food/mokko-10000180/"
+        "../../../products/food/kyunan-10021552/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -31788,7 +31788,7 @@
       "title": "キッズ長袖パジャマ 綿100％ 上下セットの特徴と選び方",
       "status": "published",
       "created_at": "2026-10-06T10:31:47+09:00",
-      "updated_at": "2026-10-22T10:00:15+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-22T10:00:15+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
@@ -31796,8 +31796,8 @@
       "related": [
         "../../../products/fashion/devirockstore-10030402/",
         "../../../products/baby/devirockstore-10031346/",
-        "../../../products/baby/try-10018460/",
-        "../../../products/baby/ponopono-10001822/"
+        "../../../products/baby/devirockstore-10028671/",
+        "../../../products/baby/try-10018460/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -32468,16 +32468,16 @@
       "title": "バイカラーのルームシューズ・もこもこ暖かい秋冬用スリッパ",
       "status": "published",
       "created_at": "2026-10-06T10:49:58+09:00",
-      "updated_at": "2026-10-29T11:30:28+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-22T10:00:35+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/living/dondon-10001586/",
         "../../../products/interior/eunicedress-10001863/",
         "../../../products/interior/m-style2021-10000350/",
-        "../../../products/interior/decori-10000575/",
-        "../../../products/baby/yamabikoya-10000344/"
+        "../../../products/interior/decori-10000575/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -32748,16 +32748,16 @@
       "title": "鶏三和の純鶏名古屋コーチン入りつくねの特徴と調理方法",
       "status": "published",
       "created_at": "2026-10-07T10:14:15+09:00",
-      "updated_at": "2026-10-25T11:10:15+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-23T10:00:41+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/kouragumi-10001546/",
         "../../../products/food/omuraisu-n-10000000/",
-        "../../../products/food/yonekyu-10002024/",
-        "../../../products/food/kouragumi-10000855/"
+        "../../../products/food/yonekyu-10002024/"
       ],
       "review_changes": 1,
       "missing_count": 1
@@ -34016,7 +34016,7 @@
       "title": "アディダス adidas ライフスタイル NY 90 オリジナルス メンズ シューズ",
       "status": "published",
       "created_at": "2026-10-07T10:45:48+09:00",
-      "updated_at": "2026-10-30T11:35:58+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-24T10:00:22+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -34025,7 +34025,7 @@
         "../../../products/sports-outdoor/adidas-10204230/",
         "../../../products/fashion/tokeiten-10000248/",
         "../../../products/fashion/renfrojapan-10000086/",
-        "../../../products/fashion/moonloid-10000278/"
+        "../../../products/fashion/renfrojapan-10000423/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -35710,16 +35710,16 @@
       "title": "DEAN＆DELUCAギフトカタログのコースと選び方",
       "status": "published",
       "created_at": "2026-10-08T10:34:38+09:00",
-      "updated_at": "2026-10-25T10:00:52+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-25T10:00:52+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/gift/bellevie-harima-10013197/",
         "../../../products/gift/bellevie-harima-10028386/",
-        "../../../products/gift/toolandmeal-10026598/",
-        "../../../products/gift/marry-gift-10105307/"
+        "../../../products/gift/toolandmeal-10026598/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -36039,16 +36039,16 @@
       "title": "綿100％デビラボ長袖Tシャツのサイズ感と仕様",
       "status": "published",
       "created_at": "2026-10-08T10:41:08+09:00",
-      "updated_at": "2026-10-26T11:15:48+09:00",
+      "updated_at": "2026-10-31T11:26:19+09:00",
       "last_checked_at": "2026-10-26T10:00:05+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 1,
       "related": [
         "../../../products/baby/devirockstore-10031346/",
+        "../../../products/baby/devirockstore-10028671/",
         "../../../products/baby/devirockstore-10004042/",
-        "../../../products/baby/devirockstore-10031942/",
-        "../../../products/fashion/devirockstore-10031186/"
+        "../../../products/baby/devirockstore-10031942/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -38037,16 +38037,16 @@
       "title": "雲仙ハム 300g×4本 セットの特徴と製品情報",
       "status": "published",
       "created_at": "2026-10-09T10:44:07+09:00",
-      "updated_at": "2026-10-28T10:00:05+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
       "last_checked_at": "2026-10-28T10:00:05+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/e-cha-10002295/",
         "../../../products/food/kado-select-10000195/",
-        "../../../products/food/yonekyu-10000040/",
-        "../../../products/food/sonoshokuan-10000320/"
+        "../../../products/food/yonekyu-10000040/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -38364,16 +38364,16 @@
       "title": "ルナソル モノアイカラーレーションの特徴と使い方",
       "status": "published",
       "created_at": "2026-10-09T10:50:38+09:00",
-      "updated_at": "2026-10-30T11:35:57+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
       "last_checked_at": "2026-10-28T10:00:14+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 1,
       "related": [
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/yslbeauty-10000307/",
         "../../../products/beauty/bobbibrown-10001609/",
-        "../../../products/beauty/brandshiseido-10000163/",
-        "../../../products/beauty/clinique-10000555/"
+        "../../../products/beauty/brandshiseido-10000163/"
       ],
       "review_changes": 2,
       "missing_count": 0,
@@ -38638,16 +38638,16 @@
       "title": "カット生ずわい蟹600gの食べ方や内容量を詳しく解説",
       "status": "published",
       "created_at": "2026-10-10T10:02:53+09:00",
-      "updated_at": "2026-10-30T11:35:57+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
       "last_checked_at": "2026-10-29T10:00:24+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
       "related": [
         "../../../products/food/kouragumi-10000441/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/pc-smartphone/honest-online-10000774/",
-        "../../../products/kitchen/insair-10051433/",
-        "../../../products/kitchen/irisplaza-r-10149259/"
+        "../../../products/kitchen/insair-10051433/"
       ],
       "review_changes": 4,
       "missing_count": 0,
@@ -39438,7 +39438,7 @@
       "title": "devirock 綿100%ボーダー長袖Tシャツのサイズ感と仕様",
       "status": "published",
       "created_at": "2026-10-10T10:16:55+09:00",
-      "updated_at": "2026-10-29T10:00:49+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
       "last_checked_at": "2026-10-29T10:00:49+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -39447,7 +39447,7 @@
         "../../../products/baby/devirockstore-10004042/",
         "../../../products/baby/devirockstore-10031942/",
         "../../../products/baby/devirockstore-10002801/",
-        "../../../products/fashion/devirockstore-10031186/"
+        "../../../products/baby/devirockstore-10028671/"
       ],
       "review_changes": 1,
       "missing_count": 0,
@@ -40585,7 +40585,7 @@
       "item_name": "◆楽天1位◆スープメーカー【豪華選べる特典】自動調理ポット【30レシピ付】レコルト recolte 自動調理ポット ブレンダー ミキサー 氷も砕ける フードプロセッサー スープ 豆乳 600ml 豆乳メーカー スムージーメーカー ポタージュ 離乳食 RSY-2【ポイント10倍】",
       "display_name": "レコルト recolte 自動調理ポット RSY-2 スープメーカー ブレンダー",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pw1co.bd4ch0bd.g00pw1co.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhotch-potch%2F00014257_cooking_pot%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhotch-potch%2Fi%2F10017531%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pw1co.bd4ch0bd.g00pw1co.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhotch-potch%2F00014257_cooking_pot%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pw1co.bd4ch0bd.g00pw1co.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhotch-potch%2F00014257_cooking_pot%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhotch-potch%2Fi%2F10017531%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "kitchen",
       "category_label": "キッチン",
       "keyword": "",
@@ -40630,8 +40630,8 @@
       "title": "レコルト自動調理ポットRSY-2の機能と容量を整理",
       "status": "published",
       "created_at": "2026-10-11T10:03:33+09:00",
-      "updated_at": "2026-10-11T10:47:31+09:00",
-      "last_checked_at": "2026-10-11T10:03:33+09:00",
+      "updated_at": "2026-10-31T10:00:13+09:00",
+      "last_checked_at": "2026-10-31T10:00:13+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 4,
@@ -40641,7 +40641,9 @@
         "../../../products/kitchen/roomy-10015766/",
         "../../../products/kitchen/roomy-10018139/"
       ],
-      "review_changes": 6
+      "review_changes": 6,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "plywood:10017400": {
       "item_code": "plywood:10017400",
@@ -40649,7 +40651,7 @@
       "item_name": "★楽天1位【30レシピ＋選べる2特典】レコルト 自動調理ポット RSY-2 自動調理 正規品recolte Auto Cooking Pot 電気 ミキサー ブレンダー 豆乳メーカー スープメーカー スープ スープジャー 小型 レシピ付き◇離乳食 介護食 豆乳機 保温 氷OK 送料無料 P10倍",
       "display_name": "レコルト 自動調理ポット RSY-2",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd8o.bd4ch146.g00pzd8o.bd4ci1a7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplywood%2F20149238%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplywood%2Fi%2F10017400%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd8o.bd4ch146.g00pzd8o.bd4ci1a7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplywood%2F20149238%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd8o.bd4ch146.g00pzd8o.bd4ci1a7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplywood%2F20149238%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplywood%2Fi%2F10017400%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "kitchen",
       "category_label": "キッチン",
       "keyword": "",
@@ -40695,8 +40697,8 @@
       "title": "レコルト自動調理ポットRSY-2の調理モードやお手入れ方法の要点整理",
       "status": "published",
       "created_at": "2026-10-11T10:06:03+09:00",
-      "updated_at": "2026-10-11T10:06:03+09:00",
-      "last_checked_at": "2026-10-11T10:06:03+09:00",
+      "updated_at": "2026-10-31T10:00:14+09:00",
+      "last_checked_at": "2026-10-31T10:00:14+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 3,
@@ -40706,7 +40708,9 @@
         "../../../products/kitchen/roomy-10015766/",
         "../../../products/kitchen/roomy-10018139/"
       ],
-      "review_changes": 4
+      "review_changes": 4,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "myhomeshop:10000456": {
       "item_code": "myhomeshop:10000456",
@@ -40714,7 +40718,7 @@
       "item_name": "ネッククーラー＜レビュー件数3300件越えの爆売れ商品！＞首掛け扇風機 ネッククーラー 冷却プレート ペルチェ素子 瞬間冷却 ネックファン 3段階風量×3段階冷感 羽根なし 360サラウンド風 11時間稼働 携帯扇風機 暑さ対策 ギフト PSE 2年保証",
       "display_name": "首掛け扇風機 ネッククーラー 冷却プレート",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tz25o.bd4ch15a.g00tz25o.bd4ci6c5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmyhomeshop%2Fsy-k009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmyhomeshop%2Fi%2F10000456%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tz25o.bd4ch15a.g00tz25o.bd4ci6c5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmyhomeshop%2Fsy-k009%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tz25o.bd4ch15a.g00tz25o.bd4ci6c5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmyhomeshop%2Fsy-k009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmyhomeshop%2Fi%2F10000456%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "appliances",
       "category_label": "家電",
       "keyword": "",
@@ -40760,8 +40764,8 @@
       "title": "冷却プレート付き首掛け扇風機の機能や重さを整理",
       "status": "published",
       "created_at": "2026-10-11T10:07:12+09:00",
-      "updated_at": "2026-10-19T10:55:08+09:00",
-      "last_checked_at": "2026-10-11T10:07:12+09:00",
+      "updated_at": "2026-10-31T10:00:16+09:00",
+      "last_checked_at": "2026-10-31T10:00:16+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
@@ -40771,7 +40775,9 @@
         "../../../products/pc-smartphone/furumiyashop-10000146/",
         "../../../products/pc-smartphone/hitidear-10000115/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "katushop:10000129": {
       "item_code": "katushop:10000129",
@@ -40779,7 +40785,7 @@
       "item_name": "クーポンで4299円から！★クーポンあり★PSE認証済み★ふわふわ電気毛布 電磁波カット ブランケット 電気 毛布 電気毛布 掛け 電気もうふ モウフ 速暖 洗える 温度調節 タイマー 電気ブランケット 厚手 シングル ダブル 省エネ コンセント",
       "display_name": "電磁波カット ブランケット 電気毛布 掛け 洗える 温度調節 タイマー",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u5pko.bd4ch753.g00u5pko.bd4ci788/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkatushop%2Fdrt06%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkatushop%2Fi%2F10000129%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u5pko.bd4ch753.g00u5pko.bd4ci788/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkatushop%2Fdrt06%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u5pko.bd4ch753.g00u5pko.bd4ci788/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkatushop%2Fdrt06%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkatushop%2Fi%2F10000129%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "appliances",
       "category_label": "家電",
       "keyword": "",
@@ -40826,18 +40832,20 @@
       "title": "電磁波カット電気毛布DRT06-1の仕様と機能解説",
       "status": "published",
       "created_at": "2026-10-11T10:08:49+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:08:49+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
+      "last_checked_at": "2026-10-31T10:00:18+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 5,
       "related": [
         "../../../products/interior/auc-ningyohonpo-10001953/",
+        "../../../products/living/dondon-10001586/",
         "../../../products/interior/eunicedress-10001863/",
-        "../../../products/appliances/mpowjapan-10000823/",
-        "../../../products/appliances/itsube-souken-10000266/"
+        "../../../products/appliances/mpowjapan-10000823/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "kurashikenkou:10216765": {
       "item_code": "kurashikenkou:10216765",
@@ -40890,8 +40898,8 @@
       "title": "低温製法米パックご飯200g×40食｜酸味料不使用の白米と保存性",
       "status": "published",
       "created_at": "2026-10-11T10:10:53+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:10:53+09:00",
+      "updated_at": "2026-10-31T10:00:21+09:00",
+      "last_checked_at": "2026-10-31T10:00:21+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 3,
@@ -40901,7 +40909,8 @@
         "../../../products/food/saibou-10001692/",
         "../../../products/food/dining-shioso-10000475/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 1
     },
     "dialdrive:10000271": {
       "item_code": "dialdrive:10000271",
@@ -40909,7 +40918,7 @@
       "item_name": "【10/4 20:00〜10/10 23:59迄★200円OFFクーポン配布】【10月9日以降順次入荷予定】NEWモデル ベビーシューズ 足にいい キッズ スニーカー ファーストシューズ 足に優しい 足育 履きやすい 歩きやすい 軽量 赤ちゃん 子供 かわいい 靴 出産祝い プレゼント ギフト リオ RIO",
       "display_name": "NEWモデル ベビーシューズ キッズ スニーカー ファーストシューズ 足育",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8wmo.bd4ch9c6.g00u8wmo.bd4cia72/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdialdrive%2Fr41301%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdialdrive%2Fi%2F10000271%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8wmo.bd4ch9c6.g00u8wmo.bd4cia72/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdialdrive%2Fr41301%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8wmo.bd4ch9c6.g00u8wmo.bd4cia72/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdialdrive%2Fr41301%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdialdrive%2Fi%2F10000271%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "baby",
       "category_label": "育児・ベビー用品",
       "keyword": "",
@@ -40956,8 +40965,8 @@
       "title": "RIOベビーシューズの機能やサイズ感を解説！選び方のポイント",
       "status": "published",
       "created_at": "2026-10-11T10:14:01+09:00",
-      "updated_at": "2026-10-26T11:15:47+09:00",
-      "last_checked_at": "2026-10-11T10:14:01+09:00",
+      "updated_at": "2026-10-31T10:00:22+09:00",
+      "last_checked_at": "2026-10-31T10:00:22+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 4,
@@ -40967,7 +40976,9 @@
         "../../../products/baby/devirockstore-10004042/",
         "../../../products/baby/devirockstore-10031942/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "petdr-x:10000338": {
       "item_code": "petdr-x:10000338",
@@ -40975,7 +40986,7 @@
       "item_name": "ロイヤルカナン 療法食 犬用 満腹感サポート 小型犬用S ドライ 3kg",
       "display_name": "ロイヤルカナン 犬用 満腹感サポート 小型犬用S 3kg",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sudho.bd4chbff.g00sudho.bd4cic6e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetdr-x%2F10000089-3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetdr-x%2Fi%2F10000338%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sudho.bd4chbff.g00sudho.bd4cic6e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetdr-x%2F10000089-3%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sudho.bd4chbff.g00sudho.bd4cic6e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetdr-x%2F10000089-3%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetdr-x%2Fi%2F10000338%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "pet",
       "category_label": "ペット用品",
       "keyword": "",
@@ -41021,8 +41032,8 @@
       "title": "ロイヤルカナン満腹感サポート小型犬用3kgの特長と購入方法",
       "status": "published",
       "created_at": "2026-10-11T10:15:05+09:00",
-      "updated_at": "2026-10-12T10:47:52+09:00",
-      "last_checked_at": "2026-10-11T10:15:05+09:00",
+      "updated_at": "2026-10-31T10:00:25+09:00",
+      "last_checked_at": "2026-10-31T10:00:25+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 8,
@@ -41032,7 +41043,9 @@
         "../../../products/pet/wwpc-10000363/",
         "../../../products/pet/petdr-x-10000334/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "marble-inc:10000797": {
       "item_code": "marble-inc:10000797",
@@ -41040,7 +41053,7 @@
       "item_name": "【正規品取扱店】【レビュー高評価100件以上】【1年保証】Brighte SHOWER DRYER BRT-SD173 ブライト シャワードライヤー【ブラック / ピンク / ホワイト / アイスブルー】 ヘアドライヤー 速乾 大風量 マイナスイオン ナノミスト 美容液 スカルプケア ヘアケア 美髪 軽量",
       "display_name": "Brighte SHOWER DRYER シャワードライヤー",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u0u1o.bd4cha6d.g00u0u1o.bd4cicf5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarble-inc%2F101362%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarble-inc%2Fi%2F10000797%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u0u1o.bd4cha6d.g00u0u1o.bd4cicf5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarble-inc%2F101362%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u0u1o.bd4cha6d.g00u0u1o.bd4cicf5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarble-inc%2F101362%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarble-inc%2Fi%2F10000797%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "haircare",
       "category_label": "ヘアケア",
       "keyword": "",
@@ -41084,8 +41097,8 @@
       "title": "Brighteシャワードライヤーの特徴と機能を確認",
       "status": "published",
       "created_at": "2026-10-11T10:16:22+09:00",
-      "updated_at": "2026-10-17T10:47:59+09:00",
-      "last_checked_at": "2026-10-11T10:16:22+09:00",
+      "updated_at": "2026-10-31T10:00:27+09:00",
+      "last_checked_at": "2026-10-31T10:00:27+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 0,
@@ -41095,7 +41108,9 @@
         "../../../products/haircare/kaminidoramawo-10000019/",
         "../../../products/haircare/mtgec-beauty-10002091/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "etoeofficial:10000004": {
       "item_code": "etoeofficial:10000004",
@@ -41103,7 +41118,7 @@
       "item_name": "【楽天マラソン!11,000円クーポン】ETOE プロジェクター 最新GoogleTV 4K対応 家庭用 ホームプロジェクター Netflix、Disney+、YouTubeライセンス 高性能小型 オートフォーカス0.1秒自動台形補正 ホームシアター 天井投影 スマホ/Switch/PS5 ランキング1位 StarfishPlus",
       "display_name": "ETOE プロジェクター 最新GoogleTV 4K対応 家庭用",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ui9eo.bd4ch49b.g00ui9eo.bd4ci069/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fetoeofficial%2Fetoed1yellow1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fetoeofficial%2Fi%2F10000004%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ui9eo.bd4ch49b.g00ui9eo.bd4ci069/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fetoeofficial%2Fetoed1yellow1%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ui9eo.bd4ch49b.g00ui9eo.bd4ci069/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fetoeofficial%2Fetoed1yellow1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fetoeofficial%2Fi%2F10000004%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "appliances",
       "category_label": "家電",
       "keyword": "",
@@ -41149,8 +41164,8 @@
       "title": "ETOE プロジェクターの仕様とGoogleTV機能を整理",
       "status": "published",
       "created_at": "2026-10-11T10:17:40+09:00",
-      "updated_at": "2026-10-25T11:10:13+09:00",
-      "last_checked_at": "2026-10-11T10:17:40+09:00",
+      "updated_at": "2026-10-31T10:00:29+09:00",
+      "last_checked_at": "2026-10-31T10:00:29+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
@@ -41160,7 +41175,9 @@
         "../../../products/interior/diydiy-10000571/",
         "../../../products/pc-smartphone/logicool-10000211/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "auc-ecoloco:10008050": {
       "item_code": "auc-ecoloco:10008050",
@@ -41168,7 +41185,7 @@
       "item_name": "【クーポンで500円オフ】【レビュー高評価】台形スカート ロング レディース ストレッチコーデュロイ 綿／着後レビューでクーポン☆ カジュアル ナチュラル コットン フレア ゆったり ボトムス エコロコ e+, ／ 大きいサイズ 26AW1009R,",
       "display_name": "台形スカート ロング ストレッチコーデュロイ 綿",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r81yo.bd4chae8.g00r81yo.bd4ci614/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-ecoloco%2Fe3299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-ecoloco%2Fi%2F10008050%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r81yo.bd4chae8.g00r81yo.bd4ci614/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-ecoloco%2Fe3299%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r81yo.bd4chae8.g00r81yo.bd4ci614/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-ecoloco%2Fe3299%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-ecoloco%2Fi%2F10008050%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "fashion",
       "category_label": "ファッション小物",
       "keyword": "",
@@ -41215,8 +41232,8 @@
       "title": "エコロコのストレッチコーデュロイ台形スカートのサイズ感と特徴",
       "status": "published",
       "created_at": "2026-10-11T10:18:53+09:00",
-      "updated_at": "2026-10-26T11:15:47+09:00",
-      "last_checked_at": "2026-10-11T10:18:53+09:00",
+      "updated_at": "2026-10-31T10:00:31+09:00",
+      "last_checked_at": "2026-10-31T10:00:31+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 2,
@@ -41226,7 +41243,9 @@
         "../../../products/fashion/hhh-style-10027835/",
         "../../../products/fashion/dearcologne-10000037/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "decori:10000575": {
       "item_code": "decori:10000575",
@@ -41234,7 +41253,7 @@
       "item_name": "【衝撃特価】最大81％OFFクーポン配布中！【一部即納】 NISHIZARC 【正規品】ふわとろ 毛布 選べる AIR・Air Premium とろとろ毛布 もこもこ毛布 洗える 毛布 ブランケット ふわふわ 厚手 あったか なめらか 秋冬 掛け毛布 ひざ掛け",
       "display_name": "NISHIZARC ふわとろ毛布 選べる AIR・Air Premium",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uocjo.bd4ch5cf.g00uocjo.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdecori%2Fy-593%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdecori%2Fi%2F10000575%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uocjo.bd4ch5cf.g00uocjo.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdecori%2Fy-593%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uocjo.bd4ch5cf.g00uocjo.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdecori%2Fy-593%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdecori%2Fi%2F10000575%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "interior",
       "category_label": "収納・インテリア",
       "keyword": "",
@@ -41282,8 +41301,8 @@
       "title": "NISHIZARC ふわとろ毛布 AIRとAIR PREMIUMの違いを整理",
       "status": "published",
       "created_at": "2026-10-11T10:20:12+09:00",
-      "updated_at": "2026-10-29T11:30:26+09:00",
-      "last_checked_at": "2026-10-11T10:20:12+09:00",
+      "updated_at": "2026-10-31T11:26:18+09:00",
+      "last_checked_at": "2026-10-31T10:00:33+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 4,
@@ -41291,9 +41310,11 @@
         "../../../products/interior/m-style2021-10000350/",
         "../../../products/interior/eunicedress-10001863/",
         "../../../products/interior/dondon-10005919/",
-        "../../../products/interior/soleine-10009935/"
+        "../../../products/interior/tansu-10049274/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "rack-kan:10102276": {
       "item_code": "rack-kan:10102276",
@@ -41301,7 +41322,7 @@
       "item_name": "【5％OFFクーポン★13日10時迄】★超激アツ★チェスト 3段 4段 5段 白 スリム/ワイド 収納ケース 引き出し 幅30.9/53cm 高さ62.5/81/99.5cm 奥行39.5cm タンス 衣装ケース プラスチック アイリスオーヤマ タンス 衣類収納 クローゼット 寝室[RNG]",
       "display_name": "チェスト 3段 4段 5段 スリム ワイド 収納ケース",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pr3yo.bd4chc91.g00pr3yo.bd4ci448/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frack-kan%2F283244%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frack-kan%2Fi%2F10102276%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pr3yo.bd4chc91.g00pr3yo.bd4ci448/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frack-kan%2F283244%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pr3yo.bd4chc91.g00pr3yo.bd4ci448/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frack-kan%2F283244%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frack-kan%2Fi%2F10102276%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "interior",
       "category_label": "収納・インテリア",
       "keyword": "",
@@ -41345,8 +41366,8 @@
       "title": "チェスト スリム・ワイド 3・4・5段の構造と組み立て方法",
       "status": "published",
       "created_at": "2026-10-11T10:21:40+09:00",
-      "updated_at": "2026-10-26T11:15:47+09:00",
-      "last_checked_at": "2026-10-11T10:21:40+09:00",
+      "updated_at": "2026-10-31T10:00:36+09:00",
+      "last_checked_at": "2026-10-31T10:00:36+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 4,
@@ -41356,7 +41377,9 @@
         "../../../products/interior/exception5251-10000379/",
         "../../../products/interior/roomy-10001182/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "netbaby:10051930": {
       "item_code": "netbaby:10051930",
@@ -41364,7 +41387,7 @@
       "item_name": "明治ほほえみ(780g×8缶)【明治ほほえみ】",
       "display_name": "明治ほほえみ(780g×8缶)",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd4o.bd4ch362.g00pzd4o.bd4cia69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F4902705129573%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnetbaby%2Fi%2F10051930%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd4o.bd4ch362.g00pzd4o.bd4cia69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F4902705129573%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzd4o.bd4ch362.g00pzd4o.bd4cia69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnetbaby%2F4902705129573%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnetbaby%2Fi%2F10051930%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "baby",
       "category_label": "育児・ベビー用品",
       "keyword": "",
@@ -41411,8 +41434,8 @@
       "title": "明治ほほえみ(780g×8缶)の特徴と調乳方法の確認",
       "status": "published",
       "created_at": "2026-10-11T10:22:56+09:00",
-      "updated_at": "2026-10-25T11:10:13+09:00",
-      "last_checked_at": "2026-10-11T10:22:56+09:00",
+      "updated_at": "2026-10-31T10:00:37+09:00",
+      "last_checked_at": "2026-10-31T10:00:37+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
@@ -41422,7 +41445,9 @@
         "../../../products/baby/netbaby-10046010/",
         "../../../products/baby/rakutensokuhaimart-10026334/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "evercloset:10001601": {
       "item_code": "evercloset:10001601",
@@ -41430,7 +41455,7 @@
       "item_name": "【アライさん楽天ROOMコラボ】 特別な日をもっと素敵に マシュマロベロアセットアップ キッズ 子供 子供服 キッズ服 男の子 女の子 長袖 トップス スウェット トレーナー ズボン パンツ 上下セット 26AW",
       "display_name": "マシュマロベロアセットアップ キッズ",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sw4ao.bd4chafc.g00sw4ao.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fevercloset%2F263276002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fevercloset%2Fi%2F10001601%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sw4ao.bd4chafc.g00sw4ao.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fevercloset%2F263276002%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sw4ao.bd4chafc.g00sw4ao.bd4cib9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fevercloset%2F263276002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fevercloset%2Fi%2F10001601%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "fashion",
       "category_label": "ファッション小物",
       "keyword": "",
@@ -41475,8 +41500,8 @@
       "title": "マシュマロベロアセットアップ キッズの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-11T10:24:14+09:00",
-      "updated_at": "2026-10-26T11:15:47+09:00",
-      "last_checked_at": "2026-10-11T10:24:14+09:00",
+      "updated_at": "2026-10-31T10:00:40+09:00",
+      "last_checked_at": "2026-10-31T10:00:40+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 2,
@@ -41486,7 +41511,9 @@
         "../../../products/fashion/devirockstore-10031302/",
         "../../../products/fashion/devirockstore-10030402/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "rakuten24:11095955": {
       "item_code": "rakuten24:11095955",
@@ -41494,7 +41521,7 @@
       "item_name": "マキアージュ ドラマティックスキンセンサーベース NEO(25ml)【マキアージュ(MAQUillAGE)】[化粧下地 SPF50 PA+++ くずれ防止 毛穴補正 乾燥]",
       "display_name": "マキアージュ ドラマティックスキンセンサーベース NEO",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136o.bd4ch78d.g00r136o.bd4ci1c7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404749%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11095955%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136o.bd4ch78d.g00r136o.bd4ci1c7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404749%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136o.bd4ch78d.g00r136o.bd4ci1c7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F404749%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F11095955%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "beauty",
       "category_label": "美容・スキンケア",
       "keyword": "",
@@ -41538,8 +41565,8 @@
       "title": "マキアージュ ドラマティックスキンセンサーベース NEOの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-11T10:25:32+09:00",
-      "updated_at": "2026-10-22T11:05:26+09:00",
-      "last_checked_at": "2026-10-11T10:25:32+09:00",
+      "updated_at": "2026-10-31T10:00:42+09:00",
+      "last_checked_at": "2026-10-31T10:00:42+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
@@ -41549,7 +41576,9 @@
         "../../../products/beauty/attenir-10000252/",
         "../../../products/beauty/attenir-10000250/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "gunze:10030817": {
       "item_code": "gunze:10030817",
@@ -41557,7 +41586,7 @@
       "item_name": "【タイムセール】≪選べる4タイプ！綿×縫い目のないショーツがさらに進化≫ グンゼ キレイラボ ショーツ レディース 綿混 コットン 縫い目なし 保湿加工 シームレス ひびきにくい ウエストゴムなし 日本製 敏感肌 下着 締め付けない 無地 KL2070A KL2062A KL2071A KL2072A",
       "display_name": "グンゼ キレイラボ ショーツ レディース 綿混 コットン 縫い目なし",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00nslko.bd4ch04e.g00nslko.bd4cifdf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgunze%2Fkl2070r-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgunze%2Fi%2F10030817%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00nslko.bd4ch04e.g00nslko.bd4cifdf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgunze%2Fkl2070r-01%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00nslko.bd4ch04e.g00nslko.bd4cifdf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgunze%2Fkl2070r-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgunze%2Fi%2F10030817%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "fashion",
       "category_label": "ファッション小物",
       "keyword": "",
@@ -41603,8 +41632,8 @@
       "title": "グンゼのキレイラボ 綿混シームレスショーツの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-11T10:26:50+09:00",
-      "updated_at": "2026-10-16T10:44:08+09:00",
-      "last_checked_at": "2026-10-11T10:26:50+09:00",
+      "updated_at": "2026-10-31T10:00:45+09:00",
+      "last_checked_at": "2026-10-31T10:00:45+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
@@ -41614,7 +41643,9 @@
         "../../../products/fashion/sockkobe-10011322/",
         "../../../products/fashion/orivin-10000618/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "mycosmeticbox:10000009": {
       "item_code": "mycosmeticbox:10000009",
@@ -41622,7 +41653,7 @@
       "item_name": "＼期間限定特別価格！／【正規品ラッシュアディクト・認証QR付 シリアル・製品保証番号付】ラッシュアディクトアドバンスまつ毛美容液 ラッシュアディクト まつげ美容液 Lashaddict ラッシュアディクトまつ毛美容液 ラッシュアディクト",
       "display_name": "ラッシュアディクトアドバンスまつ毛美容液",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9wao.bd4ch0c1.g00u9wao.bd4ci945/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmycosmeticbox%2Flashaddict%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmycosmeticbox%2Fi%2F10000009%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9wao.bd4ch0c1.g00u9wao.bd4ci945/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmycosmeticbox%2Flashaddict%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9wao.bd4ch0c1.g00u9wao.bd4ci945/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmycosmeticbox%2Flashaddict%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmycosmeticbox%2Fi%2F10000009%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "beauty",
       "category_label": "美容・スキンケア",
       "keyword": "",
@@ -41666,8 +41697,8 @@
       "title": "ラッシュアディクトアドバンスまつ毛美容液の特徴と製品詳細",
       "status": "published",
       "created_at": "2026-10-11T10:28:07+09:00",
-      "updated_at": "2026-10-17T10:47:59+09:00",
-      "last_checked_at": "2026-10-11T10:28:07+09:00",
+      "updated_at": "2026-10-31T10:00:47+09:00",
+      "last_checked_at": "2026-10-31T10:00:47+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 2,
@@ -41677,7 +41708,9 @@
         "../../../products/beauty/fancl-shop-10009421/",
         "../../../products/beauty/beautyforest2018-10000125/"
       ],
-      "review_changes": 4
+      "review_changes": 4,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "links-factory:10000028": {
       "item_code": "links-factory:10000028",
@@ -41685,7 +41718,7 @@
       "item_name": "【期間限定★送料無料★】ハイエース 200 標準 S-GL ベッドキット　1型〜9型 Flat4",
       "display_name": "ハイエース 200 標準 S-GL ベッドキット Flat4",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sjgko.bd4chea9.g00sjgko.bd4ci6e8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flinks-factory%2F10000028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flinks-factory%2Fi%2F10000028%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sjgko.bd4chea9.g00sjgko.bd4ci6e8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flinks-factory%2F10000028%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sjgko.bd4chea9.g00sjgko.bd4ci6e8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flinks-factory%2F10000028%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flinks-factory%2Fi%2F10000028%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "sports-outdoor",
       "category_label": "スポーツ・アウトドア",
       "keyword": "",
@@ -41731,8 +41764,8 @@
       "title": "ハイエース200系標準S-GL用ベッドキットFlat4の構造と特徴",
       "status": "published",
       "created_at": "2026-10-11T10:29:34+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:29:34+09:00",
+      "updated_at": "2026-10-31T10:00:49+09:00",
+      "last_checked_at": "2026-10-31T10:00:49+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
@@ -41742,7 +41775,9 @@
         "../../../products/sports-outdoor/maxshare-10057769/",
         "../../../products/sports-outdoor/e-kurashi-10030558/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "kanidokoro:10001911": {
       "item_code": "kanidokoro:10001911",
@@ -41750,7 +41785,7 @@
       "item_name": "【0の日P最大4倍】お正月 2027年 お節料理 盛付済み 冷蔵 | 6寸三段 和風おせち 35品目 約3人前 東京「銀座 田中屋」監修おせち 彩幸 【冷蔵おせち お節 御節】【10/10 00:00〜23:59迄エントリー他で】",
       "display_name": "お正月 2027年 お節料理 盛付済み 冷蔵 | 6寸三段 和風おせち",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00rf0to.bd4ch7b1.g00rf0to.bd4ci425/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkanidokoro%2F702%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkanidokoro%2Fi%2F10001911%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rf0to.bd4ch7b1.g00rf0to.bd4ci425/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkanidokoro%2F702%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rf0to.bd4ch7b1.g00rf0to.bd4ci425/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkanidokoro%2F702%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkanidokoro%2Fi%2F10001911%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "food",
       "category_label": "食品・飲料",
       "keyword": "",
@@ -41795,8 +41830,8 @@
       "title": "お正月 2027年おせち料理 彩幸 冷蔵お試しおせちの仕様と特徴",
       "status": "published",
       "created_at": "2026-10-11T10:30:57+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:30:57+09:00",
+      "updated_at": "2026-10-31T10:00:52+09:00",
+      "last_checked_at": "2026-10-31T10:00:52+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 2,
@@ -41806,7 +41841,9 @@
         "../../../products/food/kitauroko-10000341/",
         "../../../products/food/kouragumi-10000441/"
       ],
-      "review_changes": 4
+      "review_changes": 4,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "superdeal:10000677": {
       "item_code": "superdeal:10000677",
@@ -41814,7 +41851,7 @@
       "item_name": "ストウブ STAUB ラ ココット デ ゴハン M 16cm 【国内正規品】",
       "display_name": "ストウブ ラ ココット デ ゴハン M 16cm",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00t81xo.bd4cha22.g00t81xo.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F10518staubgohanm20210124%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsuperdeal%2Fi%2F10000677%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t81xo.bd4cha22.g00t81xo.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F10518staubgohanm20210124%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t81xo.bd4cha22.g00t81xo.bd4ci363/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuperdeal%2F10518staubgohanm20210124%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsuperdeal%2Fi%2F10000677%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "kitchen",
       "category_label": "キッチン",
       "keyword": "",
@@ -41860,8 +41897,8 @@
       "title": "ストウブ ラ ココット デ ゴハン Mのサイズと特徴",
       "status": "published",
       "created_at": "2026-10-11T10:32:36+09:00",
-      "updated_at": "2026-10-14T11:37:35+09:00",
-      "last_checked_at": "2026-10-11T10:32:36+09:00",
+      "updated_at": "2026-10-31T10:00:54+09:00",
+      "last_checked_at": "2026-10-31T10:00:54+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
@@ -41871,7 +41908,9 @@
         "../../../products/food/jcrops-10000347/",
         "../../../products/food/jcrops-10001511/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "lalogiquejapan:10000103": {
       "item_code": "lalogiquejapan:10000103",
@@ -41879,7 +41918,7 @@
       "item_name": "【韓コス祭り★11日 9:59まで！最大35％OFFクーポン有】【楽天総合ランキング1位】 セロラバイ リトゥジェルECMエラマックスエキスパートクリーム ecm ecm-5 イーシーエム ハリ 弾力 キメ 保湿クリーム アイクリーム ギフト ヒアルロン酸 エイジングケア 肌育 韓国コスメ",
       "display_name": "セロラバイ リトゥジェルECMエラマックスエキスパートクリーム",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ufg5o.bd4ch112.g00ufg5o.bd4ci654/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flalogiquejapan%2Fecm_cream%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flalogiquejapan%2Fi%2F10000103%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ufg5o.bd4ch112.g00ufg5o.bd4ci654/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flalogiquejapan%2Fecm_cream%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ufg5o.bd4ch112.g00ufg5o.bd4ci654/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flalogiquejapan%2Fecm_cream%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flalogiquejapan%2Fi%2F10000103%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "beauty",
       "category_label": "美容・スキンケア",
       "keyword": "",
@@ -41923,8 +41962,8 @@
       "title": "セロラバイ リトゥジェルECMエラマックスエキスパートクリームの特徴",
       "status": "published",
       "created_at": "2026-10-11T10:33:53+09:00",
-      "updated_at": "2026-10-17T10:47:59+09:00",
-      "last_checked_at": "2026-10-11T10:33:53+09:00",
+      "updated_at": "2026-10-31T10:00:57+09:00",
+      "last_checked_at": "2026-10-31T10:00:57+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
@@ -41934,7 +41973,9 @@
         "../../../products/beauty/vtcosmetic-official-10000829/",
         "../../../products/beauty/attenir-10000227/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "ease-space:10018687": {
       "item_code": "ease-space:10018687",
@@ -41942,7 +41983,7 @@
       "item_name": "【本日5%引クーポン】 楽天1位 収納ベッド フレーム単品 / マットレス付き ベッド USB コンセント シングルベッド セミダブルベッド ダブルベッド クイーンベッド 収納付きベッド ベッドフレーム マットレス付 ベットフレーム マットレスセット",
       "display_name": "収納ベッド フレーム単品 / マットレス付き",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qt86o.bd4chfc9.g00qt86o.bd4ci5c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fease-space%2F73400026%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fease-space%2Fi%2F10018687%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qt86o.bd4chfc9.g00qt86o.bd4ci5c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fease-space%2F73400026%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qt86o.bd4chfc9.g00qt86o.bd4ci5c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fease-space%2F73400026%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fease-space%2Fi%2F10018687%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "interior",
       "category_label": "収納・インテリア",
       "keyword": "",
@@ -41988,8 +42029,8 @@
       "title": "収納ベッド コンセント付き USB付きの仕様と特徴を解説",
       "status": "published",
       "created_at": "2026-10-11T10:35:11+09:00",
-      "updated_at": "2026-10-29T11:30:26+09:00",
-      "last_checked_at": "2026-10-11T10:35:11+09:00",
+      "updated_at": "2026-10-31T10:00:59+09:00",
+      "last_checked_at": "2026-10-31T10:00:59+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 2,
@@ -41999,7 +42040,9 @@
         "../../../products/interior/dondon-10001821/",
         "../../../products/interior/tansu-10043927/"
       ],
-      "review_changes": 1
+      "review_changes": 1,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "hcvalor-eshop:16877626": {
       "item_code": "hcvalor-eshop:16877626",
@@ -42007,7 +42050,7 @@
       "item_name": "【即納在庫品】 パナソニック Panasonic 温水洗浄便座 ビューティトワレ CH951SWS ホワイト CH941SWS後継品 CH951SPFパステルアイボリー 貯湯式 ビューティ・トワレ ムーブ洗浄 ノズル除菌クリーニング 薄型ボディ 抗菌 省エネ 節電 温水便座 暖房便座 交換 取替 引越し",
       "display_name": "パナソニック 温水洗浄便座 ビューティトワレ CH951SWS",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00t6oao.bd4chd65.g00t6oao.bd4ci967/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcvalor-eshop%2Fmt-90-9000000001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhcvalor-eshop%2Fi%2F16877626%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t6oao.bd4chd65.g00t6oao.bd4ci967/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcvalor-eshop%2Fmt-90-9000000001%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t6oao.bd4chd65.g00t6oao.bd4ci967/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcvalor-eshop%2Fmt-90-9000000001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhcvalor-eshop%2Fi%2F16877626%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "appliances",
       "category_label": "家電",
       "keyword": "",
@@ -42054,8 +42097,8 @@
       "title": "パナソニック温水洗浄便座ビューティトワレCH951SWSの特長",
       "status": "published",
       "created_at": "2026-10-11T10:36:42+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:36:42+09:00",
+      "updated_at": "2026-10-31T10:01:02+09:00",
+      "last_checked_at": "2026-10-31T10:01:02+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
@@ -42065,7 +42108,9 @@
         "../../../products/appliances/auc-risecreation-10004620/",
         "../../../products/appliances/itsube-souken-10000266/"
       ],
-      "review_changes": 2
+      "review_changes": 2,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "2-itamae:10001028": {
       "item_code": "2-itamae:10001028",
@@ -42073,7 +42118,7 @@
       "item_name": "おせち 早割 2027 予約『板前魂の七福神ジャパン』しちふくじん 和洋中 和風 洋風 中華 超特大 2段重［55品 4人前 〜 5人前 お節］新春 豪華 鮑 豚角煮 おこわ ローストビーフ 年越そば おせち料理［送料無料］2026 御節料理 冷凍",
       "display_name": "板前魂の七福神ジャパン 和洋中 超特大2段重 55品",
       "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qlvoo.bd4chc26.g00qlvoo.bd4cibfe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F2-itamae%2F125400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F2-itamae%2Fi%2F10001028%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qlvoo.bd4chc26.g00qlvoo.bd4cibfe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F2-itamae%2F125400%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qlvoo.bd4chc26.g00qlvoo.bd4cibfe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F2-itamae%2F125400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F2-itamae%2Fi%2F10001028%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
       "category": "food",
       "category_label": "食品・飲料",
       "keyword": "",
@@ -42119,8 +42164,8 @@
       "title": "板前魂の七福神ジャパン和洋中超特大2段重の特徴と仕様",
       "status": "published",
       "created_at": "2026-10-11T10:38:01+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
-      "last_checked_at": "2026-10-11T10:38:01+09:00",
+      "updated_at": "2026-10-31T10:01:04+09:00",
+      "last_checked_at": "2026-10-31T10:01:04+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 2,
@@ -42130,7 +42175,9 @@
         "../../../products/food/kouragumi-10001537/",
         "../../../products/food/omosan-10000086/"
       ],
-      "review_changes": 3
+      "review_changes": 3,
+      "missing_count": 0,
+      "unavailable_count": 0
     },
     "devirockstore:10030402": {
       "item_code": "devirockstore:10030402",
@@ -42184,7 +42231,7 @@
       "title": "デビラボ長袖パジャマ綿100％の仕様と特徴を解説",
       "status": "published",
       "created_at": "2026-10-11T10:39:18+09:00",
-      "updated_at": "2026-10-26T11:15:47+09:00",
+      "updated_at": "2026-10-31T11:26:17+09:00",
       "last_checked_at": "2026-10-11T10:39:18+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -42193,7 +42240,7 @@
         "../../../products/fashion/devirockstore-10031186/",
         "../../../products/fashion/devirockstore-10031954/",
         "../../../products/fashion/devirockstore-10031302/",
-        "../../../products/baby/devirockstore-10031346/"
+        "../../../products/baby/devirockstore-10028671/"
       ],
       "review_changes": 2
     },
@@ -42387,16 +42434,16 @@
       "title": "アイリスオーヤマの炭酸水500ml 48本の特徴と詳細",
       "status": "published",
       "created_at": "2026-10-11T10:44:55+09:00",
-      "updated_at": "2026-10-30T11:35:56+09:00",
+      "updated_at": "2026-10-31T11:26:17+09:00",
       "last_checked_at": "2026-10-11T10:44:55+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/akol-10001105/",
         "../../../products/food/akol-10001104/",
         "../../../products/food/rakutenoriginal-daily-10000000/",
-        "../../../products/food/akol-10000484/",
-        "../../../products/food/lifedrinkcompany-10000004/"
+        "../../../products/food/akol-10000484/"
       ],
       "review_changes": 1
     },
@@ -48031,16 +48078,16 @@
       "title": "ジョー マローン ロンドン ウッド セージ ＆ シー ソルト コロンの香りやサイズ選び",
       "status": "published",
       "created_at": "2026-10-14T11:29:21+09:00",
-      "updated_at": "2026-10-25T11:10:11+09:00",
+      "updated_at": "2026-10-31T11:26:16+09:00",
       "last_checked_at": "2026-10-14T11:29:21+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
         "../../../products/beauty/clinique-10001367/",
+        "../../../products/beauty/clinique-10001529/",
         "../../../products/beauty/yslbeauty-10000307/",
-        "../../../products/food/e-cha-10002295/",
-        "../../../products/gift/henri-charpentier-10002022/"
+        "../../../products/food/e-cha-10002295/"
       ],
       "review_changes": 3
     },
@@ -48094,7 +48141,7 @@
       "title": "昭和西川の羽毛布団リフォーム（打ち直し）シングル本掛けの手順と仕様",
       "status": "published",
       "created_at": "2026-10-14T11:31:04+09:00",
-      "updated_at": "2026-10-29T11:30:25+09:00",
+      "updated_at": "2026-10-31T11:26:16+09:00",
       "last_checked_at": "2026-10-14T11:31:04+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -48102,8 +48149,8 @@
       "related": [
         "../../../products/interior/soleine-10009935/",
         "../../../products/interior/futontown-10006072/",
-        "../../../products/pc-smartphone/pixiogaming-10000126/",
-        "../../../products/interior/tansu-10041467/"
+        "../../../products/living/dondon-10001586/",
+        "../../../products/pc-smartphone/pixiogaming-10000126/"
       ],
       "review_changes": 2
     },
@@ -51082,16 +51129,16 @@
       "title": "骨取り縞ほっけの特徴と選び方。無塩・有塩の種類を確認",
       "status": "published",
       "created_at": "2026-10-16T10:18:34+09:00",
-      "updated_at": "2026-10-27T11:23:52+09:00",
+      "updated_at": "2026-10-31T11:26:16+09:00",
       "last_checked_at": "2026-10-16T10:18:34+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 1,
       "related": [
         "../../../products/food/kouragumi-10001520/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/matsuya-10000085/",
-        "../../../products/food/sanwa-junkei-10000536/",
-        "../../../products/food/ringerhut-10000132/"
+        "../../../products/food/sanwa-junkei-10000536/"
       ],
       "review_changes": 1
     },
@@ -53529,16 +53576,16 @@
       "title": "メガ盛り博多もつ鍋セットの内容と特徴を整理",
       "status": "published",
       "created_at": "2026-10-17T10:31:18+09:00",
-      "updated_at": "2026-10-25T11:10:10+09:00",
+      "updated_at": "2026-10-31T11:26:16+09:00",
       "last_checked_at": "2026-10-17T10:31:18+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/kouragumi-10001552/",
         "../../../products/food/once-in-10000163/",
-        "../../../products/food/omuraisu-n-10000000/",
-        "../../../products/food/yonekyu-10002024/"
+        "../../../products/food/omuraisu-n-10000000/"
       ],
       "review_changes": 1
     },
@@ -56043,7 +56090,7 @@
       "title": "とろ〜りケット 洗える 夏 タオルケット ブランケット レーヨン 布団",
       "status": "published",
       "created_at": "2026-10-18T10:49:23+09:00",
-      "updated_at": "2026-10-29T11:30:24+09:00",
+      "updated_at": "2026-10-31T11:26:15+09:00",
       "last_checked_at": "2026-10-18T10:49:23+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -56052,7 +56099,7 @@
         "../../../products/interior/yukyostore-10000040/",
         "../../../products/interior/brainsleep-10000001/",
         "../../../products/interior/dondon-10005919/",
-        "../../../products/interior/nissen-rhg-10002294/"
+        "../../../products/interior/tansu-10050367/"
       ],
       "review_changes": 1
     },
@@ -56955,7 +57002,7 @@
       "title": "NANGA WHITE LABEL DOWN PARKAのサイズ感と仕様",
       "status": "published",
       "created_at": "2026-10-19T10:32:13+09:00",
-      "updated_at": "2026-10-19T10:55:06+09:00",
+      "updated_at": "2026-10-31T11:26:15+09:00",
       "last_checked_at": "2026-10-19T10:32:13+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
@@ -56963,8 +57010,8 @@
       "related": [
         "../../../products/fashion/moonloid-10000278/",
         "../../../products/sports-outdoor/styleism-10002505/",
-        "../../../products/baby/soyott-camp-10000031/",
-        "../../../products/baby/carino-carino-10000044/"
+        "../../../products/sports-outdoor/bbtown-10108462/",
+        "../../../products/baby/soyott-camp-10000031/"
       ],
       "review_changes": 2
     },
@@ -57279,16 +57326,16 @@
       "title": "NANGA WHITE LABEL DOWN CARDIGAN 別注の機能と仕様",
       "status": "published",
       "created_at": "2026-10-19T10:39:13+09:00",
-      "updated_at": "2026-10-30T11:35:54+09:00",
+      "updated_at": "2026-10-31T11:26:15+09:00",
       "last_checked_at": "2026-10-19T10:39:13+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 0,
       "related": [
         "../../../products/sports-outdoor/moonloid-10000422/",
+        "../../../products/sports-outdoor/bbtown-10108462/",
         "../../../products/fashion/tokeiten-10000248/",
-        "../../../products/fashion/auc-ecoloco-10003311/",
-        "../../../products/fashion/classical-10015856/"
+        "../../../products/fashion/auc-ecoloco-10003311/"
       ],
       "review_changes": 2
     },
@@ -59486,16 +59533,16 @@
       "title": "本ズワイガニ 太脚棒肉 フルポーションを生で楽しむ方法",
       "status": "published",
       "created_at": "2026-10-20T10:43:52+09:00",
-      "updated_at": "2026-10-30T11:35:53+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-20T10:43:52+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 4,
       "related": [
         "../../../products/food/kouragumi-10000441/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/kouragumi-10000004/",
-        "../../../products/food/e-cha-10002295/",
-        "../../../products/food/morigen-10000010/"
+        "../../../products/food/e-cha-10002295/"
       ],
       "review_changes": 4
     },
@@ -59549,7 +59596,7 @@
       "title": "DRIP POD専用カプセル 選べる7箱セットの特徴と確認ポイント",
       "status": "published",
       "created_at": "2026-10-20T10:45:11+09:00",
-      "updated_at": "2026-10-30T11:35:53+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-20T10:45:11+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -59557,8 +59604,8 @@
       "related": [
         "../../../products/appliances/drip-pod-10000253/",
         "../../../products/kitchen/dolce-gusto-10000158/",
-        "../../../products/kitchen/dolce-gusto-10000279/",
-        "../../../products/kitchen/delonghi-10002655/"
+        "../../../products/kitchen/roomy-10015796/",
+        "../../../products/kitchen/dolce-gusto-10000279/"
       ],
       "review_changes": 4
     },
@@ -61043,7 +61090,7 @@
       "title": "冬用敷きパッドの吸湿発熱機能とサイズ展開を整理",
       "status": "published",
       "created_at": "2026-10-21T10:35:00+09:00",
-      "updated_at": "2026-10-30T11:35:53+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-21T10:35:00+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -61052,7 +61099,7 @@
         "../../../products/interior/soleine-10009935/",
         "../../../products/interior/aooka-10000433/",
         "../../../products/interior/kaiminya-10000039/",
-        "../../../products/interior/rack-kan-10029626/"
+        "../../../products/interior/tansu-10049274/"
       ],
       "review_changes": 3
     },
@@ -62610,16 +62657,16 @@
       "title": "クリニーク モイスチャー サージ セットの内容と選び方",
       "status": "published",
       "created_at": "2026-10-22T10:29:41+09:00",
-      "updated_at": "2026-10-22T10:29:41+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-22T10:29:41+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
       "related": [
         "../../../products/beauty/clinique-10001382/",
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/attenir-10000252/",
-        "../../../products/beauty/attenir-10000250/",
-        "../../../products/beauty/fancl-shop-10009421/"
+        "../../../products/beauty/attenir-10000250/"
       ],
       "review_changes": 1
     },
@@ -62673,16 +62720,16 @@
       "title": "クリニーク ラッシュ パワー マスカラの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-22T10:31:29+09:00",
-      "updated_at": "2026-10-22T10:31:29+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-22T10:31:29+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/clinique-10001382/",
         "../../../products/beauty/yunth-10000000/",
-        "../../../products/beauty/beautyforest2018-10000125/",
-        "../../../products/beauty/brain-service-10000078/"
+        "../../../products/beauty/beautyforest2018-10000125/"
       ],
       "review_changes": 1
     },
@@ -62801,16 +62848,16 @@
       "title": "ミャンマーチキンカレー チェッターヒンの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-22T10:34:05+09:00",
-      "updated_at": "2026-10-22T10:34:05+09:00",
+      "updated_at": "2026-10-31T11:26:14+09:00",
       "last_checked_at": "2026-10-22T10:34:05+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
       "related": [
         "../../../products/food/santarosa-10000568/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/kouragumi-10000004/",
-        "../../../products/food/lifedrinkcompany-10000022/",
-        "../../../products/food/calinuts-10000152/"
+        "../../../products/food/lifedrinkcompany-10000022/"
       ],
       "review_changes": 1
     },
@@ -65714,7 +65761,7 @@
       "title": "次亜塩素酸水 ジアニスト 3Lの特長と希釈方法の確認",
       "status": "published",
       "created_at": "2026-10-23T11:04:47+09:00",
-      "updated_at": "2026-10-29T11:30:22+09:00",
+      "updated_at": "2026-10-31T11:26:13+09:00",
       "last_checked_at": "2026-10-23T11:04:47+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -65723,7 +65770,7 @@
         "../../../products/living/sukoyakakomachi-10000004/",
         "../../../products/living/sukoyakakomachi-10000005/",
         "../../../products/living/twinklegoods-10000055/",
-        "../../../products/living/rakuten24-11224264/"
+        "../../../products/living/prime-brain-10000071/"
       ],
       "review_changes": 1
     },
@@ -67161,16 +67208,16 @@
       "title": "水想い 6年長期保存水 2L 9本の特徴と仕様を整理",
       "status": "published",
       "created_at": "2026-10-24T10:58:24+09:00",
-      "updated_at": "2026-10-29T11:30:22+09:00",
+      "updated_at": "2026-10-31T11:26:13+09:00",
       "last_checked_at": "2026-10-24T10:58:24+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 2,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/matsuya-10000085/",
-        "../../../products/food/bousaikan-10008499/",
-        "../../../products/food/jyonetsubatake-10000342/"
+        "../../../products/food/akol-10001105/",
+        "../../../products/food/sawasei-10230379/"
       ],
       "review_changes": 1
     },
@@ -68856,7 +68903,7 @@
       "title": "履くホカロン 冷えとり 靴下 レディース ミニクルー ソックスの特徴",
       "status": "published",
       "created_at": "2026-10-25T10:48:34+09:00",
-      "updated_at": "2026-10-29T11:30:22+09:00",
+      "updated_at": "2026-10-31T11:26:13+09:00",
       "last_checked_at": "2026-10-25T10:48:34+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -68865,7 +68912,7 @@
         "../../../products/fashion/renfrojapan-10000086/",
         "../../../products/baby/sportsmario2-10206282/",
         "../../../products/fashion/enterb-10000160/",
-        "../../../products/appliances/katushop-10000129/"
+        "../../../products/living/dondon-10001586/"
       ],
       "review_changes": 1
     },
@@ -69392,16 +69439,16 @@
       "title": "クチュール ミニ クラッチは自分に合う？YSLアイシャドウの特徴を整理",
       "status": "published",
       "created_at": "2026-10-25T11:01:49+09:00",
-      "updated_at": "2026-10-25T11:10:07+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-25T11:01:49+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 10,
       "related": [
         "../../../products/beauty/maccosmetics-10001118/",
+        "../../../products/beauty/clinique-10001529/",
         "../../../products/beauty/brandshiseido-10000163/",
-        "../../../products/beauty/esteelauder-10001234/",
-        "../../../products/beauty/brandshiseido-10000016/"
+        "../../../products/beauty/esteelauder-10001234/"
       ],
       "review_changes": 2
     },
@@ -69839,16 +69886,16 @@
       "title": "生ずわい蟹ポーションの仕様と刺身対応の確認",
       "status": "published",
       "created_at": "2026-10-26T10:13:34+09:00",
-      "updated_at": "2026-10-30T11:35:51+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-26T10:13:34+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
         "../../../products/food/kouragumi-10000441/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/pc-smartphone/honest-online-10000774/",
-        "../../../products/kitchen/insair-10051433/",
-        "../../../products/kitchen/irisplaza-r-10149259/"
+        "../../../products/kitchen/insair-10051433/"
       ],
       "review_changes": 3
     },
@@ -69968,7 +70015,7 @@
       "title": "10年保存水の硬度や賞味期限を解説｜備蓄水の特徴と判断材料",
       "status": "published",
       "created_at": "2026-10-26T10:28:04+09:00",
-      "updated_at": "2026-10-29T11:30:22+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-26T10:28:04+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -69976,8 +70023,8 @@
       "related": [
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/at-rescue-10002460/",
-        "../../../products/food/mizuomoi-10000009/",
-        "../../../products/living/hiromifashionhouse-10005004/"
+        "../../../products/food/noza-mart-10000108/",
+        "../../../products/food/mizuomoi-10000009/"
       ],
       "review_changes": 3
     },
@@ -70487,16 +70534,16 @@
       "title": "綿100％デビラボ長袖Tシャツのサイズ感と特徴を整理",
       "status": "published",
       "created_at": "2026-10-26T10:47:27+09:00",
-      "updated_at": "2026-10-26T11:15:42+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-26T10:47:27+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
       "related": [
         "../../../products/baby/devirockstore-10031346/",
+        "../../../products/baby/devirockstore-10028671/",
         "../../../products/fashion/devirockstore-10030402/",
-        "../../../products/baby/devirockstore-10031942/",
-        "../../../products/baby/devirockstore-10002801/"
+        "../../../products/baby/devirockstore-10031942/"
       ],
       "review_changes": 1
     },
@@ -71910,7 +71957,7 @@
       "title": "非常用簡易トイレセットの仕様と抗菌消臭機能の確認",
       "status": "published",
       "created_at": "2026-10-27T10:39:34+09:00",
-      "updated_at": "2026-10-29T11:30:21+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-27T10:39:34+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -71919,7 +71966,7 @@
         "../../../products/living/nagomilab-10000048/",
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 1
     },
@@ -72103,16 +72150,16 @@
       "title": "非常用トイレセットの仕様と長期保存性能をチェック",
       "status": "published",
       "created_at": "2026-10-27T10:44:36+09:00",
-      "updated_at": "2026-10-29T11:30:21+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-27T10:44:36+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 2,
       "related": [
         "../../../products/food/saibou-10001692/",
-        "../../../products/living/nagomilab-10000048/",
-        "../../../products/food/bousaikan-10008499/",
-        "../../../products/food/kurashido-10000448/"
+        "../../../products/food/akol-10001105/",
+        "../../../products/living/dztai-10000403/",
+        "../../../products/living/nagomilab-10000048/"
       ],
       "review_changes": 3
     },
@@ -72168,16 +72215,16 @@
       "title": "サーフビバレッジ 長期保存水 2L×6本の仕様",
       "status": "published",
       "created_at": "2026-10-27T10:45:53+09:00",
-      "updated_at": "2026-10-30T11:35:50+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-27T10:45:53+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/jyonetsubatake-10000542/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/bousaikan-10008499/",
-        "../../../products/food/alphasyokuhin-10000015/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 2
     },
@@ -72364,7 +72411,7 @@
       "title": "履くホカロン あったか靴下 レディースの仕様と特徴",
       "status": "published",
       "created_at": "2026-10-27T10:52:57+09:00",
-      "updated_at": "2026-10-27T10:52:57+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-27T10:52:57+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -72373,7 +72420,7 @@
         "../../../products/living/auc-risecreation-10003226/",
         "../../../products/fashion/renfrojapan-10000250/",
         "../../../products/fashion/auc-ecoloco-10003920/",
-        "../../../products/fashion/renfrojapan-10000244/"
+        "../../../products/fashion/renfrojapan-10000423/"
       ],
       "review_changes": 1
     },
@@ -72428,7 +72475,7 @@
       "title": "非常食セット 1週間 21食 パンとごはん 防災セット",
       "status": "published",
       "created_at": "2026-10-27T10:54:16+09:00",
-      "updated_at": "2026-10-30T11:35:50+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-27T10:54:16+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
@@ -72436,8 +72483,8 @@
       "related": [
         "../../../products/living/nagomilab-10000048/",
         "../../../products/food/mizuomoi-10000009/",
-        "../../../products/living/twinklegoods-10000055/",
-        "../../../products/kitchen/insair-10051433/"
+        "../../../products/food/noza-mart-10000108/",
+        "../../../products/living/twinklegoods-10000055/"
       ],
       "review_changes": 1
     },
@@ -73706,16 +73753,16 @@
       "title": "非常用簡易トイレセットの備蓄回数と仕様の確認",
       "status": "published",
       "created_at": "2026-10-28T10:11:28+09:00",
-      "updated_at": "2026-10-30T11:35:50+09:00",
+      "updated_at": "2026-10-31T11:26:12+09:00",
       "last_checked_at": "2026-10-28T10:11:28+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 2,
       "related": [
         "../../../products/living/twinklegoods-10000055/",
-        "../../../products/living/bos-shop-10000067/",
-        "../../../products/living/r1-shop-10000062/",
-        "../../../products/sports-outdoor/bos-shop-10000148/"
+        "../../../products/living/prime-brain-10000071/",
+        "../../../products/living/dztai-10000403/",
+        "../../../products/living/bos-shop-10000067/"
       ],
       "review_changes": 1
     },
@@ -73909,16 +73956,16 @@
       "title": "BOS非常用トイレ100回分セットの特徴と15年保存の備え",
       "status": "published",
       "created_at": "2026-10-28T10:27:33+09:00",
-      "updated_at": "2026-10-30T11:35:50+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-28T10:27:33+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/living/bos-shop-10000144/",
         "../../../products/living/h2brothers-10001880/",
-        "../../../products/living/bos-shop-10000067/",
-        "../../../products/living/nagomilab-10000048/"
+        "../../../products/living/bos-shop-10000067/"
       ],
       "review_changes": 2
     },
@@ -74251,7 +74298,7 @@
       "title": "モールニット ルームウェア 3点セットのサイズ感と特徴",
       "status": "published",
       "created_at": "2026-10-28T10:37:35+09:00",
-      "updated_at": "2026-10-28T10:37:35+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-28T10:37:35+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -74259,8 +74306,8 @@
       "related": [
         "../../../products/fashion/sockkobe-10014431/",
         "../../../products/fashion/darkangel-10036035/",
-        "../../../products/appliances/katushop-10000129/",
-        "../../../products/interior/eunicedress-10001863/"
+        "../../../products/living/dondon-10001586/",
+        "../../../products/appliances/katushop-10000129/"
       ],
       "review_changes": 2
     },
@@ -74442,7 +74489,7 @@
       "title": "非常用トイレの備え方と「トイレの用心防」の特長",
       "status": "published",
       "created_at": "2026-10-28T10:41:30+09:00",
-      "updated_at": "2026-10-29T11:30:21+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-28T10:41:30+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -74451,7 +74498,7 @@
         "../../../products/living/nagomilab-10000048/",
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 1
     },
@@ -74829,16 +74876,16 @@
       "title": "防災セット 2人用 68点の中身や仕様、重さを整理して確認",
       "status": "published",
       "created_at": "2026-10-28T10:49:17+09:00",
-      "updated_at": "2026-10-29T11:30:21+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-28T10:49:17+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
       "auto_fixes": 5,
       "related": [
         "../../../products/living/hiromifashionhouse-10005004/",
+        "../../../products/living/dztai-10000403/",
         "../../../products/living/r1-shop-10000062/",
-        "../../../products/living/twinklegoods-10000055/",
-        "../../../products/living/supplement-life-10000035/"
+        "../../../products/living/twinklegoods-10000055/"
       ],
       "review_changes": 2
     },
@@ -74895,16 +74942,16 @@
       "title": "アイリスオーヤマ薄型カセットコンロの特長とサイズを確認",
       "status": "published",
       "created_at": "2026-10-28T10:50:35+09:00",
-      "updated_at": "2026-10-30T11:35:50+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-28T10:50:35+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 5,
       "related": [
         "../../../products/kitchen/insair-10051433/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/sports-outdoor/handmade-amane-10001224/",
-        "../../../products/sports-outdoor/styleism-10002505/",
-        "../../../products/kitchen/roomy-10015766/"
+        "../../../products/sports-outdoor/styleism-10002505/"
       ],
       "review_changes": 2
     },
@@ -75852,7 +75899,7 @@
       "title": "Qbit 簡易トイレの特徴と仕様を解説",
       "status": "published",
       "created_at": "2026-10-29T10:40:47+09:00",
-      "updated_at": "2026-10-29T10:40:47+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T10:40:47+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
@@ -75861,7 +75908,7 @@
         "../../../products/living/nagomilab-10000048/",
         "../../../products/food/mizuomoi-10000009/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/living/pykespeak-10002322/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 1
     },
@@ -76048,16 +76095,16 @@
       "title": "災害時の断水や車中泊に備える簡易トイレの選び方",
       "status": "published",
       "created_at": "2026-10-29T10:47:09+09:00",
-      "updated_at": "2026-10-30T11:35:49+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T10:47:09+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 1,
       "related": [
         "../../../products/food/saibou-10001692/",
+        "../../../products/food/akol-10001105/",
         "../../../products/living/supplement-life-10000035/",
-        "../../../products/living/pykespeak-10002322/",
-        "../../../products/living/bos-shop-10000144/"
+        "../../../products/living/pykespeak-10002322/"
       ],
       "review_changes": 1
     },
@@ -76111,16 +76158,16 @@
       "title": "非常食セット36食 4人家族3日分 パンとおにぎり",
       "status": "published",
       "created_at": "2026-10-29T10:48:28+09:00",
-      "updated_at": "2026-10-29T10:48:28+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T10:48:28+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/mizuomoi-10000009/",
         "../../../products/living/r1-shop-10000062/",
-        "../../../products/food/saibou-10001692/",
-        "../../../products/living/twinklegoods-10000055/"
+        "../../../products/living/dztai-10000403/"
       ],
       "review_changes": 1
     },
@@ -76177,7 +76224,7 @@
       "title": "5年保存非常食セット 7DAYSコンパクトの仕様",
       "status": "published",
       "created_at": "2026-10-29T10:49:46+09:00",
-      "updated_at": "2026-10-30T11:35:49+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T10:49:46+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -76186,7 +76233,7 @@
         "../../../products/food/saibou-10001692/",
         "../../../products/food/jyonetsubatake-10000342/",
         "../../../products/food/jyonetsubatake-10000542/",
-        "../../../products/food/akol-10000484/"
+        "../../../products/food/pioma-10001340/"
       ],
       "review_changes": 2
     },
@@ -76693,16 +76740,16 @@
       "title": "昭和西川 2枚合わせ毛布 シングル 衿付きの特徴と仕様",
       "status": "published",
       "created_at": "2026-10-29T11:04:15+09:00",
-      "updated_at": "2026-10-29T11:04:15+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:04:15+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/interior/tansu-10049274/",
         "../../../products/interior/eunicedress-10001863/",
         "../../../products/interior/yukyostore-10000040/",
-        "../../../products/beauty/brandshiseido-10000151/",
-        "../../../products/interior/tansu-10041467/"
+        "../../../products/beauty/brandshiseido-10000151/"
       ],
       "review_changes": 1
     },
@@ -76823,7 +76870,7 @@
       "title": "トイレの女神 PREMIUM 非常用簡易トイレ100回分の仕様整理",
       "status": "published",
       "created_at": "2026-10-29T11:06:49+09:00",
-      "updated_at": "2026-10-29T11:06:49+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:06:49+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
@@ -76832,7 +76879,7 @@
         "../../../products/living/nagomilab-10000048/",
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 2
     },
@@ -76886,7 +76933,7 @@
       "title": "100回分非常用トイレLife Reachのセット内容と特徴",
       "status": "published",
       "created_at": "2026-10-29T11:10:46+09:00",
-      "updated_at": "2026-10-30T11:35:49+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:10:46+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -76895,7 +76942,7 @@
         "../../../products/living/pykespeak-10002322/",
         "../../../products/living/bos-shop-10000144/",
         "../../../products/living/nagomilab-10000046/",
-        "../../../products/living/twinklegoods-10000055/"
+        "../../../products/living/prime-brain-10000071/"
       ],
       "review_changes": 1
     },
@@ -77204,16 +77251,16 @@
       "title": "ネスカフェ ドルチェ グスト ジェニオ エス シェアの仕様とセット内容を確認",
       "status": "published",
       "created_at": "2026-10-29T11:20:58+09:00",
-      "updated_at": "2026-10-30T11:35:49+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:20:58+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 1,
       "related": [
         "../../../products/kitchen/dolce-gusto-10000158/",
-        "../../../products/kitchen/delonghi-10002655/",
-        "../../../products/appliances/drip-pod-10000253/",
-        "../../../products/kitchen/roomy-10015766/"
+        "../../../products/kitchen/roomy-10015796/",
+        "../../../products/kitchen/coconial-10003230/",
+        "../../../products/kitchen/delonghi-10002655/"
       ],
       "review_changes": 1
     },
@@ -77266,7 +77313,7 @@
       "title": "ネオグラフェン蓄熱ソックスの特徴と素材を確認する",
       "status": "published",
       "created_at": "2026-10-29T11:22:41+09:00",
-      "updated_at": "2026-10-29T11:22:41+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:22:41+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -77275,7 +77322,7 @@
         "../../../products/baby/sportsmario2-10206282/",
         "../../../products/fashion/renfrojapan-10000086/",
         "../../../products/fashion/renfrojapan-10000244/",
-        "../../../products/appliances/katushop-10000129/"
+        "../../../products/living/dondon-10001586/"
       ],
       "review_changes": 1
     },
@@ -77329,7 +77376,7 @@
       "title": "壁紙屋本舗ののり付き30mパックで6畳間のDIY",
       "status": "published",
       "created_at": "2026-10-29T11:24:51+09:00",
-      "updated_at": "2026-10-29T11:24:51+09:00",
+      "updated_at": "2026-10-31T11:26:11+09:00",
       "last_checked_at": "2026-10-29T11:24:51+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -77337,8 +77384,8 @@
       "related": [
         "../../../products/kitchen/roomy-10016698/",
         "../../../products/kitchen/makuake-store-10000950/",
-        "../../../products/interior/bathroom-10003467/",
-        "../../../products/interior/bathroom-10002284/"
+        "../../../products/food/noza-mart-10000108/",
+        "../../../products/interior/bathroom-10003467/"
       ],
       "review_changes": 1
     },
@@ -77723,16 +77770,16 @@
       "title": "人工羽毛布団の選び方：インビスタ社中わた洗える掛け布団",
       "status": "published",
       "created_at": "2026-10-30T10:36:02+09:00",
-      "updated_at": "2026-10-30T10:36:02+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:36:02+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 2,
       "related": [
         "../../../products/interior/soleine-10009935/",
+        "../../../products/interior/tansu-10049274/",
         "../../../products/interior/eunicedress-10001863/",
-        "../../../products/interior/yukyostore-10000040/",
-        "../../../products/interior/rugly-10004030/"
+        "../../../products/interior/yukyostore-10000040/"
       ],
       "review_changes": 5
     },
@@ -77850,16 +77897,16 @@
       "title": "電気毛布 掛け敷き 洗える タイマー付きのサイズと選び方",
       "status": "published",
       "created_at": "2026-10-30T10:41:21+09:00",
-      "updated_at": "2026-10-30T10:41:21+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:41:21+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/interior/tansu-10049274/",
         "../../../products/interior/soleine-10009935/",
         "../../../products/interior/tansu-10041467/",
-        "../../../products/interior/eunicedress-10001863/",
-        "../../../products/interior/yukyostore-10000040/"
+        "../../../products/interior/eunicedress-10001863/"
       ],
       "review_changes": 2
     },
@@ -77913,16 +77960,16 @@
       "title": "10年保存水 ラベルレス 1.8L×12本の仕様と備蓄適性を整理",
       "status": "published",
       "created_at": "2026-10-30T10:44:02+09:00",
-      "updated_at": "2026-10-30T10:44:02+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:44:02+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 5,
       "related": [
+        "../../../products/food/akol-10001105/",
         "../../../products/living/nagomilab-10000048/",
         "../../../products/living/twinklegoods-10000055/",
-        "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/"
+        "../../../products/food/saibou-10001692/"
       ],
       "review_changes": 3
     },
@@ -78103,7 +78150,7 @@
       "title": "BOS非常用トイレ50回分 臭わない袋BOS付きの仕様と内容",
       "status": "published",
       "created_at": "2026-10-30T10:50:30+09:00",
-      "updated_at": "2026-10-30T10:50:30+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:50:30+09:00",
       "fail_count": 0,
       "voice": "落ち着いた解説調",
@@ -78111,8 +78158,8 @@
       "related": [
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/",
-        "../../../products/living/nagomilab-10000048/"
+        "../../../products/food/akol-10001105/",
+        "../../../products/food/mizuomoi-10000009/"
       ],
       "review_changes": 1
     },
@@ -78168,16 +78215,16 @@
       "title": "ネスカフェ ドルチェ グスト ジェニオ エス プラスの仕様と機能",
       "status": "published",
       "created_at": "2026-10-30T10:51:48+09:00",
-      "updated_at": "2026-10-30T10:51:48+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:51:48+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 4,
       "related": [
+        "../../../products/kitchen/roomy-10015796/",
         "../../../products/kitchen/dolce-gusto-10000279/",
-        "../../../products/kitchen/delonghi-10002655/",
-        "../../../products/food/drip-pod-10000603/",
-        "../../../products/kitchen/roomy-10015766/"
+        "../../../products/kitchen/coconial-10003230/",
+        "../../../products/kitchen/delonghi-10002655/"
       ],
       "review_changes": 2
     },
@@ -78244,7 +78291,7 @@
       "title": "BOS非常用トイレ50回分のセット内容とサイズ仕様",
       "status": "published",
       "created_at": "2026-10-30T10:55:17+09:00",
-      "updated_at": "2026-10-30T10:55:17+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:55:17+09:00",
       "fail_count": 0,
       "voice": "要点先出しの簡潔調",
@@ -78252,8 +78299,8 @@
       "related": [
         "../../../products/living/pykespeak-10002322/",
         "../../../products/living/h2brothers-10001880/",
-        "../../../products/living/twinklegoods-10000055/",
-        "../../../products/living/hiromifashionhouse-10005004/"
+        "../../../products/living/dztai-10000403/",
+        "../../../products/living/twinklegoods-10000055/"
       ],
       "review_changes": 1
     },
@@ -78308,7 +78355,7 @@
       "title": "サーフビバレッジの保存水5年490ml 24本の特徴と選び方",
       "status": "published",
       "created_at": "2026-10-30T10:57:33+09:00",
-      "updated_at": "2026-10-30T11:35:49+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T10:57:33+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -78316,8 +78363,8 @@
       "related": [
         "../../../products/food/jyonetsubatake-10000342/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/bousaikan-10008499/",
-        "../../../products/food/alphasyokuhin-10000015/"
+        "../../../products/food/akol-10001105/",
+        "../../../products/food/bousaikan-10008499/"
       ],
       "review_changes": 5
     },
@@ -78437,16 +78484,16 @@
       "title": "アイリスオーヤマのラベルレス天然水2L｜軟水の特徴と選び方",
       "status": "published",
       "created_at": "2026-10-30T11:02:10+09:00",
-      "updated_at": "2026-10-30T11:02:10+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:02:10+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 1,
       "related": [
+        "../../../products/food/akol-10001105/",
         "../../../products/food/rakutenoriginal-daily-10000000/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/yytakuhaibin-10004398/",
-        "../../../products/food/akol-10001104/"
+        "../../../products/food/yytakuhaibin-10004398/"
       ],
       "review_changes": 1
     },
@@ -78503,16 +78550,16 @@
       "title": "安心米 9食セット 3日分は自宅の備えに向くか",
       "status": "published",
       "created_at": "2026-10-30T11:03:28+09:00",
-      "updated_at": "2026-10-30T11:03:28+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:03:28+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/food/mizuomoi-10000009/",
         "../../../products/living/nagomilab-10000048/",
-        "../../../products/food/saibou-10001692/",
-        "../../../products/food/at-rescue-10002460/"
+        "../../../products/food/saibou-10001692/"
       ],
       "review_changes": 2
     },
@@ -78569,7 +78616,7 @@
       "title": "簡易トイレ 災害用 IPIC SONAE トイレのミカタの仕様と特徴",
       "status": "published",
       "created_at": "2026-10-30T11:05:38+09:00",
-      "updated_at": "2026-10-30T11:05:38+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:05:38+09:00",
       "fail_count": 0,
       "voice": "生活者目線の語りかけ調",
@@ -78578,7 +78625,7 @@
         "../../../products/living/nagomilab-10000048/",
         "../../../products/living/twinklegoods-10000055/",
         "../../../products/food/saibou-10001692/",
-        "../../../products/food/mizuomoi-10000009/"
+        "../../../products/food/akol-10001105/"
       ],
       "review_changes": 1
     },
@@ -78697,7 +78744,7 @@
       "title": "こたつ3点セット（120×75長方形）の仕様と選び方",
       "status": "published",
       "created_at": "2026-10-30T11:09:57+09:00",
-      "updated_at": "2026-10-30T11:09:57+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:09:57+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
@@ -78706,7 +78753,7 @@
         "../../../products/interior/tansu-10057069/",
         "../../../products/interior/rugly-10004030/",
         "../../../products/interior/tansu-10049866/",
-        "../../../products/interior/soleine-10009935/"
+        "../../../products/interior/tansu-10049274/"
       ],
       "review_changes": 1
     },
@@ -78826,16 +78873,16 @@
       "title": "ボビイ ブラウン クリスタル アイシャドウ スティックの特徴と使い方",
       "status": "published",
       "created_at": "2026-10-30T11:13:00+09:00",
-      "updated_at": "2026-10-30T11:13:00+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:13:00+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/beauty/clinique-10001547/",
         "../../../products/beauty/shuuemura-10000018/",
         "../../../products/beauty/attenir-10000252/",
-        "../../../products/beauty/attenir-10000250/",
-        "../../../products/beauty/fancl-shop-10009421/"
+        "../../../products/beauty/attenir-10000250/"
       ],
       "review_changes": 5
     },
@@ -79017,16 +79064,16 @@
       "title": "アイリスオーヤマ 薄型卓上カセットコンロの仕様と特徴を整理",
       "status": "published",
       "created_at": "2026-10-30T11:18:11+09:00",
-      "updated_at": "2026-10-30T11:18:11+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:18:11+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 9,
       "related": [
         "../../../products/kitchen/irisplaza-r-10149259/",
+        "../../../products/food/noza-mart-10000108/",
         "../../../products/sports-outdoor/handmade-amane-10001224/",
-        "../../../products/sports-outdoor/styleism-10002505/",
-        "../../../products/kitchen/roomy-10015766/"
+        "../../../products/sports-outdoor/styleism-10002505/"
       ],
       "review_changes": 3
     },
@@ -79147,16 +79194,16 @@
       "title": "緊急簡易トイレ 100回分 非常用トイレの仕様",
       "status": "published",
       "created_at": "2026-10-30T11:22:55+09:00",
-      "updated_at": "2026-10-30T11:22:55+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:22:55+09:00",
       "fail_count": 0,
       "voice": "比較検討を手伝う整理調",
       "auto_fixes": 0,
       "related": [
         "../../../products/food/saibou-10001692/",
+        "../../../products/food/akol-10001105/",
         "../../../products/living/h2brothers-10001880/",
-        "../../../products/living/nagomilab-10000048/",
-        "../../../products/living/supplement-life-10000035/"
+        "../../../products/living/nagomilab-10000048/"
       ],
       "review_changes": 3
     },
@@ -79299,16 +79346,16 @@
       "title": "アルミ蒸着防災圧縮袋 5枚入り",
       "status": "published",
       "created_at": "2026-10-30T11:29:24+09:00",
-      "updated_at": "2026-10-30T11:29:24+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
       "last_checked_at": "2026-10-30T11:29:24+09:00",
       "fail_count": 0,
       "voice": "暮らしの場面から入る描写調",
       "auto_fixes": 0,
       "related": [
+        "../../../products/living/prime-brain-10000071/",
+        "../../../products/living/dztai-10000403/",
         "../../../products/living/twinklegoods-10000055/",
-        "../../../products/living/nagomilab-10000046/",
-        "../../../products/living/bos-shop-10000067/",
-        "../../../products/living/r1-shop-10000062/"
+        "../../../products/living/nagomilab-10000046/"
       ],
       "review_changes": 2
     },
@@ -79503,19 +79550,1974 @@
         "../../../products/fashion/gryps-10021820/"
       ],
       "review_changes": 2
+    },
+    "bradelisny:10001848": {
+      "item_code": "bradelisny:10001848",
+      "slug": "bradelisny-10001848",
+      "item_name": "24時間限定【33%OFFセール★10月31日(土)9:59まで！】ノンワイヤーブラ ブラデリスハグミーブラレット | 補正ブラ 脇高 自然なバストライン 寄せ上げ 締め付けないブラ バストアップ ブラジャー 下着 S M L LL 3L 大きいサイズ ブラデリスニューヨーク 当店売れ筋",
+      "display_name": "24時間限定 ノンワイヤーブラ ブラデリスハグミーブラレット | 補正ブラ",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00rhx8o.bd4ch7fe.g00rhx8o.bd4ci00b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbradelisny%2Fme118307%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbradelisny%2Fi%2F10001848%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rhx8o.bd4ch7fe.g00rhx8o.bd4ci00b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbradelisny%2Fme118307%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "fashion",
+      "category_label": "ファッション小物",
+      "keyword": "",
+      "product_type": "ノンワイヤーブラ",
+      "keywords": [
+        "ブラデリスハグミーブラレット",
+        "ノンワイヤーブラ",
+        "補整ブラ",
+        "ブラデリスニューヨーク",
+        "脇肉スッキリ"
+      ],
+      "related_needs": [
+        "ランジェリーソープ",
+        "ショーツ",
+        "ナイトブラ",
+        "インナーウェア"
+      ],
+      "primary_score": 67.0,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 13.6,
+        "rating": 8.4,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 7.0,
+        "rank": 18
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 93.0,
+      "lp_path": "products/fashion/bradelisny-10001848/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/fashion/bradelisny-10001848/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/bradelisny/cabinet/hansoku/imgrc0110506980.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "ブラデリスハグミーブラレットの特徴と補整ノンワイヤーの仕様",
+      "status": "published",
+      "created_at": "2026-10-31T10:12:50+09:00",
+      "updated_at": "2026-10-31T10:12:50+09:00",
+      "last_checked_at": "2026-10-31T10:12:50+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/fashion/pal1-10000012/",
+        "../../../products/fashion/bradelisny-10004214/",
+        "../../../products/fashion/linoulu-10000507/",
+        "../../../products/fashion/tu-hacci-10004249/"
+      ],
+      "review_changes": 2
+    },
+    "kyunan:10012864": {
+      "item_code": "kyunan:10012864",
+      "slug": "kyunan-10012864",
+      "item_name": "10/31より＼24時間限定で1,000円OFF／2,980円→1,980円！乳酸菌飲料 美粉屋ちょーぐると 1袋(約33杯分)に1兆9293億個の複合乳酸菌 砂糖不使用 送料無料 植物性 動物性乳酸菌|ビフィズス菌 サプリメント ヨーグルト ドリンク サプリ お買い物マラソン",
+      "display_name": "美粉屋 ちょーぐると 乳酸菌飲料",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pwf8o.bd4ch4c0.g00pwf8o.bd4cifd7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyunan%2Fchogurt%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkyunan%2Fi%2F10012864%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pwf8o.bd4ch4c0.g00pwf8o.bd4cifd7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkyunan%2Fchogurt%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "health",
+      "category_label": "健康・リラックス",
+      "keyword": "",
+      "product_type": "乳酸菌飲料・パウダー",
+      "keywords": [
+        "ちょーぐると",
+        "乳酸菌",
+        "ビフィズス菌",
+        "タマチャンショップ",
+        "砂糖不使用",
+        "乳酸菌飲料"
+      ],
+      "related_needs": [
+        "青汁",
+        "酵素ドリンク",
+        "雑穀米",
+        "食物繊維サプリメント"
+      ],
+      "primary_score": 66.1,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 14.8,
+        "rating": 6.3,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 83
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 8,
+        "lp_fit": 4
+      },
+      "final_score": 90.1,
+      "lp_path": "products/health/kyunan-10012864/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/health/kyunan-10012864/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/kyunan/cabinet/bikonaya/chogurt/choguruto_tm.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/kyunan/cabinet/bikonaya/chogurt/choguruto_tm_1.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "美粉屋ちょーぐるとの特徴と原材料・飲み方の確認",
+      "status": "published",
+      "created_at": "2026-10-31T10:26:45+09:00",
+      "updated_at": "2026-10-31T10:26:45+09:00",
+      "last_checked_at": "2026-10-31T10:26:45+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 3,
+      "related": [
+        "../../../products/health/seedcoms-10004174/",
+        "../../../products/health/seikido-10000341/",
+        "../../../products/health/kyunan-10002008/",
+        "../../../products/health/qsai-10000537/"
+      ],
+      "review_changes": 1
+    },
+    "roomy:10015796": {
+      "item_code": "roomy:10015796",
+      "slug": "roomy-10015796",
+      "item_name": "レインドリップ コーヒーメーカー おしゃれ【選べる特典付】レコルト コーヒー ドリッパー ハンドドリップ ドリップコーヒー スリム 保温 コンパクト 珈琲 シャワードリップ ペーパーフィルター コーヒーマシン 一人用 RDC-1［ recolte Rain Drip Coffee Maker ］",
+      "display_name": "レコルト レインドリップ コーヒーメーカー",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qb0lo.bd4ch88b.g00qb0lo.bd4ci6db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin21mar07h02%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Froomy%2Fi%2F10015796%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qb0lo.bd4ch88b.g00qb0lo.bd4ci6db/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Froomy%2Fwin21mar07h02%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "kitchen",
+      "category_label": "キッチン",
+      "keyword": "",
+      "product_type": "コーヒーメーカー",
+      "keywords": [
+        "レコルト",
+        "レインドリップコーヒーメーカー",
+        "RDC-1",
+        "コーヒーメーカー",
+        "ハンドドリップ",
+        "コンパクト家電"
+      ],
+      "related_needs": [
+        "市販のコーヒーペーパーフィルター（2〜4カップ用）",
+        "ドリップ用コーヒー粉",
+        "コーヒーキャニスター（保存容器）",
+        "マグカップ"
+      ],
+      "primary_score": 65.7,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 11.7,
+        "rating": 9.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 88
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 90.7,
+      "lp_path": "products/kitchen/roomy-10015796/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/kitchen/roomy-10015796/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/roomy/cabinet/500cart_all/500cart_11g/p10n-5/win2066-aq004-1_gt01.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/roomy/cabinet/500cart_all/500cart_ca2_7/win2066-aq004-1_sz01.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "レコルト レインドリップ コーヒーメーカーの特徴と使い方",
+      "status": "published",
+      "created_at": "2026-10-31T10:37:16+09:00",
+      "updated_at": "2026-10-31T10:37:16+09:00",
+      "last_checked_at": "2026-10-31T10:37:16+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/food/gourmetcoffee-10001806/",
+        "../../../products/food/dripcoffee-10000184/",
+        "../../../products/kitchen/roomy-10015766/",
+        "../../../products/kitchen/hotch-potch-10017531/"
+      ],
+      "review_changes": 1
+    },
+    "dondon:10001586": {
+      "item_code": "dondon:10001586",
+      "slug": "dondon-10001586",
+      "item_name": "[冬対策セールP10倍] [レビュー11000件超え／高評価4.59点] 毛布 シングル 140×200cm ブランケット 冬 掛け布団 ひざ掛け 膝掛け 掛け毛布 160×200cm 180×200cm レギュラー ボリュームタイプ 4層プレミアム マイクロファイバー フランネル セミダブル ダブル",
+      "display_name": "毛布 シングル ブランケット 冬 掛け布団 ひざ掛け",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qqpqo.bd4ch6d6.g00qqpqo.bd4ci66c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdondon%2Fmf-003%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdondon%2Fi%2F10001586%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qqpqo.bd4ch6d6.g00qqpqo.bd4ci66c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdondon%2Fmf-003%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "living",
+      "category_label": "生活雑貨・日用品",
+      "keyword": "",
+      "product_type": "毛布",
+      "keywords": [
+        "毛布",
+        "ブランケット",
+        "フランネル",
+        "吸湿発熱",
+        "静電気防止",
+        "丸洗い"
+      ],
+      "related_needs": [
+        "掛け布団",
+        "敷きパッド",
+        "枕カバー",
+        "冬用寝具カバー"
+      ],
+      "primary_score": 68.3,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 14.2,
+        "rating": 9.1,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 118
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 95.3,
+      "lp_path": "products/living/dondon-10001586/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/living/dondon-10001586/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/dondon/cabinet/zmf01_3.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/dondon/cabinet/item04/zmf-4type_cart02_b.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "毛布 シングル等のサイズや厚みを選べる暖か寝具の特徴",
+      "status": "published",
+      "created_at": "2026-10-31T10:38:34+09:00",
+      "updated_at": "2026-10-31T10:38:34+09:00",
+      "last_checked_at": "2026-10-31T10:38:34+09:00",
+      "fail_count": 0,
+      "voice": "生活者目線の語りかけ調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/interior/rack-kan-10029626/",
+        "../../../products/interior/yukyostore-10000040/",
+        "../../../products/beauty/brandshiseido-10000151/",
+        "../../../products/interior/dondon-10005919/"
+      ],
+      "review_changes": 1
+    },
+    "scope:10069461": {
+      "item_code": "scope:10069461",
+      "slug": "scope-10069461",
+      "item_name": "【12月11日9:59まで期間限定価格！さらに20%オフクーポン対象】アラビア ルノ ティーカップ フロストベリー [ Arabia Runo Frostberry ] Frost Berry 280ml 北欧食器",
+      "display_name": "アラビア ルノ ティーカップ フロストベリー 280ml",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pkggo.bd4chfce.g00pkggo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Far65%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fscope%2Fi%2F10069461%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pkggo.bd4chfce.g00pkggo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Far65%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "kitchen",
+      "category_label": "キッチン",
+      "keyword": "",
+      "product_type": "ティーカップ",
+      "keywords": [
+        "アラビア",
+        "ルノ",
+        "フロストベリー",
+        "ティーカップ",
+        "北欧食器"
+      ],
+      "related_needs": [
+        "プレート16.5cm",
+        "スープカップ",
+        "北欧食器セット"
+      ],
+      "primary_score": 64.6,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.6,
+        "rating": 10.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 68
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 89.6,
+      "lp_path": "products/kitchen/scope-10069461/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/kitchen/scope-10069461/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia2/ara37a11111_a_im04.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia/ara37a11111_a_im11.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "アラビア ルノ ティーカップ フロストベリーの特徴とサイズ",
+      "status": "published",
+      "created_at": "2026-10-31T10:40:06+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
+      "last_checked_at": "2026-10-31T10:40:06+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/kitchen/scope-10052259/",
+        "../../../products/kitchen/scope-10093822/",
+        "../../../products/interior/rugly-10008402/",
+        "../../../products/food/noza-mart-10000108/"
+      ],
+      "review_changes": 3
+    },
+    "tansu:10049274": {
+      "item_code": "tansu:10049274",
+      "slug": "tansu-10049274",
+      "item_name": "【10%引クーポン！本日迄】 やみつきの肌触り Toronel《トロネル》 2枚合わせ 毛布 襟付き 厚手 洗える ブランケット 掛け毛布 マイクロファイバー フランネル 二枚合わせ 暖かい ひざ掛け 掛毛布 掛け布団 掛けふとん ふわふわ シングル セミダブル ダブル",
+      "display_name": "Toronel 2枚合わせ 毛布 襟付き 厚手 洗える",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bd4chcff.g00ppglo.bd4ci367/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F58700076%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftansu%2Fi%2F10049274%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bd4chcff.g00ppglo.bd4ci367/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F58700076%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "interior",
+      "category_label": "収納・インテリア",
+      "keyword": "",
+      "product_type": "毛布",
+      "keywords": [
+        "Toronel",
+        "毛布",
+        "2枚合わせ",
+        "襟付き",
+        "吸湿発熱",
+        "洗える"
+      ],
+      "related_needs": [
+        "敷パッド",
+        "掛け布団",
+        "枕カバー",
+        "洗濯ネット"
+      ],
+      "primary_score": 64.3,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 10.1,
+        "rating": 9.2,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 100
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 91.3,
+      "lp_path": "products/interior/tansu-10049274/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/interior/tansu-10049274/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/01006787/5870007621_10b.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/03949330/58700076_12.gif?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/03949330/58700076_sp0_2.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "Toronel 2枚合わせ毛布の仕様と特徴を解説",
+      "status": "published",
+      "created_at": "2026-10-31T10:44:37+09:00",
+      "updated_at": "2026-10-31T10:44:37+09:00",
+      "last_checked_at": "2026-10-31T10:44:37+09:00",
+      "fail_count": 0,
+      "voice": "比較検討を手伝う整理調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/interior/tansu-10055629/",
+        "../../../products/interior/esaki210-10001219/",
+        "../../../products/interior/ease-space-10009401/",
+        "../../../products/interior/dondon-10005919/"
+      ],
+      "review_changes": 3
+    },
+    "scope:10052259": {
+      "item_code": "scope:10052259",
+      "slug": "scope-10052259",
+      "item_name": "【12月11日9:59まで期間限定価格！さらに20%オフクーポン対象】アラビア ルノ ボウル 17cm フロストベリー [ Arabia Runo Frostberry ] スープボウル サラダボウル 北欧食器",
+      "display_name": "アラビア ルノ ボウル 17cm フロストベリー",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00pkggo.bd4chfce.g00pkggo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Fara24a11111%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fscope%2Fi%2F10052259%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pkggo.bd4chfce.g00pkggo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Fara24a11111%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "kitchen",
+      "category_label": "キッチン",
+      "keyword": "",
+      "product_type": "ボウル",
+      "keywords": [
+        "アラビア",
+        "ルノ",
+        "フロストベリー",
+        "ボウル",
+        "北欧食器"
+      ],
+      "related_needs": [
+        "プレート",
+        "マグカップ",
+        "カトラリー",
+        "グラス"
+      ],
+      "primary_score": 63.2,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.2,
+        "rating": 10.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 50
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 88.2,
+      "lp_path": "products/kitchen/scope-10052259/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/kitchen/scope-10052259/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia2/ara24a11111_a_im01.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia2/ara24a11111_a_im11.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/scope/cabinet/arabia/ara24a11111_a_im02.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "アラビア ルノ ボウル 17cm フロストベリーの特徴とサイズ感",
+      "status": "published",
+      "created_at": "2026-10-31T10:45:50+09:00",
+      "updated_at": "2026-10-31T10:45:50+09:00",
+      "last_checked_at": "2026-10-31T10:45:50+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/kitchen/scope-10069461/",
+        "../../../products/kitchen/plywood-10011212/",
+        "../../../products/kitchen/bruno-official-10000325/",
+        "../../../products/sports-outdoor/lorelife-10000003/"
+      ],
+      "review_changes": 2
+    },
+    "xiaomiofficial:10000231": {
+      "item_code": "xiaomiofficial:10000231",
+      "slug": "xiaomiofficial-10000231",
+      "item_name": "【新発売即1位！】Xiaomi Smart Band 11 薄型軽量 9.99mm 1.72インチ有機EL（AMOLED） 睡眠モニタリング 150種類以上スポーツモード 5ATM防水 心拍数ブロードキャスト 血中酸素 ストレスモニタリング 24時間健康管理 最長21日間バッテリー",
+      "display_name": "Xiaomi Smart Band 11",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u4hyo.bd4ch250.g00u4hyo.bd4ci064/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fxiaomiofficial%2Fm55453%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fxiaomiofficial%2Fi%2F10000231%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u4hyo.bd4ch250.g00u4hyo.bd4ci064/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fxiaomiofficial%2Fm55453%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "pc-smartphone",
+      "category_label": "PC・スマホ周辺機器",
+      "keyword": "",
+      "product_type": "スマートバンド",
+      "keywords": [
+        "Xiaomi",
+        "Smart Band 11",
+        "スマートバンド",
+        "有機EL",
+        "防水"
+      ],
+      "related_needs": [
+        "交換用ストラップ",
+        "ワイヤレスイヤホン",
+        "モバイルバッテリー"
+      ],
+      "primary_score": 62.7,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 10.1,
+        "rating": 7.6,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 100
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 8,
+        "lp_fit": 4
+      },
+      "final_score": 86.7,
+      "lp_path": "products/pc-smartphone/xiaomiofficial-10000231/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/pc-smartphone/xiaomiofficial-10000231/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/xiaomiofficial/cabinet/14067582/14067587/14117652/roll02.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "Xiaomi Smart Band 11の仕様と特徴を整理",
+      "status": "published",
+      "created_at": "2026-10-31T10:47:09+09:00",
+      "updated_at": "2026-10-31T10:47:09+09:00",
+      "last_checked_at": "2026-10-31T10:47:09+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/pc-smartphone/gracevally-10000026/",
+        "../../../products/pc-smartphone/gracevally-10000003/",
+        "../../../products/pc-smartphone/tabtab-10003266/",
+        "../../../products/pc-smartphone/furumiyashop-10000146/"
+      ],
+      "review_changes": 2
+    },
+    "scope:10069838": {
+      "item_code": "scope:10069838",
+      "item_name": "【12月11日9:59まで期間限定価格！さらに20%オフクーポン対象】アラビア ルノ プレート 16.5cm フロストベリー [ Arabia Runo Frostberry ] 取り皿 ケーキ皿 北欧食器",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pkggo.bd4chfce.g00pkggo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fscope%2Far67%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "other",
+      "status": "excluded",
+      "reason": "品質チェック不合格: FAQが2つ未満",
+      "primary_score": 64.7,
+      "created_at": "2026-10-31T10:47:09+09:00",
+      "updated_at": "2026-10-31T10:47:09+09:00"
+    },
+    "prime-brain:10000071": {
+      "item_code": "prime-brain:10000071",
+      "slug": "prime-brain-10000071",
+      "item_name": "【15%OFFクーポン/高吸収だから少量で固まる】 防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっぷり吸う太郎 810g 粉末 日本製 消臭 15年保存 ※凝固剤のみ | 防災 災害 断水 地震対策 介護 車中泊 ポータブルトイレ カップ麺 残り汁 処理 プライム製薬",
+      "display_name": "防災グッズ 非常用 簡易トイレ 携帯トイレ スープ 凝固剤 たっぷり吸う太郎",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00um7po.bd4chd61.g00um7po.bd4ci319/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fprime-brain%2F01altl_sutaro%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fprime-brain%2Fi%2F10000071%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00um7po.bd4chd61.g00um7po.bd4ci319/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fprime-brain%2F01altl_sutaro%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "living",
+      "category_label": "生活雑貨・日用品",
+      "keyword": "",
+      "product_type": "非常用簡易トイレ凝固剤",
+      "keywords": [
+        "非常用トイレ",
+        "簡易トイレ",
+        "凝固剤",
+        "高吸収性樹脂",
+        "防災グッズ",
+        "消臭"
+      ],
+      "related_needs": [
+        "45Lポリ袋",
+        "携帯用トイレ袋",
+        "ウェットティッシュ",
+        "簡易ポンチョ"
+      ],
+      "primary_score": 61.3,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.4,
+        "rating": 7.9,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 6.0,
+        "rank": 26
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 87.3,
+      "lp_path": "products/living/prime-brain-10000071/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/living/prime-brain-10000071/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/prime-brain/cabinet/12028134/01altl_sutaro/sutaro_thum_9.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/prime-brain/cabinet/12028134/01altl_sutaro/01altl_sutaro1.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "非常用簡易トイレの凝固剤！たっぷり吸う太郎の特徴と使い方",
+      "status": "published",
+      "created_at": "2026-10-31T10:52:03+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
+      "last_checked_at": "2026-10-31T10:52:03+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/living/dztai-10000403/",
+        "../../../products/living/twinklegoods-10000055/",
+        "../../../products/living/supplement-life-10000035/",
+        "../../../products/living/pykespeak-10002322/"
+      ],
+      "review_changes": 1
+    },
+    "noza-mart:10000108": {
+      "item_code": "noza-mart:10000108",
+      "slug": "noza-mart-10000108",
+      "item_name": "防災食 非常食 お菓子 選べる セット えいようかん ビスコ ハーベスト 乾パン マリー プライム かにビス ブルボン パイン飴 inゼリー おでん缶 野菜ジュース 保存缶 5年保存 長期保存 防災食品 保存食 防災 防災セット",
+      "display_name": "防災食 非常食 お菓子 選べる セット えいようかん ビスコ ハーベスト 乾パン",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uh0uo.bd4ch2a3.g00uh0uo.bd4ci172/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoza-mart%2Fcompass1744645100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoza-mart%2Fi%2F10000108%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uh0uo.bd4ch2a3.g00uh0uo.bd4ci172/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoza-mart%2Fcompass1744645100%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "防災食セット",
+      "keywords": [
+        "防災食",
+        "非常食",
+        "お菓子",
+        "保存食",
+        "長期保存",
+        "セット"
+      ],
+      "related_needs": [
+        "長期保存水",
+        "簡易トイレ",
+        "防災リュック",
+        "ウェットティッシュ"
+      ],
+      "primary_score": 62.0,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.8,
+        "rating": 9.7,
+        "price": 10,
+        "images": 10,
+        "specificity": 7.5,
+        "trend_bonus": 4.0,
+        "rank": 90
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 8,
+        "lp_fit": 4
+      },
+      "final_score": 86.0,
+      "lp_path": "products/food/noza-mart-10000108/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/noza-mart-10000108/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/noza-mart/cabinet/compass1767710029.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/noza-mart/cabinet/compass1767710464.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/noza-mart/cabinet/compass1747930915.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "防災食のお菓子・非常食セットの選び方と内容",
+      "status": "published",
+      "created_at": "2026-10-31T10:53:49+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
+      "last_checked_at": "2026-10-31T10:53:49+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/food/sawasei-10230379/",
+        "../../../products/food/mizuomoi-10000009/",
+        "../../../products/living/hiromifashionhouse-10005004/",
+        "../../../products/living/r1-shop-10000062/"
+      ],
+      "review_changes": 3
+    },
+    "clinique:10001547": {
+      "item_code": "clinique:10001547",
+      "slug": "clinique-10001547",
+      "item_name": "【ポイント10倍｜10/30 10:00-11/1 23:59】【数量限定｜Holiday】クリニーク ラッシュ パワー マスカラ セット 27 CLINIQUE | ロングマスカラ ボリュームマスカラ お湯で落ちる お湯オフ アイライナー ギフト プレゼント ホリデー 限定セット アイクリーム",
+      "display_name": "クリニーク ラッシュ パワー マスカラ セット",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00s54yo.bd4ch2cc.g00s54yo.bd4ci3b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fclinique%2F130394%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fclinique%2Fi%2F10001547%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s54yo.bd4ch2cc.g00s54yo.bd4ci3b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fclinique%2F130394%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "beauty",
+      "category_label": "美容・スキンケア",
+      "keyword": "",
+      "product_type": "マスカラセット",
+      "keywords": [
+        "クリニーク",
+        "マスカラ",
+        "ロングマスカラ",
+        "アイライナー",
+        "アイクリーム",
+        "ホリデーコフレ"
+      ],
+      "related_needs": [
+        "クレンジング",
+        "アイシャドウ",
+        "ビューラー",
+        "美容液"
+      ],
+      "primary_score": 59.8,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 7.9,
+        "rating": 9.7,
+        "price": 10,
+        "images": 10,
+        "specificity": 7.2,
+        "trend_bonus": 6.0,
+        "rank": 11
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 84.8,
+      "lp_path": "products/beauty/clinique-10001547/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/beauty/clinique-10001547/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/clinique/cabinet/item4/130394/2610_130394_2.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "クリニーク ラッシュ パワー マスカラ セットの内容と特徴",
+      "status": "published",
+      "created_at": "2026-10-31T10:55:21+09:00",
+      "updated_at": "2026-10-31T10:55:21+09:00",
+      "last_checked_at": "2026-10-31T10:55:21+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/beauty/clinique-10001382/",
+        "../../../products/beauty/attenir-10000252/",
+        "../../../products/beauty/attenir-10000250/",
+        "../../../products/beauty/fancl-shop-10009421/"
+      ],
+      "review_changes": 3
+    },
+    "office-com:10009460": {
+      "item_code": "office-com:10009460",
+      "slug": "office-com-10009460",
+      "item_name": "【法人様限定】会議用テーブル 折りたたみテーブル 棚付き 幅1800×奥行450×高さ700mm 長机 イベントテーブル 作業台 受付 学校 会議テーブル ミーティングテーブル 作業机 折り畳み テーブル オフィステーブル ワークテーブル オフィスデスク 省スペース 長方形",
+      "display_name": "会議用テーブル 折りたたみテーブル 棚付き 幅1800×奥行450×高さ700mm",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxcho.bd4chacb.g00qxcho.bd4cifc3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foffice-com%2Fomt-1845%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foffice-com%2Fi%2F10009460%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxcho.bd4chacb.g00qxcho.bd4cifc3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foffice-com%2Fomt-1845%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "interior",
+      "category_label": "収納・インテリア",
+      "keyword": "",
+      "product_type": "会議用テーブル",
+      "keywords": [
+        "会議用テーブル",
+        "折りたたみテーブル",
+        "長机",
+        "スタッキング",
+        "オフィス家具"
+      ],
+      "related_needs": [
+        "ミーティングチェア",
+        "ホワイトボード",
+        "パーティション",
+        "収納キャビネット"
+      ],
+      "primary_score": 63.6,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.3,
+        "rating": 9.3,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 120
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 90.6,
+      "lp_path": "products/interior/office-com-10009460/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/interior/office-com-10009460/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/office-com/cabinet/oc2/013/oc-mta1845m_050.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/office-com/cabinet/oc2/013/oc-mta1845m_002.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "幅1800mmの折りたたみ会議用テーブル 棚付きの特徴を整理",
+      "status": "published",
+      "created_at": "2026-10-31T10:56:38+09:00",
+      "updated_at": "2026-10-31T10:56:38+09:00",
+      "last_checked_at": "2026-10-31T10:56:38+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/interior/eunicedress-10001812/",
+        "../../../products/interior/sanesufitting-10001566/",
+        "../../../products/interior/dondon-10008824/",
+        "../../../products/interior/office-com-10066272/"
+      ],
+      "review_changes": 2
+    },
+    "keynice:10000014": {
+      "item_code": "keynice:10000014",
+      "slug": "keynice-10000014",
+      "item_name": "『1年保証』Greeshow 防災ラジオ 手回し充電 ソーラー 小型ラジオ 多機能 ポータブル 懐中電灯 緊急電源 スマホ充電 SOS 防災グッズ キャンプ モバイルバッテリー LEDライト USB充電 携帯ラジオ 生活防水 地震/台風/停電対策 災害用 周波数 AM/FM",
+      "display_name": "Greeshow 防災ラジオ 手回し充電 ソーラー 小型ラジオ 多機能",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uimdo.bd4ch826.g00uimdo.bd4cia78/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeynice%2Fxln-383%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeynice%2Fi%2F10000014%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uimdo.bd4ch826.g00uimdo.bd4cia78/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeynice%2Fxln-383%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "appliances",
+      "category_label": "家電",
+      "keyword": "",
+      "product_type": "防災ラジオ",
+      "keywords": [
+        "防災ラジオ",
+        "手回し充電",
+        "ソーラー充電",
+        "多機能ラジオ",
+        "懐中電灯",
+        "防災グッズ"
+      ],
+      "related_needs": [
+        "非常用トイレ",
+        "携帯浄水器",
+        "モバイルバッテリー",
+        "LEDランタン"
+      ],
+      "primary_score": 63.5,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 10.1,
+        "rating": 8.4,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 110
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 90.5,
+      "lp_path": "products/appliances/keynice-10000014/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/appliances/keynice-10000014/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/keynice/cabinet/10521877/imgrc0099743361.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/keynice/cabinet/10521877/imgrc0085341103.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "Greeshow 防災ラジオ 手回し充電ソーラー小型多機能ラジオの仕様",
+      "status": "published",
+      "created_at": "2026-10-31T10:57:57+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
+      "last_checked_at": "2026-10-31T10:57:57+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/appliances/irisplaza-r-10152150/",
+        "../../../products/sports-outdoor/bos-shop-10000148/",
+        "../../../products/living/r1-shop-10000062/",
+        "../../../products/sports-outdoor/upi-outdoor-10000054/"
+      ],
+      "review_changes": 1
+    },
+    "upi-outdoor:10000054": {
+      "item_code": "upi-outdoor:10000054",
+      "slug": "upi-outdoor-10000054",
+      "item_name": "ソーヤー ミニ SP128 SAWYER | 携帯浄水器 浄水器 濾過器 ポータブル浄水器 高性能浄水器 防災 防災用 防災アイテム 防災グッズ 災害用 非常用 緊急用 キャンプ キャンプ用品",
+      "display_name": "ソーヤー ミニ SP128 携帯浄水器",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sszyo.bd4ch2f7.g00sszyo.bd4ci22e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fupi-outdoor%2F40000000%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fupi-outdoor%2Fi%2F10000054%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sszyo.bd4ch2f7.g00sszyo.bd4ci22e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fupi-outdoor%2F40000000%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "sports-outdoor",
+      "category_label": "スポーツ・アウトドア",
+      "keyword": "",
+      "product_type": "携帯浄水器",
+      "keywords": [
+        "ソーヤー ミニ",
+        "携帯浄水器",
+        "ポータブル浄水器",
+        "防災グッズ",
+        "アウトドア 浄水器"
+      ],
+      "related_needs": [
+        "登山用リュック",
+        "ハイドレーションシステム",
+        "携帯用ウォーターバッグ",
+        "非常用持ち出し袋"
+      ],
+      "primary_score": 63.4,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.9,
+        "rating": 8.5,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 103
+      },
+      "ai_scores": {
+        "problem_solving": 14,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 91.4,
+      "lp_path": "products/sports-outdoor/upi-outdoor-10000054/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/sports-outdoor/upi-outdoor-10000054/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/upi-outdoor/cabinet/sawyer/12021082/mybest_2.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/upi-outdoor/cabinet/sawyer/12021082/imgrc0083641373.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/upi-outdoor/cabinet/sawyer/12021082/imgrc0083641374.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "ソーヤー ミニ SP128 携帯浄水器の特徴と防災・登山での活用方法",
+      "status": "published",
+      "created_at": "2026-10-31T10:59:14+09:00",
+      "updated_at": "2026-10-31T10:59:14+09:00",
+      "last_checked_at": "2026-10-31T10:59:14+09:00",
+      "fail_count": 0,
+      "voice": "比較検討を手伝う整理調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/sports-outdoor/bos-shop-10000148/",
+        "../../../products/sports-outdoor/at-rescue-10000170/",
+        "../../../products/sports-outdoor/at-rescue-10000171/",
+        "../../../products/sports-outdoor/canpanera-10000145/"
+      ],
+      "review_changes": 1
+    },
+    "coconial:10003230": {
+      "item_code": "coconial:10003230",
+      "slug": "coconial-10003230",
+      "item_name": "【送料無料】メリタ コーヒーメーカー ツイスト 2杯 〜 5杯 SCG583B SCG585R 正規品 ココニアル おしゃれ 一人用 保温 フィルター式 1人用 1人 一人用コーヒーメーカー コーヒーマシン 珈琲メーカー 赤 ルビー レッド Melitta プレゼント ギフト ガラスポット",
+      "display_name": "メリタ コーヒーメーカー ツイスト 2杯 〜 5杯",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00rdq6o.bd4ch34b.g00rdq6o.bd4cieba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoconial%2Fsteps%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcoconial%2Fi%2F10003230%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rdq6o.bd4ch34b.g00rdq6o.bd4cieba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoconial%2Fsteps%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "kitchen",
+      "category_label": "キッチン",
+      "keyword": "",
+      "product_type": "コーヒーメーカー",
+      "keywords": [
+        "メリタ",
+        "コーヒーメーカー",
+        "ツイスト",
+        "保温",
+        "1つ穴抽出"
+      ],
+      "related_needs": [
+        "コーヒーミル",
+        "コーヒー豆",
+        "コーヒーカップ"
+      ],
+      "primary_score": 58.2,
+      "score_detail": {
+        "info": 13.2,
+        "reviews": 9.4,
+        "rating": 7.5,
+        "price": 10,
+        "images": 10,
+        "specificity": 8.1,
+        "trend_bonus": 7.0,
+        "rank": 7
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 8,
+        "lp_fit": 4
+      },
+      "final_score": 82.2,
+      "lp_path": "products/kitchen/coconial-10003230/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/kitchen/coconial-10003230/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/coconial/cabinet/commodity/m/scg58_a1211.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/coconial/cabinet/commodity/m/scg58_a01.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "メリタ コーヒーメーカー ツイストの仕様と特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:00:46+09:00",
+      "updated_at": "2026-10-31T11:00:46+09:00",
+      "last_checked_at": "2026-10-31T11:00:46+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 3,
+      "related": [
+        "../../../products/food/gourmetcoffee-10001806/",
+        "../../../products/food/gourmetcoffee-10004120/",
+        "../../../products/food/dripcoffee-10000032/",
+        "../../../products/food/dripcoffee-10000184/"
+      ],
+      "review_changes": 4
+    },
+    "soukaidrink:10008702": {
+      "item_code": "soukaidrink:10008702",
+      "slug": "soukaidrink-10008702",
+      "item_name": "サントリー 天然水(6本入×2セット(1本2L))【サントリー天然水】",
+      "display_name": "サントリー 天然水",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00rzxdo.bd4ch77d.g00rzxdo.bd4cif40/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoukaidrink%2F10388%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsoukaidrink%2Fi%2F10008702%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rzxdo.bd4ch77d.g00rzxdo.bd4cif40/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoukaidrink%2F10388%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "ミネラルウォーター",
+      "keywords": [
+        "サントリー天然水",
+        "ミネラルウォーター",
+        "2L",
+        "軟水",
+        "まとめ買い"
+      ],
+      "related_needs": [
+        "ウォーターサーバー",
+        "お茶 2L ペットボトル",
+        "炭酸水 2L",
+        "保存水"
+      ],
+      "primary_score": 63.0,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.1,
+        "rating": 8.9,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 117
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 88.0,
+      "lp_path": "products/food/soukaidrink-10008702/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/soukaidrink-10008702/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/soukaidrink/cabinet/388/10388.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/soukaidrink/cabinet/388/10388-2.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/soukaidrink/cabinet/388/10388-3.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "サントリー 天然水の硬度や2Lまとめ買い仕様の解説",
+      "status": "published",
+      "created_at": "2026-10-31T11:02:03+09:00",
+      "updated_at": "2026-10-31T11:02:03+09:00",
+      "last_checked_at": "2026-10-31T11:02:03+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 5,
+      "related": [
+        "../../../products/food/mizuomoi-10000009/",
+        "../../../products/food/jyonetsubatake-10000342/",
+        "../../../products/food/onestep-10045575/",
+        "../../../products/food/zaiho-10000022/"
+      ],
+      "review_changes": 4
+    },
+    "tansu:10050367": {
+      "item_code": "tansu:10050367",
+      "slug": "tansu-10050367",
+      "item_name": "【10%引クーポン！本日迄】 楽天1位 やみつきの肌触り Toronel《トロネル》 敷きパッド 高保湿 椿オイル配合 抗菌 防臭 洗える ふわふわ 暖かい 敷毛布 敷パッド 敷きパット パッドシーツ ベッドパッド シーツ シングル セミダブル ダブル クイーン キング",
+      "display_name": "Toronel 敷きパッド 敷毛布",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bd4chcff.g00ppglo.bd4ci367/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F58700116%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftansu%2Fi%2F10050367%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ppglo.bd4chcff.g00ppglo.bd4ci367/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftansu%2F58700116%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "interior",
+      "category_label": "収納・インテリア",
+      "keyword": "",
+      "product_type": "敷きパッド",
+      "keywords": [
+        "Toronel",
+        "敷きパッド",
+        "吸湿発熱",
+        "フランネル",
+        "椿オイル",
+        "タンスのゲン"
+      ],
+      "related_needs": [
+        "毛布",
+        "ボックスシーツ",
+        "掛け布団",
+        "枕カバー"
+      ],
+      "primary_score": 62.9,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.1,
+        "rating": 8.8,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 107
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 88.9,
+      "lp_path": "products/interior/tansu-10050367/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/interior/tansu-10050367/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/tansu/cabinet/03949330/58700116_sp1.gif?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "Toronel 敷きパッドの仕様と特徴を解説",
+      "status": "published",
+      "created_at": "2026-10-31T11:03:22+09:00",
+      "updated_at": "2026-10-31T11:03:22+09:00",
+      "last_checked_at": "2026-10-31T11:03:22+09:00",
+      "fail_count": 0,
+      "voice": "生活者目線の語りかけ調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/interior/aooka-10000433/",
+        "../../../products/interior/kaiminya-10000039/",
+        "../../../products/interior/tansu-10049274/",
+        "../../../products/interior/tansu-10055629/"
+      ],
+      "review_changes": 1
+    },
+    "dztai:10000403": {
+      "item_code": "dztai:10000403",
+      "slug": "dztai-10000403",
+      "item_name": "✨＼最安値に挑戦中！／先着様限定★40%OFFクーポン配布中！✨簡易トイレ 非常用トイレセット 凝固剤 携帯トイレ 防災用品 防災グッズ 防災セット【除菌 消臭】 携帯用トイレ 災害グッズ 介護用 防災 携帯トイレ 台風 洪水 災害時 断水時 簡単使用 長期保存 防災トイレ",
+      "display_name": "簡易トイレ 非常用トイレセット 凝固剤",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tz6no.bd4ch4c7.g00tz6no.bd4cidac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdztai%2Fngj-651%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdztai%2Fi%2F10000403%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tz6no.bd4ch4c7.g00tz6no.bd4cidac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdztai%2Fngj-651%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "living",
+      "category_label": "生活雑貨・日用品",
+      "keyword": "",
+      "product_type": "簡易トイレ",
+      "keywords": [
+        "簡易トイレ",
+        "非常用トイレ",
+        "凝固剤",
+        "防災グッズ",
+        "長期保存",
+        "消臭"
+      ],
+      "related_needs": [
+        "防災用ランタン",
+        "非常用持出袋",
+        "保存水",
+        "非常食セット"
+      ],
+      "primary_score": 60.5,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.6,
+        "rating": 6.9,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 78
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 86.5,
+      "lp_path": "products/living/dztai-10000403/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/living/dztai-10000403/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/dztai/cabinet/ngj-651/ngj-0-4.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "非常用トイレセットの凝固剤・仕様と備え方の確認",
+      "status": "published",
+      "created_at": "2026-10-31T11:04:40+09:00",
+      "updated_at": "2026-10-31T11:26:10+09:00",
+      "last_checked_at": "2026-10-31T11:04:40+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/living/twinklegoods-10000055/",
+        "../../../products/living/prime-brain-10000071/",
+        "../../../products/food/saibou-10001692/",
+        "../../../products/food/akol-10001105/"
+      ],
+      "review_changes": 1
+    },
+    "akol:10001105": {
+      "item_code": "akol:10001105",
+      "slug": "akol-10001105",
+      "item_name": "保存水 備蓄水 10年保存水 ラベルレス 400ml 24本入 1ケース 10年保存可能 防災 非常時 ミネラルウォーター 軟水 国産 海洋深層水 飲料水 非常食 地震 自然災害 法人 オフィス 学校 病院 自治体 災害備蓄",
+      "display_name": "保存水 備蓄水 10年保存水 ラベルレス 400ml 24本入 1ケース",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6uro.bd4ch51e.g00q6uro.bd4ci972/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakol%2F10109%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakol%2Fi%2F10001105%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6uro.bd4ch51e.g00q6uro.bd4ci972/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakol%2F10109%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "保存水",
+      "keywords": [
+        "保存水",
+        "10年保存水",
+        "ラベルレス",
+        "備蓄水",
+        "海洋深層水",
+        "非常食"
+      ],
+      "related_needs": [
+        "非常用トイレ",
+        "非常持ち出し袋",
+        "非常食セット",
+        "簡易ライト"
+      ],
+      "primary_score": 62.2,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.3,
+        "rating": 8.9,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 2.0,
+        "rank": 104
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 89.2,
+      "lp_path": "products/food/akol-10001105/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/akol-10001105/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/akol/cabinet/06635893/07531328/10596839/imgrc0106328484.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/akol/cabinet/06635893/07531328/10596839/21l-.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "10年保存水ラベルレス400mlの特徴と仕様を整理",
+      "status": "published",
+      "created_at": "2026-10-31T11:05:58+09:00",
+      "updated_at": "2026-10-31T11:26:09+09:00",
+      "last_checked_at": "2026-10-31T11:05:58+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 6,
+      "related": [
+        "../../../products/food/akol-10001104/",
+        "../../../products/food/matsuya-10000085/",
+        "../../../products/food/saibou-10001692/",
+        "../../../products/food/sawasei-10230379/"
+      ],
+      "review_changes": 4
+    },
+    "agri-support:10024420": {
+      "item_code": "agri-support:10024420",
+      "slug": "agri-support-10024420",
+      "item_name": "ニチネンマイボンベL カセットボンベ 250g 48本 業務用 大容量 ガスボンベ 災害備蓄 キャンプ アウトドア 卓上コンロ まとめ買い 3本パック16組",
+      "display_name": "ニチネン マイボンベL カセットボンベ 250g 48本",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00run9o.bd4ch6e1.g00run9o.bd4cib7a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fagri-support%2F4944405004033-16%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fagri-support%2Fi%2F10024420%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00run9o.bd4ch6e1.g00run9o.bd4cib7a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fagri-support%2F4944405004033-16%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "sports-outdoor",
+      "category_label": "スポーツ・アウトドア",
+      "keyword": "",
+      "product_type": "カセットボンベ",
+      "keywords": [
+        "ニチネン",
+        "マイボンベL",
+        "カセットボンベ",
+        "48本",
+        "災害備蓄",
+        "業務用"
+      ],
+      "related_needs": [
+        "カセットコンロ",
+        "卓上グリル",
+        "カセットガスストーブ",
+        "ポータブル発電機"
+      ],
+      "primary_score": 60.9,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.3,
+        "rating": 10.0,
+        "price": 10,
+        "images": 7,
+        "specificity": 9.6,
+        "trend_bonus": 4.0,
+        "rank": 87
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 86.9,
+      "lp_path": "products/sports-outdoor/agri-support-10024420/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/sports-outdoor/agri-support-10024420/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/agri-support/cabinet/05/4944405004033-16_1.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/agri-support/cabinet/-6/4944405004033-16_2.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "ニチネン マイボンベL 48本入りの仕様と特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:07:15+09:00",
+      "updated_at": "2026-10-31T11:07:15+09:00",
+      "last_checked_at": "2026-10-31T11:07:15+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/food/noza-mart-10000108/",
+        "../../../products/kitchen/irisplaza-r-10149259/",
+        "../../../products/pc-smartphone/honest-online-10000774/",
+        "../../../products/appliances/marshall-official-10000035/"
+      ],
+      "review_changes": 1
+    },
+    "pioma:10001340": {
+      "item_code": "pioma:10001340",
+      "slug": "pioma-10001340",
+      "item_name": "【備蓄緊急要請】【11月13日より順次発送】【レビュー特典あり】非常食セット 5年保存 4人用3日分36食 防災 備蓄 保存食 防災食 アルファ米 ごはん パン 尾西食品 携帯おにぎり ひだまりパン 防災食品 災害食 安心米 美味しい 人気 コンパクト フェーズフリー 家族で備える",
+      "display_name": "非常食セット 5年保存 4人用3日分36食",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00tzl2o.bd4ch526.g00tzl2o.bd4cib64/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpioma%2Fusk-288%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpioma%2Fi%2F10001340%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tzl2o.bd4ch526.g00tzl2o.bd4cib64/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpioma%2Fusk-288%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "非常食セット",
+      "keywords": [
+        "非常食セット",
+        "5年保存",
+        "4人用",
+        "防災士監修",
+        "尾西食品",
+        "アルファ米"
+      ],
+      "related_needs": [
+        "保存水",
+        "簡易トイレ",
+        "防災リュック",
+        "救急セット"
+      ],
+      "primary_score": 59.7,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.4,
+        "rating": 5.3,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 93
+      },
+      "ai_scores": {
+        "problem_solving": 14,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 86.7,
+      "lp_path": "products/food/pioma-10001340/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/pioma-10001340/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/pioma/cabinet/08985684/09001447/imgrc0109322733.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "非常食セット 5年保存 4人用3日分36食の仕様と備蓄方法",
+      "status": "published",
+      "created_at": "2026-10-31T11:08:35+09:00",
+      "updated_at": "2026-10-31T11:08:35+09:00",
+      "last_checked_at": "2026-10-31T11:08:35+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/food/mizuomoi-10000009/",
+        "../../../products/living/nagomilab-10000048/",
+        "../../../products/food/saibou-10001692/",
+        "../../../products/living/twinklegoods-10000055/"
+      ],
+      "review_changes": 1
+    },
+    "sawasei:10230379": {
+      "item_code": "sawasei:10230379",
+      "slug": "sawasei-10230379",
+      "item_name": "防災食 カゴメ 野菜たっぷりスープ 16食 SO-50 SO50 (賞味期限:2031/11/21以降) 送料無料 【 長期保存 】【_",
+      "display_name": "カゴメ 野菜たっぷりスープ 16食",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00r1tro.bd4ch228.g00r1tro.bd4ci4d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsawasei%2Fs-190561034%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsawasei%2Fi%2F10230379%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r1tro.bd4ch228.g00r1tro.bd4ci4d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsawasei%2Fs-190561034%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "防災食スープ",
+      "keywords": [
+        "カゴメ",
+        "野菜たっぷりスープ",
+        "防災食",
+        "非常食",
+        "長期保存",
+        "備蓄"
+      ],
+      "related_needs": [
+        "長期保存水",
+        "アルファ米",
+        "非常用トイレ",
+        "防災リュック"
+      ],
+      "primary_score": 59.3,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.4,
+        "rating": 8.4,
+        "price": 10,
+        "images": 10,
+        "specificity": 7.5,
+        "trend_bonus": 4.0,
+        "rank": 33
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 86.3,
+      "lp_path": "products/food/sawasei-10230379/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/sawasei-10230379/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/sawasei/cabinet/brand/kagomeh/so50_00.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/sawasei/cabinet/brand/kagomeh/so50_01.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "カゴメ 野菜たっぷりスープ 16食の賞味期限と内容を解説",
+      "status": "published",
+      "created_at": "2026-10-31T11:09:51+09:00",
+      "updated_at": "2026-10-31T11:09:51+09:00",
+      "last_checked_at": "2026-10-31T11:09:51+09:00",
+      "fail_count": 0,
+      "voice": "生活者目線の語りかけ調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/living/nagomilab-10000048/",
+        "../../../products/food/at-rescue-10002460/",
+        "../../../products/food/mizuomoi-10000009/",
+        "../../../products/food/noza-mart-10000108/"
+      ],
+      "review_changes": 2
+    },
+    "devirockstore:10028671": {
+      "item_code": "devirockstore:10028671",
+      "slug": "devirockstore-10028671",
+      "item_name": "【LIMITED SALE 最大12%OFF】デビラボ BIGシルエット プリント トレーナー 子供服 キッズ ベビー服 男の子 女の子 オーバーサイズ ロゴ トレーナー トップス",
+      "display_name": "デビラボ BIGシルエット プリント トレーナー",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00qnh8o.bd4chc9a.g00qnh8o.bd4ci953/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2Fdp0014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdevirockstore%2Fi%2F10028671%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qnh8o.bd4chc9a.g00qnh8o.bd4ci953/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdevirockstore%2Fdp0014%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "baby",
+      "category_label": "育児・ベビー用品",
+      "keyword": "",
+      "product_type": "キッズトレーナー",
+      "keywords": [
+        "デビラボ",
+        "トレーナー",
+        "子供服",
+        "キッズ",
+        "BIGシルエット",
+        "裏毛"
+      ],
+      "related_needs": [
+        "キッズ パンツ",
+        "子供服 アウター",
+        "ベビー服 ロンパース"
+      ],
+      "primary_score": 59.1,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.5,
+        "rating": 7.6,
+        "price": 7,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 95
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 84.1,
+      "lp_path": "products/baby/devirockstore-10028671/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/baby/devirockstore-10028671/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/devirockstore/cabinet/itempage/26aw/1udl20258/1udl20258-01.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/devirockstore/cabinet/itempage/26aw/1udl20258/1udl20258-02.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "デビラボ BIGシルエット プリント トレーナーのサイズ感と素材特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:11:09+09:00",
+      "updated_at": "2026-10-31T11:11:09+09:00",
+      "last_checked_at": "2026-10-31T11:11:09+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/baby/devirockstore-10004042/",
+        "../../../products/baby/devirockstore-10031346/",
+        "../../../products/fashion/devirockstore-10030402/",
+        "../../../products/baby/devirockstore-10031942/"
+      ],
+      "review_changes": 2
+    },
+    "gbt-dko:10048668": {
+      "item_code": "gbt-dko:10048668",
+      "item_name": "【P3倍 10/31 23:59迄】【公式 Alsace(R) 正規品】クリスマスツリー 210cm 豊富な枝数 2026ver. 樅 高級 ドイツトウヒ ツリー オーナメント なし アルザス ツリー Alsace おしゃれ ヌードツリー 北欧風 まるで本物 スリム 組み立て5分 散らからない Xmas tree",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qde1o.bd4ch5cc.g00qde1o.bd4cieff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgbt-dko%2F25947%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "other",
+      "status": "excluded",
+      "reason": "品質チェック不合格: meta descriptionの文字数が不適切(42字)",
+      "primary_score": 58.7,
+      "created_at": "2026-10-31T11:11:10+09:00",
+      "updated_at": "2026-10-31T11:11:10+09:00"
+    },
+    "torreya-shop:10000088": {
+      "item_code": "torreya-shop:10000088",
+      "slug": "torreya-shop-10000088",
+      "item_name": "【テレビ紹介】【防災士監修】温かい防災食 非常食 防災食 6年保存 10食セット（5種類×2袋）アレルギー対応 野菜入り 栄養バランス ヒートバッグ 発熱剤付き 長期保存 保存食 防災備蓄 災害備蓄 防災グッズ 地震 台風 停電 容器不要 衛生 アウトドア【1年保証＆説明書】",
+      "display_name": "温かい防災食 非常食 6年保存 10食セット",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00scnqo.bd4chdcd.g00scnqo.bd4ci00e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftorreya-shop%2F100000048%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftorreya-shop%2Fi%2F10000088%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00scnqo.bd4chdcd.g00scnqo.bd4ci00e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftorreya-shop%2F100000048%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "food",
+      "category_label": "食品・飲料",
+      "keyword": "",
+      "product_type": "防災食セット",
+      "keywords": [
+        "防災食",
+        "非常食",
+        "6年保存",
+        "アレルギー対応",
+        "温かい防災食",
+        "発熱剤付き"
+      ],
+      "related_needs": [
+        "防災用ヘルメット",
+        "非常用持ち出し袋",
+        "簡易トイレ",
+        "保存水"
+      ],
+      "primary_score": 57.3,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 6.1,
+        "rating": 6.2,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 5.0,
+        "rank": 85
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 83.3,
+      "lp_path": "products/food/torreya-shop-10000088/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/food/torreya-shop-10000088/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/torreya-shop/cabinet/12102243/ra_thumbnail.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/torreya-shop/cabinet/12102243/p2_re2604.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "温かい防災食 非常食 6年保存 10食セットの特徴と仕様",
+      "status": "published",
+      "created_at": "2026-10-31T11:14:31+09:00",
+      "updated_at": "2026-10-31T11:14:31+09:00",
+      "last_checked_at": "2026-10-31T11:14:31+09:00",
+      "fail_count": 0,
+      "voice": "生活者目線の語りかけ調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/food/mizuomoi-10000009/",
+        "../../../products/living/twinklegoods-10000055/",
+        "../../../products/food/akol-10001105/",
+        "../../../products/food/akol-10000484/"
+      ],
+      "review_changes": 1
+    },
+    "soyott-camp:10000468": {
+      "item_code": "soyott-camp:10000468",
+      "slug": "soyott-camp-10000468",
+      "item_name": "【期間限定！最大30%OFFクーポン】【楽天3冠】 スリーパー 冬 新生児 冬用 寝るとき ベビー 赤ちゃん フランネル ガーゼ ガーゼスリーパー 袖付き 袖あり 袖なし 綿100% 着る毛布 6重ガーゼ 子供 コットン パジャマ イブル キッズ 秋 秋冬 0歳 1歳 2歳 3歳 出産祝い",
+      "display_name": "スリーパー 冬 新生児 冬用 寝るとき ベビー 赤ちゃん フランネル ガーゼ ガーゼスリーパー 袖付き 袖あり 袖なし",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00ugvgo.bd4chdcf.g00ugvgo.bd4cia33/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoyott-camp%2Fppm-6sleep%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsoyott-camp%2Fi%2F10000468%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ugvgo.bd4chdcf.g00ugvgo.bd4cia33/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsoyott-camp%2Fppm-6sleep%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "baby",
+      "category_label": "育児・ベビー用品",
+      "keyword": "",
+      "product_type": "スリーパー",
+      "keywords": [
+        "スリーパー",
+        "新生児",
+        "冬用",
+        "フランネル",
+        "ガーゼスリーパー",
+        "袖付き"
+      ],
+      "related_needs": [
+        "ベビーパジャマ",
+        "スワドル",
+        "おくるみ",
+        "ベビー毛布"
+      ],
+      "primary_score": 58.0,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 6.4,
+        "rating": 6.6,
+        "price": 10,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 96
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 83.0,
+      "lp_path": "products/baby/soyott-camp-10000468/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/baby/soyott-camp-10000468/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/soyott-camp/cabinet/goods/ppm-frsleep_m30.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/soyott-camp/cabinet/goods/ppm-frsleep_3-2.jpg?_ex=128x128"
+      ],
+      "image_count": 2,
+      "title": "冬の赤ちゃんの寝冷え対策に。フランネルガーゼスリーパーの特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:15:46+09:00",
+      "updated_at": "2026-10-31T11:15:46+09:00",
+      "last_checked_at": "2026-10-31T11:15:46+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/baby/auc-risecreation-10005198/",
+        "../../../products/baby/marine-blue-10000915/",
+        "../../../products/baby/soyott-camp-10000466/",
+        "../../../products/baby/marine-blue-10000806/"
+      ],
+      "review_changes": 1
+    },
+    "clinique:10001529": {
+      "item_code": "clinique:10001529",
+      "slug": "clinique-10001529",
+      "item_name": "【ポイント10倍｜10/30 10:00-11/1 23:59】【数量限定｜Holiday】クリニーク チーク ポップ デュオ セット 27 CLINIQUE | ギフト 頬紅 チークカラーツヤ 血色 カラー フェイスカラー プレゼント ピンク デパコス ホリデー 限定セット パウダー パウダーチーク",
+      "display_name": "クリニーク チーク ポップ デュオ セット 27",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00s54yo.bd4ch2cc.g00s54yo.bd4ci3b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fclinique%2Fvcl_lip%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fclinique%2Fi%2F10001529%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s54yo.bd4ch2cc.g00s54yo.bd4ci3b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fclinique%2Fvcl_lip%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "beauty",
+      "category_label": "美容・スキンケア",
+      "keyword": "",
+      "product_type": "チークセット",
+      "keywords": [
+        "クリニーク",
+        "チーク ポップ",
+        "ホリデー",
+        "デパコス",
+        "ギフト"
+      ],
+      "related_needs": [
+        "リップ",
+        "化粧下地",
+        "フェイスパウダー"
+      ],
+      "primary_score": 57.0,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.5,
+        "rating": 9.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 4.5,
+        "trend_bonus": 4.0,
+        "rank": 53
+      },
+      "ai_scores": {
+        "problem_solving": 12,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 83.0,
+      "lp_path": "products/beauty/clinique-10001529/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/beauty/clinique-10001529/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/clinique/cabinet/item4/vcl_lip/2607vcl230519_2.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "クリニーク チーク ポップ デュオ セット 27の種類と特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:19:05+09:00",
+      "updated_at": "2026-10-31T11:19:05+09:00",
+      "last_checked_at": "2026-10-31T11:19:05+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/beauty/esteelauder-10001234/",
+        "../../../products/beauty/clinique-10001322/",
+        "../../../products/beauty/adpentel-10000082/",
+        "../../../products/beauty/brandshiseido-10000001/"
+      ],
+      "review_changes": 1
+    },
+    "renfrojapan:10000423": {
+      "item_code": "renfrojapan:10000423",
+      "slug": "renfrojapan-10000423",
+      "item_name": "【最大15%OFFクーポン！10/29〜11/1】【2足セット】履くホカロン 毛布のような靴下 ハイソックス 20-25cm レディース ソックス 裏シャギー あったか靴下 冷え取り靴下 黒 くつした 靴下 保温 ルームソックス 冬 防寒 足元 暖か 締め付けにくい ふんわり",
+      "display_name": "履くホカロン 毛布のような靴下 ハイソックス",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u0fco.bd4ch787.g00u0fco.bd4ci7a8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenfrojapan%2Fhkclf67ec%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frenfrojapan%2Fi%2F10000423%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u0fco.bd4ch787.g00u0fco.bd4ci7a8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenfrojapan%2Fhkclf67ec%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "fashion",
+      "category_label": "ファッション小物",
+      "keyword": "",
+      "product_type": "ハイソックス",
+      "keywords": [
+        "ホカロン靴下",
+        "裏シャギー",
+        "ハイソックス",
+        "あったか靴下",
+        "冷え取り",
+        "ルームソックス"
+      ],
+      "related_needs": [
+        "ルームシューズ",
+        "ブランケット",
+        "腹巻",
+        "レッグウォーマー"
+      ],
+      "primary_score": 58.4,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 9.7,
+        "rating": 8.3,
+        "price": 10,
+        "images": 10,
+        "specificity": 5.4,
+        "trend_bonus": 2.0,
+        "rank": 103
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 85.4,
+      "lp_path": "products/fashion/renfrojapan-10000423/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/fashion/renfrojapan-10000423/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/renfrojapan/cabinet/08258504/hkclf67ec/2026/hkclf67ec_main.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/renfrojapan/cabinet/08258504/hkclf67ec/2026/hkclf67ec_01.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/renfrojapan/cabinet/08258504/hkclf67ec/2026/hkclf67ec_02.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "履くホカロン 毛布のような靴下 ハイソックスの仕様と特徴",
+      "status": "published",
+      "created_at": "2026-10-31T11:20:54+09:00",
+      "updated_at": "2026-10-31T11:20:54+09:00",
+      "last_checked_at": "2026-10-31T11:20:54+09:00",
+      "fail_count": 0,
+      "voice": "暮らしの場面から入る描写調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/fashion/sockkobe-10014431/",
+        "../../../products/fashion/renfrojapan-10000086/",
+        "../../../products/living/dondon-10001586/",
+        "../../../products/baby/ponopono-10002333/"
+      ],
+      "review_changes": 3
+    },
+    "bbtown:10108462": {
+      "item_code": "bbtown:10108462",
+      "slug": "bbtown-10108462",
+      "item_name": "デサント DESCENTE 野球 パーカー 大人用 メンズ 防寒 ブラック 黒 ネイビー 紺 ブルー 青 DBX-2360C 刺繍 冬用 スポーツ 軽量 フリースジャケット 保温 長袖 大きいサイズ 秋冬 防風 ハーフジップ フード付き アウトドア フーディー 野球パーカー 秋用 ウェア刺繍有料可(W)",
+      "display_name": "デサント DESCENTE 野球 パーカー 大人用 メンズ 防寒",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00puy0o.bd4ch0fc.g00puy0o.bd4ci5a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbbtown%2Fdbx-2360b%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbbtown%2Fi%2F10108462%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00puy0o.bd4ch0fc.g00puy0o.bd4ci5a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbbtown%2Fdbx-2360b%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "sports-outdoor",
+      "category_label": "スポーツ・アウトドア",
+      "keyword": "",
+      "product_type": "野球パーカー",
+      "keywords": [
+        "デサント",
+        "野球",
+        "パーカー",
+        "防寒",
+        "フリース",
+        "ハーフジップ"
+      ],
+      "related_needs": [
+        "野球用アンダーシャツ",
+        "野球用パンツ",
+        "トレーニングシューズ"
+      ],
+      "primary_score": 57.6,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.4,
+        "rating": 10.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 4.2,
+        "trend_bonus": 2.0,
+        "rank": 106
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 83.6,
+      "lp_path": "products/sports-outdoor/bbtown-10108462/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/sports-outdoor/bbtown-10108462/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/bbtown/cabinet/gekiyasu89/dbx-2360c.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "デサントの野球用防寒パーカーの特徴とサイズ感",
+      "status": "published",
+      "created_at": "2026-10-31T11:23:33+09:00",
+      "updated_at": "2026-10-31T11:23:33+09:00",
+      "last_checked_at": "2026-10-31T11:23:33+09:00",
+      "fail_count": 0,
+      "voice": "比較検討を手伝う整理調",
+      "auto_fixes": 0,
+      "related": [
+        "../../../products/baby/netbaby-10028658/",
+        "../../../products/baby/netbaby-10019348/",
+        "../../../products/baby/hikaritv-10227861/",
+        "../../../products/baby/irisplaza-r-10163793/"
+      ],
+      "review_changes": 3
+    },
+    "h2brothers:10000441": {
+      "item_code": "h2brothers:10000441",
+      "slug": "h2brothers-10000441",
+      "item_name": "【30日はP最大10倍&1,000円OFFcp！】はしご 伸縮 6.2m 伸縮はしご 耐荷重150kg スライド式 折り畳み 安全ロック コンパクト 持ち運び容易 屋内 屋外 アルミ梯子 多機能 ONE STEP",
+      "display_name": "ONE STEP 伸縮はしご 6.2m 耐荷重150kg",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00sk3qo.bd4ch86b.g00sk3qo.bd4ciaf9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fh2brothers%2F1000041801%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fh2brothers%2Fi%2F10000441%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sk3qo.bd4ch86b.g00sk3qo.bd4ciaf9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fh2brothers%2F1000041801%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "living",
+      "category_label": "生活雑貨・日用品",
+      "keyword": "",
+      "product_type": "伸縮はしご",
+      "keywords": [
+        "伸縮はしご",
+        "6.2m",
+        "ONE STEP",
+        "アルミ梯子",
+        "折り畳み",
+        "安全ロック"
+      ],
+      "related_needs": [
+        "高所作業用手袋",
+        "ヘルメット",
+        "安全帯",
+        "清掃用洗剤"
+      ],
+      "primary_score": 55.1,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 8.1,
+        "rating": 5.0,
+        "price": 7,
+        "images": 10,
+        "specificity": 10,
+        "trend_bonus": 4.0,
+        "rank": 62
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 5
+      },
+      "final_score": 82.1,
+      "lp_path": "products/living/h2brothers-10000441/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/living/h2brothers-10000441/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/h2brothers/cabinet/ladder/1000041801.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/h2brothers/cabinet/ladder/1000041801_1.jpg?_ex=128x128",
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/h2brothers/cabinet/ladder/1000041801_2.jpg?_ex=128x128"
+      ],
+      "image_count": 3,
+      "title": "ONE STEP 伸縮はしご 6.2mの仕様と収納サイズを確認",
+      "status": "published",
+      "created_at": "2026-10-31T11:24:51+09:00",
+      "updated_at": "2026-10-31T11:24:51+09:00",
+      "last_checked_at": "2026-10-31T11:24:51+09:00",
+      "fail_count": 0,
+      "voice": "要点先出しの簡潔調",
+      "auto_fixes": 2,
+      "related": [
+        "../../../products/living/e-kit-10042595/",
+        "../../../products/living/sinkatec-10000425/",
+        "../../../products/living/soutowelshop-10000000/",
+        "../../../products/living/dondon-10001586/"
+      ],
+      "review_changes": 1
+    },
+    "pegasus-store:10000093": {
+      "item_code": "pegasus-store:10000093",
+      "slug": "pegasus-store-10000093",
+      "item_name": "【上下セットで7980円～ 】 満足度99% リカバリーウェア リカバリーパジャマ 長袖 秋 冬 ルームウェア パジャマ メンズ レディース 部屋着 血行促進 ギフト プレゼント お祝い 睡眠 サポート 快眠 睡眠 グッズ 【30日間全額返金保証】",
+      "display_name": "リカバリーウェア リカバリーパジャマ 長袖",
+      "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00uo7vo.bd4chdf4.g00uo7vo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpegasus-store%2Frecovery%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpegasus-store%2Fi%2F10000093%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uo7vo.bd4chdf4.g00uo7vo.bd4cif8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpegasus-store%2Frecovery%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
+      "category": "health",
+      "category_label": "健康・リラックス",
+      "keyword": "",
+      "product_type": "リカバリーウェア",
+      "keywords": [
+        "リカバリーウェア",
+        "リカバリーパジャマ",
+        "ルームウェア",
+        "部屋着",
+        "血行促進",
+        "長袖"
+      ],
+      "related_needs": [
+        "アイマスク",
+        "まくら",
+        "マットレス",
+        "入浴剤"
+      ],
+      "primary_score": 55.1,
+      "score_detail": {
+        "info": 15.0,
+        "reviews": 10.1,
+        "rating": 10.0,
+        "price": 10,
+        "images": 10,
+        "specificity": 0.0,
+        "trend_bonus": 4.0,
+        "rank": 92
+      },
+      "ai_scores": {
+        "problem_solving": 13,
+        "target_clarity": 9,
+        "lp_fit": 4
+      },
+      "final_score": 81.1,
+      "lp_path": "products/health/pegasus-store-10000093/index.html",
+      "lp_url": "https://nao-web-lab.github.io/nao-ai-blog/products/health/pegasus-store-10000093/",
+      "images": [
+        "https://thumbnail.image.rakuten.co.jp/@0_mall/pegasus-store/cabinet/11449105/12968196/imgrc0114515272.jpg?_ex=128x128"
+      ],
+      "image_count": 1,
+      "title": "リカバリーウェア リカバリーパジャマ長袖の特徴と選び方",
+      "status": "published",
+      "created_at": "2026-10-31T11:26:09+09:00",
+      "updated_at": "2026-10-31T11:26:09+09:00",
+      "last_checked_at": "2026-10-31T11:26:09+09:00",
+      "fail_count": 0,
+      "voice": "落ち着いた解説調",
+      "auto_fixes": 1,
+      "related": [
+        "../../../products/interior/dondon-10001821/",
+        "../../../products/interior/tansu-10043927/",
+        "../../../products/interior/itsube-souken-10000309/",
+        "../../../products/interior/tansu-10044278/"
+      ],
+      "review_changes": 1
     }
   },
   "state": {
     "next_category": 14,
     "next_ranking_source": 3,
     "gemini_calls": {
-      "2026-10-24": 104,
       "2026-10-25": 97,
       "2026-10-26": 97,
       "2026-10-27": 101,
       "2026-10-28": 103,
       "2026-10-29": 106,
-      "2026-10-30": 121
+      "2026-10-30": 121,
+      "2026-10-31": 102
     }
   }
 }
