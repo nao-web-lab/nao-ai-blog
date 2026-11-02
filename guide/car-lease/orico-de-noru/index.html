@@ -37,23 +37,6 @@
         {"@type": "ListItem", "position": 2, "name": "カーリースガイド", "item": "https://nao-web-lab.github.io/nao-ai-blog/guide/car-lease/orico-de-noru/"},
         {"@type": "ListItem", "position": 3, "name": "オリコで乗ーるの料金・デメリット・向いている人"}
       ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "「SOMPOで乗ーる」と「オリコで乗ーる」は同じサービスですか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "2026年4月1日に「SOMPOで乗ーる」から「オリコで乗ーる」へ名称が変更されました。運営は株式会社オリコカーライフで、頭金0円・月額定額・約300車種から選べるというサービスの基本は引き続き案内されています。"}},
-        {"@type": "Question", "name": "頭金やボーナス払いは必要ですか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "広告主の案内では、頭金0円・ボーナス払いなしで、月額定額で利用できるとされています。月額に含まれる範囲はプランによって異なるため、見積書で確認してください。"}},
-        {"@type": "Question", "name": "契約期間や走行距離はどのくらい選べますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "契約期間は1〜9年で選べ、月間走行距離は250kmから3,000kmの範囲で設定できると案内されています。走行距離を短くすると月額が安くなる傾向があります。"}},
-        {"@type": "Question", "name": "途中で解約できますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "カーリースは原則として途中解約ができない契約です。オリコで乗ーるでは、中途解約オプションや免許返納オプションが用意されていますが、利用できる時期や条件、上乗せ料金は契約前に必ず確認してください。"}},
-        {"@type": "Question", "name": "契約満了時はどうなりますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "広告主の案内では「返却する」または「最後にもらえる」プランを選べるとされています。残価の設定によっては満了時に精算や買い取りが必要になる場合があるため、プランごとの条件を確認することが大切です。"}},
-        {"@type": "Question", "name": "納車まではどのくらいかかりますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "最短10日で納車できる即納車の案内があり、対象車両の情報は毎月更新されるとされています。通常の納期は車種や時期によって異なります。"}}
-      ]
     }
   ]
 }
@@ -77,7 +60,8 @@ img,svg{max-width:100%;height:auto}
 .bar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:48px}
 .bar a{font-weight:800;text-decoration:none;color:var(--navy);font-size:15px;letter-spacing:.02em}
-.pr-badge{font-size:12px;color:#4a5363;background:#eef1f6;border:1px solid #d5dbe6;border-radius:999px;padding:3px 10px;line-height:1.5;white-space:nowrap}
+.pr-badge{font-size:13px;color:#2f3744;background:#fff3cf;border:1px solid #e3c36a;border-radius:6px;padding:3px 9px;line-height:1.5;white-space:nowrap;text-decoration:none}
+.pr-badge a{color:#2f3744;font-weight:400}
 .pr-badge b{color:#2f3744}
 
 /* hero */
@@ -97,7 +81,8 @@ h1 em{font-style:normal;background:linear-gradient(transparent 62%,#ffe08a 62%)}
   padding:16px 18px;border-radius:14px;box-shadow:0 4px 0 var(--cta-d);font-size:1.08rem;line-height:1.4}
 .btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--cta-d)}
 .micro{display:block;margin-top:10px;font-size:13px;color:var(--sub)}
-.scroll{text-align:center;font-size:12px;color:var(--sub);margin:14px 0 0}
+.know{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.know a{font-size:.9rem;background:#fff;border:1px solid #c9d8fb;border-radius:999px;padding:4px 12px;text-decoration:none;color:var(--navy)}
 
 /* sections */
 section{padding:34px 0 6px}
@@ -162,8 +147,9 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}
 th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
 th{background:var(--soft);width:7em}
 
-.banner{text-align:center;margin:22px 0 6px}
-.banner img{display:inline-block;border-radius:6px}
+#compare table{font-size:.8rem}
+#compare th,#compare td{padding:7px 6px}
+#compare th{width:4.6em}
 
 footer{margin-top:44px;padding:24px 0 30px;background:var(--soft);border-top:1px solid var(--line);font-size:12.5px;color:var(--sub);line-height:1.7}
 footer a{color:var(--sub)}
@@ -183,7 +169,7 @@ footer li{word-break:break-all}
 <header class="bar">
   <div class="wrap">
     <a href="../../../">NAO WEB LAB</a>
-    <span class="pr-badge"><b>PR</b>｜広告を含みます</span>
+    <span class="pr-badge"><b>PR</b>｜広告を含みます（<a href="../../../policy.html">方針</a>）</span>
   </div>
 </header>
 
@@ -194,7 +180,7 @@ footer li{word-break:break-all}
   <div class="wrap">
     <span class="eyebrow">オリコで乗ーる（旧SOMPOで乗ーる）</span>
     <h1>頭金0円・月々定額で、<br><em>新車に乗る</em>前に。</h1>
-    <p class="lead">料金の目安と、契約前に知っておきたい注意点を、3分でわかるようにまとめました。</p>
+    <p class="lead">頭金を用意せず新車に乗りたい人向け。<b>料金の目安・向き不向き・契約前の注意点</b>を、出典つきで整理しました。</p>
 
     <svg class="car" viewBox="0 0 320 130" role="img" aria-label="新車のイラスト">
       <ellipse cx="160" cy="119" rx="132" ry="7" fill="#0b2a6b" opacity=".12"/>
@@ -214,10 +200,9 @@ footer li{word-break:break-all}
     <p class="src">※公式サイト・広告主の案内より</p>
 
     <div class="cta">
-      <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで車種と月額を見る</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
-      <span class="micro">車種ごとの月額は、公式ページで確認できます</span>
+      <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">オリコで乗ーる公式ページで車種と月額を見る</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
     </div>
-    <p class="scroll">▼ 先に注意点も知りたい方は、このまま下へ</p>
+    <nav class="know" aria-label="このページで分かること"><a href="#price">月額の目安</a><a href="#check">向き不向き</a><a href="#caution">デメリット</a><a href="#compare">他の買い方との違い</a><a href="#flow">申込みの流れ</a></nav>
   </div>
 </div>
 
@@ -232,7 +217,7 @@ footer li{word-break:break-all}
   </div>
 </section>
 
-<section>
+<section id="check">
   <h2><small>CHECK</small>あなたは向いている？</h2>
   <div class="two">
     <div class="col ok">
@@ -255,12 +240,9 @@ footer li{word-break:break-all}
       </ul>
     </div>
   </div>
-  <div class="cta">
-    <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">向いていそうなら、公式ページへ</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
-  </div>
 </section>
 
-<section>
+<section id="price">
   <h2><small>PRICE</small>月額はいくらくらい？</h2>
   <p class="sub">公開されている試算例です。実際の金額は見積りで確定します。</p>
   <div class="price">
@@ -278,7 +260,7 @@ footer li{word-break:break-all}
   </div>
 </section>
 
-<section>
+<section id="caution">
   <h2><small>CAUTION</small>デメリット・注意点</h2>
   <p class="sub">タップすると詳しく読めます。</p>
   <details>
@@ -307,7 +289,25 @@ footer li{word-break:break-all}
   </details>
 </section>
 
-<section>
+<section id="compare">
+  <h2><small>COMPARE</small>他の買い方との違い</h2>
+  <p class="sub">カーリースが合うかは、何を優先するかで変わります。一般的な違いの整理です。</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th></th><th>カーリース</th><th>現金一括</th><th>マイカーローン</th></tr></thead>
+      <tbody>
+        <tr><th>初期費用</th><td>頭金0円のプランあり</td><td>車両代の全額</td><td>頭金を求められることがある</td></tr>
+        <tr><th>毎月の支払い</th><td>定額（税金等を含む範囲はプランによる）</td><td>なし（税金・車検は都度）</td><td>返済額＋税金・車検は都度</td></tr>
+        <tr><th>車の所有</th><td>原則リース会社（満了時に選択）</td><td>自分のもの</td><td>完済後は自分のもの</td></tr>
+        <tr><th>途中でやめる</th><td>原則不可。オプションで備える</td><td>売却できる</td><td>売却・一括返済ができる</td></tr>
+        <tr><th>改造・走行距離</th><td>制限や精算あり</td><td>自由</td><td>自由</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">※一般的な傾向をまとめたものです。商品ごとに条件が異なるため、見積書・契約書で確認してください。</p>
+</section>
+
+<section id="flow">
   <h2><small>FLOW</small>申込みから納車まで</h2>
   <div class="steps">
     <div class="step"><b>乗りたい車と条件を決める</b><span>車種・契約年数・月間走行距離のイメージ</span></div>
@@ -327,7 +327,7 @@ footer li{word-break:break-all}
   </ul>
 
   <div class="cta">
-    <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで見積りの条件を確認する</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
+    <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">オリコで乗ーる公式ページで条件を確認する</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
     <span class="micro">新規契約の条件・審査・取扱車種は、公式ページの最新情報が優先されます</span>
   </div>
 </section>
@@ -385,9 +385,6 @@ footer li{word-break:break-all}
     </div>
   </details>
 
-  <div class="banner">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" rel="nofollow sponsored noopener" target="_blank"><img border="0" width="300" height="250" alt="オリコで乗ーる 公式ページへ" src="https://www24.a8.net/svt/bgt?aid=260911551234&amp;wid=008&amp;eno=01&amp;mid=s00000021239001014000&amp;mc=1" loading="lazy"></a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" alt="">
-  </div>
 </section>
 
 </div>
@@ -399,19 +396,21 @@ footer li{word-break:break-all}
     <p>本ページは情報提供を目的としており、特定の契約を保証・推奨するものではありません。料金・条件・取扱車種は変更される場合があります。申込み前に必ず公式ページで最新の内容をご確認ください。</p>
     <p><b>参考にした情報</b></p>
     <ul>
+      <li>確認日：2026年11月2日（各リンク先の内容は変更される場合があります）</li>
       <li><a href="https://orico-de-noru.jp/" rel="noopener" target="_blank">オリコで乗ーる 公式サイト</a></li>
       <li><a href="https://car-days.fun/blog/?p=28044" rel="noopener nofollow" target="_blank">car-days「オリコで乗ーる」解説</a>（名称変更）</li>
       <li><a href="https://transcarweb.com/2610-carlease-oricodenoru-guide/" rel="noopener nofollow" target="_blank">TRANSCAR「オリコで乗ーるの月額と残価精算・途中解約の注意点」</a>（料金例・オプション試算）</li>
       <li><a href="https://jidounten-lab.com/u_56914" rel="noopener nofollow" target="_blank">自動運転ラボ「オリコで乗ーる」解説</a>（メンテナンスプラン等）</li>
       <li>株式会社オリコカーライフ 広告主の案内</li>
     </ul>
-    <p><a href="../../../">NAO WEB LAB トップ</a> ／ <a href="../../../about.html">サイトについて</a> ／ <a href="../../../contact.html">お問い合わせ</a> ／ <a href="../../../privacy.html">プライバシーポリシー</a></p>
+    <p>広告・運営方針の詳細は<a href="../../../policy.html">こちら</a>。内容は2026年11月2日時点の情報で、実際に契約された場合の体験談ではありません。</p>
+    <p><a href="../../../">NAO WEB LAB トップ</a> ／ <a href="../../../about.html">サイトについて</a> ／ <a href="../../../policy.html">広告・運営方針</a> ／ <a href="../../../contact.html">お問い合わせ</a> ／ <a href="../../../privacy.html">プライバシーポリシー</a></p>
     <p>&copy; 2026 NAO WEB LAB</p>
   </div>
 </footer>
 
 <div class="sticky" id="sticky">
-  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで月額を見る</a>
+  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">オリコで乗ーる公式で月額を見る</a>
 </div>
 
 <script>
