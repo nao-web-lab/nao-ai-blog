@@ -94,3 +94,11 @@ max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_se
   サムネイル付き比較表→商品ごとの特徴カード（事実2つ・向いている人・確認したい点）→出典つきの確認点・向いていない場合→このガイドの作り方
 - 商品LPの比較表の下に、その種類のガイドへのリンク（`listing.guide_href_for` → ctx["type_guide"]）。ガイドが無い種類には出ない
 - 楽天の画像サーバーはクラウド環境からは接続できない。スクリーンショット確認時は画像を仮画像に差し替えてレイアウトだけ見る
+
+## 検索に見つけてもらうための設定（2026-11-02）
+- `sitemap.xml` の lastmod は各ページの JSON-LD `dateModified`（一覧ページは配下の最新日）。日付が分からないページは lastmod を書かない
+  （以前は毎日全URLを「今日」にしていたため、Google に lastmod を無視される状態だった）
+- `lp/side-job/` など lp/auto 以外の手書きLPもサイトマップに載せる（noindex のページは除外）
+- トップページ（index.html）に「公開中のガイド」セクション。比較ガイド一覧へは `products/#guides` で入る
+- 比較ガイドの出力は毎回同じになるようにしている（項目名の並びを固定）。無駄な差分コミットを出さないため
+- Search Console（URL検査・サイトマップ送信）はオーナーのGoogleアカウントでの手作業が必要（クラウド環境からは操作できない）

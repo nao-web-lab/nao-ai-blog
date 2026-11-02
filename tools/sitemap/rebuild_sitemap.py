@@ -8,7 +8,6 @@ touches lp/auto/**, so the sitemap/robots/listing stay in sync with
 whatever auto-lp has published (from the PC or from a phone-triggered run).
 """
 
-import datetime
 import re
 from pathlib import Path
 
@@ -49,6 +48,38 @@ def guide_urls() -> list:
     return urls
 
 
+def page_lastmod(path: Path) -> str:
+    """ページに書かれた最終更新日(JSON-LD の dateModified)を YYYY-MM-DD で返す。無ければ空文字。
+    毎日すべて「今日」にすると Google が lastmod を信用しなくなるため、実際に内容が変わった日だけを書く。"""
+    try:
+        html = path.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    m = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})', html)
+    return m.group(1) if m else ""
+
+
+def url_to_file(u: str) -> Path:
+    rel = u[len(SITE_BASE_URL):].lstrip("/")
+    p = REPO_ROOT / rel
+    return p / "index.html" if (rel == "" or rel.endswith("/")) else p
+
+
+def other_lp_urls() -> list:
+    """lp/ 以下の手書きLP（lp/auto 以外。例: lp/side-job/xxx/）。noindex のページは載せない。"""
+    urls = []
+    for f in sorted((REPO_ROOT / "lp").glob("*/*/index.html")):
+        if f.parts[-3] == "auto":
+            continue
+        html = f.read_text(encoding="utf-8")
+        if re.search(r'name="robots" content="[^"]*noindex', html, re.I):
+            continue
+        canonical = extract(html, r'<link rel="canonical" href="([^"]+)"')
+        if canonical and canonical.startswith(SITE_BASE_URL):
+            urls.append(canonical)
+    return urls
+
+
 def main() -> None:
     lp_root = REPO_ROOT / "lp" / "auto"
     entries = []
@@ -64,18 +95,29 @@ def main() -> None:
             canonical = f"{SITE_BASE_URL}/lp/auto/{d.name}/"
         entries.append({"title": title or d.name, "url": canonical, "description": description})
 
-    today = datetime.date.today().isoformat()
-
     urls = [f"{SITE_BASE_URL}/", f"{SITE_BASE_URL}/lp/auto/"] + [e["url"] for e in entries]
     urls += product_guide_urls()
     urls += guide_urls()
+    urls += other_lp_urls()
     urls += [f"{SITE_BASE_URL}/about.html", f"{SITE_BASE_URL}/policy.html"]
+    seen = set()
+    urls = [u for u in urls if not (u in seen or seen.add(u))]
+
+    # lastmod: ページの dateModified。一覧ページ(/products/ と カテゴリ)は、配下ページの最新日。
+    # 日付が分からないページは lastmod を書かない（不正確な日付を書くより良い）。
+    dates = {u: page_lastmod(url_to_file(u)) for u in urls}
+    for u in urls:
+        if not dates[u] and u.startswith(f"{SITE_BASE_URL}/products/"):
+            child = [d for v, d in dates.items() if d and v != u and v.startswith(u)]
+            if child:
+                dates[u] = max(child)
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ]
     for u in urls:
-        sitemap_lines.append(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>")
+        lm = f"<lastmod>{dates[u]}</lastmod>" if dates[u] else ""
+        sitemap_lines.append(f"  <url><loc>{u}</loc>{lm}</url>")
     sitemap_lines.append("</urlset>")
     (REPO_ROOT / "sitemap.xml").write_text("\n".join(sitemap_lines) + "\n", encoding="utf-8")
 
