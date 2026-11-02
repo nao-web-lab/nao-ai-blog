@@ -60,313 +60,368 @@
 </script>
 <style>
 :root{
-  --c-text:#1f2430; --c-sub:#5b6472; --c-bg:#ffffff; --c-soft:#f5f7fb; --c-line:#e1e5ec;
-  --c-primary:#1d4ed8; --c-primary-soft:#e8efff; --c-cta:#e8590c; --c-cta-dark:#c24a08;
-  --c-warn:#fff7e6; --c-warn-line:#f2c26b; --c-ok:#eef9f1; --c-ok-line:#9ad3a8;
+  --text:#1b2330; --sub:#5d6675; --bg:#fff; --soft:#f4f7fc; --line:#e0e6f0;
+  --blue:#1f4fd8; --navy:#0b2a6b; --blue-soft:#e9f0ff;
+  --cta:#e8590c; --cta-d:#c24a08;
+  --ok:#eaf8ee; --ok-l:#9ad3a8; --warn:#fff6e3; --warn-l:#f0c26a;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;color:var(--c-text);background:var(--c-bg);line-height:1.85;font-size:16px;
-  font-family:system-ui,-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
-  padding-bottom:72px}
-a{color:var(--c-primary)}
-img{max-width:100%;height:auto}
-.wrap{max-width:760px;margin:0 auto;padding:0 16px}
-.site-bar{border-bottom:1px solid var(--c-line);background:#fff}
-.site-bar .wrap{display:flex;align-items:center;justify-content:space-between;height:52px}
-.site-bar a{text-decoration:none;font-weight:700;color:var(--c-text)}
-.site-bar .crumb{font-size:13px;color:var(--c-sub);font-weight:400}
-.pr{margin:16px 0 0;padding:10px 14px;background:var(--c-soft);border:1px solid var(--c-line);border-radius:8px;font-size:13px;color:var(--c-sub)}
-h1{font-size:1.55rem;line-height:1.5;margin:20px 0 8px}
-.meta{font-size:13px;color:var(--c-sub);margin:0 0 20px}
-h2{font-size:1.3rem;line-height:1.5;margin:48px 0 14px;padding:10px 0 10px 14px;border-left:5px solid var(--c-primary);background:var(--c-soft)}
-h3{font-size:1.08rem;margin:28px 0 8px}
-p{margin:0 0 16px}
-ul,ol{padding-left:1.4em;margin:0 0 18px}
-li{margin:4px 0}
-.summary{background:var(--c-primary-soft);border:1px solid #c5d4fb;border-radius:10px;padding:16px 18px;margin:18px 0}
-.summary strong.t{display:block;margin-bottom:6px;font-size:1.02rem}
-.summary ul{margin:0}
-.box{border-radius:10px;padding:14px 16px;margin:18px 0;border:1px solid}
-.box.warn{background:var(--c-warn);border-color:var(--c-warn-line)}
-.box.ok{background:var(--c-ok);border-color:var(--c-ok-line)}
-.box p:last-child,.box ul:last-child{margin-bottom:0}
-.box .t{font-weight:700;display:block;margin-bottom:4px}
-.cta{text-align:center;margin:26px 0}
-.btn{display:inline-block;background:var(--c-cta);color:#fff!important;text-decoration:none;font-weight:700;
-  padding:15px 26px;border-radius:999px;box-shadow:0 3px 0 var(--c-cta-dark);font-size:1.02rem;line-height:1.4}
-.btn:hover{background:var(--c-cta-dark)}
-.cta small{display:block;margin-top:10px;color:var(--c-sub);font-size:12.5px}
-.toc{background:var(--c-soft);border:1px solid var(--c-line);border-radius:10px;padding:14px 18px;margin:22px 0}
-.toc strong{display:block;margin-bottom:6px}
-.toc ol{margin:0;padding-left:1.3em}
-.tbl{overflow-x:auto;margin:0 0 8px}
-table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{border:1px solid var(--c-line);padding:10px 12px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
-th{background:var(--c-soft);width:6.5em}
-.note{font-size:13px;color:var(--c-sub);margin:6px 0 18px}
-.two{display:grid;grid-template-columns:1fr;gap:14px;margin:16px 0}
-@media(min-width:640px){.two{grid-template-columns:1fr 1fr}}
-.two .box{margin:0}
-details{border:1px solid var(--c-line);border-radius:10px;padding:0 16px;margin:10px 0;background:#fff}
-summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none}
+body{margin:0;color:var(--text);background:var(--bg);font-size:17px;line-height:1.8;padding-bottom:80px;
+  font-family:system-ui,-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif}
+a{color:var(--blue)}
+img,svg{max-width:100%;height:auto}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+
+/* header（PRバッジは最初の画面内に常時表示） */
+.bar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:48px}
+.bar a{font-weight:800;text-decoration:none;color:var(--navy);font-size:15px;letter-spacing:.02em}
+.pr-badge{font-size:12px;color:#4a5363;background:#eef1f6;border:1px solid #d5dbe6;border-radius:999px;padding:3px 10px;line-height:1.5;white-space:nowrap}
+.pr-badge b{color:#2f3744}
+
+/* hero */
+.hero{background:linear-gradient(180deg,#eaf1ff 0%,#fff 100%);padding:26px 0 8px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--blue);background:#fff;border:1px solid #c9d8fb;border-radius:999px;padding:2px 12px;margin-bottom:12px}
+h1{font-size:1.85rem;line-height:1.42;margin:0 0 10px;color:var(--navy);letter-spacing:.01em}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,#ffe08a 62%)}
+.lead{margin:0 0 14px;color:#39424f;font-size:1rem;line-height:1.75}
+.car{margin:6px auto 4px;max-width:340px}
+.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 6px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 4px;text-align:center;box-shadow:0 1px 0 rgba(11,42,107,.05)}
+.chip b{display:block;font-size:1.28rem;line-height:1.3;color:var(--navy)}
+.chip span{display:block;font-size:11.5px;color:var(--sub);line-height:1.4;margin-top:2px}
+.src{font-size:11.5px;color:var(--sub);margin:4px 0 0;text-align:right}
+.cta{text-align:center;margin:18px 0 6px}
+.btn{display:block;background:var(--cta);color:#fff!important;text-decoration:none;font-weight:800;
+  padding:16px 18px;border-radius:14px;box-shadow:0 4px 0 var(--cta-d);font-size:1.08rem;line-height:1.4}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--cta-d)}
+.micro{display:block;margin-top:10px;font-size:13px;color:var(--sub)}
+.scroll{text-align:center;font-size:12px;color:var(--sub);margin:14px 0 0}
+
+/* sections */
+section{padding:34px 0 6px}
+h2{font-size:1.4rem;line-height:1.45;margin:0 0 6px;color:var(--navy)}
+h2 small{display:block;font-size:.8rem;font-weight:700;color:var(--blue);letter-spacing:.08em;margin-bottom:4px}
+.sub{margin:0 0 16px;color:var(--sub);font-size:.96rem}
+p{margin:0 0 14px}
+
+.cards{display:grid;gap:10px;margin:14px 0}
+.card{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 14px}
+.card .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.card.warn .n{background:#d9822b}
+.card b{display:block;line-height:1.5;margin-bottom:2px}
+.card p{margin:0;font-size:.95rem;color:#3d4756;line-height:1.7}
+
+.two{display:grid;gap:12px;margin:14px 0}
+.col{border-radius:14px;padding:16px;border:1px solid}
+.col.ok{background:var(--ok);border-color:var(--ok-l)}
+.col.ng{background:var(--warn);border-color:var(--warn-l)}
+.col h3{margin:0 0 8px;font-size:1.05rem}
+.col ul{margin:0;padding:0;list-style:none}
+.col li{padding-left:1.5em;position:relative;margin:6px 0;line-height:1.6;font-size:.98rem}
+.col.ok li::before{content:"✓";position:absolute;left:0;color:#1d8a3c;font-weight:800}
+.col.ng li::before{content:"!";position:absolute;left:.25em;color:#c06a00;font-weight:800}
+
+.price{background:#fff;border:2px solid var(--blue);border-radius:16px;padding:16px;margin:14px 0;text-align:center}
+.price .cond{font-size:.92rem;color:var(--sub);margin:0 0 2px}
+.price .yen{font-size:2.3rem;font-weight:800;color:var(--navy);line-height:1.3}
+.price .yen small{font-size:1rem;font-weight:700}
+.price .mini{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.price .mini div{background:var(--soft);border-radius:10px;padding:8px 6px;font-size:.88rem;line-height:1.5}
+.price .mini b{display:block;font-size:1.05rem;color:var(--navy)}
+.note{font-size:12.5px;color:var(--sub);line-height:1.6;margin:6px 0 14px}
+.box{border-radius:14px;padding:14px 16px;margin:14px 0;border:1px solid var(--warn-l);background:var(--warn);font-size:.96rem}
+.box b{display:block;margin-bottom:2px}
+.box p{margin:0}
+
+.steps{display:grid;gap:0;margin:14px 0;counter-reset:s}
+.step{position:relative;padding:0 0 18px 48px;counter-increment:s}
+.step::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step::after{content:"";position:absolute;left:16px;top:38px;bottom:2px;width:2px;background:var(--line)}
+.step:last-child{padding-bottom:0}.step:last-child::after{display:none}
+.step b{display:block;line-height:1.5}
+.step span{font-size:.93rem;color:var(--sub);line-height:1.6;display:block}
+
+.checks{list-style:none;margin:10px 0;padding:0}
+.checks li{padding:10px 12px 10px 40px;position:relative;background:var(--soft);border-radius:10px;margin:6px 0;font-size:.97rem;line-height:1.6}
+.checks li::before{content:"☐";position:absolute;left:12px;top:8px;font-size:1.2rem;color:var(--blue)}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tags span{background:var(--blue-soft);color:var(--navy);border-radius:999px;padding:5px 12px;font-size:.9rem;line-height:1.5}
+
+details{border:1px solid var(--line);border-radius:12px;background:#fff;margin:8px 0}
+summary{cursor:pointer;list-style:none;padding:14px 40px 14px 14px;font-weight:700;line-height:1.5;position:relative}
 summary::-webkit-details-marker{display:none}
-summary::before{content:"Q. ";color:var(--c-primary)}
-details p{margin:0 0 14px}
-.banner{text-align:center;margin:22px 0}
-.banner img{display:inline-block}
-.refs{font-size:14px;color:var(--c-sub)}
-.refs li{word-break:break-all}
-footer{margin-top:56px;padding:26px 0;background:var(--c-soft);border-top:1px solid var(--c-line);font-size:13px;color:var(--c-sub)}
-footer a{color:var(--c-sub)}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);border-top:1px solid var(--c-line);padding:10px 12px;text-align:center}
-.sticky .btn{padding:11px 22px;font-size:.96rem;width:100%;max-width:420px}
-.sticky span{display:block;font-size:11px;color:var(--c-sub);margin-top:4px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+summary::after{content:"+";position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--blue);font-weight:400}
+details[open] summary::after{content:"−"}
+details .in{padding:0 14px 14px;font-size:.96rem;color:#323b49}
+details .in p:last-child{margin-bottom:0}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+th{background:var(--soft);width:7em}
+
+.banner{text-align:center;margin:22px 0 6px}
+.banner img{display:inline-block;border-radius:6px}
+
+footer{margin-top:44px;padding:24px 0 30px;background:var(--soft);border-top:1px solid var(--line);font-size:12.5px;color:var(--sub);line-height:1.7}
+footer a{color:var(--sub)}
+footer .pr-full{margin:0 0 12px}
+footer ul{margin:6px 0 12px;padding-left:1.2em}
+footer li{word-break:break-all}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 14px;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .btn{max-width:440px;margin:0 auto;padding:13px 16px;font-size:1rem}
+@media(min-width:640px){.two{grid-template-columns:1fr 1fr}.cards.c2{grid-template-columns:1fr 1fr}h1{font-size:2.1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky{transition:none}}
 </style>
 </head>
 <body>
 
-<header class="site-bar">
+<header class="bar">
   <div class="wrap">
     <a href="../../../">NAO WEB LAB</a>
-    <span class="crumb">カーリースガイド</span>
+    <span class="pr-badge"><b>PR</b>｜広告を含みます</span>
   </div>
 </header>
 
-<main class="wrap">
+<main>
 
-<p class="pr">【PR】本ページはプロモーション（広告）を含みます。記事内のリンクから申込みがあった場合、運営者に報酬が支払われることがあります。掲載内容は、公式サイトや広告主の案内、第三者サイトの公開情報をもとに作成しています。</p>
+<!-- ファーストビュー：訴求は1つ。キャッチ・ビジュアル・出典つき数字・CTAだけ -->
+<div class="hero" id="hero">
+  <div class="wrap">
+    <span class="eyebrow">オリコで乗ーる（旧SOMPOで乗ーる）</span>
+    <h1>頭金0円・月々定額で、<br><em>新車に乗る</em>前に。</h1>
+    <p class="lead">料金の目安と、契約前に知っておきたい注意点を、3分でわかるようにまとめました。</p>
 
-<h1>オリコで乗ーる（旧SOMPOで乗ーる）の料金・デメリット・向いている人を整理</h1>
-<p class="meta">公開日：2026年11月2日 ／ 最終確認日：2026年11月2日</p>
+    <svg class="car" viewBox="0 0 320 130" role="img" aria-label="新車のイラスト">
+      <ellipse cx="160" cy="119" rx="132" ry="7" fill="#0b2a6b" opacity=".12"/>
+      <path d="M38 94 L50 68 Q56 58 70 56 L118 52 Q132 33 152 30 L196 30 Q214 31 226 48 L262 56 Q284 60 288 78 L292 94 Q292 102 284 102 L46 102 Q38 102 38 94 Z" fill="#fff" stroke="#1f4fd8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M128 52 Q140 40 154 38 L174 38 L174 54 Z" fill="#a9c8ff"/>
+      <path d="M182 38 L196 38 Q208 39 216 52 L182 54 Z" fill="#a9c8ff"/>
+      <rect x="270" y="68" width="14" height="7" rx="3" fill="#ffb454"/>
+      <circle cx="92" cy="102" r="17" fill="#1b2330"/><circle cx="92" cy="102" r="7" fill="#cfd6e4"/>
+      <circle cx="240" cy="102" r="17" fill="#1b2330"/><circle cx="240" cy="102" r="7" fill="#cfd6e4"/>
+    </svg>
 
-<p>「頭金なしで新車に乗れる」と聞くと魅力的ですが、カーリースは<strong>月額の安さだけで決めると、満了時や途中解約で想定外の負担が出る</strong>ことがあります。このページでは、カーリース「オリコで乗ーる」の特徴と、契約前に確認したい注意点を、良い面も気になる面もあわせて整理します。</p>
+    <div class="chips">
+      <div class="chip"><b>0円</b><span>頭金<br>ボーナス払いなし</span></div>
+      <div class="chip"><b>約300</b><span>車種<br>国産・輸入車</span></div>
+      <div class="chip"><b>1〜9年</b><span>契約期間<br>1年単位で設定</span></div>
+    </div>
+    <p class="src">※公式サイト・広告主の案内より</p>
 
-<div class="summary">
-  <strong class="t">先に結論</strong>
-  <ul>
-    <li>頭金0円・ボーナス払いなしで、月額定額のカーリース。国産車・輸入車あわせて約300車種から選べます。</li>
-    <li>契約期間は1〜9年、月間走行距離は250〜3,000kmの範囲で選べるため、使い方に合わせて月額を調整できます。</li>
-    <li>一方で、<strong>残価精算・中途解約・走行距離の超過</strong>は契約前の確認が必須です。</li>
-    <li>「突発的な出費を避けたい」「メンテナンスを任せたい」人に向き、「年間の走行距離が多い」「車を自由に改造したい」人には向きにくいサービスです。</li>
-  </ul>
-</div>
-
-<div class="cta">
-  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで車種と月額を確認する（PR）</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
-  <small>申込み前に、見積書で月額に含まれる内容を必ずご確認ください</small>
-</div>
-
-<nav class="toc" aria-label="目次">
-  <strong>目次</strong>
-  <ol>
-    <li><a href="#about">オリコで乗ーるとは（旧SOMPOで乗ーるとの関係）</a></li>
-    <li><a href="#features">主な特徴</a></li>
-    <li><a href="#price">月額料金の目安と、含まれないもの</a></li>
-    <li><a href="#options">オプションと、契約満了時の考え方</a></li>
-    <li><a href="#demerit">デメリット・注意点</a></li>
-    <li><a href="#fit">向いている人・向かない人</a></li>
-    <li><a href="#flow">申込みの流れと、契約前のチェックリスト</a></li>
-    <li><a href="#timing">乗り換えを考えるタイミング</a></li>
-    <li><a href="#faq">よくある質問</a></li>
-  </ol>
-</nav>
-
-<h2 id="about">オリコで乗ーるとは（旧SOMPOで乗ーるとの関係）</h2>
-<p>「オリコで乗ーる」は、株式会社オリコカーライフが提供する、新車の定額カーリース（車のサブスク）です。公式サイトでは、国産車・輸入車の約300車種から、専門スタッフと相談しながら新車を選べるサービスと案内されています。</p>
-<p>以前は「SOMPOで乗ーる」という名称でしたが、<strong>2026年4月1日に「オリコで乗ーる」へ名称が変更</strong>されています。「SOMPOで乗ーる」「損保でノール」などで検索してたどり着いた方も、サービスの基本（頭金0円・月額定額・約300車種から選択）は引き続き案内されているため、同じサービスの新しい名称と考えて問題ありません。</p>
-
-<h2 id="features">主な特徴</h2>
-<p>広告主の案内をもとに、特徴を表にまとめます。</p>
-<div class="tbl">
-<table>
-  <thead><tr><th>項目</th><th>内容</th></tr></thead>
-  <tbody>
-    <tr><th>支払い</th><td>頭金0円、ボーナス払いなし。月額は定額</td></tr>
-    <tr><th>車種</th><td>国産車・輸入車を含む約300車種（輸入車も選べる点が特徴）</td></tr>
-    <tr><th>契約期間</th><td>1〜9年の範囲で設定</td></tr>
-    <tr><th>走行距離</th><td>月間250km〜3,000kmから選択。短く設定すると月額が安くなる傾向</td></tr>
-    <tr><th>メンテナンス</th><td>メンテナンスプランを選択可能。冬タイヤの取り付け・交換・保管にも対応可能と案内</td></tr>
-    <tr><th>満了時</th><td>「途中でかえせる」「最後にもらえる」といった選び方が案内されている</td></tr>
-    <tr><th>オプション</th><td>残価保証、免許返納、中途解約（いずれも条件・料金の確認が必要）</td></tr>
-    <tr><th>納期</th><td>最短10日の即納車の案内あり（対象車両の情報は毎月更新）</td></tr>
-  </tbody>
-</table>
-</div>
-<p class="note">※内容は2026年11月2日時点の広告主の案内にもとづきます。最新の条件・車種・納期は公式ページでご確認ください。</p>
-
-<h2 id="price">月額料金の目安と、含まれないもの</h2>
-<p>月額は、<strong>車種・グレード・契約年数・走行距離・メンテナンスプランの有無</strong>で変わります。ここでは公開されている試算例を紹介します（あくまで一例で、実際の金額は見積りで確定します）。</p>
-
-<h3>試算例：ホンダ ヴェゼル G（4WD）／頭金0円・ボーナス払いなし</h3>
-<div class="tbl">
-<table>
-  <thead><tr><th>契約条件</th><th>月額（税込・概算）</th></tr></thead>
-  <tbody>
-    <tr><td>5年・ライトメンテナンス・月500km</td><td>約27,700円</td></tr>
-    <tr><td>5年・ライトメンテナンス・月1,000km</td><td>約29,350円</td></tr>
-    <tr><td>9年・ライトメンテナンス・月500km</td><td>約32,560円</td></tr>
-  </tbody>
-</table>
-</div>
-<p class="note">出典：第三者サイトの試算（2026年10月9日時点の掲載額）。同サイトの別の公開データでは金額が異なる時期もあり、料金は変動します。</p>
-
-<p>走行距離を増やすと月額が上がり、契約年数を延ばすと月額は下がる一方で総支払額は増える、という関係が読み取れます。「月額が安い＝総額が安い」ではない点に注意してください。</p>
-<p>最も安い車種の例としては、軽トラックが月額1万円台前半から案内されている例もあります（第三者サイトの掲載情報）。車種ごとの最新の月額は、公式ページで確認できます。</p>
-
-<div class="box warn">
-  <span class="t">月額に「含まれないもの」を確認しましょう</span>
-  <ul>
-    <li>任意保険、駐車場代、燃料費などは、別途必要になるのが一般的です。</li>
-    <li>メンテナンスプランの範囲外の整備費用は別途かかる場合があります。</li>
-    <li>広告上の「コミコミ」の範囲は商品ごとに異なります。<strong>見積書で、何が月額に入っているか</strong>を必ず確認してください。</li>
-  </ul>
-</div>
-
-<div class="cta">
-  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">気になる車種の月額を公式で調べる（PR）</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
-</div>
-
-<h2 id="options">オプションと、契約満了時の考え方</h2>
-<h3>用意されている主なオプション</h3>
-<ul>
-  <li><strong>残価保証オプション</strong>：契約終了時の査定額が設定残価を下回った場合の負担に備えるもの。</li>
-  <li><strong>中途解約オプション</strong>：途中で解約する可能性に備えるもの。</li>
-  <li><strong>免許返納オプション</strong>：免許を返納した場合に解約できるようにするもの。</li>
-</ul>
-<p>オプションを付けると月額は上乗せされます。上記ヴェゼルの5年契約の試算では、残価保証が月＋約2,500円、免許返納が月＋約2,200円、中途解約が月＋約9,900円とされています（第三者サイトの試算、2026年10月時点）。金額は車種や期間で変わるため、<strong>自分が選ぶ条件での金額を見積りで確認</strong>してください。</p>
-
-<h3>契約満了時の「残価精算」を理解しておく</h3>
-<p>オープンエンド方式のカーリースでは、契約時に「満了時の車の想定価値（残価）」を設定し、その分を差し引いて月額を計算します。返却時には<strong>車の査定額と設定残価の差額を精算</strong>するのが一般的で、査定額が残価を下回れば追加負担、上回れば差額を受け取れる、という仕組みです。</p>
-<p>「最後にもらえる」プランを選べると案内されていますが、<strong>残価が残る設定の場合は、満了時に買い取りの支払いが必要になる</strong>ケースもあります。「もらえる」の条件（追加費用の有無）は、契約前に確認しておきましょう。</p>
-
-<h2 id="demerit">デメリット・注意点</h2>
-<p>カーリース全般に言えることも含め、契約前に知っておきたい点です。</p>
-<ul>
-  <li><strong>原則として途中解約ができない</strong>：解約する場合は、残りの期間のリース料などが精算される仕組みが一般的です。必要ならオプションで備えますが、その分月額は上がります。</li>
-  <li><strong>走行距離の設定は大切</strong>：設定を超えた場合は、超過分の精算が発生することがあります。通勤や帰省など、実際の年間走行距離を見積もってから決めましょう。</li>
-  <li><strong>車は「借りもの」の扱い</strong>：大きな改造や、傷・へこみの放置は、返却時の精算に影響する可能性があります。</li>
-  <li><strong>総支払額は購入より高くなることがある</strong>：メンテナンスや税金を含めて定額にできる便利さと引き換えに、現金一括購入と比べて総額は変わります。</li>
-  <li><strong>プランは契約後に変更しにくい</strong>：走行距離やメンテナンスプランは、契約後の変更ができない、または制限がある場合があります。</li>
-  <li><strong>審査がある</strong>：申込内容にもとづいて審査が行われます。結果によっては契約できない場合があります。</li>
-</ul>
-
-<h2 id="fit">向いている人・向かない人</h2>
-<div class="two">
-  <div class="box ok">
-    <span class="t">向いている人</span>
-    <ul>
-      <li>まとまった頭金を用意せずに新車に乗りたい</li>
-      <li>車検や税金などの出費を、月々の定額にならしたい</li>
-      <li>メンテナンスの手配を任せたい</li>
-      <li>輸入車や大型SUVなど、幅広い車種から選びたい</li>
-      <li>3年など短めの期間で乗り換えたい</li>
-    </ul>
-  </div>
-  <div class="box warn">
-    <span class="t">慎重に検討したい人</span>
-    <ul>
-      <li>年間の走行距離がとても長い</li>
-      <li>車を自分好みに改造・カスタムしたい</li>
-      <li>数年以内に手放す可能性が高い（オプション費用も含めて比較を）</li>
-      <li>月額よりも総支払額の安さを最優先したい</li>
-    </ul>
+    <div class="cta">
+      <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで車種と月額を見る</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
+      <span class="micro">車種ごとの月額は、公式ページで確認できます</span>
+    </div>
+    <p class="scroll">▼ 先に注意点も知りたい方は、このまま下へ</p>
   </div>
 </div>
 
-<h2 id="flow">申込みの流れと、契約前のチェックリスト</h2>
-<h3>申込みの大まかな流れ</h3>
-<ol>
-  <li>乗りたい車種・契約年数・月間走行距離のイメージを決める</li>
-  <li>公式ページから、WEBで申込み（仮審査）を行う</li>
-  <li>申込内容にもとづく審査</li>
-  <li>見積り・契約内容の確認後、正式に契約</li>
-  <li>納車</li>
-</ol>
-<p class="note">※手順や必要書類の詳細は、公式の案内に従ってください。申込みの窓口を複数に分けると手続きが複雑になりやすいため、窓口は1つにまとめておくのがおすすめです。</p>
+<div class="wrap">
 
-<h3>契約前のチェックリスト</h3>
-<ul>
-  <li>月額に含まれる内容と、含まれない費用（任意保険・燃料・駐車場など）</li>
-  <li>メンテナンスプランの範囲（ライト／フルなど）と、対象外の整備</li>
-  <li>月間走行距離の設定と、超過した場合の精算ルール</li>
-  <li>満了時の選択肢（返却・乗り換え・買い取り・もらえる）と、それぞれの条件</li>
-  <li>残価の金額と、残価精算の基準（査定の条件・原状回復の範囲）</li>
-  <li>中途解約・免許返納オプションの有無、利用できる時期、上乗せ料金</li>
-  <li>納期（即納車か、通常の納期か）</li>
-</ul>
+<section>
+  <h2><small>POINT</small>まず知っておきたい3つのこと</h2>
+  <div class="cards">
+    <div class="card"><span class="n">1</span><div><b>初期費用をおさえて始められる</b><p>頭金0円・ボーナス払いなしで、月額は定額です。</p></div></div>
+    <div class="card"><span class="n">2</span><div><b>月額は「条件」で大きく変わる</b><p>車種・契約年数・走行距離・メンテナンスの有無で決まります。</p></div></div>
+    <div class="card warn"><span class="n">!</span><div><b>契約前に必ず確認したいこと</b><p>満了時の残価精算、途中解約、走行距離の超過です。</p></div></div>
+  </div>
+</section>
 
-<div class="banner">
-  <a href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" rel="nofollow sponsored noopener" target="_blank"><img border="0" width="300" height="250" alt="オリコで乗ーる 公式ページへ（PR）" src="https://www24.a8.net/svt/bgt?aid=260911551234&amp;wid=008&amp;eno=01&amp;mid=s00000021239001014000&amp;mc=1" loading="lazy"></a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" alt="">
+<section>
+  <h2><small>CHECK</small>あなたは向いている？</h2>
+  <div class="two">
+    <div class="col ok">
+      <h3>向いている人</h3>
+      <ul>
+        <li>頭金を用意せず新車に乗りたい</li>
+        <li>車検・税金の出費を月々にならしたい</li>
+        <li>メンテナンスの手配を任せたい</li>
+        <li>輸入車・大型SUVも選びたい</li>
+        <li>3年など短めで乗り換えたい</li>
+      </ul>
+    </div>
+    <div class="col ng">
+      <h3>慎重に考えたい人</h3>
+      <ul>
+        <li>年間の走行距離がとても長い</li>
+        <li>車を自由に改造したい</li>
+        <li>数年以内に手放すかもしれない</li>
+        <li>月額より総額の安さが最優先</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">向いていそうなら、公式ページへ</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
+  </div>
+</section>
+
+<section>
+  <h2><small>PRICE</small>月額はいくらくらい？</h2>
+  <p class="sub">公開されている試算例です。実際の金額は見積りで確定します。</p>
+  <div class="price">
+    <p class="cond">ホンダ ヴェゼル G（4WD）／5年・月500km・ライトメンテ</p>
+    <div class="yen">約27,700<small>円／月</small></div>
+    <div class="mini">
+      <div>月1,000kmに増やすと<b>約29,350円</b></div>
+      <div>9年・月500kmにすると<b>約32,560円</b></div>
+    </div>
+  </div>
+  <p class="note">出典：第三者サイトの試算（2026年10月9日時点の掲載額・税込概算）。料金は変動します。車種によっては月額1万円台の例もあります。</p>
+  <div class="box">
+    <b>月額に含まれないもの</b>
+    <p>任意保険・駐車場代・燃料費などは別途かかるのが一般的です。何が月額に入っているかは、見積書で確認しましょう。</p>
+  </div>
+</section>
+
+<section>
+  <h2><small>CAUTION</small>デメリット・注意点</h2>
+  <p class="sub">タップすると詳しく読めます。</p>
+  <details>
+    <summary>原則、途中解約はできない</summary>
+    <div class="in"><p>カーリースは原則として途中解約ができない契約です。解約する場合は、残りの期間のリース料などが精算される仕組みが一般的です。備えるなら中途解約・免許返納オプションがありますが、その分月額は上がります（ヴェゼル5年の試算では、免許返納が月＋約2,200円、中途解約が月＋約9,900円。第三者サイトの試算）。</p></div>
+  </details>
+  <details>
+    <summary>満了時に「残価精算」がある</summary>
+    <div class="in"><p>契約時に満了時の想定価値（残価）を設定し、返却時は査定額との差額を精算するのが一般的です。査定額が残価を下回ると追加の負担が出ることがあります（残価保証オプションもあります）。</p><p>「最後にもらえる」プランでも、残価の設定によっては買い取りの支払いが必要な場合があるので、条件を確認しましょう。</p></div>
+  </details>
+  <details>
+    <summary>走行距離の設定を超えると精算される</summary>
+    <div class="in"><p>月間走行距離は250〜3,000kmから選べます。超過分は精算になることがあるため、通勤や帰省も含めて、実際の年間走行距離を見積もってから決めるのが安全です。</p></div>
+  </details>
+  <details>
+    <summary>車は「借りもの」。改造や傷に注意</summary>
+    <div class="in"><p>大きな改造や、傷・へこみの放置は、返却時の精算に影響する可能性があります。</p></div>
+  </details>
+  <details>
+    <summary>総額は、購入より高くなることもある</summary>
+    <div class="in"><p>車検や税金をならして払える便利さと引き換えに、現金一括購入と比べて総額は変わります。月額だけでなく、契約期間の総支払額で比べましょう。</p></div>
+  </details>
+  <details>
+    <summary>審査がある／プランは変更しにくい</summary>
+    <div class="in"><p>申込内容にもとづく審査があり、結果によっては契約できない場合があります。また、走行距離やメンテナンスプランは、契約後に変更できない、または制限がある場合があります。</p></div>
+  </details>
+</section>
+
+<section>
+  <h2><small>FLOW</small>申込みから納車まで</h2>
+  <div class="steps">
+    <div class="step"><b>乗りたい車と条件を決める</b><span>車種・契約年数・月間走行距離のイメージ</span></div>
+    <div class="step"><b>公式ページからWEBで申込み（仮審査）</b><span>申込みの窓口は1つにまとめると手続きがスムーズです</span></div>
+    <div class="step"><b>審査</b><span>申込内容にもとづいて行われます</span></div>
+    <div class="step"><b>見積り・契約内容を確認して契約</b><span>下のチェックリストで最終確認</span></div>
+    <div class="step"><b>納車</b><span>最短10日の即納車の案内もあり（対象車両は毎月更新）</span></div>
+  </div>
+
+  <h3 style="margin:22px 0 4px;font-size:1.05rem;color:var(--navy)">契約前チェックリスト</h3>
+  <ul class="checks">
+    <li>月額に含まれるものと、含まれない費用</li>
+    <li>メンテナンスプランの範囲（ライト／フルなど）</li>
+    <li>月間走行距離と、超過した場合の精算ルール</li>
+    <li>満了時の選択肢と、残価精算の条件</li>
+    <li>中途解約・免許返納オプションの条件と料金</li>
+  </ul>
+
+  <div class="cta">
+    <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで見積りの条件を確認する</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
+    <span class="micro">新規契約の条件・審査・取扱車種は、公式ページの最新情報が優先されます</span>
+  </div>
+</section>
+
+<section>
+  <h2><small>TIMING</small>乗り換えを考えるタイミング</h2>
+  <div class="tags">
+    <span>事故で急な買い替え</span><span>車検・保険の満期</span><span>免許を取った</span><span>結婚・家族が増えた</span><span>子どもが独立</span><span>引っ越し</span><span>キャンプなど新しい趣味</span>
+  </div>
+  <p>必要な車のサイズや走行距離が変わりやすい時期です。<b>「今後3〜5年、どのくらい乗るか」</b>を先に考えてから、契約年数と走行距離を決めると失敗しにくくなります。</p>
+</section>
+
+<section>
+  <h2><small>Q&amp;A</small>よくある質問</h2>
+  <details>
+    <summary>「SOMPOで乗ーる」と同じサービスですか？</summary>
+    <div class="in"><p>2026年4月1日に「SOMPOで乗ーる」から「オリコで乗ーる」へ名称が変更されました。運営は株式会社オリコカーライフで、頭金0円・月額定額・約300車種から選べるというサービスの基本は引き続き案内されています。</p></div>
+  </details>
+  <details>
+    <summary>頭金やボーナス払いは必要ですか？</summary>
+    <div class="in"><p>広告主の案内では、頭金0円・ボーナス払いなしで、月額定額で利用できるとされています。月額に含まれる範囲はプランによって異なるため、見積書で確認してください。</p></div>
+  </details>
+  <details>
+    <summary>契約期間や走行距離はどのくらい選べますか？</summary>
+    <div class="in"><p>契約期間は1〜9年で選べ、月間走行距離は250kmから3,000kmの範囲で設定できると案内されています。走行距離を短くすると月額が安くなる傾向があります。</p></div>
+  </details>
+  <details>
+    <summary>途中で解約できますか？</summary>
+    <div class="in"><p>カーリースは原則として途中解約ができない契約です。中途解約オプションや免許返納オプションが用意されていますが、利用できる時期や条件、上乗せ料金は契約前に必ず確認してください。</p></div>
+  </details>
+  <details>
+    <summary>契約満了時はどうなりますか？</summary>
+    <div class="in"><p>広告主の案内では「返却する」または「最後にもらえる」プランを選べるとされています。残価の設定によっては満了時に精算や買い取りが必要になる場合があるため、プランごとの条件を確認することが大切です。</p></div>
+  </details>
+  <details>
+    <summary>納車まではどのくらいかかりますか？</summary>
+    <div class="in"><p>最短10日で納車できる即納車の案内があり、対象車両の情報は毎月更新されるとされています。通常の納期は車種や時期によって異なります。</p></div>
+  </details>
+  <details>
+    <summary>特徴をまとめて見たい（スペック一覧）</summary>
+    <div class="in tbl">
+      <table>
+        <tbody>
+          <tr><th>支払い</th><td>頭金0円、ボーナス払いなし。月額は定額</td></tr>
+          <tr><th>車種</th><td>国産車・輸入車を含む約300車種</td></tr>
+          <tr><th>契約期間</th><td>1〜9年</td></tr>
+          <tr><th>走行距離</th><td>月間250km〜3,000km</td></tr>
+          <tr><th>メンテナンス</th><td>プランを選択可能。冬タイヤの取り付け・交換・保管にも対応可能と案内</td></tr>
+          <tr><th>満了時</th><td>「途中でかえせる」「最後にもらえる」といった選び方が案内されている</td></tr>
+          <tr><th>オプション</th><td>残価保証、免許返納、中途解約</td></tr>
+          <tr><th>納期</th><td>最短10日の即納車の案内あり</td></tr>
+        </tbody>
+      </table>
+      <p class="note">※2026年11月2日時点の広告主の案内にもとづきます。</p>
+    </div>
+  </details>
+
+  <div class="banner">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" rel="nofollow sponsored noopener" target="_blank"><img border="0" width="300" height="250" alt="オリコで乗ーる 公式ページへ" src="https://www24.a8.net/svt/bgt?aid=260911551234&amp;wid=008&amp;eno=01&amp;mid=s00000021239001014000&amp;mc=1" loading="lazy"></a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+61C2P" alt="">
+  </div>
+</section>
+
 </div>
-
-<h2 id="timing">乗り換えを考えるタイミング</h2>
-<p>次のような場面は、車の持ち方を見直すきっかけになります。</p>
-<ul>
-  <li>事故で、急に車の買い替えが必要になったとき</li>
-  <li>車検や保険の満期で、まとまった出費が発生するとき</li>
-  <li>運転免許を取得したとき</li>
-  <li>結婚などで家族が増えたとき</li>
-  <li>子どもが独立し、同居の家族が減ったとき</li>
-  <li>引っ越しをしたとき</li>
-  <li>キャンプなど、新しい趣味ができたとき</li>
-</ul>
-<p>こうしたタイミングは、必要な車のサイズや走行距離が変わりやすい時期でもあります。<strong>「今後3〜5年、どのくらい乗るか」</strong>を先に整理してから、契約年数と走行距離を決めると失敗しにくくなります。</p>
-
-<h2 id="faq">よくある質問</h2>
-<details>
-  <summary>「SOMPOで乗ーる」と「オリコで乗ーる」は同じサービスですか？</summary>
-  <p>2026年4月1日に「SOMPOで乗ーる」から「オリコで乗ーる」へ名称が変更されました。運営は株式会社オリコカーライフで、頭金0円・月額定額・約300車種から選べるというサービスの基本は引き続き案内されています。</p>
-</details>
-<details>
-  <summary>頭金やボーナス払いは必要ですか？</summary>
-  <p>広告主の案内では、頭金0円・ボーナス払いなしで、月額定額で利用できるとされています。月額に含まれる範囲はプランによって異なるため、見積書で確認してください。</p>
-</details>
-<details>
-  <summary>契約期間や走行距離はどのくらい選べますか？</summary>
-  <p>契約期間は1〜9年で選べ、月間走行距離は250kmから3,000kmの範囲で設定できると案内されています。走行距離を短くすると月額が安くなる傾向があります。</p>
-</details>
-<details>
-  <summary>途中で解約できますか？</summary>
-  <p>カーリースは原則として途中解約ができない契約です。オリコで乗ーるでは、中途解約オプションや免許返納オプションが用意されていますが、利用できる時期や条件、上乗せ料金は契約前に必ず確認してください。</p>
-</details>
-<details>
-  <summary>契約満了時はどうなりますか？</summary>
-  <p>広告主の案内では「返却する」または「最後にもらえる」プランを選べるとされています。残価の設定によっては満了時に精算や買い取りが必要になる場合があるため、プランごとの条件を確認することが大切です。</p>
-</details>
-<details>
-  <summary>納車まではどのくらいかかりますか？</summary>
-  <p>最短10日で納車できる即納車の案内があり、対象車両の情報は毎月更新されるとされています。通常の納期は車種や時期によって異なります。</p>
-</details>
-
-<div class="cta">
-  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで詳しい条件を見る（PR）</a><img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" alt="">
-  <small>新規契約の条件・審査・取扱車種は公式ページの最新情報が優先されます</small>
-</div>
-
-<h2>参考にした情報</h2>
-<ul class="refs">
-  <li><a href="https://orico-de-noru.jp/" rel="noopener" target="_blank">オリコで乗ーる 公式サイト</a>（サービス概要・約300車種）</li>
-  <li><a href="https://car-days.fun/blog/?p=28044" rel="noopener nofollow" target="_blank">car-days「オリコで乗ーる」解説</a>（2026年4月1日の名称変更）</li>
-  <li><a href="https://transcarweb.com/2610-carlease-oricodenoru-guide/" rel="noopener nofollow" target="_blank">TRANSCAR「オリコで乗ーるの月額と残価精算・途中解約の注意点」</a>（料金例・オプション試算）</li>
-  <li><a href="https://jidounten-lab.com/u_56914" rel="noopener nofollow" target="_blank">自動運転ラボ「オリコで乗ーる」解説</a>（メンテナンスプラン・低価格車種の例）</li>
-  <li>株式会社オリコカーライフ 広告主の案内（特徴・契約期間・走行距離・オプションなど）</li>
-</ul>
-<p class="note">※本ページは情報提供を目的としており、特定の契約を保証・推奨するものではありません。料金・条件・取扱車種は変更される場合があります。申込み前に必ず公式ページで最新の内容をご確認ください。</p>
-
 </main>
 
 <footer>
   <div class="wrap">
+    <p class="pr-full"><b>【PR】</b>本ページはプロモーション（広告）を含みます。記事内のリンクから申込みがあった場合、運営者に報酬が支払われることがあります。掲載内容は、公式サイトや広告主の案内、第三者サイトの公開情報をもとに作成しています。</p>
+    <p>本ページは情報提供を目的としており、特定の契約を保証・推奨するものではありません。料金・条件・取扱車種は変更される場合があります。申込み前に必ず公式ページで最新の内容をご確認ください。</p>
+    <p><b>参考にした情報</b></p>
+    <ul>
+      <li><a href="https://orico-de-noru.jp/" rel="noopener" target="_blank">オリコで乗ーる 公式サイト</a></li>
+      <li><a href="https://car-days.fun/blog/?p=28044" rel="noopener nofollow" target="_blank">car-days「オリコで乗ーる」解説</a>（名称変更）</li>
+      <li><a href="https://transcarweb.com/2610-carlease-oricodenoru-guide/" rel="noopener nofollow" target="_blank">TRANSCAR「オリコで乗ーるの月額と残価精算・途中解約の注意点」</a>（料金例・オプション試算）</li>
+      <li><a href="https://jidounten-lab.com/u_56914" rel="noopener nofollow" target="_blank">自動運転ラボ「オリコで乗ーる」解説</a>（メンテナンスプラン等）</li>
+      <li>株式会社オリコカーライフ 広告主の案内</li>
+    </ul>
     <p><a href="../../../">NAO WEB LAB トップ</a> ／ <a href="../../../about.html">サイトについて</a> ／ <a href="../../../contact.html">お問い合わせ</a> ／ <a href="../../../privacy.html">プライバシーポリシー</a></p>
     <p>&copy; 2026 NAO WEB LAB</p>
   </div>
 </footer>
 
-<div class="sticky">
-  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで月額を確認する（PR）</a>
+<div class="sticky" id="sticky">
+  <a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BC8N3+3VBLQI+4JVQ+674EQ" rel="nofollow sponsored noopener" target="_blank">公式ページで月額を見る</a>
 </div>
 
+<script>
+(function(){
+  var hero=document.getElementById('hero'),bar=document.getElementById('sticky');
+  if(!hero||!bar)return;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){bar.classList.toggle('on',!e[0].isIntersecting)}).observe(hero);
+  }else{bar.classList.add('on')}
+})();
+</script>
 </body>
 </html>
