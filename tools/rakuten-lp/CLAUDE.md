@@ -81,3 +81,7 @@ max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_se
 - トップページで商品ガイドを目立たせる / Google Analytics 導入（プライバシーポリシー更新も必要）
 - Search Console の数字を見て1日の本数を調整 / Threads 自動化との連携
 - 楽天アフィリエイトの計測IDで記事別に成果を分ける（APIのURLに付与できるか要確認）
+
+## 選び方・比較ガイド（2026-11-02追加）
+- `listing.build_type_guides`：同じ product_type が5件以上あるとき `products/guide/t-xxxx/` に価格・レビュー・仕様の比較ガイドを自動生成（--rerender / 毎日の一覧更新で再生成）。商品ガイドトップにリンクあり
+- 順位・おすすめ順は付けない（価格順）。`promo/posts_draft.md` はX/Threads/note投稿の下書き

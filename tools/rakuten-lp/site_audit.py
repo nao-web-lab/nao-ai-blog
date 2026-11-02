@@ -171,7 +171,7 @@ def audit_page(path: Path):
 
 def run():
     pages = []
-    for f in sorted(PRODUCTS.glob("*/*/index.html")):
+    for f in sorted(p for p in PRODUCTS.glob("*/*/index.html") if p.parent.parent.name != "guide"):
         if f.parent.parent.name == "assets":
             continue
         pages.append(audit_page(f))

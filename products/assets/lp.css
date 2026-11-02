@@ -204,3 +204,5 @@ figcaption { font-size: .8rem; color: var(--lp-muted); margin-top: .5rem; line-h
 .lp-compare .lp-compare-date, .lp-compare .lp-compare-spec { display: block; font-size: .76rem; font-weight: 400; margin-top: .15rem; white-space: normal; }
 .lp-compare tr.is-current th, .lp-compare tr.is-current td { background: #fff7e0; }
 .lp-compare-now { display: inline-block; margin: 0 .5em .15em 0; padding: 0 .5em; border-radius: 3px; background: var(--lp-ink); color: #fff; font-size: .72rem; font-weight: 700; }
+.lp-guide-points { padding-left: 1.3em; margin: 0 0 2rem; }
+.lp-guide-points li { margin-bottom: .9rem; }

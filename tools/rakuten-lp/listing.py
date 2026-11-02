@@ -143,6 +143,97 @@ def _page(title, desc, canonical, root, h1, lead, body, site_name):
 """
 
 
+GUIDE_MIN = 5  # 同じ種類の商品がこの数以上あるときだけ「選び方・比較」ガイドを作る
+GUIDE_DIR = PRODUCTS_DIR / "guide"
+
+
+def guide_slug(ptype: str) -> str:
+    import hashlib
+    return "t-" + hashlib.sha1(_norm_type(ptype).encode("utf-8")).hexdigest()[:8]
+
+
+def guide_groups(entries: list) -> dict:
+    groups = {}
+    for r in entries:
+        t = _norm_type(r.get("product_type"))
+        if t:
+            groups.setdefault(t, []).append(r)
+    return {t: v for t, v in groups.items() if len(v) >= GUIDE_MIN}
+
+
+def build_type_guides(db: dict, config: dict) -> list:
+    """同じ種類の商品（例:ホエイプロテイン）を価格・レビュー数・仕様で並べた「選び方・比較」ガイドを書き出す。
+    値は各LPの原稿に保存済みの楽天APIの取得値だけ。順位付け・おすすめ順位は付けない（価格の安い順）。"""
+    site, name = config["site_base_url"], config["site_name"]
+    entries = published_entries(db)
+    written = []
+    for t, items in sorted(guide_groups(entries).items()):
+        rows = []
+        for r in items:
+            data = read_json(CONTENT_DIR / f"{r['slug']}.json", None)
+            if not data:
+                continue
+            pr = data["product"]
+            try:
+                price, avg, cnt = int(pr["price"]), float(pr["review_average"]), int(pr["review_count"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            fetched = (pr.get("fetched_at") or r.get("created_at") or "")[:10].replace("-", "/")
+            rows.append({"r": r, "price": price, "avg": avg, "cnt": cnt, "fetched": fetched, "spec": pick_specs(pr.get("spec_rows"), 2)})
+        if len(rows) < GUIDE_MIN:
+            continue
+        rows.sort(key=lambda x: x["price"])
+        label = items[0].get("product_type") or t
+        cat = items[0].get("category_label", "")
+        prices = [x["price"] for x in rows]
+        latest = max(x["fetched"] for x in rows)
+        body_rows = ""
+        for x in rows:
+            r = x["r"]
+            href = "../../" + r["lp_path"].replace("products/", "", 1).replace("index.html", "")
+            spec = f'<span class="lp-muted lp-compare-spec">{e(x["spec"])}</span>' if x["spec"] else ""
+            body_rows += (f'<tr><th scope="row"><a href="{href}">{e(r["display_name"])}</a>{spec}</th>'
+                          f'<td>¥{x["price"]:,}<span class="lp-muted lp-compare-date">{e(x["fetched"])}時点</span></td>'
+                          f'<td>{x["avg"]:.2f}<span class="lp-muted lp-compare-date">{x["cnt"]:,}件</span></td></tr>')
+        import statistics
+        most = max(rows, key=lambda x: x["cnt"])
+        cheap = rows[0]
+        med = int(statistics.median(prices))
+        facts = (f'<h2 class="lp-h2">数字で見る{e(label)}</h2><ul class="lp-check">'
+                 f'<li>価格帯：¥{min(prices):,}〜¥{max(prices):,}（中央値 ¥{med:,}）</li>'
+                 f'<li>レビュー件数が最も多いのは「{e(most["r"]["display_name"])}」（{most["cnt"]:,}件・平均{most["avg"]:.2f}）</li>'
+                 f'<li>価格が最も低いのは「{e(cheap["r"]["display_name"])}」（¥{cheap["price"]:,}）。ただし内容量や仕様が異なる場合があります</li></ul>'
+                 f'<p class="lp-note">いずれも{e(latest)}時点で当サイトが楽天市場の情報から集計した数値で、品質や優劣を示すものではありません。</p>')
+        body = (
+            facts +
+            f'<h2 class="lp-h2">{e(label)}を選ぶときの見るポイント</h2>'
+            f'<ol class="lp-guide-points"><li><b>価格は、内容量・仕様とセットで見る</b><br>容量・サイズ・セット数などが違うと、表示価格だけでは比べられません。下の表の仕様欄も合わせて確認してください。</li>'
+            f'<li><b>レビューは「件数」と「平均」の両方を見る</b><br>平均が高くても件数が少ないと参考になりにくいことがあります。数値は楽天市場に表示されたものです。</li>'
+            f'<li><b>使う場面と合うかを確認する</b><br>気になる商品は、下の名前から各商品ページへ進むと、向いている人・向いていない可能性がある人・購入前の確認点を読めます。</li></ol>'
+            f'<h2 class="lp-h2">{e(label)}を価格順に並べて比較</h2>'
+            f'<p class="lp-list-lead">当サイトで紹介している{len(rows)}件を、価格の安い順に並べました（¥{min(prices):,}〜¥{max(prices):,}）。順位やおすすめ順ではありません。</p>'
+            f'<div class="lp-table-wrap"><table class="lp-table lp-compare"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead><tbody>{body_rows}</tbody></table></div>'
+            f'<p class="lp-note">価格・送料・在庫・ポイントは変動します。最終確認日 {e(latest)}。購入前に楽天市場の商品ページで最新情報をご確認ください。紹介料率は掲載の判断に使っていません。</p>'
+            f'<p class="lp-back"><a href="../../">商品ガイドのトップへ</a></p>')
+        title = f"{label}の選び方と価格・レビュー比較（{len(rows)}件）"
+        desc = f"{label}を選ぶときの見るポイントと、楽天市場で扱われている{len(rows)}件の価格・レビュー数・仕様を並べて比較。購入前の確認に。"
+        path = GUIDE_DIR / guide_slug(t) / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(_page(title, desc, f"{site}/products/guide/{guide_slug(t)}/", "../../../", f"{label}の選び方と価格・レビュー比較",
+                              f"{cat}の{label}を、楽天市場の商品情報をもとに価格・レビュー・仕様で並べました。", body, name), encoding="utf-8")
+        written.append(path)
+    return written
+
+
+def _guide_nav(entries):
+    g = guide_groups(entries)
+    if not g:
+        return ""
+    chips = "".join(f'<li><a class="lp-chip" href="guide/{guide_slug(t)}/">{e(v[0].get("product_type") or t)}の比較（{len(v)}）</a></li>'
+                    for t, v in sorted(g.items(), key=lambda x: -len(x[1])))
+    return f'<nav aria-label="選び方・比較"><h2 class="lp-h2">選び方・価格比較から探す</h2><ul class="lp-chips">{chips}</ul></nav>'
+
+
 def build_listings(db: dict, config: dict, ensure: list = ()) -> list:
     """一覧ページを書き出し、書き出したファイルのパスを返す。"""
     site = config["site_base_url"]
@@ -173,10 +264,12 @@ def build_listings(db: dict, config: dict, ensure: list = ()) -> list:
     cat_links = "".join(f'<li><a class="lp-chip" href="{slug}/">{e(cats.get(slug, slug))}（{len(v)}）</a></li>' for slug, v in sorted(by_cat.items(), key=lambda x: -len(x[1])) if v)
     latest = "".join(_card(r, "") for r in entries[:60])
     body = (f'<nav aria-label="カテゴリ"><h2 class="lp-h2">カテゴリから探す</h2><ul class="lp-chips">{cat_links}</ul></nav>'
+            f'{_guide_nav(entries)}'
             f'<h2 class="lp-h2">新着の商品ガイド</h2><ul class="lp-related lp-related--grid">{latest or "<li>まだ公開されたページはありません。</li>"}</ul>')
     html_text = _page("商品ガイド一覧", "楽天市場の商品について、どんな人に向いているか・特徴・購入前に確認したい点を1商品ずつ整理した商品ガイドの一覧です。",
                       f"{site}/products/", "../", "商品ガイド",
                       "楽天市場の商品情報をもとに、「自分に合う商品か」を判断するための情報を1商品ずつ整理しています。", body, name)
     (PRODUCTS_DIR / "index.html").write_text(html_text, encoding="utf-8")
     written.append(PRODUCTS_DIR / "index.html")
+    written += build_type_guides(db, config)
     return written
