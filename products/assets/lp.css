@@ -206,3 +206,84 @@ figcaption { font-size: .8rem; color: var(--lp-muted); margin-top: .5rem; line-h
 .lp-compare-now { display: inline-block; margin: 0 .5em .15em 0; padding: 0 .5em; border-radius: 3px; background: var(--lp-ink); color: #fff; font-size: .72rem; font-weight: 700; }
 .lp-guide-points { padding-left: 1.3em; margin: 0 0 2rem; }
 .lp-guide-points li { margin-bottom: .9rem; }
+
+/* LPから「選び方・比較」ガイドへのリンク */
+.lp-guide-link { margin: 1.2rem 0 0; padding: .9rem 1rem; background: #fff; border: 1px solid var(--lp-line); border-left: 4px solid var(--lp-ink); border-radius: 4px; }
+.lp-guide-link a { display: block; font-weight: 700; color: var(--lp-ink); }
+.lp-guide-link .lp-muted { display: block; margin-top: .2rem; }
+
+/* =========================================================
+   選び方・比較ガイド（/products/guide/t-xxxx/） 2026-11-02
+   ========================================================= */
+.tg-head { padding: .6rem 0 2rem; }
+.tg-head .container { max-width: 1040px; }
+.tg-lead { max-width: 42em; margin: .2rem 0 .9rem; line-height: 1.8; }
+.tg-fv .lp-know { margin-top: 0; }
+.tg-fv { display: grid; gap: 1rem; }
+.tg-fv-for { margin: 0; font-weight: 700; color: var(--lp-ink); font-size: .92rem; }
+.tg-fv-cta { margin: .8rem 0 0; }
+.tg-btn-ghost { display: inline-flex; align-items: center; gap: .4em; min-height: 46px; padding: 0 1.2rem; border: 2px solid var(--lp-ink); border-radius: 6px; background: #fff; color: var(--lp-ink); font-weight: 700; text-decoration: none; }
+.tg-btn-ghost:hover { background: var(--lp-mist); color: var(--lp-ink); }
+.tg-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; list-style: none; margin: 0; padding: .8rem; background: var(--lp-stage); border-radius: 4px; }
+.tg-strip .lp-img-link { padding: 3px; border: 0; }
+.tg-sub { font-weight: 700; color: var(--lp-ink); margin: 1.6rem 0 .4rem; font-size: .92rem; }
+.tg-h3 { margin-top: 2rem; }
+
+/* 選ぶ前に決めること（手順） */
+.tg-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.tg-steps li { display: grid; grid-template-columns: 2.2rem 1fr; gap: .8rem; align-items: start; padding: 1rem; border: 1px solid var(--lp-line); border-radius: 6px; background: #fff; }
+.tg-steps p { margin: 0; line-height: 1.8; }
+.tg-step-no { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--lp-ink); color: #fff; font-weight: 700; font-family: var(--lp-serif); }
+
+/* 価格の分布図（HTML/CSSのみ。値は図の下に文字でも記載） */
+.tg-range { margin: 0; padding: 2.4rem 1.2rem 1rem; background: #fff; border: 1px solid var(--lp-line); border-radius: 6px; }
+.tg-axis { position: relative; height: 34px; margin: 0 6px; border-bottom: 2px solid var(--lp-ink); }
+.tg-band { position: absolute; bottom: -2px; height: 12px; background: rgba(29, 39, 71, .18); border-radius: 2px; }
+.tg-dot { position: absolute; bottom: 4px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--lp-gold); border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(29, 39, 71, .35); }
+.tg-med { position: absolute; bottom: -2px; top: -1.6rem; border-left: 2px dashed var(--lp-ink); }
+.tg-med span { position: absolute; top: -.2rem; left: 0; transform: translateX(-50%); white-space: nowrap; font-size: .76rem; font-weight: 700; color: var(--lp-ink); background: #fff; padding: 0 .3em; }
+.tg-axis-labels { display: flex; justify-content: space-between; font-size: .8rem; color: var(--lp-muted); margin-top: .35rem; }
+
+/* 比較表のサムネイル */
+.tg-row { display: flex; gap: .6rem; align-items: flex-start; }
+.tg-thumb { flex: none; width: 44px; }
+.tg-thumb .lp-img-link { padding: 2px; }
+.tg-table th[scope="row"] { min-width: 0; font-size: .88rem; }
+.tg-table td { white-space: normal; font-size: .86rem; }
+.tg-table td .lp-compare-date { font-size: .72rem; }
+.tg-table th[scope="col"] { white-space: normal; width: auto; }
+.tg-table th, .tg-table td { padding: .7rem .45rem; }
+.tg-table th[scope="row"] { width: 52%; overflow-wrap: anywhere; }
+
+/* 商品ごとの特徴カード */
+.tg-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.tg-card { display: grid; grid-template-columns: 96px 1fr; gap: .9rem; padding: 1rem; background: #fff; border: 1px solid var(--lp-line); border-radius: 6px; }
+.tg-card h3 { font-size: 1rem; margin: 0 0 .3rem; }
+.tg-card h3 a { color: var(--lp-ink); }
+.tg-card-meta { margin: 0 0 .4rem; font-size: .88rem; }
+.tg-card-facts { margin: 0 0 .5rem; padding-left: 1.1em; font-size: .9rem; line-height: 1.7; }
+.tg-card-who, .tg-card-caution { margin: .3rem 0 0; font-size: .88rem; line-height: 1.7; }
+.tg-card-who b, .tg-card-caution b { display: inline-block; margin-right: .5em; padding: 0 .45em; border-radius: 3px; font-size: .74rem; background: var(--lp-mist); color: var(--lp-ink); }
+.tg-card-caution b { background: #fff1ec; color: var(--lp-cta-dark); }
+.tg-card-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: .7rem 0 0; font-size: .88rem; }
+.tg-card-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--lp-ink); }
+.tg-card-links a[rel~="sponsored"] { color: var(--lp-cta-dark); }
+
+/* 出典つきの確認点 */
+.tg-src { display: block; margin-top: .15rem; font-size: .76rem; color: var(--lp-muted); }
+.tg-points li { list-style: none; }
+.tg-method { padding-left: 1.1em; }
+.tg-method li { margin-bottom: .8rem; line-height: 1.8; }
+.tg-method b { display: block; color: var(--lp-ink); }
+
+@media (min-width: 768px) {
+  .tg-fv { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; }
+  .tg-strip { order: 2; }
+  .tg-thumb { width: 56px; }
+  .tg-table th[scope="row"] { min-width: 13em; font-size: inherit; }
+  .tg-table td { white-space: nowrap; font-size: .92rem; }
+  .tg-table th, .tg-table td { padding: .75rem .6rem; }
+  .tg-head { padding: 1.2rem 0 2.6rem; }
+  .tg-card { grid-template-columns: 150px 1fr; gap: 1.3rem; }
+}
+.tg-points li { background: #fff; border: 1px solid var(--lp-line); border-radius: 4px; padding: .8rem .95rem; line-height: 1.7; }

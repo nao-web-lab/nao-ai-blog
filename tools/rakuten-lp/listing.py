@@ -161,66 +161,105 @@ def guide_groups(entries: list) -> dict:
     return {t: v for t, v in groups.items() if len(v) >= GUIDE_MIN}
 
 
+def _guide_page(title, desc, canonical, h1, lead, fv, body, site_name, ld, crumb_label, og_image):
+    """選び方・比較ガイド用のページ枠。セクションごとに全幅の背景を使うため、一覧用の _page とは分ける。"""
+    root = "../../../"
+    nav = (f'<li><a href="{root}index.html">ホーム</a></li><li><a href="{root}about.html">サイトについて</a></li>'
+           f'<li><a href="{root}products/" aria-current="page">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li>')
+    return f"""<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{e(title)}｜{e(site_name)}</title>
+<meta name="description" content="{e(desc)}">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="{e(canonical)}">
+<link rel="icon" type="image/svg+xml" href="{FAVICON}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{e(site_name)}">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
+<meta property="og:url" content="{e(canonical)}">
+<meta property="og:image" content="{e(og_image)}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://thumbnail.image.rakuten.co.jp">
+<link rel="stylesheet" href="{root}css/style.css">
+<link rel="stylesheet" href="{root}products/assets/lp.css">
+{ld}
+</head>
+<body class="lp-body lp-type-guide">
+<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+<header class="site-header"><div class="container header-inner">
+<a class="site-logo" href="{root}index.html"><span class="site-logo-mark" aria-hidden="true">N</span>{e(site_name)}</a>
+<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開閉する"><span></span><span></span><span></span></button>
+<nav id="primary-nav" class="site-nav" aria-label="メインナビゲーション"><ul>{nav}</ul></nav>
+</div></header>
+<nav class="lp-breadcrumb container" aria-label="パンくずリスト"><a href="{root}index.html">ホーム</a> <span aria-hidden="true">›</span> <a href="{root}products/">商品ガイド</a> <span aria-hidden="true">›</span> <span aria-current="page">{e(crumb_label)}</span></nav>
+<main id="main-content">
+<section class="tg-head"><div class="container">
+<p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>
+<h1 class="lp-h1">{e(h1)}</h1><p class="tg-lead">{e(lead)}</p>
+{fv}
+</div></section>
+{body}
+<div class="container container--narrow lp-disclaimer">
+<p>※このページには楽天アフィリエイトの広告リンクが含まれます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。商品の選び方・文章の作り方は<a href="{root}policy.html">広告・運営方針</a>に記載しています。</p>
+<p>※商品画像は楽天アフィリエイトを通じて提供されている画像を使用しています（著作権は各ショップ・権利者に帰属します）。</p>
+</div>
+</main>
+<footer class="site-footer"><div class="container footer-inner">
+<p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(site_name)}</p>
+<nav class="footer-nav" aria-label="フッターナビゲーション"><ul><li><a href="{root}about.html">サイトについて</a></li><li><a href="{root}policy.html">広告・運営方針</a></li><li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li><li><a href="{root}privacy.html">プライバシーポリシー</a></li></ul></nav>
+<p class="footer-copyright">&copy; <span data-current-year>2026</span> {e(site_name)}</p>
+</div></footer>
+<script src="{root}js/main.js" defer></script>
+</body>
+</html>
+"""
+
+
+def guide_href_for(rec: dict, entries: list, from_dir_depth: int = 3):
+    """LPから、その商品の種類の「選び方・比較」ガイドへのリンク (href, label, 件数)。ガイドが無ければ None。"""
+    t = _norm_type(rec.get("product_type"))
+    if not t:
+        return None
+    n = sum(1 for o in entries if _norm_type(o.get("product_type")) == t
+            and (o.get("affiliate_url") or "").startswith("https://hb.afl.rakuten.co.jp/")
+            and (CONTENT_DIR / f"{o['slug']}.json").exists())
+    if n < GUIDE_MIN:
+        return None
+    return ("../" * from_dir_depth + f"products/guide/{guide_slug(t)}/", rec.get("product_type") or t, n)
+
+
 def build_type_guides(db: dict, config: dict) -> list:
-    """同じ種類の商品（例:ホエイプロテイン）を価格・レビュー数・仕様で並べた「選び方・比較」ガイドを書き出す。
-    値は各LPの原稿に保存済みの楽天APIの取得値だけ。順位付け・おすすめ順位は付けない（価格の安い順）。"""
+    """同じ種類の商品（例:ホエイプロテイン）の「選び方・比較」ガイドを書き出す（中身は type_guide.py）。
+    値は各LPの原稿に保存済みの楽天APIの取得値と商品説明から抜き出した事実だけ。順位付けはしない（価格の安い順）。"""
+    import type_guide
     site, name = config["site_base_url"], config["site_name"]
     entries = published_entries(db)
+    groups = guide_groups(entries)
+    built = {}
+    for t, items in sorted(groups.items()):
+        rows = type_guide.guide_rows(items, lambda r: read_json(CONTENT_DIR / f"{r['slug']}.json", None))
+        if len(rows) >= GUIDE_MIN:
+            built[t] = rows
     written = []
-    for t, items in sorted(guide_groups(entries).items()):
-        rows = []
-        for r in items:
-            data = read_json(CONTENT_DIR / f"{r['slug']}.json", None)
-            if not data:
-                continue
-            pr = data["product"]
-            try:
-                price, avg, cnt = int(pr["price"]), float(pr["review_average"]), int(pr["review_count"])
-            except (KeyError, TypeError, ValueError):
-                continue
-            fetched = (pr.get("fetched_at") or r.get("created_at") or "")[:10].replace("-", "/")
-            rows.append({"r": r, "price": price, "avg": avg, "cnt": cnt, "fetched": fetched, "spec": pick_specs(pr.get("spec_rows"), 2)})
-        if len(rows) < GUIDE_MIN:
-            continue
-        rows.sort(key=lambda x: x["price"])
-        label = items[0].get("product_type") or t
-        cat = items[0].get("category_label", "")
-        prices = [x["price"] for x in rows]
-        latest = max(x["fetched"] for x in rows)
-        body_rows = ""
-        for x in rows:
-            r = x["r"]
-            href = "../../" + r["lp_path"].replace("products/", "", 1).replace("index.html", "")
-            spec = f'<span class="lp-muted lp-compare-spec">{e(x["spec"])}</span>' if x["spec"] else ""
-            body_rows += (f'<tr><th scope="row"><a href="{href}">{e(r["display_name"])}</a>{spec}</th>'
-                          f'<td>¥{x["price"]:,}<span class="lp-muted lp-compare-date">{e(x["fetched"])}時点</span></td>'
-                          f'<td>{x["avg"]:.2f}<span class="lp-muted lp-compare-date">{x["cnt"]:,}件</span></td></tr>')
-        import statistics
-        most = max(rows, key=lambda x: x["cnt"])
-        cheap = rows[0]
-        med = int(statistics.median(prices))
-        facts = (f'<h2 class="lp-h2">数字で見る{e(label)}</h2><ul class="lp-check">'
-                 f'<li>価格帯：¥{min(prices):,}〜¥{max(prices):,}（中央値 ¥{med:,}）</li>'
-                 f'<li>レビュー件数が最も多いのは「{e(most["r"]["display_name"])}」（{most["cnt"]:,}件・平均{most["avg"]:.2f}）</li>'
-                 f'<li>価格が最も低いのは「{e(cheap["r"]["display_name"])}」（¥{cheap["price"]:,}）。ただし内容量や仕様が異なる場合があります</li></ul>'
-                 f'<p class="lp-note">いずれも{e(latest)}時点で当サイトが楽天市場の情報から集計した数値で、品質や優劣を示すものではありません。</p>')
-        body = (
-            facts +
-            f'<h2 class="lp-h2">{e(label)}を選ぶときの見るポイント</h2>'
-            f'<ol class="lp-guide-points"><li><b>価格は、内容量・仕様とセットで見る</b><br>容量・サイズ・セット数などが違うと、表示価格だけでは比べられません。下の表の仕様欄も合わせて確認してください。</li>'
-            f'<li><b>レビューは「件数」と「平均」の両方を見る</b><br>平均が高くても件数が少ないと参考になりにくいことがあります。数値は楽天市場に表示されたものです。</li>'
-            f'<li><b>使う場面と合うかを確認する</b><br>気になる商品は、下の名前から各商品ページへ進むと、向いている人・向いていない可能性がある人・購入前の確認点を読めます。</li></ol>'
-            f'<h2 class="lp-h2">{e(label)}を価格順に並べて比較</h2>'
-            f'<p class="lp-list-lead">当サイトで紹介している{len(rows)}件を、価格の安い順に並べました（¥{min(prices):,}〜¥{max(prices):,}）。順位やおすすめ順ではありません。</p>'
-            f'<div class="lp-table-wrap"><table class="lp-table lp-compare"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead><tbody>{body_rows}</tbody></table></div>'
-            f'<p class="lp-note">価格・送料・在庫・ポイントは変動します。最終確認日 {e(latest)}。購入前に楽天市場の商品ページで最新情報をご確認ください。紹介料率は掲載の判断に使っていません。</p>'
-            f'<p class="lp-back"><a href="../../">商品ガイドのトップへ</a></p>')
-        title = f"{label}の選び方と価格・レビュー比較（{len(rows)}件）"
-        desc = f"{label}を選ぶときの見るポイントと、楽天市場で扱われている{len(rows)}件の価格・レビュー数・仕様を並べて比較。購入前の確認に。"
+    for t, rows in built.items():
+        first = rows[0]["r"]
+        label = first.get("product_type") or t
+        cat, cat_slug = first.get("category_label", ""), first.get("category", "")
+        siblings = [(v[0]["r"].get("product_type") or k, guide_slug(k), len(v)) for k, v in sorted(built.items(), key=lambda kv: -len(kv[1]))
+                    if k != t and v[0]["r"].get("category") == cat_slug][:8]
+        lead, fv, body, title, desc, h1 = type_guide.render_guide_body(label, cat, cat_slug, rows, siblings)
+        url = f"{site}/products/guide/{guide_slug(t)}/"
+        latest = max(x["fetched"] for x in rows).replace("/", "-")
+        ld = type_guide.jsonld(title, url, site, h1, latest)
         path = GUIDE_DIR / guide_slug(t) / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(_page(title, desc, f"{site}/products/guide/{guide_slug(t)}/", "../../../", f"{label}の選び方と価格・レビュー比較",
-                              f"{cat}の{label}を、楽天市場の商品情報をもとに価格・レビュー・仕様で並べました。", body, name), encoding="utf-8")
+        path.write_text(_guide_page(title, desc, url, h1, lead, fv, body, name, ld, f"{label}の選び方・比較",
+                                    site + "/products/assets/og-default.png"), encoding="utf-8")
         written.append(path)
     return written
 

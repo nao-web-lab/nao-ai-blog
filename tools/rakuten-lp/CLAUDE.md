@@ -90,3 +90,7 @@ max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_se
 ## 選び方・比較ガイド（2026-11-02追加）
 - `listing.build_type_guides`：同じ product_type が5件以上あるとき `products/guide/t-xxxx/` に価格・レビュー・仕様の比較ガイドを自動生成（--rerender / 毎日の一覧更新で再生成）。商品ガイドトップにリンクあり
 - 順位・おすすめ順は付けない（価格順）。`promo/posts_draft.md` はX/Threads/note投稿の下書き
+- 2026-11-02 改訂：中身は `type_guide.py`。最初の画面（対象者・分かること・商品画像4枚・比較表へのボタン）→選ぶ前に決める3つ→価格分布図（CSS）→
+  サムネイル付き比較表→商品ごとの特徴カード（事実2つ・向いている人・確認したい点）→出典つきの確認点・向いていない場合→このガイドの作り方
+- 商品LPの比較表の下に、その種類のガイドへのリンク（`listing.guide_href_for` → ctx["type_guide"]）。ガイドが無い種類には出ない
+- 楽天の画像サーバーはクラウド環境からは接続できない。スクリーンショット確認時は画像を仮画像に差し替えてレイアウトだけ見る
