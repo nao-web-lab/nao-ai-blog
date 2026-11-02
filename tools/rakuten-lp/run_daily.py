@@ -273,6 +273,16 @@ def page_ctx(config, p, slug, created, modified, fetched=None):
             "published": created, "modified": modified, "favicon": listing.FAVICON}
 
 
+def attach_compare(ctx: dict, rec: dict, p: dict, entries: list, config: dict) -> dict:
+    """同じ種類の商品との比較表用データをページ生成用の ctx に付ける（取得済みの事実データのみ・API不使用）。"""
+    try:
+        price = int(p.get("price") or 0)
+    except (TypeError, ValueError):
+        price = 0
+    ctx["compare"] = listing.compare_rows({**rec, "_price": price}, entries, config.get("compare_max", 3))
+    return ctx
+
+
 def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat: dict = None) -> dict:
     it = cand["item"]
     code = it["itemCode"]
@@ -362,7 +372,7 @@ def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat:
     }
     entries = listing.published_entries(db)
     related = listing.related_items_for(rec, entries, config["related_links"])
-    ctx = page_ctx(config, p, slug, now, now)
+    ctx = attach_compare(page_ctx(config, p, slug, now, now), rec, p, entries, config)
     html_text = render.render_page(p, c, plan, related, ctx)
 
     page_path = REPO_ROOT / lp_rel
@@ -392,7 +402,7 @@ def refresh_related(db: dict, config: dict) -> int:
         if not data:
             continue
         now = now_jst().isoformat(timespec="seconds")
-        ctx = page_ctx(config, data["product"], rec["slug"], rec["created_at"], now)
+        ctx = attach_compare(page_ctx(config, data["product"], rec["slug"], rec["created_at"], now), rec, data["product"], entries, config)
         html_text = render.render_page(data["product"], data["content"], data["image_plan"], related, ctx)
         path = REPO_ROOT / rec["lp_path"]
         if quality.check_html(html_text, path, ctx["public_url"], rec["affiliate_url"], REPO_ROOT):
@@ -415,7 +425,7 @@ def rerender_all(db: dict, config: dict) -> tuple:
             ng.append(f"{rec['slug']}: 原稿なし")
             continue
         related = listing.related_items_for(rec, entries, config["related_links"])
-        ctx = page_ctx(config, data["product"], rec["slug"], rec["created_at"], rec.get("updated_at") or rec["created_at"])
+        ctx = attach_compare(page_ctx(config, data["product"], rec["slug"], rec["created_at"], rec.get("updated_at") or rec["created_at"]), rec, data["product"], entries, config)
         html_text = render.render_page(data["product"], data["content"], data["image_plan"], related, ctx)
         path = REPO_ROOT / rec["lp_path"]
         issues = quality.check_html(html_text, path, ctx["public_url"], rec["affiliate_url"], REPO_ROOT)
@@ -756,7 +766,7 @@ def audit_published(db: dict, config: dict) -> dict:
         # 4. 再生成（情報の取得日も更新）
         entries = listing.published_entries(db)
         related = listing.related_items_for(rec, entries, config["related_links"])
-        ctx = page_ctx(config, p, rec["slug"], rec["created_at"], now, fetched=p.get("fetched_at"))
+        ctx = attach_compare(page_ctx(config, p, rec["slug"], rec["created_at"], now, fetched=p.get("fetched_at")), rec, p, entries, config)
         html_text = render.render_page(p, c, plan, related, ctx)
         path = REPO_ROOT / rec["lp_path"]
         issues = quality.check_html(html_text, path, ctx["public_url"], p["affiliate_url"], REPO_ROOT)

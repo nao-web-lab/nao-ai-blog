@@ -50,9 +50,32 @@ def _img(img, aff_url, eager=False, cls="lp-figure"):
     return f'<figure class="{cls}">{_aff(aff_url, tag, "lp-img-link", img["alt"] + "（楽天市場の商品ページへ）")}{cap}</figure>'
 
 
+DEFAULT_CTA = "楽天市場で価格・詳細を確認する"
+DEFAULT_CTA_SUB = "価格・在庫・送料は楽天市場の商品ページでご確認ください"
+
+
+COMPARABLE_LABELS = ("内容量", "容量", "サイズ", "本体サイズ", "重量", "入数", "枚数", "サイズ・容量", "セット内容", "素材", "対応")
+
+
+def pick_specs(rows: list, n: int = 2) -> str:
+    """比較表に載せる仕様。内容量・サイズなど、並べて比べられる項目を優先する（製造国などは後回し）。"""
+    rows = rows or []
+    pri = [r for r in rows if any(k in r.get("label", "") for k in COMPARABLE_LABELS)]
+    rest = [r for r in rows if r not in pri]
+    return "、".join(f'{r["label"]}:{r["value"]}' for r in (pri + rest)[:n] if r.get("value"))
+
+
+def cta_label(label: str) -> str:
+    """ボタン文言は「押すとどこで何をするか」が分かる形にする（遷移先の楽天市場を必ず含める）。"""
+    label = (label or "").strip()
+    return label if "楽天市場" in label else DEFAULT_CTA
+
+
 def _cta(p, c, variant="main"):
-    label = (c.get("cta") or {}).get("main") or "楽天市場で商品の詳細を見る"
-    sub = (c.get("cta") or {}).get("sub") or "価格・在庫・送料は楽天市場の商品ページでご確認ください"
+    label = cta_label((c.get("cta") or {}).get("main"))
+    sub = (c.get("cta") or {}).get("sub") or DEFAULT_CTA_SUB
+    if "楽天" not in sub:
+        sub = DEFAULT_CTA_SUB
     inner = e(label) + ' <span aria-hidden="true">›</span>'
     btn = _aff(p["affiliate_url"], inner, "btn btn-primary lp-cta-btn")
     return f'<div class="lp-cta lp-cta--{variant}">{btn}<p class="lp-cta-sub">{e(sub)}</p></div>'
@@ -133,12 +156,50 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
         items = "".join(f'<details class="faq-item"><summary>{e(f["q"])}</summary><p>{e(f["a"])}</p></details>' for f in c["faq"])
         blocks["faq"] = _section("faq", heads["faq"], items)
 
+    # 同じ種類の商品との比較表（取得済みの事実データだけ。項目は価格・レビュー・仕様で、報酬率などは使わない）
+    compare = ctx.get("compare") or []
+    if compare:
+        def _row(name, href, price, avg, cnt, fetched_d, spec, current=False):
+            link = f'<a href="{e(href)}">{e(name)}</a>' if href else f'<strong>{e(name)}</strong>'
+            tag = '<span class="lp-compare-now">このページ</span>' if current else ""
+            spec_html = f'<span class="lp-muted lp-compare-spec">{e(spec)}</span>' if spec else ""
+            return (f'<tr{" class=\"is-current\"" if current else ""}><th scope="row">{tag}{link}{spec_html}</th>'
+                    f'<td>¥{int(price):,}<span class="lp-muted lp-compare-date">{e(fetched_d)}時点</span></td>'
+                    f'<td>{float(avg):.2f}<span class="lp-muted lp-compare-date">{int(cnt):,}件</span></td></tr>')
+        spec_now = pick_specs(p.get("spec_rows"))
+        rows = [(float(p["price"]), _row(p["display_name"], None, p["price"], p["review_average"], p["review_count"], fetched, spec_now, True))]
+        for x in compare:
+            rows.append((float(x["price"]), _row(x["name"], x["href"], x["price"], x["review_average"], x["review_count"], x["fetched"], x["spec"])))
+        rows.sort(key=lambda t: t[0])
+        table_html = "".join(r for _, r in rows)
+        blocks["compare"] = _section(
+            "compare", "同じ種類の商品と並べて確認する",
+            f'<p>このサイトで紹介している、同じカテゴリ・同じ種類の商品を、価格が近い順に並べました。選び方の参考にしてください。</p>'
+            f'<div class="lp-table-wrap"><table class="lp-table lp-compare"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead>'
+            f'<tbody>{table_html}</tbody></table></div>'
+            f'<p class="lp-note">価格・レビューは、各ページに記載の確認日時点の楽天市場の表示です（確認日は商品ごとに異なります）。内容量・セット数・色などが違うと価格は単純に比べられません。'
+            f'表示する商品は、紹介料ではなく、カテゴリ・商品の種類・価格の近さで選んでいます。</p>', "section--muted")
+
     order = LAYOUTS.get(p["layout"], LAYOUTS["living"])
     mid_after = MID_CTA_AFTER.get(p["layout"], "features")
     body_sections = []
+    know_items = []
+    KNOW = {"features": "商品の特徴", "scenes": "使う場面", "specs": "価格・仕様（確認日つき）", "compare": "同じ種類の商品との比較",
+            "checkpoints": "購入前の確認点", "not_for": "向いていない人", "faq": "よくある質問"}
+    for key in order:
+        if key in KNOW and key in blocks:
+            know_items.append((key, KNOW[key]))
+        if key == "specs" and "compare" in blocks:
+            know_items.append(("compare", KNOW["compare"]))
+    know_html = ""
+    if know_items:
+        links = "".join(f'<a href="#{k}">{e(v)}</a>' for k, v in know_items[:6])
+        know_html = f'<p class="lp-know"><span class="lp-know-label">このページで分かること</span>{links}</p>'
     for key in order:
         if key in blocks:
             body_sections.append(blocks[key])
+            if key == "specs" and "compare" in blocks:
+                body_sections.append(blocks["compare"])
             if key == mid_after:
                 body_sections.append(f'<div class="container container--narrow">{_cta(p, c, "mid")}</div>')
 
@@ -168,14 +229,14 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
              f'<strong>{p["review_average"]:.2f}</strong><span>楽天市場のレビュー {p["review_count"]:,}件（{e(fetched)}時点）</span></p>')
     eyebrow = f'<p class="lp-eyebrow">{e(fv.get("eyebrow"))}</p>' if fv.get("eyebrow") else ""
     fv_html = (f'<section class="lp-fv"><div class="container lp-fv-grid">'
-               f'<div class="lp-fv-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます</p>'
+               f'<div class="lp-fv-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>'
                f'{eyebrow}<h1 class="lp-h1">{e(c["h1"])}</h1></div>'
                f'<div class="lp-fv-stage">{fv_img}</div>'
                f'<div class="lp-fv-body">{stars}<p class="lp-catch">{e(fv.get("catch"))}</p>'
-               f'<p class="lp-lead">{e(fv.get("lead"))}</p><ul class="lp-fv-points">{points}</ul>{_cta(p, c, "fv")}</div>'
+               f'<p class="lp-lead">{e(fv.get("lead"))}</p><ul class="lp-fv-points">{points}</ul>{know_html}{_cta(p, c, "fv")}</div>'
                f'</div></section>')
     sticky = (f'<div class="lp-sticky"><div class="lp-sticky-inner"><span class="lp-sticky-name">{e(p["display_name"])}</span>'
-              f'{_aff(aff, "楽天市場で見る", "lp-sticky-btn")}</div></div>')
+              f'{_aff(aff, "楽天市場で詳細を確認", "lp-sticky-btn")}</div></div>')
 
     # ---- breadcrumb / JSON-LD
     crumbs = [("ホーム", f'{root}index.html', ctx["site_url"] + "/"),
@@ -187,16 +248,12 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
     ld = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList",
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, _, u) in enumerate(crumbs)]},
-        {"@context": "https://schema.org", "@type": "Product", "name": p["display_name"],
-         "image": [sized(i["url"], IMG_SIZE) for i in image_plan], "description": c.get("meta_description", ""),
-         "sku": p["item_code"], "category": p["category_label"]},
         {"@context": "https://schema.org", "@type": "WebPage", "name": c["title"], "url": ctx["public_url"],
          "datePublished": ctx["published"], "dateModified": ctx["modified"], "inLanguage": "ja"},
     ]
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
 
     title = f'{c["title"]}｜{ctx["site_name"]}'
-    keywords = ", ".join(c.get("_keywords") or [])
     og_image = ctx["site_url"] + "/products/assets/og-default.png"
     nav = (f'<li><a href="{root}index.html">ホーム</a></li><li><a href="{root}about.html">サイトについて</a></li>'
            f'<li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li>')
@@ -209,7 +266,6 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 <title>{e(title)}</title>
 <meta name="description" content="{e(c.get('meta_description'))}">
 <meta name="robots" content="index,follow">
-{f'<meta name="keywords" content="{e(keywords)}">' if keywords else ''}
 <link rel="canonical" href="{e(ctx['public_url'])}">
 <link rel="icon" type="image/svg+xml" href="{ctx['favicon']}">
 <meta property="og:type" content="article">
@@ -240,7 +296,7 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 {final}
 {related_html}
 <div class="container container--narrow lp-disclaimer">
-<p>※本ページは楽天アフィリエイトを利用した広告を含みます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</p>
+<p>※本ページは楽天アフィリエイトを利用した広告を含みます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。商品の選び方・文章の作り方は<a href="{root}policy.html">広告・運営方針</a>に記載しています。</p>
 <p>※本ページの内容は{e(fetched)}時点で楽天市場に登録されている商品情報をもとに作成しています。商品の仕様・価格・在庫・レビュー件数などは変更されている場合があります。最新の情報は楽天市場の商品ページでご確認ください。</p>
 <p>※商品画像は楽天アフィリエイトを通じて提供されている画像を使用しています（著作権は各ショップ・権利者に帰属します）。</p>
 <p class="lp-muted">最終更新: {e(ctx['modified'][:10])}</p>
@@ -249,7 +305,7 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 </main>
 <footer class="site-footer"><div class="container footer-inner">
 <p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(ctx['site_name'])}</p>
-<nav class="footer-nav" aria-label="フッターナビゲーション"><ul><li><a href="{root}about.html">サイトについて</a></li><li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li><li><a href="{root}privacy.html">プライバシーポリシー</a></li></ul></nav>
+<nav class="footer-nav" aria-label="フッターナビゲーション"><ul><li><a href="{root}about.html">サイトについて</a></li><li><a href="{root}policy.html">広告・運営方針</a></li><li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li><li><a href="{root}privacy.html">プライバシーポリシー</a></li></ul></nav>
 <p class="footer-copyright">&copy; <span data-current-year>2026</span> {e(ctx['site_name'])}</p>
 </div></footer>
 <script src="{root}js/main.js" defer></script>

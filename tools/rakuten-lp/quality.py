@@ -307,6 +307,18 @@ def check_html(html: str, page_path: Path, public_url: str, affiliate_url: str, 
         issues.append("viewportがない（スマホ非対応）")
     if "PR" not in html or "アフィリエイト" not in html:
         issues.append("アフィリエイト(PR)表記がない")
+    # PR表記は商品名(H1)より前＝最初の画面に必ず置く（末尾だけ・折りたたみは不可）
+    pr_pos, h1_pos = html.find('class="lp-pr"'), html.find("<h1")
+    if pr_pos < 0 or (h1_pos >= 0 and pr_pos > h1_pos):
+        issues.append("PR表記が商品名より前（最初の画面）にない")
+    if "policy.html" not in html:
+        issues.append("広告・運営方針へのリンクがない")
+    if attrs_of("meta", name="keywords"):
+        issues.append("meta keywords は使わない（検索に使われず、詰め込みに見えるため）")
+    for label in re.findall(r'class="btn btn-primary lp-cta-btn"[^>]*>([^<]*)', html):
+        if "楽天市場" not in label:
+            issues.append(f"ボタン文言に遷移先(楽天市場)がない: {label.strip()[:20]}")
+            break
     for j in c.jsonld:
         try:
             json.loads(j)
@@ -370,8 +382,8 @@ def is_valid_affiliate_url(url: str) -> bool:
 
 
 CTA_POOL = [
-    "楽天市場で商品の詳細を見る", "楽天市場で最新の価格を確認する", "商品ページで仕様をチェックする",
-    "楽天市場でサイズ・仕様を確かめる", "在庫と配送日を楽天市場で確認", "楽天市場の販売ページを開く",
+    "楽天市場で商品の詳細を見る", "楽天市場で最新の価格を確認する", "楽天市場の商品ページで仕様を確認する",
+    "楽天市場でサイズ・仕様を確かめる", "在庫と配送日を楽天市場で確認", "楽天市場で価格・詳細を確認する",
     "楽天市場でレビュー件数と評価を見る", "カラー・種類を楽天市場で選ぶ", "楽天市場で送料と価格を確認する",
 ]
 
@@ -381,7 +393,7 @@ def diversify_cta(content: dict, others: list, rng) -> None:
     recent = [(_get(o, ("cta", "main"))) for o in others[:8]]
     cta = content.setdefault("cta", {})
     mine = cta.get("main") or ""
-    too_similar = (not mine) or len(mine) > 22 or any(r and difflib.SequenceMatcher(None, mine, r).ratio() >= 0.8 for r in recent)
+    too_similar = (not mine) or len(mine) > 22 or "楽天市場" not in mine or any(r and difflib.SequenceMatcher(None, mine, r).ratio() >= 0.8 for r in recent)
     if too_similar:
         choices = [c for c in CTA_POOL if c not in recent] or CTA_POOL
         cta["main"] = rng.choice(choices)

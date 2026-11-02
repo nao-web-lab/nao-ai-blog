@@ -3,9 +3,11 @@
 一覧には「公開済み かつ ファイルが実在する」LPだけを載せる（存在しないLPへのリンクを作らない）。
 """
 
-from common import PRODUCTS_DIR, REPO_ROOT
+import unicodedata
+
+from common import CONTENT_DIR, PRODUCTS_DIR, REPO_ROOT, read_json
 from images import sized
-from render import e
+from render import e, pick_specs
 
 FAVICON = ("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%232563eb'/%3E%3Ctext%20x='32'%20y='44'%20font-family='Arial,Helvetica,sans-serif'%20font-size='34'%20font-weight='700'%20fill='%23ffffff'%20text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E")
 
@@ -54,6 +56,40 @@ def related_items_for(rec: dict, entries: list, n: int, from_dir_depth: int = 3)
     } for o in pick_related(rec, entries, n) if o.get("images")]
 
 
+def _norm_type(s: str) -> str:
+    return unicodedata.normalize("NFKC", s or "").replace(" ", "").replace("　", "")
+
+
+def compare_rows(rec: dict, entries: list, n: int = 3, from_dir_depth: int = 3) -> list:
+    """同じカテゴリ・同じ商品の種類のLPから、価格が近い順に最大n件を比較表用に返す。
+    使う値は、各LPの原稿に保存済みの楽天APIの取得値（価格・レビュー・仕様）だけ。紹介料率などは使わない。"""
+    ptype = _norm_type(rec.get("product_type"))
+    if not ptype:
+        return []
+    up = "../" * from_dir_depth
+    peers = []
+    for o in entries:
+        if o["item_code"] == rec["item_code"] or o.get("category") != rec.get("category"):
+            continue
+        if _norm_type(o.get("product_type")) != ptype:
+            continue
+        data = read_json(CONTENT_DIR / f"{o['slug']}.json", None)
+        if not data:
+            continue
+        pr = data["product"]
+        try:
+            price, avg, cnt = int(pr["price"]), float(pr["review_average"]), int(pr["review_count"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        fetched = (pr.get("fetched_at") or o.get("created_at") or "")[:10].replace("-", "/")
+        spec = pick_specs(pr.get("spec_rows"))
+        peers.append({"href": f"{up}{o['lp_path'].replace('index.html', '')}", "name": o["display_name"], "price": price,
+                      "review_average": avg, "review_count": cnt, "fetched": fetched, "spec": spec})
+    base = rec.get("_price") or 0
+    peers.sort(key=lambda x: abs(x["price"] - base) if base else x["price"])
+    return peers[:n]
+
+
 def _card(r, up):
     img = r["images"][0] if r.get("images") else ""
     img_html = (f'<img src="{e(sized(img, "300x300"))}" width="300" height="300" alt="{e(r["display_name"])}" loading="lazy" decoding="async">' if img else "")
@@ -91,14 +127,14 @@ def _page(title, desc, canonical, root, h1, lead, body, site_name):
 <nav id="primary-nav" class="site-nav" aria-label="メインナビゲーション"><ul>{nav}</ul></nav>
 </div></header>
 <main id="main-content"><section class="lp-list"><div class="container">
-<div class="lp-list-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます</p>
+<div class="lp-list-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>
 <h1 class="lp-h1">{e(h1)}</h1><p class="lp-list-lead">{e(lead)}</p></div>
 {body}
 <p class="lp-disclaimer">※このページで紹介している商品ページには、楽天アフィリエイトの広告リンクが含まれます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</p>
 </div></section></main>
 <footer class="site-footer"><div class="container footer-inner">
 <p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(site_name)}</p>
-<nav class="footer-nav" aria-label="フッターナビゲーション"><ul><li><a href="{root}about.html">サイトについて</a></li><li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li><li><a href="{root}privacy.html">プライバシーポリシー</a></li></ul></nav>
+<nav class="footer-nav" aria-label="フッターナビゲーション"><ul><li><a href="{root}about.html">サイトについて</a></li><li><a href="{root}policy.html">広告・運営方針</a></li><li><a href="{root}products/">商品ガイド</a></li><li><a href="{root}contact.html">お問い合わせ</a></li><li><a href="{root}privacy.html">プライバシーポリシー</a></li></ul></nav>
 <p class="footer-copyright">&copy; <span data-current-year>2026</span> {e(site_name)}</p>
 </div></footer>
 <script src="{root}js/main.js" defer></script>

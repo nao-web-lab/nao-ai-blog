@@ -69,6 +69,7 @@ def main() -> None:
     urls = [f"{SITE_BASE_URL}/", f"{SITE_BASE_URL}/lp/auto/"] + [e["url"] for e in entries]
     urls += product_guide_urls()
     urls += guide_urls()
+    urls += [f"{SITE_BASE_URL}/about.html", f"{SITE_BASE_URL}/policy.html"]
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',

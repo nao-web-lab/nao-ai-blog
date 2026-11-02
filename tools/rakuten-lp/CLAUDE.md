@@ -44,6 +44,13 @@
   オーナーから「消したい」要望があったが、景品表示法（ステマ規制）と楽天規約のため冒頭の1行は必ず残す
 - HTML構造を変えたら `--rerender` で全LPを作り直す（API・Gemini不使用、文章・更新日は据え置き、1本でも失敗したら公開しない）
 
+## 共通ルール（2026-11-02追加）
+- 全LPのルールは同じフォルダの `RULES.md`。変更・新規作成のときは必ず従う
+- `site_audit.py`：公開ページをオフライン点検（PR・リンク・構造・薄いページ・重複）。`--json out.json` / `--list <flag>`
+- LPに「同じ種類の商品と並べて確認する」比較表（`listing.compare_rows` / `run_daily.attach_compare`）と「このページで分かること」を追加
+- Product構造化データ・meta keywords は廃止（要件を満たせないため）。PR行に `policy.html` へのリンクを付ける
+- A8解説ガイドは `/guide/` 以下（例: car-lease/orico-de-noru）。手書き。sitemapは `rebuild_sitemap.py` が拾う
+
 ## 秘密情報（値はここに書かない。変数名のみ）
 `C:\Users\user\rakuten-threads-auto\local\env\common.env`（git管理外）を `config.json` の `env_files` から読み込む。
 - `RAKUTEN_APPLICATION_ID` / `RAKUTEN_ACCESS_KEY` / `RAKUTEN_AFFILIATE_ID`

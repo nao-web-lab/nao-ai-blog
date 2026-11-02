@@ -27,8 +27,9 @@
 .lp-body a:focus-visible, .lp-body summary:focus-visible, .lp-body input:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
 
 /* PR表記（ページ冒頭・商品名の上に1行） */
-.lp-pr { display: flex; align-items: center; gap: .5em; margin: 0 0 .7rem; font-size: .78rem; line-height: 1.5; color: var(--lp-muted); }
-.lp-pr-badge { flex: none; border: 1px solid currentColor; border-radius: 3px; padding: 0 .4em; font-size: .72rem; font-weight: 700; line-height: 1.5; }
+.lp-pr { display: flex; flex-wrap: wrap; align-items: center; gap: .3em .6em; margin: 0 0 .7rem; font-size: .9rem; line-height: 1.6; color: var(--lp-text); }
+.lp-pr-badge { flex: none; border: 1px solid currentColor; border-radius: 3px; padding: 0 .45em; font-size: .82rem; font-weight: 700; line-height: 1.6; color: var(--lp-ink); }
+.lp-pr a { color: var(--lp-text); text-decoration: underline; text-underline-offset: 2px; font-size: .85rem; }
 
 .lp-breadcrumb { font-size: .76rem; color: var(--lp-muted); padding-top: .7rem; padding-bottom: .3rem; overflow-x: auto; white-space: nowrap; }
 .lp-breadcrumb a { color: var(--lp-muted); }
@@ -188,3 +189,18 @@ figcaption { font-size: .8rem; color: var(--lp-muted); margin-top: .5rem; line-h
   .lp-chips { flex-wrap: wrap; overflow: visible; }
   .lp-sticky { display: none; }
 }
+
+
+/* このページで分かること（ファーストビュー内の目次） */
+.lp-know { display: flex; flex-wrap: wrap; gap: .35rem .5rem; align-items: center; margin: 1rem 0 .4rem; font-size: .88rem; line-height: 1.5; }
+.lp-know-label { flex: 0 0 100%; font-weight: 700; color: var(--lp-ink); font-size: .85rem; }
+.lp-know a { display: inline-block; padding: .25rem .65rem; border: 1px solid var(--lp-line); border-radius: 999px; background: #fff; color: var(--lp-ink); text-decoration: none; }
+.lp-know a:hover, .lp-know a:focus-visible { border-color: var(--lp-ink); }
+
+/* 同じ種類の商品との比較表 */
+.lp-compare th[scope="row"] { text-align: left; font-weight: 600; min-width: 7.5em; }
+.lp-compare th[scope="col"] { white-space: nowrap; font-size: .85rem; }
+.lp-compare td { white-space: nowrap; vertical-align: top; font-size: .92rem; }
+.lp-compare .lp-compare-date, .lp-compare .lp-compare-spec { display: block; font-size: .76rem; font-weight: 400; margin-top: .15rem; white-space: normal; }
+.lp-compare tr.is-current th, .lp-compare tr.is-current td { background: #fff7e0; }
+.lp-compare-now { display: inline-block; margin: 0 .5em .15em 0; padding: 0 .5em; border-radius: 3px; background: var(--lp-ink); color: #fff; font-size: .72rem; font-weight: 700; }
