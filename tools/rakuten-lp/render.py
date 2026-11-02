@@ -158,6 +158,10 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 
     # 同じ種類の商品との比較表（取得済みの事実データだけ。項目は価格・レビュー・仕様で、報酬率などは使わない）
     compare = ctx.get("compare") or []
+    # 同じ種類の「選び方・比較」ガイドへの内部リンク（ガイドがある種類だけ）
+    tg = ctx.get("type_guide")
+    guide_link = (f'<p class="lp-guide-link"><a href="{e(tg[0])}">{e(tg[1])}の選び方と{int(tg[2])}商品の比較を見る'
+                  f' <span aria-hidden="true">›</span></a><span class="lp-muted">価格帯・購入前の確認点・向いていない場合をまとめたページです</span></p>') if tg else ""
     if compare:
         def _row(name, href, price, avg, cnt, fetched_d, spec, current=False):
             link = f'<a href="{e(href)}">{e(name)}</a>' if href else f'<strong>{e(name)}</strong>'
@@ -178,7 +182,10 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
             f'<div class="lp-table-wrap"><table class="lp-table lp-compare"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead>'
             f'<tbody>{table_html}</tbody></table></div>'
             f'<p class="lp-note">価格・レビューは、各ページに記載の確認日時点の楽天市場の表示です（確認日は商品ごとに異なります）。内容量・セット数・色などが違うと価格は単純に比べられません。'
-            f'表示する商品は、紹介料ではなく、カテゴリ・商品の種類・価格の近さで選んでいます。</p>', "section--muted")
+            f'表示する商品は、紹介料ではなく、カテゴリ・商品の種類・価格の近さで選んでいます。</p>{guide_link}', "section--muted")
+
+    if guide_link and "compare" not in blocks:
+        blocks["compare"] = _section("compare", "同じ種類の商品と比べる", guide_link, "section--muted")
 
     order = LAYOUTS.get(p["layout"], LAYOUTS["living"])
     mid_after = MID_CTA_AFTER.get(p["layout"], "features")
