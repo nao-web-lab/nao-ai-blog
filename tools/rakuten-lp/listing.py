@@ -270,7 +270,7 @@ def _guide_nav(entries):
         return ""
     chips = "".join(f'<li><a class="lp-chip" href="guide/{guide_slug(t)}/">{e(v[0].get("product_type") or t)}の比較（{len(v)}）</a></li>'
                     for t, v in sorted(g.items(), key=lambda x: -len(x[1])))
-    return f'<nav aria-label="選び方・比較"><h2 class="lp-h2">選び方・価格比較から探す</h2><ul class="lp-chips">{chips}</ul></nav>'
+    return f'<nav id="guides" aria-label="選び方・比較"><h2 class="lp-h2">選び方・価格比較から探す</h2><ul class="lp-chips">{chips}</ul></nav>'
 
 
 def build_listings(db: dict, config: dict, ensure: list = ()) -> list:

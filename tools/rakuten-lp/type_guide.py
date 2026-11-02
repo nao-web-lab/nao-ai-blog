@@ -107,7 +107,7 @@ def render_guide_body(label: str, cat_label: str, cat_slug: str, rows: list, sib
     for x in rows:
         for lab in set(_n(l) for l in x["spec_labels"] if l):
             lab_count[lab] = lab_count.get(lab, 0) + 1
-    common_labels = [l for l, c in sorted(lab_count.items(), key=lambda t: -t[1]) if c >= 2 and not any(k in l for k in SKIP_LABELS)][:4]
+    common_labels = [l for l, c in sorted(lab_count.items(), key=lambda t: (-t[1], t[0])) if c >= 2 and not any(k in l for k in SKIP_LABELS)][:4]
 
     worries = _pick_unique([(w, src(x)) for x in rows for w in x["worries"]], 3, 60)
     cautions = _pick_unique([(c, src(x)) for x in rows for c in (x["cautions"] + x["checkpoints"])], 6, 70)
