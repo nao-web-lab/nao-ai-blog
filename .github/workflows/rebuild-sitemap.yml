@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "lp/auto/**"
+      - "guide/**"
   workflow_dispatch: {}
 
 permissions:

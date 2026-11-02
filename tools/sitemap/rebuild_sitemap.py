@@ -36,6 +36,19 @@ def product_guide_urls() -> list:
     return urls
 
 
+def guide_urls() -> list:
+    """手書きの解説ガイド(/guide/ 以下)のURL。canonical が書かれている index.html だけを対象にする。"""
+    root = REPO_ROOT / "guide"
+    urls = []
+    if not root.is_dir():
+        return urls
+    for f in sorted(root.glob("*/*/index.html")):
+        canonical = extract(f.read_text(encoding="utf-8"), r'<link rel="canonical" href="([^"]+)"')
+        if canonical and canonical.startswith(SITE_BASE_URL):
+            urls.append(canonical)
+    return urls
+
+
 def main() -> None:
     lp_root = REPO_ROOT / "lp" / "auto"
     entries = []
@@ -55,6 +68,7 @@ def main() -> None:
 
     urls = [f"{SITE_BASE_URL}/", f"{SITE_BASE_URL}/lp/auto/"] + [e["url"] for e in entries]
     urls += product_guide_urls()
+    urls += guide_urls()
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
