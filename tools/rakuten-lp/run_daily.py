@@ -280,6 +280,7 @@ def attach_compare(ctx: dict, rec: dict, p: dict, entries: list, config: dict) -
     except (TypeError, ValueError):
         price = 0
     ctx["compare"] = listing.compare_rows({**rec, "_price": price}, entries, config.get("compare_max", 3))
+    ctx["type_guide"] = listing.guide_href_for(rec, entries)
     return ctx
 
 
