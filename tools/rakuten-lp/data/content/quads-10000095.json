@@ -8,8 +8,8 @@
     "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ugo6o.bd4ch439.g00ugo6o.bd4cia5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fquads%2Fqs549%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fquads%2Fi%2F10000095%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
     "shop_name": "QUADS公式楽天市場店",
     "price": 19800,
-    "review_count": 439,
-    "review_average": 4.58,
+    "review_count": 527,
+    "review_average": 4.55,
     "tax_flag": 0,
     "postage_flag": 0,
     "category": "appliances",
@@ -51,7 +51,7 @@
         "value": "約1.5m"
       }
     ],
-    "fetched_at": "2026-10-15T10:00:52+09:00"
+    "fetched_at": "2026-11-07T10:00:53+09:00"
   },
   "content": {
     "title": "クワッズのスチーム加湿器GLASSを解説。ガラスポット式の特徴とは",
@@ -180,15 +180,8 @@
   },
   "image_plan": [
     {
-      "url": "https://thumbnail.image.rakuten.co.jp/@0_mall/quads/cabinet/26aw/top_tmb/qs661_top_tmb_2.jpg?_ex=128x128",
-      "role": "main",
-      "alt": "公式限定モデルのスチーム加湿器本体と主な仕様の表示",
-      "caption": "ガラスポット式でLEDライトを搭載したスチーム加湿器",
-      "seen_by_ai": true
-    },
-    {
       "url": "https://thumbnail.image.rakuten.co.jp/@0_mall/quads/cabinet/26aw/qs661/tmb/qs661_tmb_01.jpg?_ex=128x128",
-      "role": "overview",
+      "role": "main",
       "alt": "グレージュウッドカラーのスチーム加湿器本体",
       "caption": "新色のグレージュウッドカラー",
       "seen_by_ai": true
