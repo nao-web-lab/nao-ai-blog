@@ -166,15 +166,8 @@
   },
   "image_plan": [
     {
-      "url": "https://thumbnail.image.rakuten.co.jp/@0_gold/byurjapan/event/2610mt2/daily_aquaserummask.jpg?_ex=128x128",
-      "role": "main",
-      "alt": "バイユアのボックス型シートマスク",
-      "caption": "ボックスからシートを取り出せる大容量容器",
-      "seen_by_ai": true
-    },
-    {
       "url": "https://thumbnail.image.rakuten.co.jp/@0_mall/byurjapan/cabinet/09521667/dailyv1/imgrc0121408202.jpg?_ex=128x128",
-      "role": "detail",
+      "role": "main",
       "alt": "バイユアのシートマスクのカラー展開と開封口",
       "caption": "フタの内側にピンセットが収まる容器設計",
       "seen_by_ai": true
