@@ -287,3 +287,13 @@ figcaption { font-size: .8rem; color: var(--lp-muted); margin-top: .5rem; line-h
   .tg-card { grid-template-columns: 150px 1fr; gap: 1.3rem; }
 }
 .tg-points li { background: #fff; border: 1px solid var(--lp-line); border-radius: 4px; padding: .8rem .95rem; line-height: 1.7; }
+
+/* 2026-11-11 見直し: 最初の画面に価格／商品情報は表だけ／固定ボタンは必要な区間だけ */
+.lp-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin: 0 0 .5rem; font-size: .85rem; color: var(--lp-text); }
+.lp-price-label { font-weight: 700; color: var(--lp-ink); }
+.lp-price strong { font-size: 1.5rem; line-height: 1.2; color: var(--lp-ink); font-weight: 700; letter-spacing: .01em; }
+.lp-price .lp-muted { flex-basis: 100%; font-size: .76rem; }
+.lp-spec.lp-spec--noimg { display: block; }
+.lp-sticky[hidden] { display: none; }
+.lp-disclaimer p { font-size: .78rem; color: var(--lp-muted); line-height: 1.7; }
+.lp-disclaimer a { color: var(--lp-muted); }

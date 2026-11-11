@@ -127,10 +127,10 @@ def _page(title, desc, canonical, root, h1, lead, body, site_name):
 <nav id="primary-nav" class="site-nav" aria-label="メインナビゲーション"><ul>{nav}</ul></nav>
 </div></header>
 <main id="main-content"><section class="lp-list"><div class="container">
-<div class="lp-list-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>
+<div class="lp-list-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>本ページは広告を含みます<a href="{root}policy.html">運営方針</a></p>
 <h1 class="lp-h1">{e(h1)}</h1><p class="lp-list-lead">{e(lead)}</p></div>
 {body}
-<p class="lp-disclaimer">※このページで紹介している商品ページには、楽天アフィリエイトの広告リンクが含まれます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。</p>
+<p class="lp-disclaimer">当サイトは楽天アフィリエイトに参加しており、紹介先での購入により運営者が報酬を受け取る場合があります（<a href="{root}policy.html">運営方針</a>）。</p>
 </div></section></main>
 <footer class="site-footer"><div class="container footer-inner">
 <p class="site-logo"><span class="site-logo-mark" aria-hidden="true">N</span>{e(site_name)}</p>
@@ -199,14 +199,13 @@ def _guide_page(title, desc, canonical, h1, lead, fv, body, site_name, ld, crumb
 <nav class="lp-breadcrumb container" aria-label="パンくずリスト"><a href="{root}index.html">ホーム</a> <span aria-hidden="true">›</span> <a href="{root}products/">商品ガイド</a> <span aria-hidden="true">›</span> <span aria-current="page">{e(crumb_label)}</span></nav>
 <main id="main-content">
 <section class="tg-head"><div class="container">
-<p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>
+<p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>本ページは広告を含みます<a href="{root}policy.html">運営方針</a></p>
 <h1 class="lp-h1">{e(h1)}</h1><p class="tg-lead">{e(lead)}</p>
 {fv}
 </div></section>
 {body}
 <div class="container container--narrow lp-disclaimer">
-<p>※このページには楽天アフィリエイトの広告リンクが含まれます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。商品の選び方・文章の作り方は<a href="{root}policy.html">広告・運営方針</a>に記載しています。</p>
-<p>※商品画像は楽天アフィリエイトを通じて提供されている画像を使用しています（著作権は各ショップ・権利者に帰属します）。</p>
+<p>当サイトは楽天アフィリエイトに参加しており、リンク先での購入により運営者が報酬を受け取る場合があります（<a href="{root}policy.html">運営方針</a>）。商品画像は楽天市場から提供されているもので、権利は各ショップ・権利者に帰属します。</p>
 </div>
 </main>
 <footer class="site-footer"><div class="container footer-inner">
