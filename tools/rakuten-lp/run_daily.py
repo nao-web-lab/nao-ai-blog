@@ -944,6 +944,12 @@ def run(config, args) -> int:
         notify_line(f"✅ 楽天LP自動生成\n本日 {done}本（今回 {len(new_recs)}本・Gemini {gemini.calls_used()}回）\n"
                     + (f"点検 {audit.get('checked', 0)}本（更新{audit.get('updated', 0)}・修正{audit.get('text_fixed', 0)}・取り下げ{audit.get('retracted', 0)}）\n" if audit else "")
                     + ("公開(push)済み" if do_git and new_recs else "未公開"))
+    if not args.mock:
+        try:  # Search Console の数字集め（未設定なら何もしない。失敗してもLP作成には影響しない）
+            import gsc_report
+            gsc_report.daily_step(config, notify_line if args.notify else None)
+        except Exception as e:
+            log(f"Search Console の処理でエラー（LP作成には影響なし）: {redact(e)}")
     return 0
 
 

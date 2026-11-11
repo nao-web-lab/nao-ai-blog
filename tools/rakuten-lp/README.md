@@ -52,3 +52,8 @@ python tools\rakuten-lp\run_daily.py --rerender                                 
 | data/database.json | 商品DB（重複防止・生成履歴） |
 | data/content/*.json | 各LPの原稿（関連リンク更新時の再生成用） |
 | logs/ | 実行ログ・generated-products.json・failed-products.json（git管理外） |
+
+## Search Console の数字（自動集計）
+毎朝の実行の最後に、Search Console の数字（検索の表示回数・クリック数・順位・登録状況）を集めます。
+最初に1回だけ設定が必要です。手順は同じフォルダの `GSC_SETUP.md` を見てください。
+毎週月曜に LINE へ短いまとめが届き、詳しい内容は `logs\gsc\report-日付.md` に保存されます（公開はされません）。
