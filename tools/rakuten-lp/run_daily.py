@@ -316,6 +316,13 @@ def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat:
                 and r.get("product_type") and (ptype in quality._norm(r["product_type"]) or quality._norm(r["product_type"]) in ptype)]
         if len(same) >= config.get("max_per_product_type_per_day", 2):
             raise CategoryFull(f"{a.get('product_type')}（同じ種類の商品・1日{config.get('max_per_product_type_per_day', 2)}本まで）")
+        # 同じ種類の商品ページを増やしすぎない（似たページの量産を避け、1本ごとの質を優先する）
+        cap = config.get("max_per_product_type_total", 0)
+        if cap:
+            total = sum(1 for r in db["products"].values() if r.get("status") == "published"
+                        and quality._norm(r.get("product_type") or "") == ptype)
+            if total >= cap:
+                raise SkipProduct(f"同じ種類（{a.get('product_type')}）のページが既に{total}本ある")
     ai_scores = a.get("scores") or {}
     final = scoring.final_score(cand["primary"], ai_scores)
     if not a.get("suitable", False):
@@ -327,6 +334,8 @@ def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat:
     plan = images.build_image_plan(verified, a.get("images"), config["max_images"], p["display_name"])
     if not plan:
         raise SkipProduct("LPに使える画像がない")
+    if len(plan) < config.get("min_images", 1):
+        raise SkipProduct(f"LPに使える画像が{len(plan)}枚（{config.get('min_images')}枚以上の商品だけ作る）")
 
     recents = recent_contents(db)
     c = writer.write(p, a, avoid_phrases(recents), rng)
@@ -367,7 +376,7 @@ def process(cand: dict, config: dict, db: dict, rng: random.Random, made_by_cat:
         "keyword": p["keyword"], "product_type": a.get("product_type", ""), "keywords": a.get("keywords") or [],
         "related_needs": a.get("related_needs") or [], "primary_score": cand["primary"], "score_detail": cand["score_detail"],
         "ai_scores": ai_scores, "final_score": final, "lp_path": lp_rel, "lp_url": f"{config['site_base_url']}/products/{p['category']}/{slug}/",
-        "images": [x["url"] for x in plan], "image_count": len(plan), "title": c.get("title", ""),
+        "images": [x["url"] for x in plan], "image_count": len(plan), "title": c.get("title", ""), "name_polished": "new",
         "status": "published", "created_at": now, "updated_at": now, "last_checked_at": now, "fail_count": 0,
         "voice": c.get("_voice"), "auto_fixes": len(fixes1) + len(fixes2),
     }
@@ -789,6 +798,63 @@ def audit_published(db: dict, config: dict) -> dict:
     return summary
 
 
+def needs_name_polish(rec: dict) -> bool:
+    """商品名が楽天の検索用キーワードの羅列のままになっているか（空白区切りの語が多い・長い）。"""
+    if rec.get("name_polished"):
+        return False
+    name = rec.get("display_name") or ""
+    return len(name.split()) >= 5 or len(name) > 34
+
+
+def polish_names(db: dict, config: dict) -> int:
+    """既存ページの商品名・大見出しを、キーワードの羅列から自然な名前に整える（Gemini 1回/本）。
+    元の商品名にある語しか使わせず、検査に通ったものだけ反映する。失敗したページは元のまま。"""
+    n = config.get("polish_names_per_day", 0)
+    if n <= 0:
+        return 0
+    targets = [r for r in db["products"].values() if r.get("status") == "published" and needs_name_polish(r)]
+    targets.sort(key=lambda r: r.get("created_at", ""), reverse=True)
+    done = 0
+    for rec in targets[:n]:
+        if budget_exhausted(config, db):
+            break
+        data = read_json(CONTENT_DIR / f"{rec.get('slug', '')}.json", None)
+        if not data:
+            continue
+        p, c, plan = data["product"], data["content"], data["image_plan"]
+        today = today_str()
+        try:
+            res = writer.polish_name(p, c, (data.get("analysis") or {}).get("product_type") or rec.get("product_type") or "")
+        except Exception as e:  # 通信・利用枠の問題。印を付けず、次回もう一度試す
+            log(f"  名前の整理に失敗（次回に回します）: {rec.get('display_name')} {redact(e)}")
+            break
+        name, h1 = (res.get("display_name") or "").strip(), (res.get("h1") or "").strip()
+        problem = quality.name_problems(name, h1, p["item_name"], source_text(p))
+        if problem:
+            rec["name_polished"] = f"skip:{today}"
+            log(f"  名前の整理を見送り: {rec.get('display_name')}（{problem}）")
+            continue
+        p2, c2 = {**p, "display_name": name}, {**c, "h1": h1}
+        entries = listing.published_entries(db)
+        related = listing.related_items_for(rec, entries, config["related_links"])
+        now = now_jst().isoformat(timespec="seconds")
+        ctx = attach_compare(page_ctx(config, p2, rec["slug"], rec["created_at"], now, fetched=p.get("fetched_at")), rec, p2, entries, config)
+        html_text = render.render_page(p2, c2, plan, related, ctx)
+        path = REPO_ROOT / rec["lp_path"]
+        if quality.check_html(html_text, path, ctx["public_url"], p2["affiliate_url"], REPO_ROOT):
+            rec["name_polished"] = f"skip:{today}"
+            continue
+        path.write_text(html_text, encoding="utf-8")
+        write_json(CONTENT_DIR / f"{rec['slug']}.json", {**data, "product": p2, "content": c2})
+        log(f"  名前を整理: {rec['display_name']} → {name}")
+        rec["display_name"] = name
+        rec["name_polished"] = today
+        rec["updated_at"] = now
+        done += 1
+    log(f"商品名・見出しの整理: {done}本（残り {sum(1 for r in db['products'].values() if r.get('status') == 'published' and needs_name_polish(r))}本）")
+    return done
+
+
 def run(config, args) -> int:
     log("=" * 50)
     log("楽天商品LP 自動生成")
@@ -850,6 +916,10 @@ def run(config, args) -> int:
                 break
             stop = process_pool(pool, config, db, rng, new_recs, made_by_cat, remaining, tried_codes)
 
+    try:  # 新規作成の後、残った利用枠で既存ページの商品名・見出しを整える
+        polish_names(db, config)
+    except Exception as e:
+        log(f"商品名の整理でエラー（ほかの処理は続行）: {redact(e)}")
     calls = db["state"].setdefault("gemini_calls", {})
     calls[today] = calls.get(today, 0) + gemini.calls_used()
     for d in sorted(calls)[:-7]:

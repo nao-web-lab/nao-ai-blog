@@ -99,6 +99,28 @@ def _sentence_problems(sentence: str, source_norm: str) -> list:
     return probs
 
 
+def name_problems(name: str, h1: str, item_name: str, source_norm_text: str) -> str:
+    """整理後の商品名・大見出しの検査。問題があれば理由を返す（問題なしは空文字）。
+    元の商品名にない語を足していないこと・長さ・誇張表現がないことを確かめる。"""
+    if not (6 <= len(name) <= 34):
+        return f"商品名の長さが範囲外（{len(name)}字）"
+    if len(name.split()) > 5:
+        return "商品名がまだ語の羅列"
+    src = _norm(item_name).lower()
+    for tok in re.split(r"[\s　/／・,、()（）]+", name):
+        t = _norm(tok).lower()
+        if len(t) >= 2 and t not in src:
+            return f"元の商品名にない語「{tok}」"
+    if not (8 <= len(h1) <= 40):
+        return f"見出しの長さが範囲外（{len(h1)}字）"
+    if _norm(name) not in _norm(h1):
+        return "見出しに商品名が入っていない"
+    if len(h1.split()) > len(name.split()) + 1:
+        return "見出しが語の羅列"
+    probs = _sentence_problems(h1, _norm(source_norm_text)) + _sentence_problems(name, _norm(source_norm_text))
+    return probs[0] if probs else ""
+
+
 TYPO_FIXES = [(re.compile(r"(お|ご)\1(?=[一-龥])"), r"\1"), (re.compile(r"([をにがはで])\1"), r"\1"), (re.compile(r"。。+"), "。")]
 
 

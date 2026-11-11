@@ -121,8 +121,11 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
     if c.get("scenes"):
         cards = "".join(f'<div class="lp-scene"><h3>{e(s["title"])}</h3><p>{e(s["body"])}</p></div>' for s in c["scenes"])
         blocks["scenes"] = _section("scenes", heads["scenes"], f'<div class="lp-scenes">{cards}</div>', "section--muted")
-    if len(image_plan) >= 2:
-        figs = "".join(_img(img, aff, cls="lp-gallery-item") for img in image_plan)
+    # ギャラリーは「本文でまだ見せていない画像」があるときだけ（同じ画像の繰り返しで縦に長くしない）
+    shown = 1 + min(len(c.get("features") or []), len(extra_imgs))
+    unused = image_plan[shown:]
+    if len(unused) >= 2:
+        figs = "".join(_img(img, aff, cls="lp-gallery-item") for img in unused)
         note = '<p class="lp-note">画像は楽天市場の商品ページに掲載されているものです。タップすると商品ページが開きます。</p>'
         blocks["gallery"] = _section("gallery", heads["gallery"],
                                      f'<div class="lp-gallery" role="list" aria-label="商品画像">{figs}</div>'
@@ -139,9 +142,9 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
     for r in p.get("spec_rows") or []:
         rows.append((e(r["label"]), e(r["value"])))
     table = "".join(f"<tr><th scope=\"row\">{k}</th><td>{v}</td></tr>" for k, v in rows)
-    spec_img = f'<div class="lp-spec-img">{_img(main_img, aff)}</div>' if main_img else ""
+    spec_img = ""  # メイン画像の再掲はしない（最初の画面と最後の案内にある）
     blocks["specs"] = _section("specs", heads["specs"],
-                               f'<div class="lp-spec">{spec_img}<div class="lp-table-wrap"><table class="lp-table">{table}</table></div></div>'
+                               f'<div class="lp-spec lp-spec--noimg">{spec_img}<div class="lp-table-wrap"><table class="lp-table">{table}</table></div></div>'
                                f'<p class="lp-note">価格・送料・在庫・ポイントは変動します。購入前に楽天市場の商品ページで最新情報をご確認ください。'
                                f'記載のない仕様は、このページでは確認できていません。</p>')
     if c.get("checkpoints"):
@@ -179,10 +182,10 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
         blocks["compare"] = _section(
             "compare", "同じ種類の商品と並べて確認する",
             f'<p>このサイトで紹介している、同じカテゴリ・同じ種類の商品を、価格が近い順に並べました。選び方の参考にしてください。</p>'
-            f'<div class="lp-table-wrap"><table class="lp-table lp-compare"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead>'
+            f'<div class="lp-table-wrap"><table class="lp-table lp-compare tg-table"><thead><tr><th scope="col">商品</th><th scope="col">価格</th><th scope="col">楽天レビュー</th></tr></thead>'
             f'<tbody>{table_html}</tbody></table></div>'
             f'<p class="lp-note">価格・レビューは、各ページに記載の確認日時点の楽天市場の表示です（確認日は商品ごとに異なります）。内容量・セット数・色などが違うと価格は単純に比べられません。'
-            f'表示する商品は、紹介料ではなく、カテゴリ・商品の種類・価格の近さで選んでいます。</p>{guide_link}', "section--muted")
+            f'並べる商品は、カテゴリ・商品の種類・価格の近さで選んでいます。</p>{guide_link}', "section--muted")
 
     if guide_link and "compare" not in blocks:
         blocks["compare"] = _section("compare", "同じ種類の商品と比べる", guide_link, "section--muted")
@@ -218,8 +221,7 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
             f'<img src="{e(sized(r["image"], "300x300"))}" width="300" height="300" alt="{e(r["name"])}" loading="lazy" decoding="async">'
             f'<span class="lp-related-cat">{e(r["category_label"])}</span><span class="lp-related-name">{e(r["title"])}</span></a></li>'
             for r in related)
-        related_html = _section("related", "あわせて検討されやすい商品", f'<ul class="lp-related">{cards}</ul>'
-                                '<p class="lp-note">各ページにも楽天アフィリエイトのリンクを含みます。</p>', "section--muted")
+        related_html = _section("related", "関連する商品ガイド", f'<ul class="lp-related">{cards}</ul>', "section--muted")
 
     # ---- final CTA
     final_img = _img(main_img, aff, cls="lp-final-img") if main_img else ""
@@ -234,15 +236,18 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
     # 星の表示は楽天APIのレビュー平均そのもの（装飾のみ。数値は文字でも併記する）
     stars = (f'<p class="lp-rating"><span class="lp-stars" style="--rate:{p["review_average"]:.2f}" aria-hidden="true"></span>'
              f'<strong>{p["review_average"]:.2f}</strong><span>楽天市場のレビュー {p["review_count"]:,}件（{e(fetched)}時点）</span></p>')
+    price_fv = (f'<p class="lp-price"><span class="lp-price-label">価格</span><strong>¥{p["price"]:,}</strong>'
+                + ("<span>税込</span>" if p.get("tax_flag") == 0 else "") + ("<span>送料込み</span>" if p.get("postage_flag") == 0 else "")
+                + f'<span class="lp-muted">{e(fetched)}時点・楽天市場の表示</span></p>')
     eyebrow = f'<p class="lp-eyebrow">{e(fv.get("eyebrow"))}</p>' if fv.get("eyebrow") else ""
     fv_html = (f'<section class="lp-fv"><div class="container lp-fv-grid">'
-               f'<div class="lp-fv-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>楽天アフィリエイト広告を含みます<a href="{root}policy.html">広告・運営方針</a></p>'
+               f'<div class="lp-fv-head"><p class="lp-pr" role="note"><span class="lp-pr-badge">PR</span>本ページは広告を含みます<a href="{root}policy.html">運営方針</a></p>'
                f'{eyebrow}<h1 class="lp-h1">{e(c["h1"])}</h1></div>'
                f'<div class="lp-fv-stage">{fv_img}</div>'
-               f'<div class="lp-fv-body">{stars}<p class="lp-catch">{e(fv.get("catch"))}</p>'
+               f'<div class="lp-fv-body">{price_fv}{stars}<p class="lp-catch">{e(fv.get("catch"))}</p>'
                f'<p class="lp-lead">{e(fv.get("lead"))}</p><ul class="lp-fv-points">{points}</ul>{know_html}{_cta(p, c, "fv")}</div>'
                f'</div></section>')
-    sticky = (f'<div class="lp-sticky"><div class="lp-sticky-inner"><span class="lp-sticky-name">{e(p["display_name"])}</span>'
+    sticky = (f'<div class="lp-sticky" data-lp-sticky hidden><div class="lp-sticky-inner"><span class="lp-sticky-name">{e(p["display_name"])}</span>'
               f'{_aff(aff, "楽天市場で詳細を確認", "lp-sticky-btn")}</div></div>')
 
     # ---- breadcrumb / JSON-LD
@@ -303,9 +308,8 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 {final}
 {related_html}
 <div class="container container--narrow lp-disclaimer">
-<p>※本ページは楽天アフィリエイトを利用した広告を含みます。リンク先の楽天市場で商品が購入されると、運営者に報酬が支払われる場合があります。商品の選び方・文章の作り方は<a href="{root}policy.html">広告・運営方針</a>に記載しています。</p>
-<p>※本ページの内容は{e(fetched)}時点で楽天市場に登録されている商品情報をもとに作成しています。商品の仕様・価格・在庫・レビュー件数などは変更されている場合があります。最新の情報は楽天市場の商品ページでご確認ください。</p>
-<p>※商品画像は楽天アフィリエイトを通じて提供されている画像を使用しています（著作権は各ショップ・権利者に帰属します）。</p>
+<p>このページは{e(fetched)}時点の楽天市場の商品情報をもとに作成しています。価格・在庫・仕様は変わることがあるため、購入前に楽天市場の商品ページでご確認ください。</p>
+<p>当サイトは楽天アフィリエイトに参加しており、リンク先での購入により運営者が報酬を受け取る場合があります（<a href="{root}policy.html">運営方針</a>）。商品画像は楽天市場から提供されているもので、権利は各ショップ・権利者に帰属します。</p>
 <p class="lp-muted">最終更新: {e(ctx['modified'][:10])}</p>
 </div>
 {sticky}
@@ -316,6 +320,7 @@ def render_page(p: dict, c: dict, image_plan: list, related: list, ctx: dict) ->
 <p class="footer-copyright">&copy; <span data-current-year>2026</span> {e(ctx['site_name'])}</p>
 </div></footer>
 <script src="{root}js/main.js" defer></script>
+<script>(function(){{var s=document.querySelector('[data-lp-sticky]'),a=document.querySelector('.lp-cta--fv'),z=document.getElementById('final'),t=0;if(!s||!a)return;function u(){{t=0;var h=window.innerHeight,p=a.getBoundingClientRect().bottom<0,e=z?z.getBoundingClientRect().top<h:false;s.hidden=!p||e;}}function q(){{if(!t)t=requestAnimationFrame(u);}}addEventListener('scroll',q,{{passive:true}});addEventListener('resize',q);u();}})();</script>
 </body>
 </html>
 """

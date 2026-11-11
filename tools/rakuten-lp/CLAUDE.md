@@ -14,7 +14,7 @@
 ## 現在の運用状態（2026-10-20 時点）
 - 毎日 10:00 に Windows タスクスケジューラ「NaoAiBlog-RakutenLP」が起動
   （`pythonw tools\rakuten-lp\run_daily.py --notify`、登録は `register_task.ps1`、最長6時間）
-- 1日30本を作成 → 公開済みLPを30本点検 → git commit/push → LINE通知。所要 約1時間
+- 1日10本を作成（2026-11-11に30→10。数より質）→ 公開済みLPを60本点検 → 既存ページの商品名を最大40本整理 → git commit/push → LINE通知
 - 公開中 約830本 / DB: `data/database.json`（published / excluded / failed）
 - 楽天APIは IP制限（このPCのみ）のため GitHub Actions では動かせない。必ずこのPCで実行する
 
@@ -63,8 +63,8 @@
 - LINE通知は `rakuten-threads-auto/local/line_notify.py` を利用
 
 ## 主な設定（config.json）
-daily_target=30 / audit_per_day=30 / min_final_score=75 / min_review_count=20 / min_review_average=3.8 /
-max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_sec=13 / gemini_daily_calls_limit=150 / max_run_minutes=300
+daily_target=10 / audit_per_day=60 / min_final_score=85 / min_review_count=50 / min_review_average=3.8 / min_images=2 /
+max_per_category_per_day=3 / max_per_product_type_per_day=1 / max_per_product_type_total=8 / polish_names_per_day=40 / gemini_interval_sec=13 / gemini_daily_calls_limit=150 / max_run_minutes=300
 
 ## 作業するときの注意（重要）
 - **10:00〜12:00頃は自動実行中**の可能性がある。この時間にコードを編集・git操作しない
@@ -102,3 +102,13 @@ max_per_category_per_day=6 / max_per_product_type_per_day=2 / gemini_interval_se
 - トップページ（index.html）に「公開中のガイド」セクション。比較ガイド一覧へは `products/#guides` で入る
 - 比較ガイドの出力は毎回同じになるようにしている（項目名の並びを固定）。無駄な差分コミットを出さないため
 - Search Console（URL検査・サイトマップ送信）はオーナーのGoogleアカウントでの手作業が必要（クラウド環境からは操作できない）
+
+## 全体見直し（2026-11-11。オーナー指示：検索されやすい・見やすい・分かりやすい・購入されやすい／広告の主張は控えめに／本数より質）
+- 本数と基準：1日10本、最終スコア85点以上、レビュー50件以上、画像2枚以上、同じ種類は合計8本まで・1日1本まで
+- 広告の見せ方：冒頭は「PR｜本ページは広告を含みます｜運営方針」の1行（法律上この1行は消さない）。「楽天アフィリエイト」の説明はページ下の注意書きに1回だけ。詳細は policy.html
+- 固定ボタン（スマホ下部）は、最初のボタンが画面から消えてから表示し、最後の案内では隠す（LP内の小さなインラインスクリプト）
+- 最初の画面に価格（確認日つき）を表示。同じ画像の繰り返し（ギャラリー・商品情報内の再掲）をやめた
+- 商品名：新規は analyze のプロンプトで「ブランド＋種類＋型番・容量、30字以内、キーワードの羅列にしない」。
+  既存は `run_daily.polish_names`（`writer.polish_name` → `quality.name_problems` で検査）が毎日少しずつ整える。DBの `name_polished` が印
+  ※ polish_names は --mock でのみ動作確認済み。実際のGeminiでの初回実行後、ログの「名前を整理:」「見送り:」を確認すること
+- 11/03 に旧コードで書き出された67ページ（Product構造化データ・meta keywords つき）は --rerender で解消済み
