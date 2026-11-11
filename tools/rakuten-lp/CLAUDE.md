@@ -112,3 +112,15 @@ max_per_category_per_day=3 / max_per_product_type_per_day=1 / max_per_product_ty
   既存は `run_daily.polish_names`（`writer.polish_name` → `quality.name_problems` で検査）が毎日少しずつ整える。DBの `name_polished` が印
   ※ polish_names は --mock でのみ動作確認済み。実際のGeminiでの初回実行後、ログの「名前を整理:」「見送り:」を確認すること
 - 11/03 に旧コードで書き出された67ページ（Product構造化データ・meta keywords つき）は --rerender で解消済み
+
+## Search Console の自動集計（2026-11-11 追加）
+- `gsc_report.py`：Search Console API で数字を集める。毎日の実行の最後に `daily_step` が呼ばれる（`--mock` 時は呼ばない。失敗してもLP作成には影響しない）
+  - 毎日：URL検査APIで登録状況を `gsc.inspect_per_day`（100）本ずつ検査 → `logs/gsc/inspection.json`
+  - 毎週月曜（`gsc.report_weekday`）：直近7日と前週の表示・クリック・順位、ページ種類別、上位ページ・検索語句、サイトマップ状態、
+    登録状況の集計 → `logs/gsc/report-日付.md/.json`、LINEに短いまとめ
+- 認証はサービスアカウントの鍵（JSON）。置き場所は `gsc.key_file`（既定 `rakuten-threads-auto/local/env/gsc-service-account.json`、git管理外）。
+  鍵がリポジトリ内にあると止まる。鍵が無ければ「未設定」とログに出して何もしない。署名は `cryptography` パッケージを使用
+- 設定手順はオーナー向けに `GSC_SETUP.md`。確認は `python tools\rakuten-lp\gsc_report.py --check`
+- 数字は logs（非公開）にだけ保存し、公開リポジトリには載せない。分析を頼まれたら report-*.md の中身を貼ってもらう
+- 「ページ」画面の登録済み/未登録の合計はAPIで取れない（抜き取り検査で代用）
+- ※ 偽のGoogleサーバーでの通し確認のみ。本物のSearch Consoleでは未確認（初回の --check で確認すること）

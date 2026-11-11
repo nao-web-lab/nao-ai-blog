@@ -267,5 +267,13 @@
   "_comment": "daily_target=1日に作るLPの上限(10本。2026-11-11に30→10へ。数より1本ごとの質を優先)。min_images=画像がこの枚数未満の商品は作らない。max_per_product_type_total=同じ種類の商品ページの総数の上限。polish_names_per_day=キーワードの羅列になっている既存ページの商品名・見出しを1日に何本まで整えるか(Gemini 1回/本)。audit_per_day=価格・在庫の点検本数",
   "min_images": 2,
   "max_per_product_type_total": 8,
-  "polish_names_per_day": 40
+  "polish_names_per_day": 40,
+  "gsc": {
+    "enabled": true,
+    "site_url": "https://nao-web-lab.github.io/nao-ai-blog/",
+    "key_file": "../../../rakuten-threads-auto/local/env/gsc-service-account.json",
+    "inspect_per_day": 100,
+    "report_weekday": 0,
+    "_comment": "Search Console の数字集め(gsc_report.py)。key_file=サービスアカウントの鍵(JSON)の置き場所。git管理外の場所に置き、鍵の中身はここに書かない。inspect_per_day=登録状況を1日に何本検査するか(上限2000)。report_weekday=週次まとめを作る曜日(0=月曜)"
+  }
 }
