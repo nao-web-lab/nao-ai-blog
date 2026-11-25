@@ -7,9 +7,9 @@
     "item_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9wao.bd4ch0c1.g00u9wao.bd4ci945/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmycosmeticbox%2Flashaddict%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmycosmeticbox%2Fi%2F10000009%2F&rafcid=wsc_i_ra_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
     "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9wao.bd4ch0c1.g00u9wao.bd4ci945/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmycosmeticbox%2Flashaddict%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmycosmeticbox%2Fi%2F10000009%2F&rafcid=wsc_i_is_43111b7d-4df1-43e7-a3a6-8a1d089804bf",
     "shop_name": "MyCosmeticBox",
-    "price": 5980,
-    "review_count": 203,
-    "review_average": 4.19,
+    "price": 5382,
+    "review_count": 224,
+    "review_average": 4.2,
     "tax_flag": 0,
     "postage_flag": 1,
     "category": "beauty",
@@ -35,7 +35,7 @@
         "value": "化粧品"
       }
     ],
-    "fetched_at": "2026-10-31T10:00:47+09:00"
+    "fetched_at": "2026-11-25T10:01:56+09:00"
   },
   "content": {
     "title": "ラッシュアディクトアドバンスまつ毛美容液の特徴と製品詳細",
@@ -162,15 +162,8 @@
   },
   "image_plan": [
     {
-      "url": "https://thumbnail.image.rakuten.co.jp/@0_mall/mycosmeticbox/cabinet/11302732/lash01.jpg?_ex=128x128",
-      "role": "main",
-      "alt": "ラッシュアディクトのボトルとパッケージ",
-      "caption": "ナノ化ペプチド配合のまつ毛美容液",
-      "seen_by_ai": true
-    },
-    {
       "url": "https://thumbnail.image.rakuten.co.jp/@0_mall/mycosmeticbox/cabinet/11302732/lash02.jpg?_ex=128x128",
-      "role": "detail",
+      "role": "main",
       "alt": "ラッシュアディクトのブラシ部分と成分のイメージ",
       "caption": "美容成分をバランスよく配合したケア製品",
       "seen_by_ai": true
